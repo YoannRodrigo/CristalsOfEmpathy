@@ -1,6 +1,5 @@
 ﻿#region Using Directives
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 #endregion
@@ -8,20 +7,23 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     #region Member Variables
-    protected Joystick _joystick;
+
+    protected Joystick _joystick; /*Pourquoi "protected" il n'y pas de classe dérivée*/
 
     #endregion
 
     #region Methods
-    void Start()
+
+    private void Start()
     {
-        _joystick = FindObjectOfType<Joystick>();
+        _joystick = FindObjectOfType<Joystick>(); /* Mieux vaut un public qu'un "FindObjectOfType"*/
     }
 
-    void Update()
+    private void Update()
     {
-        var _rigidbody = GetComponent<Rigidbody>();
+        var _rigidbody = GetComponent<Rigidbody>(); /* Par de "var", on mets le type directement */
         _rigidbody.velocity = new Vector3(_joystick.Horizontal * 5f, _rigidbody.velocity.y, _joystick.Vertical * 5f);
     }
+
     #endregion
 }
