@@ -1,6 +1,5 @@
 ﻿#region Using Directives
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 #endregion
@@ -8,14 +7,17 @@ using UnityEngine;
 public class DespairBarHandler : MonoBehaviour
 {
     #region Member Variables
-    public int _despairBarPoints;
+
+    public int _despairBarPoints; /* Pourquoi un "public" ? */
 
     #endregion
 
     #region Methods
-    void Start()
+
+    private void Start()
     {
-        _despairBarPoints = 0;
+        _despairBarPoints = 0; /* On remets la variable à zéro à chaque chargement de scène ? */
     }
+
     #endregion
 }
