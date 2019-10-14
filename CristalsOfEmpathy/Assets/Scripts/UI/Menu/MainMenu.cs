@@ -1,7 +1,6 @@
 ﻿#region Using Directives
 
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 #endregion
 
