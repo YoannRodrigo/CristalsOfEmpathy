@@ -10,9 +10,9 @@ public class CameraMovement : MonoBehaviour
 
     #region Member Variables
 
-    public Transform _target;
-    public float _smoothSpeed = 0.125f;
-    public Vector3 _offset;
+    public Transform target;
+    private const float SMOOTH_SPEED = 0.125f;
+    public Vector3 offset;
 
     #endregion
 
@@ -20,16 +20,15 @@ public class CameraMovement : MonoBehaviour
 
     private void Start()
     {
-        _offset = new Vector3(0, 25, -10);
+        offset = new Vector3(0, 25, -10);
     }
 
     private void FixedUpdate()
     {
-        var desiredPosition = _target.position + _offset;
-        var smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, _smoothSpeed);
+        Vector3 desiredPosition = target.position + offset;
+        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, SMOOTH_SPEED);
         transform.position = smoothedPosition;
-
-        transform.LookAt(_target);
+        transform.LookAt(target);
     }
 
     #endregion

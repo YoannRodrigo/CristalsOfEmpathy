@@ -1,28 +1,32 @@
 ﻿#region Using Directives
 
 using UnityEngine;
-
 #endregion
 
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
     #region Member Variables
 
-    protected Joystick _joystick; /*Pourquoi "protected" il n'y pas de classe dérivée*/
-
+    private Joystick joystick;
+    private Rigidbody rb;
+    
     #endregion
 
     #region Methods
 
     private void Start()
     {
-        _joystick = FindObjectOfType<Joystick>(); /* Mieux vaut un public qu'un "FindObjectOfType"*/
+        joystick = FindObjectOfType<Joystick>();
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        var _rigidbody = GetComponent<Rigidbody>(); /* Par de "var", on mets le type directement */
-        _rigidbody.velocity = new Vector3(_joystick.Horizontal * 5f, _rigidbody.velocity.y, _joystick.Vertical * 5f);
+        if(joystick)
+        {
+            rb.velocity = new Vector3(joystick.Horizontal * 5f, rb.velocity.y, joystick.Vertical * 5f);
+        }
     }
 
     #endregion
