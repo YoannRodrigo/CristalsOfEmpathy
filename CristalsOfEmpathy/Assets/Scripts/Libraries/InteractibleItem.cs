@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class InteractibleItem : MonoBehaviour
 {
+    private bool canBeTouch;
     private void Update()
     {
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
@@ -13,10 +15,26 @@ public class InteractibleItem : MonoBehaviour
                 {
                     if (raycastHit.collider.gameObject == gameObject)
                     {
-                        Debug.Log("Touch");
+                        Debug.Log(canBeTouch ? "Touch" : "Too far");
                     }
                 }
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            canBeTouch = true;
+        }
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            canBeTouch = false;
         }
     }
 }
