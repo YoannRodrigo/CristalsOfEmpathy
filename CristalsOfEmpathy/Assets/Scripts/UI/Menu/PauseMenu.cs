@@ -55,7 +55,7 @@ public class PauseMenu : MonoBehaviour
 
     public void MenuGameOnClick()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + -2);
+        SceneManager.LoadScene(0);
     }
 
     #endregion

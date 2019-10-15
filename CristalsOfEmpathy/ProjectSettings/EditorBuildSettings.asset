@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 47735a7253995174795fad3282bb5a18
   - enabled: 0
     path: Assets/Scenes/DevScene_Yanice.unity
     guid: 0eb3ded911fa6df499d11b626f40d287
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 86cfe382fb557404b9046defa157057c
   m_configObjects: {}
