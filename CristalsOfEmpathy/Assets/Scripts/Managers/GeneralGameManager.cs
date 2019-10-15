@@ -24,6 +24,7 @@ public class GeneralGameManager : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         if (playerSpawnerTransform != null && _playerPrefab != null)
         {
             Instantiate(_playerPrefab, playerSpawnerTransform.position, playerSpawnerTransform.rotation);

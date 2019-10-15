@@ -27,7 +27,7 @@ public class PauseMenu : MonoBehaviour
     #region Methods
     public void PauseButtonOnClick()
     {
-        pauseMenu.gameObject.SetActive(true);
+        pauseMenu.SetActive(true);
         joystickButton.gameObject.SetActive(false);
         pauseButton.gameObject.SetActive(false);
         Time.timeScale = 0;
@@ -35,7 +35,7 @@ public class PauseMenu : MonoBehaviour
 
     public void BackToGameOnClick()
     {
-        pauseMenu.gameObject.SetActive(false);
+        pauseMenu.SetActive(false);
         joystickButton.gameObject.SetActive(true);
         pauseButton.gameObject.SetActive(true);
         Time.timeScale = 1;
@@ -43,13 +43,13 @@ public class PauseMenu : MonoBehaviour
 
     public void OptionsGameOnClick()
     {
-        pauseMenu.gameObject.SetActive(false);
+        pauseMenu.SetActive(false);
         optionsSubMenu.gameObject.SetActive(true);
     }
 
     public void BackToMenuOnClick()
     {
-        pauseMenu.gameObject.SetActive(true);
+        pauseMenu.SetActive(true);
         optionsSubMenu.gameObject.SetActive(false);
     }
 
