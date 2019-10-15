@@ -2,7 +2,7 @@
 using UnityEngine;
 #endregion
 
-public class InteraticbleObject : InteractibleItem
+public class InteractibleObject : InteractibleItem
 {
     #region Member Variables
     #endregion
