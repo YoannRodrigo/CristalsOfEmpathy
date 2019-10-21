@@ -1,14 +1,16 @@
 ﻿#region Using Directives
 
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 #endregion
 public class SplashScreenToGame : MonoBehaviour
 {
     #region Member Variables
 
+    public LevelChanger levelChanger;
+    
     private const float TIME_MAX_BEFORE_NEXT_SCENE = 2f;
+    private const int FIRST_GAME_SCENE_ID = 2;
     private float timeSinceSceneStarted;
     
     #endregion
@@ -20,7 +22,7 @@ public class SplashScreenToGame : MonoBehaviour
         timeSinceSceneStarted += Time.deltaTime;
         if (timeSinceSceneStarted > TIME_MAX_BEFORE_NEXT_SCENE)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            levelChanger.ChangeToLevelWithFade(FIRST_GAME_SCENE_ID);
         }
     }
     

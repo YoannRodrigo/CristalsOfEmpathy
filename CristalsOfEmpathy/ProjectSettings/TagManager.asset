@@ -7,6 +7,7 @@ TagManager:
   - InteractibleItem
   - FxTemporaire
   - CollectableItem
+  - LevelChanger
   layers:
   - Default
   - TransparentFX
