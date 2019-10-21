@@ -1,7 +1,5 @@
 ﻿#region Using Directives
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,13 +12,11 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenu;
     public GameObject optionsSubMenu;
+    public GameObject inventoryButtonGameObject;
     public GameObject joystickButton;
+    public GameObject inventoryMenu;
 
     public Button pauseButton;
-    public Button backButton;
-    public Button optionsButton;
-    public Button menuButton;
-    public Button backOptionsSubMenuOptions;
 
     #endregion
 
@@ -28,7 +24,9 @@ public class PauseMenu : MonoBehaviour
     public void PauseButtonOnClick()
     {
         pauseMenu.SetActive(true);
-        joystickButton.gameObject.SetActive(false);
+        joystickButton.SetActive(false);
+        inventoryMenu.SetActive(false);
+        inventoryButtonGameObject.SetActive(false);
         pauseButton.gameObject.SetActive(false);
         Time.timeScale = 0;
     }
@@ -38,6 +36,11 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         joystickButton.gameObject.SetActive(true);
         pauseButton.gameObject.SetActive(true);
+        inventoryButtonGameObject.SetActive(true);
+        if (inventoryButtonGameObject.GetComponent<InventoryMenu>().IsOpen)
+        {
+            inventoryMenu.SetActive(true);
+        }
         Time.timeScale = 1;
     }
 

@@ -1,9 +1,6 @@
 ﻿#region Using Directives
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 #endregion
 
@@ -14,9 +11,11 @@ public class InventoryMenu : MonoBehaviour
 
     public GameObject inventoryMenu;
 
-    public Button inventoryButton;
+    //public Button inventoryButton;
 
-    private bool isOpen = false;
+    private bool isOpen;
+
+    public bool IsOpen => isOpen;
 
     #endregion
 
