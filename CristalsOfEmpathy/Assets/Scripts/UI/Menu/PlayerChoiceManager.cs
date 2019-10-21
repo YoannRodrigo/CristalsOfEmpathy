@@ -2,7 +2,6 @@
 
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 #endregion
@@ -11,11 +10,14 @@ public class PlayerChoiceManager : MonoBehaviour
 {
     #region Member Variables
 
+    private const int SPLASHSCREEN_ID = 1;
+    
     private PlayerChoice playerChoice = PlayerChoice.NONE;
     
     public List<GameObject> playerPrefabs = new List<GameObject>();
     public GeneralGameManager generalGameManager;
     public Button validateButton;
+    public LevelChanger levelChanger;
 
     #endregion
 
@@ -50,7 +52,7 @@ public class PlayerChoiceManager : MonoBehaviour
     public void ValidateOnClick()
     {
         generalGameManager.SetPlayerPrefab(playerPrefabs[(int) playerChoice]);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        levelChanger.ChangeToLevelWithFade(SPLASHSCREEN_ID);
     }
 
     #endregion

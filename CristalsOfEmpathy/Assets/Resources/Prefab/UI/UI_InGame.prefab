@@ -1366,11 +1366,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptionsMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 500377634070270060, guid: 381298e339c064141815ecf740f432b6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 274839474997868855}
     - target: {fileID: 500377634865719395, guid: 381298e339c064141815ecf740f432b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1476,6 +1471,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 500377634070270060, guid: 381298e339c064141815ecf740f432b6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 274839474997868855}
     - target: {fileID: 500377635384715892, guid: 381298e339c064141815ecf740f432b6,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1667,31 +1667,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseButton
       objectReference: {fileID: 0}
-    - target: {fileID: 143326028232180398, guid: 13833f53bf52f9449936a50ec11cd07c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 274839474997868855}
-    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
-      propertyPath: pauseMenu
-      value: 
-      objectReference: {fileID: 311733563365359759}
-    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
-      propertyPath: optionsSubMenu
-      value: 
-      objectReference: {fileID: 8833892337731129533}
-    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
-      propertyPath: inventoryButtonGameObject
-      value: 
-      objectReference: {fileID: 4945881847643516794}
-    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
-      propertyPath: joystickButton
-      value: 
-      objectReference: {fileID: 6111160286257111517}
-    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
-      propertyPath: inventoryMenu
-      value: 
-      objectReference: {fileID: 1764639768}
     - target: {fileID: 143326028232180399, guid: 13833f53bf52f9449936a50ec11cd07c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1797,6 +1772,31 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 311733563365359759}
+    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
+      propertyPath: optionsSubMenu
+      value: 
+      objectReference: {fileID: 8833892337731129533}
+    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
+      propertyPath: inventoryButtonGameObject
+      value: 
+      objectReference: {fileID: 4945881847643516794}
+    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
+      propertyPath: joystickButton
+      value: 
+      objectReference: {fileID: 6111160286257111517}
+    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
+      propertyPath: inventoryMenu
+      value: 
+      objectReference: {fileID: 1764639768}
+    - target: {fileID: 143326028232180398, guid: 13833f53bf52f9449936a50ec11cd07c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 274839474997868855}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
 --- !u!114 &9049080525415932798 stripped
@@ -1959,12 +1959,12 @@ PrefabInstance:
       propertyPath: pauseButton
       value: 
       objectReference: {fileID: 9049080525415932798}
-    - target: {fileID: 8663369384742796743, guid: 2a44caf32b460cf40a2733c1e3fef4a5,
+    - target: {fileID: 8663369385408247827, guid: 2a44caf32b460cf40a2733c1e3fef4a5,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 274839474997868855}
-    - target: {fileID: 8663369385408247827, guid: 2a44caf32b460cf40a2733c1e3fef4a5,
+    - target: {fileID: 8663369384742796743, guid: 2a44caf32b460cf40a2733c1e3fef4a5,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

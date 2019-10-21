@@ -1,7 +1,6 @@
 ﻿#region Using Directives
 
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 #endregion
@@ -10,12 +9,14 @@ public class PauseMenu : MonoBehaviour
 {
     #region Member Variables
 
+    private const int MAIN_MENU_SCENE_ID = 0;
+    
     public GameObject pauseMenu;
     public GameObject optionsSubMenu;
     public GameObject inventoryButtonGameObject;
     public GameObject joystickButton;
     public GameObject inventoryMenu;
-
+    public LevelChanger levelChanger;
     public Button pauseButton;
 
     #endregion
@@ -58,7 +59,7 @@ public class PauseMenu : MonoBehaviour
 
     public void MenuGameOnClick()
     {
-        SceneManager.LoadScene(0);
+        levelChanger.ChangeToLevelWithFade(MAIN_MENU_SCENE_ID);
     }
 
     #endregion
