@@ -181,6 +181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: xbot
       objectReference: {fileID: 0}
+    - target: {fileID: 100138, guid: 27050af7949919c4c9c622efefbc37a8, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 400138, guid: 27050af7949919c4c9c622efefbc37a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
