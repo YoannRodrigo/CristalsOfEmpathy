@@ -108,6 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nearParticlesSystem: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
     type: 3}
+  collectibleItem: {fileID: 8447002172417320584}
+  item: {fileID: 11400000, guid: 6bfb42b80b49423409cdd5395771401c, type: 2}
 --- !u!135 &8447002172417320590
 SphereCollider:
   m_ObjectHideFlags: 0
