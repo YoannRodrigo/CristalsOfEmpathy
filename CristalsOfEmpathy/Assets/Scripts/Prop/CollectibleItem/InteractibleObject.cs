@@ -6,6 +6,7 @@ public class InteractibleObject : InteractibleItem
 {
     #region Member Variables
     public GameObject collectibleItem;
+    public Item item;
     #endregion
 
     #region Methods
@@ -16,13 +17,19 @@ public class InteractibleObject : InteractibleItem
     //        Destroy(collectibleItem);
     //    }
     //}
+
     protected override void OnTouch()
     {
         Debug.Log(canBeTouch ? "Touch" : "Too far");
+        Debug.Log("Picking up" + item.name);
 
         if (canBeTouch)
         {
-            Destroy(collectibleItem);
+            bool wasPickedUp = Inventory.inventoryInstance.Add(item);
+            if (wasPickedUp)
+            {
+                Destroy(collectibleItem);
+            }
         }
     }
     #endregion
