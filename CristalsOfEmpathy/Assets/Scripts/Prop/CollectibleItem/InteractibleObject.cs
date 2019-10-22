@@ -10,13 +10,6 @@ public class InteractibleObject : InteractibleItem
     #endregion
 
     #region Methods
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject.CompareTag("Player"))
-    //    {
-    //        Destroy(collectibleItem);
-    //    }
-    //}
 
     protected override void OnTouch()
     {
