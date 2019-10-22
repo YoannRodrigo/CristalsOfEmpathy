@@ -638,20 +638,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2481375784498096206, guid: 9a8f4294edaa7bb4dac936e8756d7ce2,
+    - target: {fileID: 311733563365359759, guid: 9a8f4294edaa7bb4dac936e8756d7ce2,
         type: 3}
-      propertyPath: m_OverrideSorting
-      value: 1
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2481375784498096206, guid: 9a8f4294edaa7bb4dac936e8756d7ce2,
+    - target: {fileID: 274839474997868855, guid: 9a8f4294edaa7bb4dac936e8756d7ce2,
         type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1476882405291551712, guid: 9a8f4294edaa7bb4dac936e8756d7ce2,
-        type: 3}
-      propertyPath: m_BlockingMask.m_Bits
-      value: 279
+      propertyPath: canBeDesativate
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a8f4294edaa7bb4dac936e8756d7ce2, type: 3}

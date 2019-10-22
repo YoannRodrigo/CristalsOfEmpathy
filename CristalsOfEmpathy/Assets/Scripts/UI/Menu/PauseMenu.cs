@@ -1,5 +1,6 @@
 ﻿#region Using Directives
 
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,8 @@ public class PauseMenu : MonoBehaviour
     #region Member Variables
 
     private const int MAIN_MENU_SCENE_ID = 0;
+
+    private Animator animator;
     
     public GameObject pauseMenu;
     public GameObject optionsSubMenu;
@@ -18,10 +21,38 @@ public class PauseMenu : MonoBehaviour
     public GameObject inventoryMenu;
     public LevelChanger levelChanger;
     public Button pauseButton;
+    public bool canBeDesativate;
+    private bool isActivateForOption;
+    private static readonly int isOnPause = Animator.StringToHash("isOnPause");
 
     #endregion
 
     #region Methods
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
+    private void OnEnable()
+    {
+        if(!isActivateForOption)
+        {
+            isActivateForOption = true;
+            animator.SetBool(isOnPause, true);
+        }
+    }
+
+    private void Update()
+    {
+        if (canBeDesativate)
+        {
+            isActivateForOption = false;
+            canBeDesativate = false;
+            gameObject.SetActive(false);
+        }
+    }
+
     public void PauseButtonOnClick()
     {
         pauseMenu.SetActive(true);
@@ -29,12 +60,12 @@ public class PauseMenu : MonoBehaviour
         inventoryMenu.SetActive(false);
         inventoryButtonGameObject.SetActive(false);
         pauseButton.gameObject.SetActive(false);
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
     }
 
     public void BackToGameOnClick()
     {
-        pauseMenu.SetActive(false);
+        animator.SetBool(isOnPause, false);
         joystickButton.gameObject.SetActive(true);
         pauseButton.gameObject.SetActive(true);
         inventoryButtonGameObject.SetActive(true);
@@ -54,6 +85,7 @@ public class PauseMenu : MonoBehaviour
     public void BackToMenuOnClick()
     {
         pauseMenu.SetActive(true);
+        animator.SetBool(isOnPause, true);
         optionsSubMenu.gameObject.SetActive(false);
     }
 
