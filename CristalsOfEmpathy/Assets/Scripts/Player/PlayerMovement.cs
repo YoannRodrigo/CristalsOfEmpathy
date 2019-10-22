@@ -34,17 +34,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if(joystick)
+        if (joystick)
         {
             if (Math.Abs(joystick.Direction.magnitude) > 0.0f)
             {
                 Vector3 newLookDirection = new Vector3(joystick.Horizontal, 0, joystick.Vertical);
                 transform.rotation = Quaternion.LookRotation(newLookDirection);
             }
-            
+
             rb.velocity = new Vector3(joystick.Horizontal * 5f, rb.velocity.y, joystick.Vertical * 5f);
         }
-        
+
         Vector3 velocityOnGround = Vector3.Scale(rb.velocity, new Vector3(1, 0, 1));
         if (Math.Abs(velocityOnGround.magnitude) <= 0.2f)
         {
@@ -53,8 +53,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            Quaternion velocityAngle = Quaternion.Euler(0, Vector3.SignedAngle(transform.forward,velocityOnGround,  Vector3.up),0);
-            transform.rotation = Quaternion.Slerp(transform.rotation,velocityAngle,ROTATION_SPEED*Time.deltaTime);
+            Quaternion velocityAngle = Quaternion.Euler(0, Vector3.SignedAngle(transform.forward, velocityOnGround, Vector3.up), 0);
+            transform.rotation = Quaternion.Slerp(transform.rotation, velocityAngle, ROTATION_SPEED * Time.deltaTime);
             if (Math.Abs(velocityOnGround.magnitude) < WALKING_SPEED_MAX)
             {
                 animator.SetBool(isPlayerRunning, false);
