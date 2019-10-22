@@ -1,22 +1,16 @@
 ﻿#region Using Directives
-
 using UnityEngine;
-
 #endregion
-
 
 public class InventoryMenu : MonoBehaviour
 {
     #region Member Variables
-
-    public GameObject inventoryMenu;
-
-    //public Button inventoryButton;
-
     private bool isOpen;
+    public GameObject inventoryMenu;
+    #endregion
 
+    #region Properties
     public bool IsOpen => isOpen;
-
     #endregion
 
     #region Methods
@@ -33,9 +27,7 @@ public class InventoryMenu : MonoBehaviour
             inventoryMenu.SetActive(false);
             isOpen = false;
         }
-
     }
 
     #endregion
-
 }
