@@ -16,7 +16,6 @@ public class PlayerChoiceManager : MonoBehaviour
     
     public List<GameObject> playerPrefabs = new List<GameObject>();
     public GeneralGameManager generalGameManager;
-    public Button validateButton;
     public LevelChanger levelChanger;
 
     #endregion
@@ -33,23 +32,41 @@ public class PlayerChoiceManager : MonoBehaviour
 
     public void PlayerAOnClick()
     {
-        playerChoice = PlayerChoice.PLAYER_A;
-        validateButton.gameObject.SetActive(true);
+        if(playerChoice != PlayerChoice.PLAYER_A)
+        {
+            playerChoice = PlayerChoice.PLAYER_A;
+        }
+        else
+        {
+            ValidateOnClick();
+        }
     }
 
     public void PlayerBOnClick()
     {
-        playerChoice = PlayerChoice.PLAYER_B;
-        validateButton.gameObject.SetActive(true);
+        if(playerChoice != PlayerChoice.PLAYER_B)
+        {
+            playerChoice = PlayerChoice.PLAYER_B;
+        }
+        else
+        {
+            ValidateOnClick();
+        }
     }
 
     public void PlayerCOnClick()
     {
-        playerChoice = PlayerChoice.PLAYER_C;
-        validateButton.gameObject.SetActive(true);
+        if(playerChoice != PlayerChoice.PLAYER_C)
+        {
+            playerChoice = PlayerChoice.PLAYER_C;
+        }
+        else
+        {
+            ValidateOnClick();
+        }
     }
 
-    public void ValidateOnClick()
+    private void ValidateOnClick()
     {
         generalGameManager.SetPlayerPrefab(playerPrefabs[(int) playerChoice]);
         levelChanger.ChangeToLevelWithFade(SPLASHSCREEN_ID);
