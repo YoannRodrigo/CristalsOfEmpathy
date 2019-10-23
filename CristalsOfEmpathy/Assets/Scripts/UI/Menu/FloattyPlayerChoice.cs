@@ -1,17 +1,19 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿#region Using Directives
+using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
-
+#endregion
 public class FloattyPlayerChoice : MonoBehaviour
 {
-
+    #region Member Variables
     private const float MAX_OFFSET_Y = 100f;
     private const float SPEED = 0.05f;
     private float currentOffsetGoal;
     private float timeSinceOffsetReached;
 
+    #endregion
+
+    #region Methods
     private void Start()
     {
         currentOffsetGoal = Random.Range(0,2) == 0 ? -MAX_OFFSET_Y : MAX_OFFSET_Y;
@@ -29,4 +31,5 @@ public class FloattyPlayerChoice : MonoBehaviour
             timeSinceOffsetReached = 0;
         }
     }
+    #endregion
 }

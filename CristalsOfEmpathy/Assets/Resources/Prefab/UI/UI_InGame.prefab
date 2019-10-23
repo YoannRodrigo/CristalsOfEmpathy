@@ -2265,60 +2265,19 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 143326028232180399, guid: 13833f53bf52f9449936a50ec11cd07c,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 143326028232180399, guid: 13833f53bf52f9449936a50ec11cd07c,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
-      propertyPath: pauseMenu
-      value: 
-      objectReference: {fileID: 311733563365359759}
-    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
-      propertyPath: optionsSubMenu
-      value: 
-      objectReference: {fileID: 8833892337731129533}
-    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
-      propertyPath: inventoryButtonGameObject
-      value: 
-      objectReference: {fileID: 4945881847643516794}
-    - target: {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
-      propertyPath: joystickButton
-      value: 
-      objectReference: {fileID: 6111160286257111517}
-    - target: {fileID: 143326028232180398, guid: 13833f53bf52f9449936a50ec11cd07c,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 274839474997868855}
     - target: {fileID: 143326028232180398, guid: 13833f53bf52f9449936a50ec11cd07c,
         type: 3}
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 214464728814181534}
+    - target: {fileID: 143326028232180398, guid: 13833f53bf52f9449936a50ec11cd07c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 274839474997868855}
     - target: {fileID: 143326028232180393, guid: 13833f53bf52f9449936a50ec11cd07c,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6176093202964572870, guid: 13833f53bf52f9449936a50ec11cd07c,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6176093202964572870, guid: 13833f53bf52f9449936a50ec11cd07c,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6176093202964572870, guid: 13833f53bf52f9449936a50ec11cd07c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6176093202964572870, guid: 13833f53bf52f9449936a50ec11cd07c,
@@ -2366,8 +2325,7 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 795256619, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13833f53bf52f9449936a50ec11cd07c, type: 3}
 --- !u!114 &9049080525415932798 stripped
 MonoBehaviour:
@@ -2541,11 +2499,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 8663369385887433164, guid: 2a44caf32b460cf40a2733c1e3fef4a5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8663369385408247827, guid: 2a44caf32b460cf40a2733c1e3fef4a5,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2603,11 +2556,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3480017452408662443, guid: 2a44caf32b460cf40a2733c1e3fef4a5,
         type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3480017452408662443, guid: 2a44caf32b460cf40a2733c1e3fef4a5,
-        type: 3}
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
@@ -2619,6 +2567,11 @@ PrefabInstance:
     - target: {fileID: 3480017452408662443, guid: 2a44caf32b460cf40a2733c1e3fef4a5,
         type: 3}
       propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3480017452408662443, guid: 2a44caf32b460cf40a2733c1e3fef4a5,
+        type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2712,12 +2665,12 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 215
+      value: -817
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -998
+      value: -457
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -2732,22 +2685,22 @@ PrefabInstance:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
