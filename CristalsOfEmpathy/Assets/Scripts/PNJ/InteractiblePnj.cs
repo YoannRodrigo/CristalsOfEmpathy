@@ -4,16 +4,19 @@ using UnityEngine;
 
 #endregion
 
-
 public class InteractiblePnj : InteractibleItem
 {
     #region Member Variables
+
     #endregion
     
     #region Methods
     protected override void OnTouch()
     {
-        Debug.Log(canBeTouch ? "Touch" : "Too far");
+        if (canBeTouch)
+        {
+            Debug.Log("Interacting with a PNJ...");
+        }
     }
     #endregion
 }
