@@ -108,6 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nearParticlesSystem: {fileID: 4363562844490038545, guid: df49b143a0c4fd342b7138947cc7adf4,
     type: 3}
+  dialogue: {fileID: 0}
 --- !u!135 &8780005789634281319
 SphereCollider:
   m_ObjectHideFlags: 0

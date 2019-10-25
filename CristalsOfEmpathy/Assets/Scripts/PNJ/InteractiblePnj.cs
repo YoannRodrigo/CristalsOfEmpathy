@@ -7,7 +7,9 @@ using UnityEngine;
 public class InteractiblePnj : InteractibleItem
 {
     #region Member Variables
+    public Dialogue dialogue;
 
+    public GameObject dialogueBox;
     #endregion
     
     #region Methods
@@ -16,6 +18,8 @@ public class InteractiblePnj : InteractibleItem
         if (canBeTouch)
         {
             Debug.Log("Interacting with a PNJ...");
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            dialogueBox.SetActive(true);
         }
     }
     #endregion
