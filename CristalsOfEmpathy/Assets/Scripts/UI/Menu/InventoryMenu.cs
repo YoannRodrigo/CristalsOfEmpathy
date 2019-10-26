@@ -7,6 +7,8 @@ public class InventoryMenu : MonoBehaviour
     #region Member Variables
     private bool isOpen;
     public GameObject inventoryMenu;
+    public GameObject pauseButton;
+    public GameObject joystick;
     #endregion
 
     #region Properties
@@ -20,11 +22,15 @@ public class InventoryMenu : MonoBehaviour
         if (!isOpen)
         {
             inventoryMenu.SetActive(true);
+            pauseButton.SetActive(false);
+            joystick.SetActive(false);
             isOpen = true;
         }
         else
         {
             inventoryMenu.SetActive(false);
+            pauseButton.SetActive(true);
+            joystick.SetActive(true);
             isOpen = false;
         }
     }
