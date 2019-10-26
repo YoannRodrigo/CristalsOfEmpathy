@@ -4,16 +4,23 @@ using UnityEngine;
 
 #endregion
 
-
 public class InteractiblePnj : InteractibleItem
 {
     #region Member Variables
+    public Dialogue dialogue;
+
+    public GameObject dialogueBox;
     #endregion
     
     #region Methods
     protected override void OnTouch()
     {
-        Debug.Log(canBeTouch ? "Touch" : "Too far");
+        if (canBeTouch)
+        {
+            Debug.Log("Interacting with a PNJ...");
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            dialogueBox.SetActive(true);
+        }
     }
     #endregion
 }
