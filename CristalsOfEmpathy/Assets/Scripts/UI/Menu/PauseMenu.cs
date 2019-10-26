@@ -1,5 +1,6 @@
 ﻿#region Using Directives
 
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     #region Member Variables
 
     private const int MAIN_MENU_SCENE_ID = 0;
+    private static bool isOnPause;
     
     public GameObject pauseMenu;
     public GameObject optionsSubMenu;
@@ -18,23 +20,62 @@ public class PauseMenu : MonoBehaviour
     public GameObject inventoryMenu;
     public LevelChanger levelChanger;
     public Button pauseButton;
+    public bool canBeDesativate;
+    public bool canActivateOption;
+    private bool isActivateForOption;
 
     #endregion
 
     #region Methods
+
+    public static void SetPause(bool isOnPause)
+    {
+        PauseMenu.isOnPause = isOnPause;
+    }
+
+    public static bool IsOnPause()
+    {
+        return isOnPause;
+    }
+    
+    private void OnEnable()
+    {
+        if(!isActivateForOption)
+        {
+            isActivateForOption = true;
+        }
+    }
+
+    private void Update()
+    {
+        if (canBeDesativate)
+        {
+            if (canActivateOption)
+            {
+                canActivateOption = false;
+                optionsSubMenu.SetActive(true);
+            }
+            isActivateForOption = false;
+            canBeDesativate = false;
+            gameObject.SetActive(false);
+        }
+    }
+
     public void PauseButtonOnClick()
     {
+        isOnPause = true;
         pauseMenu.SetActive(true);
+        pauseMenu.GetComponent<PauseAnimatorController>().SlideUiIn();
         joystickButton.SetActive(false);
         inventoryMenu.SetActive(false);
         inventoryButtonGameObject.SetActive(false);
         pauseButton.gameObject.SetActive(false);
-        Time.timeScale = 0;
     }
 
     public void BackToGameOnClick()
     {
-        pauseMenu.SetActive(false);
+        isOnPause = false;
+        pauseMenu.GetComponent<PauseAnimatorController>().SlideUiOut();
         joystickButton.gameObject.SetActive(true);
         pauseButton.gameObject.SetActive(true);
         inventoryButtonGameObject.SetActive(true);
@@ -42,23 +83,21 @@ public class PauseMenu : MonoBehaviour
         {
             inventoryMenu.SetActive(true);
         }
-        Time.timeScale = 1;
     }
 
     public void OptionsGameOnClick()
     {
-        pauseMenu.SetActive(false);
-        optionsSubMenu.gameObject.SetActive(true);
+        pauseMenu.GetComponent<PauseAnimatorController>().SlideToOption();
     }
 
     public void BackToMenuOnClick()
     {
-        pauseMenu.SetActive(true);
-        optionsSubMenu.gameObject.SetActive(false);
+        optionsSubMenu.GetComponent<OptionAnimatorController>().SlideUiOut();
     }
 
     public void MenuGameOnClick()
     {
+        isOnPause = false;
         levelChanger.ChangeToLevelWithFade(MAIN_MENU_SCENE_ID);
     }
 

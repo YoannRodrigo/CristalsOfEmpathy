@@ -12,22 +12,20 @@ public class PlayerMovement : MonoBehaviour
 
     private const float WALKING_SPEED_MAX = 3f;
     private const float ROTATION_SPEED = 2f;
-    private const float MAX_SPEED = 6f;
-    private Joystick joystick;
+    private SingleJoystick joystick;
     private Rigidbody rb;
     private Animator animator;
     private static readonly int isPlayerRunning = Animator.StringToHash("isPlayerRunning");
     private static readonly int isPlayerWalking = Animator.StringToHash("isPlayerWalking");
-    private Vector3 oldLookDir;
-
+    private Vector3 joystickMovement;
+    
     #endregion
 
     #region Methods
 
     private void Start()
     {
-        oldLookDir = transform.forward;
-        joystick = FindObjectOfType<Joystick>();
+        joystick = FindObjectOfType<SingleJoystick>();
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
     }
@@ -36,13 +34,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if (joystick)
         {
-            if (Math.Abs(joystick.Direction.magnitude) > 0.0f)
+            joystickMovement = joystick.GetInputDirection();
+            if (Math.Abs(joystickMovement.magnitude) > 0.0f)
             {
-                Vector3 newLookDirection = new Vector3(joystick.Horizontal, 0, joystick.Vertical);
+                Vector3 newLookDirection = new Vector3(joystickMovement.x, 0, joystickMovement.y);
                 transform.rotation = Quaternion.LookRotation(newLookDirection);
             }
 
-            rb.velocity = new Vector3(joystick.Horizontal * 5f, rb.velocity.y, joystick.Vertical * 5f);
+            rb.velocity = new Vector3(joystickMovement.x * 5f, rb.velocity.y, joystickMovement.y * 5f);
         }
 
         Vector3 velocityOnGround = Vector3.Scale(rb.velocity, new Vector3(1, 0, 1));
