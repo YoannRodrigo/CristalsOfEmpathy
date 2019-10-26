@@ -21,6 +21,7 @@ public class InventoryMenu : MonoBehaviour
     {
         if (!isOpen)
         {
+            PauseMenu.SetPause(true);
             inventoryMenu.SetActive(true);
             pauseButton.SetActive(false);
             joystick.SetActive(false);
@@ -28,6 +29,7 @@ public class InventoryMenu : MonoBehaviour
         }
         else
         {
+            PauseMenu.SetPause(false);
             inventoryMenu.SetActive(false);
             pauseButton.SetActive(true);
             joystick.SetActive(true);

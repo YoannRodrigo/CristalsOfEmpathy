@@ -20,7 +20,7 @@ public abstract class InteractibleItem : MonoBehaviour
                 Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
                 if (Physics.Raycast(raycast, out RaycastHit raycastHit))
                 {
-                    if (raycastHit.collider.gameObject == gameObject)
+                    if (raycastHit.collider.gameObject == gameObject && !PauseMenu.IsOnPause())
                     {
                         OnTouch();
                     }

@@ -1,5 +1,6 @@
 ﻿#region Using Directives
 
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,7 +11,7 @@ public class PauseMenu : MonoBehaviour
     #region Member Variables
 
     private const int MAIN_MENU_SCENE_ID = 0;
-
+    private static bool isOnPause;
     
     public GameObject pauseMenu;
     public GameObject optionsSubMenu;
@@ -27,6 +28,16 @@ public class PauseMenu : MonoBehaviour
 
     #region Methods
 
+    public static void SetPause(bool isOnPause)
+    {
+        PauseMenu.isOnPause = isOnPause;
+    }
+
+    public static bool IsOnPause()
+    {
+        return isOnPause;
+    }
+    
     private void OnEnable()
     {
         if(!isActivateForOption)
@@ -52,6 +63,7 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseButtonOnClick()
     {
+        isOnPause = true;
         pauseMenu.SetActive(true);
         pauseMenu.GetComponent<PauseAnimatorController>().SlideUiIn();
         joystickButton.SetActive(false);
@@ -62,6 +74,7 @@ public class PauseMenu : MonoBehaviour
 
     public void BackToGameOnClick()
     {
+        isOnPause = false;
         pauseMenu.GetComponent<PauseAnimatorController>().SlideUiOut();
         joystickButton.gameObject.SetActive(true);
         pauseButton.gameObject.SetActive(true);
@@ -84,6 +97,7 @@ public class PauseMenu : MonoBehaviour
 
     public void MenuGameOnClick()
     {
+        isOnPause = false;
         levelChanger.ChangeToLevelWithFade(MAIN_MENU_SCENE_ID);
     }
 
