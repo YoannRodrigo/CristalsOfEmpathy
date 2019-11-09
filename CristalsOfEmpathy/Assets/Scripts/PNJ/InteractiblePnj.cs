@@ -21,16 +21,21 @@ public class InteractiblePnj : InteractibleItem
         if (canBeTouch)
         {
             Debug.Log("Interacting with a PNJ...");
-            if(playerAnswers.Length == 0)
-            {
-                dialogueManager.StartDialogue(dialogues);
-            }
-            else
-            {
-                dialogueManager.StartDialogue(dialogues, playerAnswers);
-            }
-            dialogueBox.SetActive(true);
+            StartDialogue();
         }
+    }
+
+    public void StartDialogue()
+    {
+        if(playerAnswers.Length == 0)
+        {
+            dialogueManager.StartDialogue(dialogues);
+        }
+        else
+        {
+            dialogueManager.StartDialogue(dialogues, playerAnswers);
+        }
+        dialogueBox.SetActive(true); 
     }
     #endregion
 }
