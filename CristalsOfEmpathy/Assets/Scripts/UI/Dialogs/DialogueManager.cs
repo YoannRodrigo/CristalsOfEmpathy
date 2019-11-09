@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
 
     #region Methods
 
-    public void StartDialogue(Dialogue[] dialogues)
+    public void StartDialogue(Dialogue[] dialogues, int startId = 0)
     {
         joystick.SetActive(false);
         pauseButton.SetActive(false);
@@ -39,17 +39,17 @@ public class DialogueManager : MonoBehaviour
         {
             this.dialogues.Add(dialogue);
         }
-        DisplayNextSentence(0);
+        DisplayNextSentence(startId);
     }
     
-    public void StartDialogue(Dialogue[] dialogues, PlayerAnswers[] playerAnswers)
+    public void StartDialogue(Dialogue[] dialogues, PlayerAnswers[] playerAnswers, int startId = 0)
     {
         this.playerAnswers.Clear();
         foreach (PlayerAnswers playerAnswer in playerAnswers)
         {
             this.playerAnswers.Add(playerAnswer);
         }
-        StartDialogue(dialogues);
+        StartDialogue(dialogues, startId);
     }
 
     private void EndDialogue()
