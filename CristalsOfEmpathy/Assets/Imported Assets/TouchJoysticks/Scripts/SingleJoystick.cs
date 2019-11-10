@@ -12,6 +12,7 @@ calculates and ouputs a normalized direction vector for another script to use in
     the required child "knob" image must be positioned and anchored to the center to the background image 
 */
 
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -25,7 +26,7 @@ public class SingleJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
 
     private Image bgImage; // background of the joystick, this is the part of the joystick that recieves input
     private Image joystickKnobImage; // the "knob" part of the joystick, it just moves to provide feedback, it does not receive input from the touch
-    private Vector3 inputVector; // normalized direction vector that will be ouput from this joystick, it can be accessed from outside this class using the public function GetInputDirection() defined in this class, this vector can be used to control your game object ex. a player character or any desired game object
+    private Vector3 inputVector = Vector3.zero; // normalized direction vector that will be ouput from this joystick, it can be accessed from outside this class using the public function GetInputDirection() defined in this class, this vector can be used to control your game object ex. a player character or any desired game object
     private Vector3 unNormalizedInput; // unormalized direction vector (it has a magnitude) that is only used within this class to allow this joystick to drag along on the screen as the user drags
     private Vector3[] fourCornersArray = new Vector3[4]; // used to get the bottom right corner of the image in order to ensure that the pivot of the joystick's background image is always at the bottom right corner of the image (the pivot must always be placed on the bottom right corner of the joystick's background image in order to the script to work)
     private Vector2 bgImageStartPosition; // used to temporarily store the starting position of the joystick's background image (where it was placed on the canvas in the editor before play was pressed) in order to set the image back to this same position after setting the pivot to the bottom right corner of the image
@@ -141,6 +142,17 @@ public class SingleJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
     {
         inputVector = Vector3.zero; // resets the inputVector so that output will no longer affect movement of the game object (example, a player character or any desired game object)
         joystickKnobImage.rectTransform.anchoredPosition = Vector3.zero; // resets the handle ("knob") of this joystick back to the center
+    }
+
+    private void OnEnable()
+    {
+        if (joystickKnobImage != null)
+        {
+            inputVector =
+                Vector3.zero; // resets the inputVector so that output will no longer affect movement of the game object (example, a player character or any desired game object)
+            joystickKnobImage.rectTransform.anchoredPosition =
+                Vector3.zero; // resets the handle ("knob") of this joystick back to the center}
+        }
     }
 
     // ouputs the direction vector, use this public function from another script to control movement of a game object (such as a player character or any desired game object)
