@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement;
 public class DialogueManager : MonoBehaviour
 {
     #region Member Variables
+    public TutorialManager tutorialManager;
 
     public Text pnjNameText;
     public Text dialogueText;
@@ -17,17 +18,12 @@ public class DialogueManager : MonoBehaviour
     public Text answer2;
     public Text answer3;
     public Text answer4;
-    public Text answer5;
-    public Text answer6;
 
     public GameObject dialogueBox;
     public GameObject answerBox;
     public GameObject joystick;
     public GameObject pauseButton;
     public GameObject inventoryButton;
-
-    public bool isQuestActivated = false;
-    public bool isQuestAchieved = false;
 
     private int currentTextId;
     private int currentAnswerId;
@@ -39,43 +35,22 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue[] dialogues, int startId = 0)
     {
-        // QUEST LOCKING DIALOG
-        if (!isQuestActivated)
+        // QUEST LOCKING DIALOG & FIXING SHIT
+        if (!tutorialManager.isQuestActivated)
         {
-            joystick.SetActive(false);
-            pauseButton.SetActive(false);
-            inventoryButton.SetActive(false);
-            this.dialogues.Clear();
-            foreach (Dialogue dialogue in dialogues)
-            {
-                this.dialogues.Add(dialogue);
-            }
+            OnDialogueInteraction(dialogues, 0);
             DisplayNextSentence(startId);
         }
 
         else
         {
-            joystick.SetActive(false);
-            pauseButton.SetActive(false);
-            inventoryButton.SetActive(false);
-            this.dialogues.Clear();
-            foreach (Dialogue dialogue in dialogues)
-            {
-                this.dialogues.Add(dialogue);
-            }
+            OnDialogueInteraction(dialogues, 0);
         }
 
-        // SAMPLE DIALOG WHEN QUEST ACHIEVED
-        if (isQuestAchieved)
+        // SAMPLE DIALOG WHEN QUEST ACHIEVED & FIXING SHIT
+        if (tutorialManager.isQuestAchieved)
         {
-            joystick.SetActive(false);
-            pauseButton.SetActive(false);
-            inventoryButton.SetActive(false);
-            this.dialogues.Clear();
-            foreach (Dialogue dialogue in dialogues)
-            {
-                this.dialogues.Add(dialogue);
-            }
+            OnDialogueInteraction(dialogues, 0);
             DisplayNextSentence(8);
         }
     }
@@ -88,6 +63,18 @@ public class DialogueManager : MonoBehaviour
             this.playerAnswers.Add(playerAnswer);
         }
         StartDialogue(dialogues, startId);
+    }
+
+    public void OnDialogueInteraction(Dialogue[] dialogues, int startId = 0)
+    {
+        joystick.SetActive(false);
+        pauseButton.SetActive(false);
+        inventoryButton.SetActive(false);
+        this.dialogues.Clear();
+        foreach (Dialogue dialogue in dialogues)
+        {
+            this.dialogues.Add(dialogue);
+        }
     }
 
     private void EndDialogue()
@@ -118,13 +105,7 @@ public class DialogueManager : MonoBehaviour
 
     public void NextSentenceOnClick()
     {
-        // WE CAN NOW TP IF QUEST ACHIEVED
-        if (isQuestAchieved && dialogues[currentTextId].nextTextId == -2)
-        {
-            EndDialogue();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
-
+        // FIXING SHIT
         if (dialogues[currentTextId].isAnswerNeeded)
         {
             dialogueBox.SetActive(false);
@@ -134,10 +115,12 @@ public class DialogueManager : MonoBehaviour
 
         else
         {
-            if (dialogues[currentTextId].nextTextId == -1)
+            // OR IF QUEST ACHIEVED
+            if (dialogues[currentTextId].nextTextId == -1 || tutorialManager.isQuestAchieved && dialogues[currentTextId].nextTextId == -2)
             {
                 EndDialogue();
             }
+
             else
             {
                 DisplayNextSentence(dialogues[currentTextId].nextTextId);
@@ -151,10 +134,9 @@ public class DialogueManager : MonoBehaviour
         answerBox.SetActive(false);
         DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId1);
 
-        //QUEST ACTIVATION MAY LOCK
+        //QUEST ACTIVATION MAY LOCK && FIXING SHIT
 
-        isQuestActivated = true;
-        Debug.Log("Quest activated");
+        tutorialManager.isQuestActivated = true;
     }
 
     public void Answer2OnClick()
