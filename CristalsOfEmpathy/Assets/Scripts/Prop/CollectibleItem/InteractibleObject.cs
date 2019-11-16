@@ -10,13 +10,12 @@ public class InteractibleObject : InteractibleItem
     #endregion
 
     #region Methods
-
     protected override void OnTouch()
     {
         Debug.Log(canBeTouch ? "Touch" : "Too far");
         Debug.Log("Picking up" + item.name);
 
-        if (canBeTouch)
+        if (canBeTouch && collectibleItem.tag != "Berlingots")
         {
             bool wasPickedUp = Inventory.inventoryInstance.Add(item);
             if (wasPickedUp)

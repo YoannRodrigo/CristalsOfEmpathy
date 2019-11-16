@@ -3,18 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 #endregion
 
 public class DialogueManager : MonoBehaviour
 {
     #region Member Variables
+    public TutorialManager tutorialManager;
+
     public Text pnjNameText;
     public Text dialogueText;
     public Text answer1;
     public Text answer2;
     public Text answer3;
     public Text answer4;
+
     public GameObject dialogueBox;
     public GameObject answerBox;
     public GameObject joystick;
@@ -31,17 +35,26 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue[] dialogues, int startId = 0)
     {
-        joystick.SetActive(false);
-        pauseButton.SetActive(false);
-        inventoryButton.SetActive(false);
-        this.dialogues.Clear();
-        foreach (Dialogue dialogue in dialogues)
+        // QUEST LOCKING DIALOG & FIXING SHIT
+        if (!tutorialManager.isQuestActivated)
         {
-            this.dialogues.Add(dialogue);
+            OnDialogueInteraction(dialogues, 0);
+            DisplayNextSentence(startId);
         }
-        DisplayNextSentence(startId);
+
+        else
+        {
+            OnDialogueInteraction(dialogues, 0);
+        }
+
+        // SAMPLE DIALOG WHEN QUEST ACHIEVED & FIXING SHIT
+        if (tutorialManager.isQuestAchieved)
+        {
+            OnDialogueInteraction(dialogues, 0);
+            DisplayNextSentence(8);
+        }
     }
-    
+
     public void StartDialogue(Dialogue[] dialogues, PlayerAnswers[] playerAnswers, int startId = 0)
     {
         this.playerAnswers.Clear();
@@ -50,6 +63,18 @@ public class DialogueManager : MonoBehaviour
             this.playerAnswers.Add(playerAnswer);
         }
         StartDialogue(dialogues, startId);
+    }
+
+    public void OnDialogueInteraction(Dialogue[] dialogues, int startId = 0)
+    {
+        joystick.SetActive(false);
+        pauseButton.SetActive(false);
+        inventoryButton.SetActive(false);
+        this.dialogues.Clear();
+        foreach (Dialogue dialogue in dialogues)
+        {
+            this.dialogues.Add(dialogue);
+        }
     }
 
     private void EndDialogue()
@@ -77,21 +102,25 @@ public class DialogueManager : MonoBehaviour
         answer3.text = playerAnswers[id].text3;
         answer4.text = playerAnswers[id].text4;
     }
-    
+
     public void NextSentenceOnClick()
     {
+        // FIXING SHIT
         if (dialogues[currentTextId].isAnswerNeeded)
         {
             dialogueBox.SetActive(false);
             answerBox.SetActive(true);
             DisplayAnswer(dialogues[currentTextId].nextTextId);
         }
+
         else
         {
-            if (dialogues[currentTextId].nextTextId == -1)
+            // OR IF QUEST ACHIEVED
+            if (dialogues[currentTextId].nextTextId == -1 || tutorialManager.isQuestAchieved && dialogues[currentTextId].nextTextId == -2)
             {
                 EndDialogue();
             }
+
             else
             {
                 DisplayNextSentence(dialogues[currentTextId].nextTextId);
@@ -104,29 +133,33 @@ public class DialogueManager : MonoBehaviour
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
         DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId1);
+
+        //QUEST ACTIVATION MAY LOCK && FIXING SHIT
+
+        tutorialManager.isQuestActivated = true;
     }
-    
+
     public void Answer2OnClick()
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
         DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId2);
     }
-    
+
     public void Answer3OnClick()
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
         DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId3);
     }
-    
+
     public void Answer4OnClick()
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
         DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId4);
     }
-    
+
     private IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";

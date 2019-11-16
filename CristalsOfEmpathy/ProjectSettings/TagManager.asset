@@ -9,6 +9,7 @@ TagManager:
   - CollectableItem
   - LevelChanger
   - Terrain
+  - Berlingots
   layers:
   - Default
   - TransparentFX
