@@ -5,35 +5,32 @@ using UnityEngine;
 public class InteractibleBerlingot : InteractibleItem
 {
     #region Member Variables
-    public TutorialManager tutorialManager;
-    public DialogueManager dialogueManager;
-
     public GameObject berlingotItem;
     public Item item;
+
+    private bool isQuestActivated;
     #endregion
 
     #region Methods
+
+    public void ActivateQuest()
+    {
+        isQuestActivated = true;
+    }
     protected override void OnTouch()
     {
         // BERLINGOTS HANDLING
 
-        if (canBeTouch && berlingotItem.tag == "Berlingots" && tutorialManager.isQuestActivated)
+        if (canBeTouch && berlingotItem.CompareTag("Berlingots") && isQuestActivated)
         {
             bool wasPickedUp = Inventory.inventoryInstance.Add(item);
 
             if (wasPickedUp)
             {
                 Destroy(berlingotItem.gameObject);
-                tutorialManager.BerlingotListRemover();
-
-                if (tutorialManager.berlingotsList.Count == 1)
-                {
-                    tutorialManager.TutorialQuestCompleted();
-                }
             }
         }
-
-        else if (!tutorialManager.isQuestActivated)
+        else if (!isQuestActivated)
         {
             Debug.Log("QUEST AIN'T ACCEPTED");
         }

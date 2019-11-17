@@ -39,19 +39,18 @@ public class DialogueManager : MonoBehaviour
         // QUEST LOCKING DIALOG & FIXING SHIT
         if (!tutorialManager.isQuestActivated)
         {
-            OnDialogueInteraction(dialogues, 0);
+            OnDialogueInteraction(dialogues);
             DisplayNextSentence(startId);
         }
-
         else
         {
-            OnDialogueInteraction(dialogues, 0);
+            OnDialogueInteraction(dialogues);
         }
 
         // SAMPLE DIALOG WHEN QUEST ACHIEVED & FIXING SHIT
         if (tutorialManager.isQuestAchieved)
         {
-            OnDialogueInteraction(dialogues, 0);
+            OnDialogueInteraction(dialogues);
             DisplayNextSentence(8);
         }
     }
@@ -144,7 +143,7 @@ public class DialogueManager : MonoBehaviour
 
         //QUEST ACTIVATION MAY LOCK && FIXING SHIT
 
-        tutorialManager.isQuestActivated = true;
+        tutorialManager.ActivateQuest();
     }
 
     public void Answer2OnClick()
