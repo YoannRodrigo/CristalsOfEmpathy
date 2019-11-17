@@ -2222,7 +2222,6 @@ GameObject:
   - component: {fileID: 2277169644068753300}
   - component: {fileID: 2277169644078080510}
   - component: {fileID: 2277169644068590517}
-  - component: {fileID: 8043381750495185309}
   - component: {fileID: 91092332}
   m_Layer: 0
   m_Name: Helise
@@ -2297,16 +2296,16 @@ MonoBehaviour:
       qu'ils ne disparaissent. Sans \xE7a, nous sommes tous condamn\xE9s ! Tout est
       sens dessus dessous, il faut agir vite !"
   - pnjName: "H\xE9lise"
-    isAnswerNeeded: 0
-    nextTextId: 5
+    isAnswerNeeded: 1
+    nextTextId: 0
     sentence: "Eh bien.. Euh.. A vrai dire, j'ai mang\xE9 un berlingo douteux et je
       me suis retrouv\xE9e face \xE0 moi-m\xEAme ! Mon double a \xE9t\xE9 envoy\xE9
       dans un autre monde qu'elle a appel\xE9 Dystopar. Elle r\xE8gne sur ses habitants
       comme un tyran, elle leur a m\xEAme \xF4t\xE9 toutes leurs \xE9motions ! Certains
       cristaux se trouvent l\xE0-bas."
   - pnjName: "H\xE9lise"
-    isAnswerNeeded: 0
-    nextTextId: 5
+    isAnswerNeeded: 1
+    nextTextId: 0
     sentence: "Toute qu\xEAte est dangereuse mais c'est dans le danger que r\xE9side
       le secret de la vie. C'est une prise de risque, un saut dans le vide. Mais sache
       que nous devons \xEAtre pr\xEAts \xE0 tout pour sauver Heimartilf !"
@@ -2332,12 +2331,13 @@ MonoBehaviour:
   - pnjName: "H\xE9lise"
     isAnswerNeeded: 0
     nextTextId: -1
-    sentence: "Je dois encore manger 6 berlingots avant de pouvoir partir !\r\n"
+    sentence: "Je dois encore manger 5 berlingots avant de pouvoir partir !\r\n"
   - pnjName: "H\xE9lise"
     isAnswerNeeded: 0
     nextTextId: -2
-    sentence: "F\xE9licitations humble troubadour, tu as r\xE9ussi le tutoriel, tu
-      vas maintenant \xEAtre t\xE9l\xE9port\xE9 directement dans le jeu !"
+    sentence: "Mrmhm.. Merci ! \xC7a r\xE9chauffe l\u2019\xE2me et le corps ! Allons
+      au village le plus proche, celui de Tilfinn pour parler avec les villageois
+      !"
   - pnjName: "H\xE9lise"
     isAnswerNeeded: 0
     nextTextId: -2
@@ -2353,19 +2353,6 @@ MonoBehaviour:
     text3: "C\u2019est dangereux ?"
     text4: Je refuse
   dialogueBox: {fileID: 0}
---- !u!114 &8043381750495185309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2277169644068590516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd1c85835aec76144837d9405eaa57d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactiblePnj: {fileID: 0}
 --- !u!114 &91092332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2373,7 +2360,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2277169644068590516}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1787aa2bd2dfa34cb06189b54070396, type: 3}
   m_Name: 

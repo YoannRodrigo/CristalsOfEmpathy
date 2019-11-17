@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 {
     #region Member Variables
 
-    private const float WALKING_SPEED_MAX = 3f;
+    private const float WALKING_SPEED_MAX = 4f;
     private const float ROTATION_SPEED = 2f;
     private SingleJoystick joystick;
     private Rigidbody rb;
