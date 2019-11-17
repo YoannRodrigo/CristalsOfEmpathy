@@ -549,25 +549,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad69e332a1d80ce4d875aa1931fc2a41, type: 3}
---- !u!1 &91092328 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2277169644068590516, guid: f15b6ea9c1b0e4442a200e1f62520269,
-    type: 3}
-  m_PrefabInstance: {fileID: 8072126943599974952}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &91092332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91092328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1787aa2bd2dfa34cb06189b54070396, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetSpeed: 0.15
 --- !u!4 &91589668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4978993132652972, guid: 510a55b5c4aed6945a274d56d5790da3,
@@ -11621,11 +11602,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
         type: 3}
-      propertyPath: dialogues.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1526557375}
@@ -11634,92 +11610,6 @@ PrefabInstance:
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 1594217731}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[7].pnjName
-      value: "H\xE9lise"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[7].nextTextId
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[7].sentence
-      value: "Je dois encore manger des berlingots avant de pouvoir partir !\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[6].nextTextId
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[6].sentence
-      value: "Mais attention ! Depuis le d\xE9doublement, les gens sont \xE9tranges.
-        Chaque conversation est importante et il faudra trouver les bons mots pour
-        d\xE9lier les langues. Plus tu trouveras de berlingots, plus je serai forte,
-        et plus je pourrais t\u2019aider dans tes choix ! J\u2019illuminerai tous
-        les objets avec lesquels tu peux interagir."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[8].pnjName
-      value: "H\xE9lise"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[8].nextTextId
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[8].sentence
-      value: "F\xE9licitations humble troubadour, tu as r\xE9ussi le tutoriel, tu
-        vas maintenant \xEAtre t\xE9l\xE9port\xE9 directement dans le jeu !"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[8].isAnswerNeeded
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: playerAnswers.Array.data[0].text5
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: playerAnswers.Array.data[0].text6
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: playerAnswers.Array.data[0].nextTextId5
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: playerAnswers.Array.data[0].nextTextId6
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[9].pnjName
-      value: "H\xE9lise"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[9].nextTextId
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2277169644068590517, guid: f15b6ea9c1b0e4442a200e1f62520269,
-        type: 3}
-      propertyPath: dialogues.Array.data[9].sentence
-      value: "F\xE9licitations humble troubadour, tu as r\xE9ussi le tutoriel, tu
-        vas maintenant \xEAtre t\xE9l\xE9port\xE9 directement dans le jeu !"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f15b6ea9c1b0e4442a200e1f62520269, type: 3}
 --- !u!114 &8072126943599974953 stripped
@@ -11728,7 +11618,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 8072126943599974952}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91092328}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dedd09dc9f17d86448696dae17f0be3d, type: 3}
