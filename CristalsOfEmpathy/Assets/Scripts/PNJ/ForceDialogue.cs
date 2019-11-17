@@ -4,6 +4,8 @@ using UnityEngine;
 public class ForceDialogue : MonoBehaviour
 {
     #region Member Variables
+
+    public bool isNeededToBeDestroyed;
     public InteractiblePnj interactiblePnj;
     #endregion
 
@@ -11,6 +13,10 @@ public class ForceDialogue : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         interactiblePnj.StartDialogue();
+        if (isNeededToBeDestroyed)
+        {
+            Destroy(gameObject);
+        }
     }
     #endregion
 }
