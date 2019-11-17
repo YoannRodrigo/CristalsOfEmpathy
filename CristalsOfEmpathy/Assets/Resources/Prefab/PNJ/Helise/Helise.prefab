@@ -2223,6 +2223,7 @@ GameObject:
   - component: {fileID: 2277169644078080510}
   - component: {fileID: 2277169644068590517}
   - component: {fileID: 8043381750495185309}
+  - component: {fileID: 91092332}
   m_Layer: 0
   m_Name: Helise
   m_TagString: Untagged
@@ -2322,13 +2323,26 @@ MonoBehaviour:
       Pendentif de Vie."
   - pnjName: "H\xE9lise"
     isAnswerNeeded: 0
-    nextTextId: -1
+    nextTextId: 7
     sentence: "Mais attention ! Depuis le d\xE9doublement, les gens sont \xE9tranges.
       Chaque conversation est importante et il faudra trouver les bons mots pour d\xE9lier
       les langues. Plus tu trouveras de berlingots, plus je serai forte, et plus je
       pourrais t\u2019aider dans tes choix ! J\u2019illuminerai tous les objets avec
-      lesquels tu peux interagir. \r\nJe dois encore manger 6 berlingots avant de
-      pouvoir partir !\r\n"
+      lesquels tu peux interagir."
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Je dois encore manger 6 berlingots avant de pouvoir partir !\r\n"
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 0
+    nextTextId: -2
+    sentence: "F\xE9licitations humble troubadour, tu as r\xE9ussi le tutoriel, tu
+      vas maintenant \xEAtre t\xE9l\xE9port\xE9 directement dans le jeu !"
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 0
+    nextTextId: -2
+    sentence: "F\xE9licitations humble troubadour, tu as r\xE9ussi le tutoriel, tu
+      vas maintenant \xEAtre t\xE9l\xE9port\xE9 directement dans le jeu !"
   playerAnswers:
   - nextTextId1: 5
     nextTextId2: 2
@@ -2351,6 +2365,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1c85835aec76144837d9405eaa57d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactiblePnj: {fileID: 0}
+--- !u!114 &91092332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2277169644068590516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1787aa2bd2dfa34cb06189b54070396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSpeed: 0.15
 --- !u!1 &2277169644068590518
 GameObject:
   m_ObjectHideFlags: 0

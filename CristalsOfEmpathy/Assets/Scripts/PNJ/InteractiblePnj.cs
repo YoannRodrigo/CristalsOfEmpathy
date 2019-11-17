@@ -25,15 +25,15 @@ public class InteractiblePnj : InteractibleItem
         }
     }
 
-    public void StartDialogue()
+    public void StartDialogue(int startId = 0)
     {
         if(playerAnswers.Length == 0)
         {
-            dialogueManager.StartDialogue(dialogues);
+            dialogueManager.StartDialogue(dialogues, startId);
         }
         else
         {
-            dialogueManager.StartDialogue(dialogues, playerAnswers);
+            dialogueManager.StartDialogue(dialogues, playerAnswers, startId);
         }
         dialogueBox.SetActive(true); 
     }

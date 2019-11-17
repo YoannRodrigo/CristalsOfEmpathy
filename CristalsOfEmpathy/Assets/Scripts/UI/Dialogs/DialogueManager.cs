@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
 
     private int currentTextId;
     private int currentAnswerId;
+    private bool isTextWritten;
     private readonly List<Dialogue> dialogues = new List<Dialogue>();
     private readonly List<PlayerAnswers> playerAnswers = new List<PlayerAnswers>();
     #endregion
@@ -105,25 +106,32 @@ public class DialogueManager : MonoBehaviour
 
     public void NextSentenceOnClick()
     {
-        // FIXING SHIT
-        if (dialogues[currentTextId].isAnswerNeeded)
+        if (!isTextWritten)
         {
-            dialogueBox.SetActive(false);
-            answerBox.SetActive(true);
-            DisplayAnswer(dialogues[currentTextId].nextTextId);
+            isTextWritten = true;
         }
-
         else
         {
-            // OR IF QUEST ACHIEVED
-            if (dialogues[currentTextId].nextTextId == -1 || tutorialManager.isQuestAchieved && dialogues[currentTextId].nextTextId == -2)
+            isTextWritten = false;
+            if (dialogues[currentTextId].isAnswerNeeded)
             {
-                EndDialogue();
+                dialogueBox.SetActive(false);
+                answerBox.SetActive(true);
+                DisplayAnswer(dialogues[currentTextId].nextTextId);
             }
 
             else
             {
-                DisplayNextSentence(dialogues[currentTextId].nextTextId);
+                if (dialogues[currentTextId].nextTextId == -1 ||
+                    tutorialManager.isQuestAchieved && dialogues[currentTextId].nextTextId == -2)
+                {
+                    EndDialogue();
+                }
+
+                else
+                {
+                    DisplayNextSentence(dialogues[currentTextId].nextTextId);
+                }
             }
         }
     }
@@ -163,11 +171,18 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
+        
         foreach (char letter in sentence.ToCharArray())
         {
+            if (isTextWritten)
+            {
+                dialogueText.text = sentence;
+                yield break;
+            }
             dialogueText.text += letter;
             yield return null;
         }
+        isTextWritten = true;
     }
     #endregion
 }
