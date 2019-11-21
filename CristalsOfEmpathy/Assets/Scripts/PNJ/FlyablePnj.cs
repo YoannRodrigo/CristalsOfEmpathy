@@ -5,11 +5,12 @@ using Random = UnityEngine.Random;
 
 #endregion
 
-
 public class FlyablePnj : MonoBehaviour
 {
     #region Member Variables
-    public float targetSpeed = 0.1f;
+    public float targetSpeed = 0.15f;
+    public TutorialManager tutorialManager;
+    public GameObject endTutorialArea;
     private Transform targetTransform;
     private static bool _isPnjFlyingAllowed;
     private Vector3 flyNewPosition;
@@ -19,12 +20,12 @@ public class FlyablePnj : MonoBehaviour
 
     private void SetTargetTransform()
     {
-        if(!targetTransform)
+        if (!targetTransform)
         {
             targetTransform = FindObjectOfType<PlayerMovement>().gameObject.transform;
         }
     }
-    
+
     public void AllowPnjToFly()
     {
         _isPnjFlyingAllowed = true;
@@ -37,11 +38,18 @@ public class FlyablePnj : MonoBehaviour
 
     private void Update()
     {
-        if (_isPnjFlyingAllowed)
+        if (_isPnjFlyingAllowed && !tutorialManager.isQuestSubmitted)
         {
             SetTargetTransform();
             UpdateYPosition();
             UpdatePositionXz();
+        }
+
+        else if (_isPnjFlyingAllowed && tutorialManager.isQuestSubmitted)
+        {
+            SetTargetTransform();
+            UpdateYPosition();
+            FlyToEndArea();
         }
     }
 
@@ -61,7 +69,19 @@ public class FlyablePnj : MonoBehaviour
             Vector3 position = transform.position;
             Vector3 position1 = targetTransform.position;
             position = Vector3.MoveTowards(position,
-                new Vector3(position1.x, position.y, position1.z), 2*Time.deltaTime);
+                new Vector3(position1.x, position.y, position1.z), 4.5f * Time.deltaTime);
+            transform.position = position;
+        }
+    }
+
+    private void FlyToEndArea()
+    {
+        if (IsNearTarget(50f))
+        {
+            Vector3 position = transform.position;
+            Vector3 position1 = endTutorialArea.gameObject.transform.position;
+            position = Vector3.MoveTowards(position,
+                new Vector3(position1.x, position.y, position1.z), 4.5f * Time.deltaTime);
             transform.position = position;
         }
     }
@@ -70,9 +90,10 @@ public class FlyablePnj : MonoBehaviour
     {
         Vector3 position = transform.position;
         Vector3 position1 = targetTransform.position;
-        return Mathf.Pow(position.x - position1.x,2) + Mathf.Pow(position.z - position1.z,2) < marge;
+        
+        return Mathf.Pow(position.x - position1.x, 2) + Mathf.Pow(position.z - position1.z, 2) < marge;
     }
-    
+
 
     private void PositionChanged()
     {
