@@ -52,6 +52,7 @@ public class DialogueManager : MonoBehaviour
         {
             OnDialogueInteraction(dialogues);
             DisplayNextSentence(8);
+            tutorialManager.isQuestSubmitted = true;
         }
     }
 
