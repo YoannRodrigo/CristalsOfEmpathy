@@ -10,6 +10,7 @@ TagManager:
   - LevelChanger
   - Terrain
   - Berlingots
+  - Flower
   layers:
   - Default
   - TransparentFX
