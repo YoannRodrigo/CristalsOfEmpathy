@@ -9,6 +9,7 @@ public class InteractiblePnj : InteractibleItem
     #region Member Variables
 
     public DialogueManager dialogueManager;
+    public DialogueGuardian dialogueGuardian;
     public Dialogue[] dialogues;
     public PlayerAnswers[] playerAnswers;
 
@@ -30,11 +31,14 @@ public class InteractiblePnj : InteractibleItem
         if(playerAnswers.Length == 0)
         {
             dialogueManager.StartDialogue(dialogues, startId);
+            dialogueGuardian.StartDialogueGuardian(dialogues, startId);
         }
         else
         {
             dialogueManager.StartDialogue(dialogues, playerAnswers, startId);
+            dialogueGuardian.StartDialogueGuardian(dialogues, playerAnswers, startId);
         }
+
         dialogueBox.SetActive(true); 
     }
     #endregion

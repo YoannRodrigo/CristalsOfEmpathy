@@ -18,6 +18,7 @@ public class TutorialManager : MonoBehaviour
     #region Methods
     private void Update()
     {
+        
         berlingotsList.RemoveAll(item => item == null);
         if (berlingotsList.Count == 0)
         {

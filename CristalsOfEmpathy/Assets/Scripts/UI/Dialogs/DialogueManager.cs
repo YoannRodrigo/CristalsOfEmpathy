@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-
 #endregion
 
 public class DialogueManager : MonoBehaviour
@@ -78,7 +76,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private void EndDialogue()
+    public void EndDialogue()
     {
         dialogueBox.SetActive(false);
         joystick.SetActive(true);
@@ -86,7 +84,7 @@ public class DialogueManager : MonoBehaviour
         inventoryButton.SetActive(true);
     }
 
-    private void DisplayNextSentence(int id)
+    public void DisplayNextSentence(int id)
     {
         currentTextId = id;
         pnjNameText.text = dialogues[id].pnjName;
@@ -95,7 +93,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(dialogues[id].sentence));
     }
 
-    private void DisplayAnswer(int id)
+    public void DisplayAnswer(int id)
     {
         currentAnswerId = id;
         answer1.text = playerAnswers[id].text1;
