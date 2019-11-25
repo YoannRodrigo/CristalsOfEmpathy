@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-
 #endregion
 
 public class DialogueManager : MonoBehaviour
@@ -25,39 +23,45 @@ public class DialogueManager : MonoBehaviour
     public GameObject pauseButton;
     public GameObject inventoryButton;
 
+    private InteractiblePnj interactiblePnj;
     private int currentTextId;
     private int currentAnswerId;
     private bool isTextWritten;
-    private readonly List<Dialogue> dialogues = new List<Dialogue>();
-    private readonly List<PlayerAnswers> playerAnswers = new List<PlayerAnswers>();
+    private bool isDialogueEnded = true;
+    public List<Dialogue> dialogues = new List<Dialogue>();
+    public List<PlayerAnswers> playerAnswers = new List<PlayerAnswers>();
     #endregion
 
     #region Methods
 
+    public void SetInteractiblePnj(InteractiblePnj interactiblePnj)
+    {
+        this.interactiblePnj = interactiblePnj;
+    }
+    
+    public bool IsDialogueEnded()
+    {
+        return isDialogueEnded;
+    }
+    
     public void StartDialogue(Dialogue[] dialogues, int startId = 0)
     {
         // QUEST LOCKING DIALOG & FIXING SHIT
-        if (!tutorialManager.isQuestActivated)
-        {
-            OnDialogueInteraction(dialogues);
-            DisplayNextSentence(startId);
-        }
-        else
-        {
-            OnDialogueInteraction(dialogues);
-        }
-
+        isDialogueEnded = false;
+        dialogueBox.SetActive(true);
+        OnDialogueInteraction(dialogues);
+        DisplayNextSentence(startId);
         // SAMPLE DIALOG WHEN QUEST ACHIEVED & FIXING SHIT
-        if (tutorialManager.isQuestAchieved)
+        /*if (tutorialManager.isQuestAchieved)
         {
             OnDialogueInteraction(dialogues);
             DisplayNextSentence(8);
-        }
+            tutorialManager.isQuestSubmitted = true;
+        }*/
     }
 
     public void StartDialogue(Dialogue[] dialogues, PlayerAnswers[] playerAnswers, int startId = 0)
     {
-        this.playerAnswers.Clear();
         foreach (PlayerAnswers playerAnswer in playerAnswers)
         {
             this.playerAnswers.Add(playerAnswer);
@@ -65,12 +69,11 @@ public class DialogueManager : MonoBehaviour
         StartDialogue(dialogues, startId);
     }
 
-    public void OnDialogueInteraction(Dialogue[] dialogues, int startId = 0)
+    public void OnDialogueInteraction(Dialogue[] dialogues)
     {
         joystick.SetActive(false);
         pauseButton.SetActive(false);
         inventoryButton.SetActive(false);
-        this.dialogues.Clear();
         foreach (Dialogue dialogue in dialogues)
         {
             this.dialogues.Add(dialogue);
@@ -79,13 +82,33 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        interactiblePnj.OnDialogEnded();
+        ResetVariables();
+        ActivateGameUi();
+    }
+
+    private void ResetVariables()
+    {
+        currentAnswerId = 0;
+        currentTextId = 0;
+        isTextWritten = false;
+        dialogues.Clear();
+        playerAnswers.Clear();
+        dialogueText.text = "";
+        pnjNameText.text = "";
+        isDialogueEnded = true;
+        interactiblePnj = null;
+    }
+
+    private void ActivateGameUi()
+    {
         dialogueBox.SetActive(false);
         joystick.SetActive(true);
         pauseButton.SetActive(true);
         inventoryButton.SetActive(true);
     }
 
-    private void DisplayNextSentence(int id)
+    public void DisplayNextSentence(int id)
     {
         currentTextId = id;
         pnjNameText.text = dialogues[id].pnjName;
@@ -94,13 +117,13 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(dialogues[id].sentence));
     }
 
-    private void DisplayAnswer(int id)
+    public void DisplayAnswer(int id)
     {
         currentAnswerId = id;
-        answer1.text = playerAnswers[id].text1;
-        answer2.text = playerAnswers[id].text2;
-        answer3.text = playerAnswers[id].text3;
-        answer4.text = playerAnswers[id].text4;
+        answer1.text = playerAnswers[id].GetText(0);
+        answer2.text = playerAnswers[id].GetText(1);
+        answer3.text = playerAnswers[id].GetText(2);
+        answer4.text = playerAnswers[id].GetText(3);
     }
 
     public void NextSentenceOnClick()
@@ -139,8 +162,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId1);
-
+        UpdateDisplay(0);
         //QUEST ACTIVATION MAY LOCK && FIXING SHIT
 
         tutorialManager.ActivateQuest();
@@ -150,21 +172,28 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId2);
+        UpdateDisplay(1);
     }
 
     public void Answer3OnClick()
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId3);
+        UpdateDisplay(2);
     }
 
     public void Answer4OnClick()
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId4);
+        UpdateDisplay(3);
+    }
+
+    private void UpdateDisplay(int answerId)
+    {
+        PlayerAnswers playerAnswer = playerAnswers[currentAnswerId];
+        DisplayNextSentence(playerAnswer.GetNextId(answerId));
+        BarPointsHandler.UpdateEmotionPoints(playerAnswer.GetEmotion(answerId), playerAnswer.GetEmotionInfluence(answerId));
     }
 
     private IEnumerator TypeSentence(string sentence)

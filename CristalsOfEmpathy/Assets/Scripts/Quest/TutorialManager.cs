@@ -9,6 +9,7 @@ public class TutorialManager : MonoBehaviour
     #region Member Variables
     public bool isQuestActivated;
     public bool isQuestAchieved;
+    public bool isQuestSubmitted;
     public FlyablePnj heliseFly;
     public List<GameObject> berlingotsList = new List<GameObject>();
     public GameObject dialogueLauncher;
@@ -17,6 +18,7 @@ public class TutorialManager : MonoBehaviour
     #region Methods
     private void Update()
     {
+        
         berlingotsList.RemoveAll(item => item == null);
         if (berlingotsList.Count == 0)
         {
@@ -37,6 +39,5 @@ public class TutorialManager : MonoBehaviour
             berlingot.GetComponent<InteractibleBerlingot>().ActivateQuest();
         }
     }
-    
     #endregion
 }

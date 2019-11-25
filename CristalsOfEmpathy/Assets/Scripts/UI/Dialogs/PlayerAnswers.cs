@@ -1,13 +1,36 @@
 ﻿#region Using Directives
-using UnityEngine;
+
+using System.Collections.Generic;
 #endregion
 
 [System.Serializable]
 public class PlayerAnswers
 {
     #region Member Variables
-    public int nextTextId1, nextTextId2, nextTextId3, nextTextId4;
-    [TextArea(3, 10)]
-    public string text1, text2, text3, text4;
+    public List<PlayerAnswer> playerAnswers = new List<PlayerAnswer>(4);
+    #endregion
+    
+    #region Methods
+
+    public string GetText(int id)
+    {
+        return playerAnswers[id].text;
+    }
+
+    public int GetNextId(int id)
+    {
+        return playerAnswers[id].nextTextId;
+    }
+
+    public BarPointsHandler.Emotions GetEmotion(int id)
+    {
+        return playerAnswers[id].emotion;
+    }
+
+    public int GetEmotionInfluence(int id)
+    {
+        return playerAnswers[id].influence;
+    }
+    
     #endregion
 }
