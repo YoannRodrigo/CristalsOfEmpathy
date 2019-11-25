@@ -21,5 +21,16 @@ public class PlayerAnswers
     {
         return playerAnswers[id].nextTextId;
     }
+
+    public BarPointsHandler.Emotions GetEmotion(int id)
+    {
+        return playerAnswers[id].emotion;
+    }
+
+    public int GetEmotionInfluence(int id)
+    {
+        return playerAnswers[id].influence;
+    }
+    
     #endregion
 }

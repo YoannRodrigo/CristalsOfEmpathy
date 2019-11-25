@@ -12,7 +12,6 @@ public class InteractiblePnj : InteractibleItem
     public Dialogue[] dialogues;
     public PlayerAnswers[] playerAnswers;
 
-    public GameObject dialogueBox;
     #endregion
     
     #region Methods
@@ -27,6 +26,7 @@ public class InteractiblePnj : InteractibleItem
 
     public void StartDialogue(int startId = 0)
     {
+        dialogueManager.SetInteractiblePnj(this);
         if(playerAnswers.Length == 0)
         {
             dialogueManager.StartDialogue(dialogues, startId);
@@ -36,5 +36,11 @@ public class InteractiblePnj : InteractibleItem
             dialogueManager.StartDialogue(dialogues, playerAnswers, startId);
         }
     }
+
+    public virtual void OnDialogEnded()
+    {
+        
+    }
+
     #endregion
 }

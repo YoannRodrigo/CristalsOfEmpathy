@@ -974,10 +974,10 @@ GameObject:
   m_Component:
   - component: {fileID: 407818178852761700}
   - component: {fileID: 407818178859753346}
-  - component: {fileID: 4245269033184870462}
+  - component: {fileID: 6917791272019464019}
   m_Layer: 0
   m_Name: Cat Lite
-  m_TagString: Untagged
+  m_TagString: Guardian
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1017,7 +1017,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4245269033184870462
+--- !u!114 &6917791272019464019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1026,47 +1026,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 407818178852334660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedd09dc9f17d86448696dae17f0be3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f4a9d3ed0a692148b3004485d5e5549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nearParticlesSystem: {fileID: 4363562844490038545, guid: df49b143a0c4fd342b7138947cc7adf4,
     type: 3}
   dialogueManager: {fileID: 0}
   dialogues:
-  - pnjName: Guardian
-    isAnswerNeeded: 0
-    nextTextId: 1
-    sentence: Yo
-  - pnjName: Guardian
+  - pnjName: ' '
     isAnswerNeeded: 1
     nextTextId: 0
-    sentence: Choix
-  - pnjName: Guardian
+    sentence: "Vous apercevez un berlingot plus loin dans la for\xEAt mais un renard
+      vous barre la route"
+  - pnjName: ' '
     isAnswerNeeded: 0
     nextTextId: -1
-    sentence: Choix 1
-  - pnjName: Guardian
+    sentence: Le renard vous sourit, satisfait, il vous laisse passer
+  - pnjName: ' '
     isAnswerNeeded: 0
     nextTextId: -1
-    sentence: Choix 2
-  - pnjName: Guardian
-    isAnswerNeeded: 0
-    nextTextId: -1
-    sentence: Choix 3
-  - pnjName: Guardian
-    isAnswerNeeded: 0
-    nextTextId: -1
-    sentence: Choix 4
+    sentence: "Le renard prend peur et s'enfuit dans la for\xEAt"
   playerAnswers:
-  - nextTextId1: 2
-    nextTextId2: 3
-    nextTextId3: 4
-    nextTextId4: 6
-    text1: Caresse
-    text2: Parle
-    text3: Hurle
-    text4: Frappe
-  dialogueBox: {fileID: 0}
+  - playerAnswers:
+    - text: Le caresser
+      nextTextId: 1
+      emotion: 0
+      influence: 1
+    - text: Le contourner
+      nextTextId: 2
+      emotion: 1
+      influence: 1
+    - text: Lui hurler dessus
+      nextTextId: 2
+      emotion: 3
+      influence: 1
+    - text: "L'observer en d\xE9tail"
+      nextTextId: 2
+      emotion: 2
+      influence: 1
 --- !u!1 &407818178852334662
 GameObject:
   m_ObjectHideFlags: 0

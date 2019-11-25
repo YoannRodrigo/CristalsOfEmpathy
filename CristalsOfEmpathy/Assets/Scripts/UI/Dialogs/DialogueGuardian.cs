@@ -5,10 +5,7 @@ using UnityEngine;
 public class DialogueGuardian : DialogueManager
 {
     #region Member Variables
-    public BarPointsHandler barPointsHandler;
-
     public GameObject guardian;
-
     public bool isDialogueEndedGuardian;
     #endregion
 

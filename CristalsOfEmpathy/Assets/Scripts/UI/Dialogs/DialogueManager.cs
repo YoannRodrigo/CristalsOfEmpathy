@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject pauseButton;
     public GameObject inventoryButton;
 
+    private InteractiblePnj interactiblePnj;
     private int currentTextId;
     private int currentAnswerId;
     private bool isTextWritten;
@@ -33,6 +34,11 @@ public class DialogueManager : MonoBehaviour
 
     #region Methods
 
+    public void SetInteractiblePnj(InteractiblePnj interactiblePnj)
+    {
+        this.interactiblePnj = interactiblePnj;
+    }
+    
     public bool IsDialogueEnded()
     {
         return isDialogueEnded;
@@ -74,8 +80,9 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
+    private void EndDialogue()
     {
+        interactiblePnj.OnDialogEnded();
         ResetVariables();
         ActivateGameUi();
     }
@@ -90,6 +97,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         pnjNameText.text = "";
         isDialogueEnded = true;
+        interactiblePnj = null;
     }
 
     private void ActivateGameUi()
@@ -154,8 +162,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].GetNextId(0));
-
+        UpdateDisplay(0);
         //QUEST ACTIVATION MAY LOCK && FIXING SHIT
 
         tutorialManager.ActivateQuest();
@@ -165,21 +172,28 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].GetNextId(1));
+        UpdateDisplay(1);
     }
 
     public void Answer3OnClick()
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].GetNextId(2));
+        UpdateDisplay(2);
     }
 
     public void Answer4OnClick()
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].GetNextId(3));
+        UpdateDisplay(3);
+    }
+
+    private void UpdateDisplay(int answerId)
+    {
+        PlayerAnswers playerAnswer = playerAnswers[currentAnswerId];
+        DisplayNextSentence(playerAnswer.GetNextId(answerId));
+        BarPointsHandler.UpdateEmotionPoints(playerAnswer.GetEmotion(answerId), playerAnswer.GetEmotionInfluence(answerId));
     }
 
     private IEnumerator TypeSentence(string sentence)

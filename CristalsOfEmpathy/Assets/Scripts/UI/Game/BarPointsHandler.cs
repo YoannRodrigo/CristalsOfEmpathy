@@ -47,7 +47,7 @@ public class BarPointsHandler : MonoBehaviour
         }
     }
 
-    public void UpdateEmotionPoints(Emotions emotion, int influence)
+    public static void UpdateEmotionPoints(Emotions emotion, int influence)
     {
         switch (emotion)
         {
