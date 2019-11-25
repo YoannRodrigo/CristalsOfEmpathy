@@ -1,5 +1,6 @@
 ﻿#region Using Directives
 
+using System;
 using UnityEngine;
 
 #endregion
@@ -15,6 +16,15 @@ public class BarPointsHandler : MonoBehaviour
     private static int _curiosityBarPoints;
     private static int _aversionBarPoints;
 
+    public enum Emotions
+    {
+        LOVE,
+        FEAR,
+        CURIOSITY,
+        AVERSION,
+        NONE
+    }
+    
     public int LoveBarPoints { get => _loveBarPoints; set => _loveBarPoints = value; }
     public int FearBarPoints { get => _fearBarPoints; set => _fearBarPoints = value; }
     public int CuriosityBarPoints { get => _curiosityBarPoints; set => _curiosityBarPoints = value; }
@@ -37,7 +47,28 @@ public class BarPointsHandler : MonoBehaviour
         }
     }
 
-
+    public void UpdateEmotionPoints(Emotions emotion, int influence)
+    {
+        switch (emotion)
+        {
+            case Emotions.LOVE:
+                _loveBarPoints += influence;
+                break;
+            case Emotions.FEAR :
+                _fearBarPoints += influence;
+                break;
+            case Emotions.AVERSION :
+                _aversionBarPoints += influence;
+                break;
+            case Emotions.CURIOSITY :
+                _curiosityBarPoints += influence;
+                break;
+            case Emotions.NONE :
+                break;
+            default:
+                throw new ArgumentOutOfRangeException(nameof(emotion), emotion, null);
+        }
+    }
     #endregion
 
     #region Methods

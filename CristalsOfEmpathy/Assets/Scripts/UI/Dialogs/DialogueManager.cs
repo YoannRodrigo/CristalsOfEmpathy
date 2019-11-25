@@ -26,16 +26,22 @@ public class DialogueManager : MonoBehaviour
     private int currentTextId;
     private int currentAnswerId;
     private bool isTextWritten;
+    private bool isDialogueEnded = true;
     public List<Dialogue> dialogues = new List<Dialogue>();
     public List<PlayerAnswers> playerAnswers = new List<PlayerAnswers>();
     #endregion
 
     #region Methods
 
+    public bool IsDialogueEnded()
+    {
+        return isDialogueEnded;
+    }
+    
     public void StartDialogue(Dialogue[] dialogues, int startId = 0)
     {
         // QUEST LOCKING DIALOG & FIXING SHIT
-        
+        isDialogueEnded = false;
         dialogueBox.SetActive(true);
         OnDialogueInteraction(dialogues);
         DisplayNextSentence(startId);
@@ -83,6 +89,7 @@ public class DialogueManager : MonoBehaviour
         playerAnswers.Clear();
         dialogueText.text = "";
         pnjNameText.text = "";
+        isDialogueEnded = true;
     }
 
     private void ActivateGameUi()
@@ -105,10 +112,10 @@ public class DialogueManager : MonoBehaviour
     public void DisplayAnswer(int id)
     {
         currentAnswerId = id;
-        answer1.text = playerAnswers[id].text1;
-        answer2.text = playerAnswers[id].text2;
-        answer3.text = playerAnswers[id].text3;
-        answer4.text = playerAnswers[id].text4;
+        answer1.text = playerAnswers[id].GetText(0);
+        answer2.text = playerAnswers[id].GetText(1);
+        answer3.text = playerAnswers[id].GetText(2);
+        answer4.text = playerAnswers[id].GetText(3);
     }
 
     public void NextSentenceOnClick()
@@ -147,7 +154,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId1);
+        DisplayNextSentence(playerAnswers[currentAnswerId].GetNextId(0));
 
         //QUEST ACTIVATION MAY LOCK && FIXING SHIT
 
@@ -158,21 +165,21 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId2);
+        DisplayNextSentence(playerAnswers[currentAnswerId].GetNextId(1));
     }
 
     public void Answer3OnClick()
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId3);
+        DisplayNextSentence(playerAnswers[currentAnswerId].GetNextId(2));
     }
 
     public void Answer4OnClick()
     {
         dialogueBox.SetActive(true);
         answerBox.SetActive(false);
-        DisplayNextSentence(playerAnswers[currentAnswerId].nextTextId4);
+        DisplayNextSentence(playerAnswers[currentAnswerId].GetNextId(3));
     }
 
     private IEnumerator TypeSentence(string sentence)

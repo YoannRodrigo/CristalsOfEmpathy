@@ -1,8 +1,5 @@
 ﻿#region Using Directives
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 #endregion
 
 public class DialogueGuardian : DialogueManager
@@ -28,6 +25,6 @@ public class DialogueGuardian : DialogueManager
             }
         }
     }
-    
+
     #endregion
 }
