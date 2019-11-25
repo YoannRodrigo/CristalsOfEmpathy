@@ -1,6 +1,5 @@
 ﻿#region Using Directives
 
-using System;
 using UnityEngine;
 
 #endregion
@@ -11,10 +10,10 @@ public class BarPointsHandler : MonoBehaviour
 
     private static BarPointsHandler _instance;
 
-    private static int _loveBarPoints = 0;
-    private static int _fearBarPoints = 0;
-    private static int _curiosityBarPoints = 0;
-    private static int _aversionBarPoints = 0;
+    private static int _loveBarPoints;
+    private static int _fearBarPoints;
+    private static int _curiosityBarPoints;
+    private static int _aversionBarPoints;
 
     public int LoveBarPoints { get => _loveBarPoints; set => _loveBarPoints = value; }
     public int FearBarPoints { get => _fearBarPoints; set => _fearBarPoints = value; }
@@ -30,7 +29,7 @@ public class BarPointsHandler : MonoBehaviour
     {
         if (_instance != null && _instance != this) 
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         else
         {

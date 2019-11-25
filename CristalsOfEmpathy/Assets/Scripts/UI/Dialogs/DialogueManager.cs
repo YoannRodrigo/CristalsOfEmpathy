@@ -26,8 +26,8 @@ public class DialogueManager : MonoBehaviour
     private int currentTextId;
     private int currentAnswerId;
     private bool isTextWritten;
-    private readonly List<Dialogue> dialogues = new List<Dialogue>();
-    private readonly List<PlayerAnswers> playerAnswers = new List<PlayerAnswers>();
+    public List<Dialogue> dialogues = new List<Dialogue>();
+    public List<PlayerAnswers> playerAnswers = new List<PlayerAnswers>();
     #endregion
 
     #region Methods
@@ -35,28 +35,21 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue[] dialogues, int startId = 0)
     {
         // QUEST LOCKING DIALOG & FIXING SHIT
-        if (!tutorialManager.isQuestActivated)
-        {
-            OnDialogueInteraction(dialogues);
-            DisplayNextSentence(startId);
-        }
-        else
-        {
-            OnDialogueInteraction(dialogues);
-        }
-
+        
+        dialogueBox.SetActive(true);
+        OnDialogueInteraction(dialogues);
+        DisplayNextSentence(startId);
         // SAMPLE DIALOG WHEN QUEST ACHIEVED & FIXING SHIT
-        if (tutorialManager.isQuestAchieved)
+        /*if (tutorialManager.isQuestAchieved)
         {
             OnDialogueInteraction(dialogues);
             DisplayNextSentence(8);
             tutorialManager.isQuestSubmitted = true;
-        }
+        }*/
     }
 
     public void StartDialogue(Dialogue[] dialogues, PlayerAnswers[] playerAnswers, int startId = 0)
     {
-        this.playerAnswers.Clear();
         foreach (PlayerAnswers playerAnswer in playerAnswers)
         {
             this.playerAnswers.Add(playerAnswer);
@@ -64,12 +57,11 @@ public class DialogueManager : MonoBehaviour
         StartDialogue(dialogues, startId);
     }
 
-    public void OnDialogueInteraction(Dialogue[] dialogues, int startId = 0)
+    public void OnDialogueInteraction(Dialogue[] dialogues)
     {
         joystick.SetActive(false);
         pauseButton.SetActive(false);
         inventoryButton.SetActive(false);
-        this.dialogues.Clear();
         foreach (Dialogue dialogue in dialogues)
         {
             this.dialogues.Add(dialogue);
@@ -77,6 +69,23 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void EndDialogue()
+    {
+        ResetVariables();
+        ActivateGameUi();
+    }
+
+    private void ResetVariables()
+    {
+        currentAnswerId = 0;
+        currentTextId = 0;
+        isTextWritten = false;
+        dialogues.Clear();
+        playerAnswers.Clear();
+        dialogueText.text = "";
+        pnjNameText.text = "";
+    }
+
+    private void ActivateGameUi()
     {
         dialogueBox.SetActive(false);
         joystick.SetActive(true);
