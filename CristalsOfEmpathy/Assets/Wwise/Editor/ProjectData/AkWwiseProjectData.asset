@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a190228be775a4d85c3bf44f161c6f, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 11bcb6001e54724fb306c4a33ea713da
+    GuidInternal: 
+    m_lastTime: -8586264660713730933
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 72e80bcdcf5a514897a583a6abe16895
+    GuidInternal: 
+    m_lastTime: -8586264660713591319
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: cf5eedc6e53c154382ce4716c863ce4a
+    GuidInternal: 
+    m_lastTime: -8586264568109361409
+    List:
+    - name: Main
+      guid: c498ba4ec332254c8f39b3fc8cd9d66d
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 71960e2e778eb049be87a6930ee0f61e
+    GuidInternal: 
+    m_lastTime: -8586264581550598421
+    List:
+    - name: ButtonPressed
+      guid: 0675b9ee399860479bd9e2b162b7cd6c
+      id: 2821508605
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ButtonPressed
+        ObjectType: 3
+      Path: Default Work Unit\ButtonPressed
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 305bff01cd266d468bda7766082d460b
+    GuidInternal: 
+    m_lastTime: -8586264660713621241
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: d05fea2ce3cd9244b7496de7026fcccf
+    GuidInternal: 
+    m_lastTime: -8586264660713374112
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 846253be0357fe459765fddac040020e
+    GuidInternal: 
+    m_lastTime: -8586264660713284349
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 49a7b43797b0d84fb57b4ba1df3247aa
+    GuidInternal: 
+    m_lastTime: -8586264660713234474
+    List: []
+  ExpandedItems:
+  - /CristalsOfEmpathy_WwiseProject
+  - /CristalsOfEmpathy_WwiseProject/SoundBanks
+  - /CristalsOfEmpathy_WwiseProject/SoundBanks/Default Work Unit
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

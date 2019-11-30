@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{329851EE-C28B-43E3-A703-A0324ACC76B8}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{329851EE-C28B-43E3-A703-A0324ACC76B8}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Button Hits" ID="{EE58CF3C-D110-49B7-B269-FE5FE9EE10D6}" ShortID="600123930">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{157158CB-1DD3-4B6F-96E0-63CAFFC2AE2B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="10"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD0BE872-5ACF-4851-97A5-83A6ABE16895}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="UI Hits Game 3" ID="{270C20DF-3B95-43FE-AA3C-325189A97533}" ShortID="753318199">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{40FEFFE9-D0DD-4AF7-ADD3-FAFBC978A1BE}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD0BE872-5ACF-4851-97A5-83A6ABE16895}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI Hits Game 3" ID="{A783C0C1-C676-4F09-A33F-A2BECE35EC0B}" ShortID="951790365">
+									<Language>SFX</Language>
+									<AudioFile>UI Hits Game 3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI Hits Game 3" ID="{A783C0C1-C676-4F09-A33F-A2BECE35EC0B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI Hits Game 4" ID="{3ECE1466-0680-436A-83DC-506E6AFD1F66}" ShortID="550290461">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{91C72F50-CDD5-48D6-B55D-DCF67C600FCB}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD0BE872-5ACF-4851-97A5-83A6ABE16895}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI Hits Game 4" ID="{3EF95290-B24C-43A7-AC50-D71299513155}" ShortID="891508614">
+									<Language>SFX</Language>
+									<AudioFile>UI Hits Game 4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI Hits Game 4" ID="{3EF95290-B24C-43A7-AC50-D71299513155}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="MainMenu" ID="{6E24405E-4910-4DCB-96C1-ADF79468B2FD}" ShortID="483725207">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD0BE872-5ACF-4851-97A5-83A6ABE16895}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CoE - Ecran d'acuueil" ID="{89749411-274E-4847-828C-E1C8D262128B}" ShortID="718541537">
+							<Language>SFX</Language>
+							<AudioFile>CoE - Ecran d'acuueil.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CoE - Ecran d'acuueil" ID="{89749411-274E-4847-828C-E1C8D262128B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
