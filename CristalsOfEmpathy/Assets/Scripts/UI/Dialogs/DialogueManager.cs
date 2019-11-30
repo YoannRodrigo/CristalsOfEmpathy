@@ -1,6 +1,7 @@
 ﻿#region Using Directives
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 #endregion
@@ -10,8 +11,8 @@ public class DialogueManager : MonoBehaviour
     #region Member Variables
     public TutorialManager tutorialManager;
 
-    public Text pnjNameText;
-    public Text dialogueText;
+    public TextMeshProUGUI pnjNameText;
+    public TextMeshProUGUI dialogueText;
     public Text answer1;
     public Text answer2;
     public Text answer3;
