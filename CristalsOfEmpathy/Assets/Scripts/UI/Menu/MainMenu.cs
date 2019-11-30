@@ -2,13 +2,13 @@
 
 using UnityEngine;
 using UnityEngine.UI;
-
 #endregion
 
 public class MainMenu : MonoBehaviour
 {
     #region Member Variables
 
+    
     public Button playButton;
     public Button optionsButton;
     public Button backButton;
@@ -20,6 +20,8 @@ public class MainMenu : MonoBehaviour
     #endregion
 
     #region Methods
+
+    
 
     public void PlayGameOnClick()
     {
@@ -53,6 +55,7 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
+
 
     #endregion
 }
