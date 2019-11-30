@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isNeededToBeDestroyed: 1
-  interactiblePnj: {fileID: 0}
+  interactiblePnj: {fileID: 5364374150674270178}
   dialogueToPlay: 8
 --- !u!1 &2277169644068590112
 GameObject:
@@ -2387,8 +2387,8 @@ MonoBehaviour:
       que nous devons \xEAtre pr\xEAts \xE0 tout pour sauver Heimartilf !"
   - pnjName: "H\xE9lise"
     isAnswerNeeded: 0
-    nextTextId: -1
-    sentence: "Je vais devoir m'adresser \xE0 quelqu'un d'autre ..."
+    nextTextId: 0
+    sentence: J'ai vraiment besoin de toi !
   - pnjName: "H\xE9lise"
     isAnswerNeeded: 0
     nextTextId: 6
@@ -2425,11 +2425,11 @@ MonoBehaviour:
       emotion: 4
       influence: 0
     - text: "C\u2019est dangereux ?"
-      nextTextId: 0
+      nextTextId: 3
       emotion: 4
       influence: 0
     - text: Je refuse ...
-      nextTextId: 0
+      nextTextId: 4
       emotion: 4
       influence: 0
 --- !u!1 &2277169644068590518
