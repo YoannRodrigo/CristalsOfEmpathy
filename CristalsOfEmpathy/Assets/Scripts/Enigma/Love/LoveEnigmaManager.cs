@@ -15,8 +15,14 @@ public class LoveEnigmaManager : MonoBehaviour
     public List<Couple> couples = new List<Couple>();
     public Image leftPortrait;
     public Image rightPortrait;
+    public Image leftPortraitDialogue;
+    public Image rightPortraitDialogue;
     public TextMeshProUGUI leftName;
     public TextMeshProUGUI rightName;
+    public TextMeshProUGUI leftNameDialogue;
+    public TextMeshProUGUI rightNameDialogue;
+    public TextMeshProUGUI leftDialogue;
+    public TextMeshProUGUI rightDialogue;
     public TextMeshProUGUI tipText;
     public TextMeshProUGUI consignTitle;
     public TextMeshProUGUI gameTitle;
@@ -148,6 +154,12 @@ public class LoveEnigmaManager : MonoBehaviour
     {
         canvasAnimator.SetBool(toDialogue, true);
         canvasAnimator.SetBool(toGame, false);
+        leftPortraitDialogue.sprite = personnas[currentLeftPersonna].avatarPortrait;
+        leftNameDialogue.text = personnas[currentLeftPersonna].name;
+        leftDialogue.text = personnas[currentLeftPersonna].dialogues;
+        rightPortraitDialogue.sprite = personnas[currentRightPersonna].avatarPortrait;
+        rightNameDialogue.text = personnas[currentRightPersonna].name;
+        rightDialogue.text = personnas[currentRightPersonna].dialogues;
     }
 
     public void ConsigneOnClic()
