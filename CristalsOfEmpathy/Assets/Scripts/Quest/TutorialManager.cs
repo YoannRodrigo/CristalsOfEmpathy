@@ -1,4 +1,6 @@
 ﻿#region Using Directives
+
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 #endregion
@@ -16,6 +18,12 @@ public class TutorialManager : MonoBehaviour
     #endregion
 
     #region Methods
+
+    private void Start()
+    {
+        heliseFly.AllowPnjToFly(false);
+    }
+
     private void Update()
     {
         
