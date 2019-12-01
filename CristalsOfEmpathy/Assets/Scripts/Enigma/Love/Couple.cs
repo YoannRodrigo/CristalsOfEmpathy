@@ -2,19 +2,22 @@
 using UnityEngine;
 #endregion
 
+
 [System.Serializable]
-public class Personna
+public class Couple
 {
     #region Member Variables
     
-    public Sprite avatarPortrait;
-    public string name;
-    [TextArea(3, 10)]
-    public string dialogues;
     public char couple;
     
+    [TextArea(3, 10)] 
+    public string tip;
+
+    public string title;
+
     #endregion
-    
+
     #region Methods
+
     #endregion
-}    
+}

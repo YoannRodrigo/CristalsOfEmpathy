@@ -12,18 +12,20 @@ public class LoveEnigmaManager : MonoBehaviour
     private const float TIME_BEFORE_OTHER_PERSONNAS = 1f;
     
     public List<Personna> personnas = new List<Personna>();
+    public List<Couple> couples = new List<Couple>();
     public Image leftPortrait;
     public Image rightPortrait;
     public TextMeshProUGUI leftName;
     public TextMeshProUGUI rightName;
+    public TextMeshProUGUI tipText;
+    public TextMeshProUGUI consignTitle;
+    public TextMeshProUGUI gameTitle;
     public GameObject hearth;
-    public GameObject windowsGame;
-    public GameObject windowsConsigne;
-    public GameObject windowsDialogue;
     public Animator canvasAnimator;
     
     private int currentLeftPersonna;
     private int currentRightPersonna;
+    private Couple currentCouple;
     private bool isCoupleOk;
     private float timeSinceValidation;
     private static readonly int toDialogue = Animator.StringToHash("ToDialogue");
@@ -36,6 +38,8 @@ public class LoveEnigmaManager : MonoBehaviour
 
     private void Start()
     {
+        
+        currentCouple = couples[0];
         ChooseRandomPersonna();
     }
     
@@ -52,6 +56,7 @@ public class LoveEnigmaManager : MonoBehaviour
         
         UpdateLeftPersonna(personnas[currentLeftPersonna]);
         UpdateRightPersonna(personnas[currentRightPersonna]);
+        UpdateGameTitle();
     }
 
     private void UpdateLeftPersonna(Personna newPersonna)
@@ -66,6 +71,10 @@ public class LoveEnigmaManager : MonoBehaviour
         rightName.text = newPersonna.name;
     }
 
+    private void UpdateGameTitle()
+    {
+        gameTitle.text = currentCouple.title;
+    }
     public void LeftArrowLeftOnClic()
     {
         currentLeftPersonna--;
@@ -128,7 +137,7 @@ public class LoveEnigmaManager : MonoBehaviour
 
     public void ValidateOnClic()
     {
-        if (personnas[currentLeftPersonna].couple == personnas[currentRightPersonna].couple)
+        if (personnas[currentLeftPersonna].couple == personnas[currentRightPersonna].couple && personnas[currentLeftPersonna].couple == currentCouple.couple)
         {
             hearth.SetActive(true);
             isCoupleOk = true;
@@ -145,6 +154,8 @@ public class LoveEnigmaManager : MonoBehaviour
     {
         canvasAnimator.SetBool(toConsigne, true);
         canvasAnimator.SetBool(toGame, false);
+        tipText.text = currentCouple.tip;
+        consignTitle.text = currentCouple.title;
     }
 
     public void ToGameOnClic()
@@ -165,6 +176,8 @@ public class LoveEnigmaManager : MonoBehaviour
                 Personna rightPersonna = personnas[currentRightPersonna];
                 personnas.Remove(leftPersonna);
                 personnas.Remove(rightPersonna);
+                couples.Remove(currentCouple);
+                currentCouple = couples[0];
                 if(personnas.Count != 0)
                 {
                     ChooseRandomPersonna();
