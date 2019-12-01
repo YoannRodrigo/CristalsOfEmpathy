@@ -26,9 +26,9 @@ public class FlyablePnj : MonoBehaviour
         }
     }
 
-    public void AllowPnjToFly()
+    public void AllowPnjToFly(bool allow = true)
     {
-        _isPnjFlyingAllowed = true;
+        _isPnjFlyingAllowed = allow;
     }
 
     private void Start()
