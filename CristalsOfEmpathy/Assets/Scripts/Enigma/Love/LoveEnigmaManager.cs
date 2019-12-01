@@ -17,10 +17,19 @@ public class LoveEnigmaManager : MonoBehaviour
     public TextMeshProUGUI leftName;
     public TextMeshProUGUI rightName;
     public GameObject hearth;
+    public GameObject windowsGame;
+    public GameObject windowsConsigne;
+    public GameObject windowsDialogue;
+    public Animator canvasAnimator;
+    
     private int currentLeftPersonna;
     private int currentRightPersonna;
     private bool isCoupleOk;
     private float timeSinceValidation;
+    private static readonly int toDialogue = Animator.StringToHash("ToDialogue");
+    private static readonly int toConsigne = Animator.StringToHash("ToConsigne");
+    private static readonly int toGame = Animator.StringToHash("ToGame");
+
     #endregion
 
     #region Methods
@@ -119,7 +128,6 @@ public class LoveEnigmaManager : MonoBehaviour
 
     public void ValidateOnClic()
     {
-        print("Clic");
         if (personnas[currentLeftPersonna].couple == personnas[currentRightPersonna].couple)
         {
             hearth.SetActive(true);
@@ -127,6 +135,25 @@ public class LoveEnigmaManager : MonoBehaviour
         }
     }
 
+    public void DialogueOnClic()
+    {
+        canvasAnimator.SetBool(toDialogue, true);
+        canvasAnimator.SetBool(toGame, false);
+    }
+
+    public void ConsigneOnClic()
+    {
+        canvasAnimator.SetBool(toConsigne, true);
+        canvasAnimator.SetBool(toGame, false);
+    }
+
+    public void ToGameOnClic()
+    {
+        canvasAnimator.SetBool(toDialogue, false);
+        canvasAnimator.SetBool(toConsigne, false);
+        canvasAnimator.SetBool(toGame, true);
+    }
+    
     private void Update()
     {
         if (isCoupleOk)
