@@ -70,6 +70,11 @@ public class PlayerChoiceManager : MonoBehaviour
         generalGameManager.SetPlayerPrefab(playerPrefabs[(int) playerChoice]);
         levelChanger.ChangeToLevelWithFade(SPLASHSCREEN_ID);
     }
+    
+    public void LoveEnigmaOnClick()
+    {
+        levelChanger.ChangeToLevelWithFade(4);
+    }
 
     #endregion
 }
