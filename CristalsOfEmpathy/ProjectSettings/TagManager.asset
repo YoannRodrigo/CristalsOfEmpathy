@@ -12,6 +12,7 @@ TagManager:
   - Berlingots
   - Flower
   - Guardian
+  - Light
   layers:
   - Default
   - TransparentFX
