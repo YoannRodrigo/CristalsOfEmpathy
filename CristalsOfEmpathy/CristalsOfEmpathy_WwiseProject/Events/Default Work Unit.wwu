@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StartFearMusic" ID="{2635907E-E094-4B0F-A393-6D4CD61EF318}">
+					<ChildrenList>
+						<Action Name="" ID="{06D1E17F-E3C2-4AC1-A72B-F991AF67BF3E}" ShortID="436717301">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Emotion Peur" ID="{27F57FEB-3326-404F-82BB-8BBEF83321EF}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

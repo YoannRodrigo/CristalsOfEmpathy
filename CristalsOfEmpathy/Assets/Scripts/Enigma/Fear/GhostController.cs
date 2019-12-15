@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 
 public class GhostController : MonoBehaviour
@@ -12,6 +9,7 @@ public class GhostController : MonoBehaviour
     private float timeBeforeDeath;
     private float timeInEnlightment;
     private float speed;
+    private GameObject playerLight;
     
     public void SetPlayerTransform(Transform playerTransform)
     {
@@ -36,6 +34,10 @@ public class GhostController : MonoBehaviour
 
     private void Update()
     {
+        if (playerLight != null && !playerLight.GetComponent<Light>().enabled)
+        {
+            isEnlight = false;
+        }
         if (isEnlight)
         {
             timeInEnlightment += Time.deltaTime;
@@ -55,6 +57,7 @@ public class GhostController : MonoBehaviour
     {
         if(other.CompareTag("Light"))
         {
+            playerLight = other.gameObject;
             isEnlight = true;
         }
     }

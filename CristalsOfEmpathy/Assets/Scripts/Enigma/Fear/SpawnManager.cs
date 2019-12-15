@@ -9,9 +9,13 @@ public class SpawnManager : MonoBehaviour
     public GameObject ghostPrefab;
     public List<Transform> spawnersTransform = new List<Transform>();
     private float timeSinceBegin;
-    private List<float> timeCode = new List<float>(20){6,16,20,22,24,28,37,41,44,48,50,52,60,66,72,78,84,90,96,102};
+    private readonly List<float> timeCode = new List<float>(20){6,16,20,22,24,28,37,41,44,48,50,52,60,66,72,78,84,90,96,102};
     private int ghostId;
 
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("StartFearMusic", gameObject);
+    }
     private void Update()
     {
         timeSinceBegin += Time.deltaTime;

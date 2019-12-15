@@ -23,8 +23,13 @@
 			<IncludedEvents>
 				<Event Id="2821508605" Name="ButtonPressed" ObjectPath="\Events\Default Work Unit\ButtonPressed" DurationType="OneShot" DurationMin="0.547936" DurationMax="1.470734"/>
 				<Event Id="3658128575" Name="MainMenuOpen" ObjectPath="\Events\Default Work Unit\MainMenuOpen" DurationType="OneShot" DurationMin="51.230770" DurationMax="51.230770"/>
+				<Event Id="20033646" Name="StartFearMusic" ObjectPath="\Events\Default Work Unit\StartFearMusic" DurationType="OneShot" DurationMin="109.374992" DurationMax="109.374992"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="715401843" Language="SFX">
+					<ShortName>CoE - Emotion - Peur.wav</ShortName>
+					<Path>SFX\CoE - Emotion - Peur_10C4C929.wem</Path>
+				</File>
 				<File Id="718541537" Language="SFX">
 					<ShortName>CoE - Ecran d'acuueil.wav</ShortName>
 					<Path>SFX\CoE - Ecran d'acuueil_10C4C929.wem</Path>

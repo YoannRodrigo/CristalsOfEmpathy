@@ -119,6 +119,25 @@
 						<ActiveSource Name="CoE - Ecran d'acuueil" ID="{89749411-274E-4847-828C-E1C8D262128B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Emotion Peur" ID="{27F57FEB-3326-404F-82BB-8BBEF83321EF}" ShortID="381606535">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD0BE872-5ACF-4851-97A5-83A6ABE16895}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CoE - Emotion - Peur" ID="{99B6B93F-EB84-4ACA-A763-659A40AD772F}" ShortID="715401843">
+							<Language>SFX</Language>
+							<AudioFile>CoE - Emotion - Peur.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CoE - Emotion - Peur" ID="{99B6B93F-EB84-4ACA-A763-659A40AD772F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
