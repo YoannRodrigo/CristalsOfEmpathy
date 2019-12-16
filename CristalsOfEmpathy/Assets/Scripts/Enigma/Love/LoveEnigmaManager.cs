@@ -10,6 +10,7 @@ public class LoveEnigmaManager : MonoBehaviour
     #region Member Variables
 
     private const float TIME_BEFORE_OTHER_PERSONNAS = 1f;
+    private const int NB_MAX_VICTORY = 5;
     
     public List<Personna> personnas = new List<Personna>();
     public List<Couple> couples = new List<Couple>();
@@ -28,6 +29,7 @@ public class LoveEnigmaManager : MonoBehaviour
     public TextMeshProUGUI gameTitle;
     public GameObject hearth;
     public Animator canvasAnimator;
+    public GameObject victoryScreen;
     
     private int currentLeftPersonna;
     private int currentRightPersonna;
@@ -37,6 +39,7 @@ public class LoveEnigmaManager : MonoBehaviour
     private static readonly int toDialogue = Animator.StringToHash("ToDialogue");
     private static readonly int toConsigne = Animator.StringToHash("ToConsigne");
     private static readonly int toGame = Animator.StringToHash("ToGame");
+    private int nbVictory;
 
     #endregion
 
@@ -147,6 +150,7 @@ public class LoveEnigmaManager : MonoBehaviour
         {
             hearth.SetActive(true);
             isCoupleOk = true;
+            nbVictory++;
         }
     }
 
@@ -179,20 +183,28 @@ public class LoveEnigmaManager : MonoBehaviour
     
     private void Update()
     {
+        
         if (isCoupleOk)
         {
             timeSinceValidation += Time.deltaTime;
             if (timeSinceValidation > TIME_BEFORE_OTHER_PERSONNAS)
             {
-                Personna leftPersonna = personnas[currentLeftPersonna];
-                Personna rightPersonna = personnas[currentRightPersonna];
-                personnas.Remove(leftPersonna);
-                personnas.Remove(rightPersonna);
-                couples.Remove(currentCouple);
-                currentCouple = couples[0];
-                if(personnas.Count != 0)
+                if (nbVictory >= NB_MAX_VICTORY)
                 {
-                    ChooseRandomPersonna();
+                    victoryScreen.SetActive(true);
+                }
+                else
+                {
+                    Personna leftPersonna = personnas[currentLeftPersonna];
+                    Personna rightPersonna = personnas[currentRightPersonna];
+                    personnas.Remove(leftPersonna);
+                    personnas.Remove(rightPersonna);
+                    couples.Remove(currentCouple);
+                    currentCouple = couples[0];
+                    if (personnas.Count != 0)
+                    {
+                        ChooseRandomPersonna();
+                    }
                 }
             }
         }
