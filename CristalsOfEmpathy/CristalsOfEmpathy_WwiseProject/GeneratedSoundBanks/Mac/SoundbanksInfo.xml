@@ -21,9 +21,19 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2821508605" Name="ButtonPressed" ObjectPath="\Events\Default Work Unit\ButtonPressed" DurationType="OneShot" DurationMin="0.615038" DurationMax="1.310275"/>
+				<Event Id="2821508605" Name="ButtonPressed" ObjectPath="\Events\Default Work Unit\ButtonPressed" DurationType="OneShot" DurationMin="0.547936" DurationMax="1.470734"/>
+				<Event Id="3658128575" Name="MainMenuOpen" ObjectPath="\Events\Default Work Unit\MainMenuOpen" DurationType="OneShot" DurationMin="51.230770" DurationMax="51.230770"/>
+				<Event Id="2486664568" Name="StartLoveMusic" ObjectPath="\Events\Default Work Unit\StartLoveMusic" DurationType="OneShot" DurationMin="90.666664" DurationMax="90.666664"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="383016134" Language="SFX">
+					<ShortName>CoE - Emotion - Amour.wav</ShortName>
+					<Path>SFX\CoE - Emotion - Amour_10C4C929.wem</Path>
+				</File>
+				<File Id="718541537" Language="SFX">
+					<ShortName>CoE - Ecran d'acuueil.wav</ShortName>
+					<Path>SFX\CoE - Ecran d'acuueil_10C4C929.wem</Path>
+				</File>
 				<File Id="891508614" Language="SFX">
 					<ShortName>UI Hits Game 4.wav</ShortName>
 					<Path>SFX\UI Hits Game 4_10C4C929.wem</Path>

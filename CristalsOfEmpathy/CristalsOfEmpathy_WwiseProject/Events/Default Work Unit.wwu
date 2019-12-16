@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StartLoveMusic" ID="{96669FF5-F098-4FD3-97CF-E3CD24747F41}">
+					<ChildrenList>
+						<Action Name="" ID="{D1D17121-0EBD-44FA-91F2-E661EDCFF9D0}" ShortID="1030121604">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Emotion Amour" ID="{F619B40D-DA13-4F04-B397-BABF81F4ED3A}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
