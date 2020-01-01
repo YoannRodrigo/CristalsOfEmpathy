@@ -12,6 +12,8 @@ TagManager:
   - Berlingots
   - Flower
   - Guardian
+  - Tomato
+  - Maire
   layers:
   - Default
   - TransparentFX
