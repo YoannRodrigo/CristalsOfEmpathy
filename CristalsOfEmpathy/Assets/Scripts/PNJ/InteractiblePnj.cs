@@ -9,8 +9,7 @@ public class InteractiblePnj : InteractibleItem
     #region Member Variables
 
     public DialogueManager dialogueManager;
-    public Dialogue[] dialogues;
-    public PlayerAnswers[] playerAnswers;
+    public ScriptablePNJ scriptablePnj;
 
     #endregion
     
@@ -27,13 +26,13 @@ public class InteractiblePnj : InteractibleItem
     public void StartDialogue(int startId = 0)
     {
         dialogueManager.SetInteractiblePnj(this);
-        if(playerAnswers.Length == 0)
+        if(scriptablePnj.playerAnswers.Length == 0)
         {
-            dialogueManager.StartDialogue(dialogues, startId);
+            dialogueManager.StartDialogue(scriptablePnj.dialogues, startId);
         }
         else
         {
-            dialogueManager.StartDialogue(dialogues, playerAnswers, startId);
+            dialogueManager.StartDialogue(scriptablePnj.dialogues, scriptablePnj.playerAnswers, startId);
         }
     }
 
