@@ -1,4 +1,6 @@
 ﻿#region Using Directives
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
@@ -10,15 +12,54 @@ public class AversionEnigmaMenuManager : MonoBehaviour
 {
     #region Member Variables
 
+    public Transform spawnerTransform;
+    public GameObject tomatoPrefab;
+    public GameObject waterCanonPrefab;
+    
+    public List<Image> tomatoes = new List<Image>();
     public Animator enigmaAnimator;
     private static readonly int isGiveUpWindowsNeeded = Animator.StringToHash("isGiveUpWindowsNeeded");
     private static readonly int isTipsWindowsNeeded = Animator.StringToHash("isTipsWindowsNeeded");
     private static readonly int isWaterNeeded = Animator.StringToHash("isWaterNeeded");
     private static readonly int isTomatoNeeded = Animator.StringToHash("isTomatoNeeded");
 
+    private GameObject currentTomato;
+    
+    private enum GameState
+    {
+            TOMATO,
+            WATER
+    }
+
+    private GameState gameState = GameState.TOMATO;
+    
     #endregion
 
     #region Methods
+
+    private void Update()
+    {
+        switch (gameState)
+        {
+            case GameState.TOMATO :
+                if (!currentTomato)
+                {
+                    currentTomato = Instantiate(tomatoPrefab, spawnerTransform);
+                }
+                waterCanonPrefab.SetActive(false);
+                break;
+            case GameState.WATER:
+                if (currentTomato)
+                {
+                    Destroy(currentTomato);
+                }
+                waterCanonPrefab.SetActive(true);
+                break;
+            default:
+                break;
+        }
+    }
+
     public void GiveUpButtonOnClick()
     {
         enigmaAnimator.SetBool(isGiveUpWindowsNeeded,true);
@@ -43,12 +84,14 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     {
         enigmaAnimator.SetBool(isTomatoNeeded,true);
         enigmaAnimator.SetBool(isWaterNeeded, false);
+        gameState = GameState.TOMATO;
     }
     
     public void WaterButtonOnClick()
     {
         enigmaAnimator.SetBool(isTomatoNeeded,false);
         enigmaAnimator.SetBool(isWaterNeeded, true);
+        gameState = GameState.WATER;
     }
     
     #endregion
