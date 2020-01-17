@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: d46293d922d3c3b45b740404b484584e
+guid: 117cd5b21fe62d549b2c95bd5988356f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Onglet_Tuyau_0
+    21300000: Items.meta_0
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Onglet_Tuyau_0
+      name: Items.meta_0
       rect:
         serializedVersion: 2
-        x: 1390
-        y: 523
-        width: 530
-        height: 200
+        x: 33
+        y: 42
+        width: 57
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,7 +121,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d253ca7143dfe1f4cb98245755c78340
+      spriteID: c4be243d22649f341a6f23ff4a8118d7
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7b073c80f8db7084e97f3d82db69f927
+    spriteID: a2fcc2638ecae0a4f9bc9bbb95807a1e
     vertices: []
     indices: 
     edges: []

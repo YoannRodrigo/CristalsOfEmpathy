@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: d46293d922d3c3b45b740404b484584e
+guid: 6d49477b9c332be4a9e42b73fef990fe
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Onglet_Tuyau_0
+    21300000: tomate3_0
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -107,21 +107,21 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Onglet_Tuyau_0
+      name: tomate3_0
       rect:
         serializedVersion: 2
-        x: 1390
-        y: 523
-        width: 530
-        height: 200
+        x: 35
+        y: 0
+        width: 98
+        height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d253ca7143dfe1f4cb98245755c78340
+      spriteID: ee91748be8ef6c540bf8db2dff6facd5
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7b073c80f8db7084e97f3d82db69f927
+    spriteID: 1560a6e649e51af44a934636baed8820
     vertices: []
     indices: 
     edges: []

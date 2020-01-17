@@ -40,7 +40,7 @@ public class InteractiblePnj : InteractibleItem
     public virtual void OnDialogEnded()
     {
         
-    }
+    } 
 
     #endregion
 }
