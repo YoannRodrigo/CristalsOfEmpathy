@@ -1,6 +1,7 @@
 ﻿#region Using Directives
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 #endregion
@@ -8,53 +9,47 @@ using UnityEngine.UI;
 public class AversionEnigmaMenuManager : MonoBehaviour
 {
     #region Member Variables
-    public Image backDialogsImage;
-    public Image backYesImage;
-    public Image backNoImage;
 
-    public Button backYesButton;
-    public Button backNoButton;
+    public Animator enigmaAnimator;
+    private static readonly int isGiveUpWindowsNeeded = Animator.StringToHash("isGiveUpWindowsNeeded");
+    private static readonly int isTipsWindowsNeeded = Animator.StringToHash("isTipsWindowsNeeded");
+    private static readonly int isWaterNeeded = Animator.StringToHash("isWaterNeeded");
+    private static readonly int isTomatoNeeded = Animator.StringToHash("isTomatoNeeded");
 
-    public Button arrowButton;
-
-    public GameObject tomatoWindow;
-    public GameObject pipeWindow;
-    public GameObject backWindow;
-
-    public Animator aversionEnigmaAnimatorLeave;
-    public Animator aversionEnigmaAnimatorIndication;
-
-    private static readonly int toLeaveWindow = Animator.StringToHash("ToLeaveWindow");
-    private static readonly int toIndicationWindow = Animator.StringToHash("ToIndicationWindow");
     #endregion
 
     #region Methods
-    public void BackButtonOnClick()
+    public void GiveUpButtonOnClick()
     {
-        //backWindow.SetActive(true);
-        aversionEnigmaAnimatorLeave.SetBool(toLeaveWindow, true);
-        Debug.Log("BB Clicked");
+        enigmaAnimator.SetBool(isGiveUpWindowsNeeded,true);
     }
 
-    public void BackYesButtonOnClick()
+    public void TipsButtonOnClick()
     {
-        //Application.Quit();
-
-        Debug.Log("BB Y Clicked");
+        enigmaAnimator.SetBool(isTipsWindowsNeeded, true);
     }
 
-    public void BackNoButtonOnClick()
+    public void TipsBackButtonOnClick()
     {
-        //backWindow.SetActive(false);
-
-        aversionEnigmaAnimatorLeave.SetBool(toLeaveWindow, false);
-        Debug.Log("BB N Clicked");
+        enigmaAnimator.SetBool(isTipsWindowsNeeded,false);
     }
 
-    public void ArrowButtonOnClick()
+    public void GiveUpNoButtonOnClick()
     {
-        aversionEnigmaAnimatorIndication.SetBool(toIndicationWindow, false);
-        Debug.Log("Arrow Clicked");
+        enigmaAnimator.SetBool(isGiveUpWindowsNeeded,false);
     }
+
+    public void TomatoButtonOnClick()
+    {
+        enigmaAnimator.SetBool(isTomatoNeeded,true);
+        enigmaAnimator.SetBool(isWaterNeeded, false);
+    }
+    
+    public void WaterButtonOnClick()
+    {
+        enigmaAnimator.SetBool(isTomatoNeeded,false);
+        enigmaAnimator.SetBool(isWaterNeeded, true);
+    }
+    
     #endregion
 }
