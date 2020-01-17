@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: TutoGuardian
+  m_EditorClassIdentifier: 
+  dialogues:
+  - pnjName: 
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: 'Vous appercevez un berlingot mais un renard vous barre la route.
+
+      Qu''est ce que vous allez faire ?'
+  - pnjName: 
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: Le renard est content et s'en va
+  - pnjName: 
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: Le renard prend peur et s'enfui
+  playerAnswers:
+  - playerAnswers:
+    - text: Le caresser
+      nextTextId: 1
+      emotion: 0
+      influence: 5
+    - text: Lui crier dessus
+      nextTextId: 2
+      emotion: 1
+      influence: 5
+    - text: L'observer
+      nextTextId: 2
+      emotion: 2
+      influence: 5
+    - text: Le frapper
+      nextTextId: 2
+      emotion: 3
+      influence: 5
