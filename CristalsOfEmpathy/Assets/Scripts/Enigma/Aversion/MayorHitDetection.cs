@@ -23,6 +23,7 @@ public class MayorHitDetection : MonoBehaviour
                 tomatoesOnMayor.Add(Instantiate(tomatoSplash[randomIndex], other.transform.position, other.transform.rotation, transform));
                 Destroy(other.gameObject);
                 animator.SetTrigger(getHit);
+                gameManager.UpdateScore(100);
             }
         }
     }
@@ -39,8 +40,12 @@ public class MayorHitDetection : MonoBehaviour
                 GameObject tomatoToRemove = tomatoesOnMayor[randomIndex];
                 tomatoesOnMayor.Remove(tomatoesOnMayor[randomIndex]);
                 Destroy(tomatoToRemove);
-                
+                gameManager.UpdateScore(-100);
             }
+        }
+        else
+        {
+            timeSinceLastTomatoClean = 0;
         }
     }
 }

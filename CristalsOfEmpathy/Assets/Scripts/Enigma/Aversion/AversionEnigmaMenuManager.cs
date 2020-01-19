@@ -4,7 +4,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.UI;
 #endregion
 
@@ -15,13 +17,16 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     public Transform spawnerTransform;
     public GameObject tomatoPrefab;
     public GameObject waterCanonPrefab;
-    
+    public TextMeshProUGUI scoreText;
+    public GameObject victoryScreen;
     public Animator enigmaAnimator;
+    public LevelChanger levelChanger;
     private static readonly int isGiveUpWindowsNeeded = Animator.StringToHash("isGiveUpWindowsNeeded");
     private static readonly int isTipsWindowsNeeded = Animator.StringToHash("isTipsWindowsNeeded");
     private static readonly int isWaterNeeded = Animator.StringToHash("isWaterNeeded");
     private static readonly int isTomatoNeeded = Animator.StringToHash("isTomatoNeeded");
 
+    private float currentScore;
     private GameObject currentTomato;
     
     public enum GameState
@@ -36,6 +41,12 @@ public class AversionEnigmaMenuManager : MonoBehaviour
 
     #region Methods
 
+    public void UpdateScore(float pointToAdd)
+    {
+        currentScore += pointToAdd;
+        scoreText.text = "" + currentScore;
+    }
+    
     public GameState GetGameState()
     {
         return gameState;
@@ -84,6 +95,12 @@ public class AversionEnigmaMenuManager : MonoBehaviour
         enigmaAnimator.SetBool(isGiveUpWindowsNeeded,false);
     }
 
+    public void GiveUpYesButtonOnClick()
+    {
+        victoryScreen.SetActive(true);
+        StartCoroutine(waitToReturn());
+    }
+
     public void TomatoButtonOnClick()
     {
         enigmaAnimator.SetBool(isTomatoNeeded,true);
@@ -96,6 +113,12 @@ public class AversionEnigmaMenuManager : MonoBehaviour
         enigmaAnimator.SetBool(isTomatoNeeded,false);
         enigmaAnimator.SetBool(isWaterNeeded, true);
         gameState = GameState.WATER;
+    }
+
+    private IEnumerator waitToReturn()
+    {
+        yield return new WaitForSeconds(2);
+        levelChanger.ChangeToLevelWithFade(0);
     }
     
     #endregion
