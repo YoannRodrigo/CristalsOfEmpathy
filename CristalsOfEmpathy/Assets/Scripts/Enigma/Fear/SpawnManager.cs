@@ -8,9 +8,11 @@ public class SpawnManager : MonoBehaviour
     public Transform playerTransform;
     public GameObject ghostPrefab;
     public List<Transform> spawnersTransform = new List<Transform>();
+    public FearEnigmaManager fearEnigmaManager;
     private float timeSinceBegin;
     private readonly List<float> timeCode = new List<float>(20){6,16,20,22,24,28,37,41,44,48,50,52,60,66,72,78,84,90,96,102};
     private int ghostId;
+    private GameObject lastGhost;
     private bool isMusicPlaying;
     public Light ambiantLight;
 
@@ -39,13 +41,14 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    private void SpawnAGhost(float timeBeforeDeath, float timeToReachPlayer, int spawnIndex)
+    private GameObject SpawnAGhost(float timeBeforeDeath, float timeToReachPlayer, int spawnIndex)
     {
         GameObject ghost = Instantiate(ghostPrefab, spawnersTransform[spawnIndex].position, spawnersTransform[spawnIndex].rotation);
         ghost.GetComponent<GhostController>().SetPlayerTransform(playerTransform);
         ghost.GetComponent<GhostController>().SetDifficulty(timeBeforeDeath,timeToReachPlayer);
         ghost.SetActive(true);
         ghostId++;
+        return ghost;
     }
 
     private void SpawnGhost()
@@ -114,7 +117,8 @@ public class SpawnManager : MonoBehaviour
                         SpawnAGhost(3, 5, 2);
                         break;
                     case 19:
-                        SpawnAGhost(4, 5, 6);
+                        lastGhost = SpawnAGhost(4, 5, 6);
+                        fearEnigmaManager.SetLastGhost(lastGhost);
                         break;
 
                 }
