@@ -1,17 +1,20 @@
 ﻿#region Using Directives
+
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 #endregion
+
 public class LoveEnigmaManager : MonoBehaviour
 {
     #region Member Variables
 
     private const float TIME_BEFORE_OTHER_PERSONNAS = 1f;
     private const int NB_MAX_VICTORY = 5;
-    
+
     public List<Personna> personnas = new List<Personna>();
     public List<Couple> couples = new List<Couple>();
     public Image leftPortrait;
@@ -30,7 +33,8 @@ public class LoveEnigmaManager : MonoBehaviour
     public GameObject hearth;
     public Animator canvasAnimator;
     public GameObject victoryScreen;
-    
+    public LevelChanger levelChanger;
+
     private int currentLeftPersonna;
     private int currentRightPersonna;
     private Couple currentCouple;
@@ -51,7 +55,7 @@ public class LoveEnigmaManager : MonoBehaviour
         currentCouple = couples[0];
         ChooseRandomPersonna();
     }
-    
+
     private void ChooseRandomPersonna()
     {
         hearth.SetActive(false);
@@ -62,7 +66,7 @@ public class LoveEnigmaManager : MonoBehaviour
         {
             currentRightPersonna = Random.Range(0, personnas.Count);
         } while (currentLeftPersonna == currentRightPersonna);
-        
+
         UpdateLeftPersonna(personnas[currentLeftPersonna]);
         UpdateRightPersonna(personnas[currentRightPersonna]);
         UpdateGameTitle();
@@ -84,21 +88,17 @@ public class LoveEnigmaManager : MonoBehaviour
     {
         gameTitle.text = currentCouple.title;
     }
+
     public void LeftArrowLeftOnClic()
     {
         currentLeftPersonna--;
-        if (currentLeftPersonna < 0)
-        {
-            currentLeftPersonna = personnas.Count - 1;
-        }
+        if (currentLeftPersonna < 0) currentLeftPersonna = personnas.Count - 1;
         if (currentLeftPersonna == currentRightPersonna)
         {
             currentLeftPersonna--;
-            if (currentLeftPersonna < 0)
-            {
-                currentLeftPersonna = personnas.Count - 1;
-            }
+            if (currentLeftPersonna < 0) currentLeftPersonna = personnas.Count - 1;
         }
+
         UpdateLeftPersonna(personnas[currentLeftPersonna]);
     }
 
@@ -111,24 +111,20 @@ public class LoveEnigmaManager : MonoBehaviour
             currentLeftPersonna++;
             currentLeftPersonna %= personnas.Count;
         }
+
         UpdateLeftPersonna(personnas[currentLeftPersonna]);
     }
 
     public void RightArrowLeftOnClic()
     {
         currentRightPersonna--;
-        if (currentRightPersonna < 0)
-        {
-            currentRightPersonna = personnas.Count - 1;
-        }
+        if (currentRightPersonna < 0) currentRightPersonna = personnas.Count - 1;
         if (currentLeftPersonna == currentRightPersonna)
         {
             currentRightPersonna--;
-            if (currentRightPersonna < 0)
-            {
-                currentRightPersonna = personnas.Count - 1;
-            }
+            if (currentRightPersonna < 0) currentRightPersonna = personnas.Count - 1;
         }
+
         UpdateRightPersonna(personnas[currentRightPersonna]);
     }
 
@@ -141,12 +137,14 @@ public class LoveEnigmaManager : MonoBehaviour
             currentRightPersonna++;
             currentRightPersonna %= personnas.Count;
         }
+
         UpdateRightPersonna(personnas[currentRightPersonna]);
     }
 
     public void ValidateOnClic()
     {
-        if (personnas[currentLeftPersonna].couple == personnas[currentRightPersonna].couple && personnas[currentLeftPersonna].couple == currentCouple.couple)
+        if (personnas[currentLeftPersonna].couple == personnas[currentRightPersonna].couple &&
+            personnas[currentLeftPersonna].couple == currentCouple.couple)
         {
             hearth.SetActive(true);
             isCoupleOk = true;
@@ -180,10 +178,9 @@ public class LoveEnigmaManager : MonoBehaviour
         canvasAnimator.SetBool(toConsigne, false);
         canvasAnimator.SetBool(toGame, true);
     }
-    
+
     private void Update()
     {
-        
         if (isCoupleOk)
         {
             timeSinceValidation += Time.deltaTime;
@@ -192,6 +189,7 @@ public class LoveEnigmaManager : MonoBehaviour
                 if (nbVictory >= NB_MAX_VICTORY)
                 {
                     victoryScreen.SetActive(true);
+                    StartCoroutine(WaitToReturn());
                 }
                 else
                 {
@@ -201,13 +199,16 @@ public class LoveEnigmaManager : MonoBehaviour
                     personnas.Remove(rightPersonna);
                     couples.Remove(currentCouple);
                     currentCouple = couples[0];
-                    if (personnas.Count != 0)
-                    {
-                        ChooseRandomPersonna();
-                    }
+                    if (personnas.Count != 0) ChooseRandomPersonna();
                 }
             }
         }
+    }
+
+    private IEnumerator WaitToReturn()
+    {
+        yield return new WaitForSeconds(2);
+        levelChanger.ChangeToLevelWithFade(0);
     }
 
     #endregion

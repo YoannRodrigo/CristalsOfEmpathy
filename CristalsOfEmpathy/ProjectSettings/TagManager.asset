@@ -4,21 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - InteractibleItem
-  - FxTemporaire
-  - CollectableItem
-  - LevelChanger
-  - Terrain
-  - Berlingots
-  - Flower
-  - Guardian
-<<<<<<< HEAD
-  - Tomato
-  - Maire
-=======
-  - Light
   - Ghost
->>>>>>> #222
+  - Tomato
   layers:
   - Default
   - TransparentFX
@@ -28,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - 
   - 
   - 
   - 

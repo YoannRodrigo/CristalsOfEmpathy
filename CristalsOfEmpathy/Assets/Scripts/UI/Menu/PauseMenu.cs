@@ -1,6 +1,5 @@
 ﻿#region Using Directives
 
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +11,7 @@ public class PauseMenu : MonoBehaviour
 
     private const int MAIN_MENU_SCENE_ID = 0;
     private static bool isOnPause;
-    
+
     public GameObject pauseMenu;
     public GameObject optionsSubMenu;
     public GameObject inventoryButtonGameObject;
@@ -37,13 +36,10 @@ public class PauseMenu : MonoBehaviour
     {
         return isOnPause;
     }
-    
+
     private void OnEnable()
     {
-        if(!isActivateForOption)
-        {
-            isActivateForOption = true;
-        }
+        if (!isActivateForOption) isActivateForOption = true;
     }
 
     private void Update()
@@ -55,6 +51,7 @@ public class PauseMenu : MonoBehaviour
                 canActivateOption = false;
                 optionsSubMenu.SetActive(true);
             }
+
             isActivateForOption = false;
             canBeDesativate = false;
             gameObject.SetActive(false);
@@ -79,10 +76,7 @@ public class PauseMenu : MonoBehaviour
         joystickButton.gameObject.SetActive(true);
         pauseButton.gameObject.SetActive(true);
         inventoryButtonGameObject.SetActive(true);
-        if (inventoryButtonGameObject.GetComponent<InventoryMenu>().IsOpen)
-        {
-            inventoryMenu.SetActive(true);
-        }
+        if (inventoryButtonGameObject.GetComponent<InventoryMenu>().IsOpen) inventoryMenu.SetActive(true);
     }
 
     public void OptionsGameOnClick()

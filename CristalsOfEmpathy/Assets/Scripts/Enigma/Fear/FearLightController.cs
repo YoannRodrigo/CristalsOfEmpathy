@@ -1,13 +1,13 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Light))]
 [RequireComponent(typeof(CapsuleCollider))]
-
 public class FearLightController : MonoBehaviour
 {
-    private Light spotLight;
     private CapsuleCollider capsuleCollider;
+
+    private Light spotLight;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -22,7 +22,6 @@ public class FearLightController : MonoBehaviour
         {
             OnTouchDown();
             UpdateLightPosition();
-            
         }
         else
         {
@@ -48,7 +47,7 @@ public class FearLightController : MonoBehaviour
         {
             Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             Vector3 onScreenPosition = raycast.GetPoint(0);
-            transform.position = new Vector3(onScreenPosition.x,onScreenPosition.y,transform.position.z);
+            transform.position = new Vector3(onScreenPosition.x, onScreenPosition.y, transform.position.z);
         }
     }
 }

@@ -1,15 +1,19 @@
 ﻿#region Using Directives
 
+using System;
 using System.Collections.Generic;
+
 #endregion
 
-[System.Serializable]
+[Serializable]
 public class PlayerAnswers
 {
     #region Member Variables
+
     public List<PlayerAnswer> playerAnswers = new List<PlayerAnswer>(4);
+
     #endregion
-    
+
     #region Methods
 
     public string GetText(int id)
@@ -31,6 +35,6 @@ public class PlayerAnswers
     {
         return playerAnswers[id].influence;
     }
-    
+
     #endregion
 }

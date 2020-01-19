@@ -1,13 +1,9 @@
 ﻿#region Using Directives
 
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
-using UnityEngine.UI;
+
 #endregion
 
 public class AversionEnigmaMenuManager : MonoBehaviour
@@ -28,15 +24,15 @@ public class AversionEnigmaMenuManager : MonoBehaviour
 
     private float currentScore;
     private GameObject currentTomato;
-    
+
     public enum GameState
     {
-            TOMATO,
-            WATER
+        TOMATO,
+        WATER
     }
 
     private GameState gameState = GameState.TOMATO;
-    
+
     #endregion
 
     #region Methods
@@ -46,7 +42,7 @@ public class AversionEnigmaMenuManager : MonoBehaviour
         currentScore += pointToAdd;
         scoreText.text = "" + currentScore;
     }
-    
+
     public GameState GetGameState()
     {
         return gameState;
@@ -56,28 +52,20 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     {
         switch (gameState)
         {
-            case GameState.TOMATO :
-                if (!currentTomato)
-                {
-                    currentTomato = Instantiate(tomatoPrefab, spawnerTransform);
-                }
+            case GameState.TOMATO:
+                if (!currentTomato) currentTomato = Instantiate(tomatoPrefab, spawnerTransform);
                 waterCanonPrefab.SetActive(false);
                 break;
             case GameState.WATER:
-                if (currentTomato)
-                {
-                    Destroy(currentTomato);
-                }
+                if (currentTomato) Destroy(currentTomato);
                 waterCanonPrefab.SetActive(true);
-                break;
-            default:
                 break;
         }
     }
 
     public void GiveUpButtonOnClick()
     {
-        enigmaAnimator.SetBool(isGiveUpWindowsNeeded,true);
+        enigmaAnimator.SetBool(isGiveUpWindowsNeeded, true);
     }
 
     public void TipsButtonOnClick()
@@ -87,39 +75,39 @@ public class AversionEnigmaMenuManager : MonoBehaviour
 
     public void TipsBackButtonOnClick()
     {
-        enigmaAnimator.SetBool(isTipsWindowsNeeded,false);
+        enigmaAnimator.SetBool(isTipsWindowsNeeded, false);
     }
 
     public void GiveUpNoButtonOnClick()
     {
-        enigmaAnimator.SetBool(isGiveUpWindowsNeeded,false);
+        enigmaAnimator.SetBool(isGiveUpWindowsNeeded, false);
     }
 
     public void GiveUpYesButtonOnClick()
     {
         victoryScreen.SetActive(true);
-        StartCoroutine(waitToReturn());
+        StartCoroutine(WaitToReturn());
     }
 
     public void TomatoButtonOnClick()
     {
-        enigmaAnimator.SetBool(isTomatoNeeded,true);
+        enigmaAnimator.SetBool(isTomatoNeeded, true);
         enigmaAnimator.SetBool(isWaterNeeded, false);
         gameState = GameState.TOMATO;
     }
-    
+
     public void WaterButtonOnClick()
     {
-        enigmaAnimator.SetBool(isTomatoNeeded,false);
+        enigmaAnimator.SetBool(isTomatoNeeded, false);
         enigmaAnimator.SetBool(isWaterNeeded, true);
         gameState = GameState.WATER;
     }
 
-    private IEnumerator waitToReturn()
+    private IEnumerator WaitToReturn()
     {
         yield return new WaitForSeconds(2);
         levelChanger.ChangeToLevelWithFade(0);
     }
-    
+
     #endregion
 }
