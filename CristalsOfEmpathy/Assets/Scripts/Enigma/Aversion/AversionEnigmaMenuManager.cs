@@ -16,7 +16,6 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     public GameObject tomatoPrefab;
     public GameObject waterCanonPrefab;
     
-    public List<Image> tomatoes = new List<Image>();
     public Animator enigmaAnimator;
     private static readonly int isGiveUpWindowsNeeded = Animator.StringToHash("isGiveUpWindowsNeeded");
     private static readonly int isTipsWindowsNeeded = Animator.StringToHash("isTipsWindowsNeeded");
