@@ -1,5 +1,7 @@
 ﻿#region Using Directives
+
 using UnityEngine;
+
 #endregion
 
 namespace Assets.Scripts.Quest
@@ -9,6 +11,7 @@ namespace Assets.Scripts.Quest
     public class Quest : MonoBehaviour
     {
         #region Properties
+
         public int Id { get; set; }
 
         public string QuestName { get; set; }
@@ -16,9 +19,11 @@ namespace Assets.Scripts.Quest
         public string QuestGiver { get; set; }
 
         public string QuestObjective { get; set; }
+
         #endregion
 
         #region Constructor
+
         public Quest(int id, string questName, string questGiver, string questObjective)
         {
             Id = id;
@@ -39,6 +44,7 @@ namespace Assets.Scripts.Quest
             Id = id;
             QuestName = questName;
         }
+
         #endregion
     }
 }

@@ -1,16 +1,15 @@
 ﻿using UnityEngine;
 
-
 public class GhostController : MonoBehaviour
 {
-    private Transform playerTransform;
     private bool isEnlight;
-    private float timeToReachPlayer;
+    private GameObject playerLight;
+    private Transform playerTransform;
+    private float speed;
     private float timeBeforeDeath;
     private float timeInEnlightment;
-    private float speed;
-    private GameObject playerLight;
-    
+    private float timeToReachPlayer;
+
     public void SetPlayerTransform(Transform playerTransform)
     {
         this.playerTransform = playerTransform;
@@ -34,17 +33,11 @@ public class GhostController : MonoBehaviour
 
     private void Update()
     {
-        if (playerLight != null && !playerLight.GetComponent<Light>().enabled)
-        {
-            isEnlight = false;
-        }
+        if (playerLight != null && !playerLight.GetComponent<Light>().enabled) isEnlight = false;
         if (isEnlight)
         {
             timeInEnlightment += Time.deltaTime;
-            if (timeInEnlightment >= timeBeforeDeath)
-            {
-                Destroy(gameObject);
-            }
+            if (timeInEnlightment >= timeBeforeDeath) Destroy(gameObject);
         }
         else
         {
@@ -55,7 +48,7 @@ public class GhostController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Light"))
+        if (other.CompareTag("Light"))
         {
             playerLight = other.gameObject;
             isEnlight = true;
@@ -64,9 +57,6 @@ public class GhostController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Light"))
-        {
-            isEnlight = false;
-        }
+        if (other.CompareTag("Light")) isEnlight = false;
     }
 }

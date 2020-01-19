@@ -12,8 +12,9 @@ public class InteractiblePnj : InteractibleItem
     public ScriptablePNJ scriptablePnj;
 
     #endregion
-    
+
     #region Methods
+
     protected override void OnTouch()
     {
         if (canBeTouch)
@@ -26,20 +27,15 @@ public class InteractiblePnj : InteractibleItem
     public void StartDialogue(int startId = 0)
     {
         dialogueManager.SetInteractiblePnj(this);
-        if(scriptablePnj.playerAnswers.Length == 0)
-        {
+        if (scriptablePnj.playerAnswers.Length == 0)
             dialogueManager.StartDialogue(scriptablePnj.dialogues, startId);
-        }
         else
-        {
             dialogueManager.StartDialogue(scriptablePnj.dialogues, scriptablePnj.playerAnswers, startId);
-        }
     }
 
     public virtual void OnDialogEnded()
     {
-        
-    } 
+    }
 
     #endregion
 }

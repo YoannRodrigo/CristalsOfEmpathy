@@ -1,14 +1,18 @@
 ﻿#region Using Directives
+
 using UnityEngine;
+
 #endregion
 
 public class InteractibleBerlingot : InteractibleItem
 {
     #region Member Variables
+
     public GameObject berlingotItem;
     public Item item;
 
     private bool isQuestActivated;
+
     #endregion
 
     #region Methods
@@ -17,6 +21,7 @@ public class InteractibleBerlingot : InteractibleItem
     {
         isQuestActivated = true;
     }
+
     protected override void OnTouch()
     {
         // BERLINGOTS HANDLING
@@ -25,10 +30,7 @@ public class InteractibleBerlingot : InteractibleItem
         {
             bool wasPickedUp = Inventory.inventoryInstance.Add(item);
 
-            if (wasPickedUp)
-            {
-                Destroy(berlingotItem.gameObject);
-            }
+            if (wasPickedUp) Destroy(berlingotItem.gameObject);
         }
         else if (!isQuestActivated)
         {

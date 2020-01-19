@@ -1,20 +1,22 @@
 ﻿#region Using Directives
 
-using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
+
 #endregion
 
 public class OptionAnimatorController : MonoBehaviour
 {
     #region Member Variables
+
     private static readonly int isOnOption = Animator.StringToHash("isOnOption");
-    
+
     public GameObject pauseMenu;
     public bool canBeDesactivated;
-    
+
     private Animator animator;
+
     #endregion
 
     #region Methods
@@ -49,6 +51,6 @@ public class OptionAnimatorController : MonoBehaviour
     {
         animator.SetBool(isOnOption, false);
     }
-    
+
     #endregion
 }

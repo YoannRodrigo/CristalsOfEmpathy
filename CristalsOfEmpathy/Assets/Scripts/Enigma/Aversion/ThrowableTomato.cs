@@ -1,6 +1,5 @@
 ﻿#region Using Directives
 
-using System;
 using UnityEngine;
 
 #endregion
@@ -8,6 +7,7 @@ using UnityEngine;
 public class ThrowableTomato : MonoBehaviour
 {
     #region Member Variables
+
     private Vector3 startTouchPosition;
     private Vector3 endTouchPosition;
     private Vector3 directionSwipeTouchPosition;
@@ -22,9 +22,11 @@ public class ThrowableTomato : MonoBehaviour
 
     private bool throwAllowed = true;
     private bool isTomatoTouched;
+
     #endregion
 
     #region Methods
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -42,21 +44,12 @@ public class ThrowableTomato : MonoBehaviour
             transform.localScale = actualScale;
         }
 
-        if (transform.localScale.x < 0.4 || transform.localScale.y < 0.4)
-        {
-            Destroy(gameObject);
-        }
+        if (transform.localScale.x < 0.4 || transform.localScale.y < 0.4) Destroy(gameObject);
 
 
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            OnTouch();
-        }
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) OnTouch();
 
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
-        {
-            OnUnTouch();
-        }
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended) OnUnTouch();
 
         if (isTomatoTouched)
         {
@@ -71,7 +64,6 @@ public class ThrowableTomato : MonoBehaviour
     {
         Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
         if (Physics.Raycast(raycast, out RaycastHit raycastHit))
-        {
             if (raycastHit.collider.CompareTag("Tomato") && !isTomatoTouched)
             {
                 startTouchPosition = new Vector3(Input.GetTouch(0).position.x,
@@ -80,7 +72,6 @@ public class ThrowableTomato : MonoBehaviour
                 timeSinceTouchStarted = 0;
                 isTomatoTouched = true;
             }
-        }
     }
 
     private void OnUnTouch()

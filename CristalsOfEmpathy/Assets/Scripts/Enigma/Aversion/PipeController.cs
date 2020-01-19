@@ -1,9 +1,9 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PipeController : MonoBehaviour
 {
     public ParticleSystem particlesSystem;
+
     private void Update()
     {
         if (Input.touchCount > 0)
@@ -19,5 +19,4 @@ public class PipeController : MonoBehaviour
             main.loop = false;
         }
     }
-    
 }

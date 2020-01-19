@@ -3,17 +3,19 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
+
 #endregion
 
 public class PauseAnimatorController : MonoBehaviour
 {
     #region Member Variables
-    
+
     private static readonly int isOnPause = Animator.StringToHash("isOnPause");
     private static readonly int toOption = Animator.StringToHash("toOption");
-    
-    
+
+
     private Animator animator;
+
     #endregion
 
     #region Methods
@@ -23,7 +25,7 @@ public class PauseAnimatorController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    
+
     public void SlideUiIn()
     {
         animator.SetBool(isOnPause, true);
@@ -38,6 +40,6 @@ public class PauseAnimatorController : MonoBehaviour
     {
         animator.SetBool(isOnPause, false);
     }
-    
+
     #endregion
 }

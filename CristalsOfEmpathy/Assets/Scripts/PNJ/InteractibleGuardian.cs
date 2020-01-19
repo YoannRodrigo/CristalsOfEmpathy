@@ -3,14 +3,17 @@
 using UnityEngine;
 
 #endregion
+
 public class InteractibleGuardian : InteractiblePnj
 {
     #region Member Variables
+
     private bool isDialogueEndedGuardian;
+
     #endregion
-    
+
     #region Methods
-    
+
     public override void OnDialogEnded()
     {
         isDialogueEndedGuardian = true;
@@ -24,6 +27,6 @@ public class InteractibleGuardian : InteractiblePnj
             Destroy(gameObject, 22f);
         }
     }
-    
+
     #endregion
 }

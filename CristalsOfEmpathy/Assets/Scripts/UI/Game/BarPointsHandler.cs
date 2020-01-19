@@ -24,11 +24,30 @@ public class BarPointsHandler : MonoBehaviour
         AVERSION,
         NONE
     }
-    
-    public int LoveBarPoints { get => _loveBarPoints; set => _loveBarPoints = value; }
-    public int FearBarPoints { get => _fearBarPoints; set => _fearBarPoints = value; }
-    public int CuriosityBarPoints { get => _curiosityBarPoints; set => _curiosityBarPoints = value; }
-    public int AversionBarPoints { get => _aversionBarPoints; set => _aversionBarPoints = value; }
+
+    public int LoveBarPoints
+    {
+        get => _loveBarPoints;
+        set => _loveBarPoints = value;
+    }
+
+    public int FearBarPoints
+    {
+        get => _fearBarPoints;
+        set => _fearBarPoints = value;
+    }
+
+    public int CuriosityBarPoints
+    {
+        get => _curiosityBarPoints;
+        set => _curiosityBarPoints = value;
+    }
+
+    public int AversionBarPoints
+    {
+        get => _aversionBarPoints;
+        set => _aversionBarPoints = value;
+    }
 
     public BarPointsHandler GetInstance()
     {
@@ -37,14 +56,10 @@ public class BarPointsHandler : MonoBehaviour
 
     private void Awake()
     {
-        if (_instance != null && _instance != this) 
-        {
+        if (_instance != null && _instance != this)
             Destroy(gameObject);
-        }
         else
-        {
             _instance = this;
-        }
     }
 
     public static void UpdateEmotionPoints(Emotions emotion, int influence)
@@ -54,25 +69,25 @@ public class BarPointsHandler : MonoBehaviour
             case Emotions.LOVE:
                 _loveBarPoints += influence;
                 break;
-            case Emotions.FEAR :
+            case Emotions.FEAR:
                 _fearBarPoints += influence;
                 break;
-            case Emotions.AVERSION :
+            case Emotions.AVERSION:
                 _aversionBarPoints += influence;
                 break;
-            case Emotions.CURIOSITY :
+            case Emotions.CURIOSITY:
                 _curiosityBarPoints += influence;
                 break;
-            case Emotions.NONE :
+            case Emotions.NONE:
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(emotion), emotion, null);
         }
     }
+
     #endregion
 
     #region Methods
-
 
     #endregion
 }

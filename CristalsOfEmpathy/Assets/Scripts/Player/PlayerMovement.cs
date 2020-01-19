@@ -2,6 +2,7 @@
 
 using System;
 using UnityEngine;
+
 #endregion
 
 [RequireComponent(typeof(Rigidbody))]
@@ -18,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private static readonly int isPlayerRunning = Animator.StringToHash("isPlayerRunning");
     private static readonly int isPlayerWalking = Animator.StringToHash("isPlayerWalking");
     private Vector3 joystickMovement;
-    
+
     #endregion
 
     #region Methods
@@ -44,10 +45,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector3(joystickMovement.x * 5f, rb.velocity.y, joystickMovement.y * 5f);
         }
 
-        if (!joystick.gameObject.activeSelf)
-        {
-            rb.velocity = Vector3.zero;
-        }
+        if (!joystick.gameObject.activeSelf) rb.velocity = Vector3.zero;
 
         Vector3 velocityOnGround = Vector3.Scale(rb.velocity, new Vector3(1, 0, 1));
         if (Math.Abs(velocityOnGround.magnitude) <= 0.2f)
@@ -57,7 +55,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            Quaternion velocityAngle = Quaternion.Euler(0, Vector3.SignedAngle(transform.forward, velocityOnGround, Vector3.up), 0);
+            Quaternion velocityAngle =
+                Quaternion.Euler(0, Vector3.SignedAngle(transform.forward, velocityOnGround, Vector3.up), 0);
             transform.rotation = Quaternion.Slerp(transform.rotation, velocityAngle, ROTATION_SPEED * Time.deltaTime);
             if (Math.Abs(velocityOnGround.magnitude) < WALKING_SPEED_MAX)
             {
