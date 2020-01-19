@@ -90,7 +90,6 @@ public class ThrowableTomato : MonoBehaviour
             rb.constraints = RigidbodyConstraints.FreezeRotation;
             timeInterval = timeSinceTouchStarted;
             directionSwipeTouchPosition = endTouchPosition - startTouchPosition;
-            print(directionSwipeTouchPosition);
             Debug.DrawLine(endTouchPosition, startTouchPosition, Color.cyan, 30);
             rb.AddForce(directionSwipeTouchPosition * THROW_FORCE / timeInterval);
             throwAllowed = false;

@@ -24,7 +24,7 @@ public class AversionEnigmaMenuManager : MonoBehaviour
 
     private GameObject currentTomato;
     
-    private enum GameState
+    public enum GameState
     {
             TOMATO,
             WATER
@@ -35,6 +35,11 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     #endregion
 
     #region Methods
+
+    public GameState GetGameState()
+    {
+        return gameState;
+    }
 
     private void Update()
     {
