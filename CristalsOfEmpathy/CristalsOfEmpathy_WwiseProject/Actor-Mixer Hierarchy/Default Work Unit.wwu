@@ -119,7 +119,11 @@
 						<ActiveSource Name="CoE - Ecran d'acuueil" ID="{89749411-274E-4847-828C-E1C8D262128B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+<<<<<<< HEAD
 				<Sound Name="Emotion Amour" ID="{F619B40D-DA13-4F04-B397-BABF81F4ED3A}" ShortID="656906680">
+=======
+				<Sound Name="Emotion Peur" ID="{27F57FEB-3326-404F-82BB-8BBEF83321EF}" ShortID="381606535">
+>>>>>>> #222
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
@@ -129,6 +133,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
+<<<<<<< HEAD
 						<AudioFileSource Name="CoE - Emotion - Amour" ID="{3849FFE3-8C82-44C4-A83A-821B7C8991A7}" ShortID="383016134">
 							<Language>SFX</Language>
 							<AudioFile>CoE - Emotion - Amour.wav</AudioFile>
@@ -136,6 +141,15 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="CoE - Emotion - Amour" ID="{3849FFE3-8C82-44C4-A83A-821B7C8991A7}" Platform="Linked"/>
+=======
+						<AudioFileSource Name="CoE - Emotion - Peur" ID="{99B6B93F-EB84-4ACA-A763-659A40AD772F}" ShortID="715401843">
+							<Language>SFX</Language>
+							<AudioFile>CoE - Emotion - Peur.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CoE - Emotion - Peur" ID="{99B6B93F-EB84-4ACA-A763-659A40AD772F}" Platform="Linked"/>
+>>>>>>> #222
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

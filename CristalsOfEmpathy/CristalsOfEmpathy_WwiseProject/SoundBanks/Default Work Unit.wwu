@@ -7,7 +7,11 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="MainMenuOpen" ID="{322AF292-4E00-40F5-BC15-F9FDA7E71F02}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ButtonPressed" ID="{ADBFD95A-9115-4A6D-B483-76984B479149}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
+<<<<<<< HEAD
 						<ObjectRef Name="StartLoveMusic" ID="{96669FF5-F098-4FD3-97CF-E3CD24747F41}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
+=======
+						<ObjectRef Name="StartFearMusic" ID="{2635907E-E094-4B0F-A393-6D4CD61EF318}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
+>>>>>>> #222
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

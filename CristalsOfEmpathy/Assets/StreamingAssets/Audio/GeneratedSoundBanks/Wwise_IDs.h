@@ -15,7 +15,11 @@ namespace AK
     {
         static const AkUniqueID BUTTONPRESSED = 2821508605U;
         static const AkUniqueID MAINMENUOPEN = 3658128575U;
+<<<<<<< HEAD
         static const AkUniqueID STARTLOVEMUSIC = 2486664568U;
+=======
+        static const AkUniqueID STARTFEARMUSIC = 20033646U;
+>>>>>>> #222
     } // namespace EVENTS
 
     namespace BANKS

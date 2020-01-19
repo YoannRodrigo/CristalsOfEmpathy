@@ -12,8 +12,13 @@ TagManager:
   - Berlingots
   - Flower
   - Guardian
+<<<<<<< HEAD
   - Tomato
   - Maire
+=======
+  - Light
+  - Ghost
+>>>>>>> #222
   layers:
   - Default
   - TransparentFX

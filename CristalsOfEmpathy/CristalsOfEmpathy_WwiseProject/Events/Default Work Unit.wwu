@@ -25,12 +25,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+<<<<<<< HEAD
 				<Event Name="StartLoveMusic" ID="{96669FF5-F098-4FD3-97CF-E3CD24747F41}">
 					<ChildrenList>
 						<Action Name="" ID="{D1D17121-0EBD-44FA-91F2-E661EDCFF9D0}" ShortID="1030121604">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Emotion Amour" ID="{F619B40D-DA13-4F04-B397-BABF81F4ED3A}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+=======
+				<Event Name="StartFearMusic" ID="{2635907E-E094-4B0F-A393-6D4CD61EF318}">
+					<ChildrenList>
+						<Action Name="" ID="{06D1E17F-E3C2-4AC1-A72B-F991AF67BF3E}" ShortID="436717301">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Emotion Peur" ID="{27F57FEB-3326-404F-82BB-8BBEF83321EF}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+>>>>>>> #222
 								</Reference>
 							</ReferenceList>
 						</Action>
