@@ -1,4 +1,6 @@
 ﻿#region Member Variables
+
+using System;
 using UnityEngine;
 #endregion
 
@@ -8,13 +10,11 @@ public class TomatoScript : MonoBehaviour
     #endregion
 
     #region Methods
-    private void OnCollisionEnter2D(Collision2D entity)
+
+    private void OnTriggerStay(Collider other)
     {
-        if (entity.gameObject.tag == "Maire")
-        {
-            Destroy(this.gameObject);
-            Instantiate(this.gameObject, this.gameObject.transform.position, this.gameObject.transform.rotation); ;
-        }
+        print(other.gameObject.name);
     }
+
     #endregion
 }

@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 109567202}
   - component: {fileID: 109567201}
   - component: {fileID: 109567200}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BackNoButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 115187151}
   - component: {fileID: 115187152}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ButtonArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 266952514}
   - component: {fileID: 266952513}
   - component: {fileID: 266952516}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TabTomatoButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -663,7 +663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 281641890}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TipWindows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 285323846}
   - component: {fileID: 285323845}
   - component: {fileID: 285323844}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TabWaterButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 309522505}
   - component: {fileID: 309522504}
   - component: {fileID: 309522503}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -951,7 +951,7 @@ GameObject:
   - component: {fileID: 325339292}
   - component: {fileID: 325339294}
   - component: {fileID: 325339293}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BackDialogsImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1023,7 +1023,7 @@ GameObject:
   - component: {fileID: 334174754}
   - component: {fileID: 334174756}
   - component: {fileID: 334174755}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1095,7 +1095,7 @@ GameObject:
   - component: {fileID: 350127327}
   - component: {fileID: 350127329}
   - component: {fileID: 350127328}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1136,7 +1136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1223,6 +1223,89 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &463413620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 463413621}
+  - component: {fileID: 463413622}
+  - component: {fileID: 463413623}
+  - component: {fileID: 463413624}
+  m_Layer: 0
+  m_Name: MayorHitBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &463413621
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463413620}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1838246545}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &463413622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463413620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 335.65613, y: 821.0186, z: 10}
+  m_Center: {x: -4.9194946, y: -91.63327, z: 0}
+--- !u!54 &463413623
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463413620}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &463413624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463413620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c59517928fa32440bc54a6dea25b11a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tomatoSplash:
+  - {fileID: 383310345192411973, guid: 296b545009603f44e874790b8e0372fc, type: 3}
+  - {fileID: 4254662729857438348, guid: 47d58be9daebea74fb620757306292b3, type: 3}
+  - {fileID: 377099912872030606, guid: 4212fdbc758115e438ed770876ae2d4a, type: 3}
 --- !u!1 &567243617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 567243618}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TomatoSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1246,12 +1329,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567243617}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 614939250}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1271,7 +1354,7 @@ GameObject:
   - component: {fileID: 574247080}
   - component: {fileID: 574247079}
   - component: {fileID: 574247083}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1326,7 +1409,7 @@ Canvas:
   m_GameObject: {fileID: 574247078}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1795935059}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1391,7 +1474,7 @@ GameObject:
   - component: {fileID: 587643206}
   - component: {fileID: 587643205}
   - component: {fileID: 587643204}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BackYesImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1463,7 +1546,7 @@ GameObject:
   - component: {fileID: 603942637}
   - component: {fileID: 603942636}
   - component: {fileID: 603942635}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TabTomatoImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1533,7 +1616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 614939250}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: GameWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1553,9 +1636,9 @@ RectTransform:
   m_Children:
   - {fileID: 1838246545}
   - {fileID: 1918246102}
-  - {fileID: 567243618}
   - {fileID: 950859694}
   - {fileID: 1265530042}
+  - {fileID: 567243618}
   m_Father: {fileID: 574247082}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1576,7 +1659,7 @@ GameObject:
   - component: {fileID: 647634303}
   - component: {fileID: 647634302}
   - component: {fileID: 647634301}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: NoButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1701,7 +1784,7 @@ GameObject:
   - component: {fileID: 658688527}
   - component: {fileID: 658688526}
   - component: {fileID: 658688529}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TabPipeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1828,7 +1911,7 @@ GameObject:
   - component: {fileID: 710343649}
   - component: {fileID: 710343651}
   - component: {fileID: 710343650}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: IndicationImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1958,7 +2041,7 @@ GameObject:
   - component: {fileID: 872223870}
   - component: {fileID: 872223872}
   - component: {fileID: 872223871}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2035,7 +2118,7 @@ GameObject:
   - component: {fileID: 880470384}
   - component: {fileID: 880470386}
   - component: {fileID: 880470385}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2113,7 +2196,7 @@ GameObject:
   - component: {fileID: 924921397}
   - component: {fileID: 924921396}
   - component: {fileID: 924921395}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ArrowButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2235,7 +2318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950859694}
   - component: {fileID: 950859695}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ButtonArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2258,7 +2341,7 @@ RectTransform:
   - {fileID: 285323843}
   - {fileID: 1052453285}
   m_Father: {fileID: 614939250}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2297,7 +2380,7 @@ GameObject:
   - component: {fileID: 992889437}
   - component: {fileID: 992889436}
   - component: {fileID: 992889435}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TabTomatoButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2421,7 +2504,7 @@ GameObject:
   - component: {fileID: 1052453288}
   - component: {fileID: 1052453287}
   - component: {fileID: 1052453286}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TabIndicationButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2544,7 +2627,7 @@ GameObject:
   - component: {fileID: 1234897153}
   - component: {fileID: 1234897152}
   - component: {fileID: 1234897151}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TabPipeImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2629,7 +2712,7 @@ GameObject:
   - component: {fileID: 1363770628}
   - component: {fileID: 1363770627}
   - component: {fileID: 1363770626}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BackYesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2753,7 +2836,7 @@ GameObject:
   - component: {fileID: 1373100846}
   - component: {fileID: 1373100848}
   - component: {fileID: 1373100847}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2830,7 +2913,7 @@ GameObject:
   - component: {fileID: 1400191290}
   - component: {fileID: 1400191292}
   - component: {fileID: 1400191291}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2902,7 +2985,7 @@ GameObject:
   - component: {fileID: 1432357733}
   - component: {fileID: 1432357732}
   - component: {fileID: 1432357731}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TabIndicationImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2974,7 +3057,7 @@ GameObject:
   - component: {fileID: 1443898428}
   - component: {fileID: 1443898427}
   - component: {fileID: 1443898426}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BackImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3048,7 +3131,7 @@ GameObject:
   - component: {fileID: 1448733637}
   - component: {fileID: 1448733636}
   - component: {fileID: 1448733639}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TabIndicationButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3176,7 +3259,7 @@ GameObject:
   - component: {fileID: 1456529529}
   - component: {fileID: 1456529528}
   - component: {fileID: 1456529527}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: YesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3288,7 +3371,7 @@ GameObject:
   - component: {fileID: 1487051613}
   - component: {fileID: 1487051615}
   - component: {fileID: 1487051614}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3330,7 +3413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3363,7 +3446,7 @@ GameObject:
   - component: {fileID: 1491123733}
   - component: {fileID: 1491123732}
   - component: {fileID: 1491123731}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Visage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3422,7 +3505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3454,7 +3537,7 @@ GameObject:
   - component: {fileID: 1542729141}
   - component: {fileID: 1542729143}
   - component: {fileID: 1542729142}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3531,7 +3614,7 @@ GameObject:
   - component: {fileID: 1693298922}
   - component: {fileID: 1693298924}
   - component: {fileID: 1693298923}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3609,7 +3692,7 @@ GameObject:
   - component: {fileID: 1720792932}
   - component: {fileID: 1720792931}
   - component: {fileID: 1720792930}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3843,7 +3926,7 @@ GameObject:
   - component: {fileID: 1838246545}
   - component: {fileID: 1838246547}
   - component: {fileID: 1838246546}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3862,6 +3945,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1491123730}
+  - {fileID: 463413621}
   m_Father: {fileID: 614939250}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3916,7 +4000,7 @@ GameObject:
   - component: {fileID: 1839258544}
   - component: {fileID: 1839258546}
   - component: {fileID: 1839258545}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3991,7 +4075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1839577443}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: PipeWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4032,7 +4116,7 @@ GameObject:
   - component: {fileID: 1855520140}
   - component: {fileID: 1855520139}
   - component: {fileID: 1855520138}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BackNoImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4104,7 +4188,7 @@ GameObject:
   - component: {fileID: 1918246102}
   - component: {fileID: 1918246104}
   - component: {fileID: 1918246103}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ScoreImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4144,7 +4228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4176,7 +4260,7 @@ GameObject:
   - component: {fileID: 2010698054}
   - component: {fileID: 2010698056}
   - component: {fileID: 2010698055}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ScoreImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4246,7 +4330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2027467403}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: GiveUpWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4285,7 +4369,7 @@ GameObject:
   - component: {fileID: 2125216699}
   - component: {fileID: 2125216701}
   - component: {fileID: 2125216700}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4363,6 +4447,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8395406474659424797, guid: f128fa4fab6c9d54e8d9bcb0f153f87e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8395406474659424798, guid: f128fa4fab6c9d54e8d9bcb0f153f87e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4401,7 +4490,7 @@ PrefabInstance:
     - target: {fileID: 8395406474659424798, guid: f128fa4fab6c9d54e8d9bcb0f153f87e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8395406474659424798, guid: f128fa4fab6c9d54e8d9bcb0f153f87e,
         type: 3}
