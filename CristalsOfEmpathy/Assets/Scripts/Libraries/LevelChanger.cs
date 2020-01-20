@@ -40,6 +40,7 @@ public class LevelChanger : MonoBehaviour
         {
             timeSinceFadeBegan += Time.deltaTime;
             if (timeSinceFadeBegan > TIME_BEFORE_FADE_ENDED) SceneManager.LoadScene(levelId);
+            
         }
     }
 

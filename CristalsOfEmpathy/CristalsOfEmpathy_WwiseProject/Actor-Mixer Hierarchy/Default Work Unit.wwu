@@ -138,6 +138,63 @@
 						<ActiveSource Name="CoE - Emotion - Amour" ID="{3849FFE3-8C82-44C4-A83A-821B7C8991A7}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="CoE - Emotion - Aversion et Dégoût" ID="{CDB4FA23-BB11-4C70-8423-8D2EAD683044}" ShortID="280235841">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD0BE872-5ACF-4851-97A5-83A6ABE16895}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CoE - Emotion - Aversion et Dégoût" ID="{A4B0DE77-2B84-4A2B-8CD6-62BF966FCB6D}" ShortID="471958184">
+							<Language>SFX</Language>
+							<AudioFile>CoE - Emotion - Aversion et Dégoût.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CoE - Emotion - Aversion et Dégoût" ID="{A4B0DE77-2B84-4A2B-8CD6-62BF966FCB6D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CoE - Emotion - Curiosité et Surprise" ID="{F51F4209-F04B-4047-8026-657AAB74E711}" ShortID="658784992">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD0BE872-5ACF-4851-97A5-83A6ABE16895}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CoE - Emotion - Curiosité et Surprise" ID="{4A26720D-36EE-4DF1-9623-3E0FC4FF4647}" ShortID="178422844">
+							<Language>SFX</Language>
+							<AudioFile>CoE - Emotion - Curiosité et Surprise.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CoE - Emotion - Curiosité et Surprise" ID="{4A26720D-36EE-4DF1-9623-3E0FC4FF4647}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CoE - Emotion - Peur" ID="{BBF739B7-BB28-4D63-9946-E4C64B0E76AC}" ShortID="5804419">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD0BE872-5ACF-4851-97A5-83A6ABE16895}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CoE - Emotion - Peur" ID="{64292B30-910C-4C61-937F-EF9B6EB1C1CD}" ShortID="448652585">
+							<Language>SFX</Language>
+							<AudioFile>CoE - Emotion - Peur.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CoE - Emotion - Peur" ID="{64292B30-910C-4C61-937F-EF9B6EB1C1CD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

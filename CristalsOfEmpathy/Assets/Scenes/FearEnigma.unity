@@ -1071,9 +1071,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343a67bc23248634da39a2afd965694c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelChanger: {fileID: 1235259109}
   textMeshProUgui: {fileID: 1542629298}
   winScreen: {fileID: 1427496426}
-  levelChanger: {fileID: 1235259109}
 --- !u!1 &1245663999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1664,9 +1664,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 343a67bc23248634da39a2afd965694c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelChanger: {fileID: 0}
   textMeshProUgui: {fileID: 1542629298}
   winScreen: {fileID: 0}
-  levelChanger: {fileID: 0}
 --- !u!1 &1841169979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,9 +1719,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ca06a0baa3a6c4b92d7ecb22616259, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1668054221}
+  ambiantLight: {fileID: 1783041631}
+  fearEnigmaManager: {fileID: 1236118276}
   ghostPrefab: {fileID: 9217755202205932016, guid: 5998d9fec2da98041b9952b0e21e7c60,
     type: 3}
+  playerTransform: {fileID: 1668054221}
   spawnersTransform:
   - {fileID: 1186601442}
   - {fileID: 1381008879}
@@ -1731,8 +1733,6 @@ MonoBehaviour:
   - {fileID: 213939943}
   - {fileID: 160782005}
   - {fileID: 892566250}
-  fearEnigmaManager: {fileID: 1236118276}
-  ambiantLight: {fileID: 1783041631}
 --- !u!114 &1841169982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1750,7 +1750,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 462e73900d8dbcd42b97cc91fbd32f69,
+    WwiseObjectReference: {fileID: 11400000, guid: 77ef24354b0b2b440a2f9ed37d64425d,
       type: 2}
   decodeBank: 0
   loadAsynchronous: 0

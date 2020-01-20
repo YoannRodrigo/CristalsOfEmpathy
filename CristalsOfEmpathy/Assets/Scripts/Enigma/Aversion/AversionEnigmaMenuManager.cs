@@ -37,6 +37,10 @@ public class AversionEnigmaMenuManager : MonoBehaviour
 
     #region Methods
 
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("StartAversionMusic", gameObject);
+    }
     public void UpdateScore(float pointToAdd)
     {
         currentScore += pointToAdd;

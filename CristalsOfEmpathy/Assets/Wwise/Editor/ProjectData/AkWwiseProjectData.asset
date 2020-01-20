@@ -17,22 +17,49 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 11bcb6001e54724fb306c4a33ea713da
     GuidInternal: 
-    m_lastTime: -8586264660713730933
+    m_lastTime: -8586264535017257652
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 72e80bcdcf5a514897a583a6abe16895
     GuidInternal: 
-    m_lastTime: -8586264660713591319
+    m_lastTime: -8586264535037009885
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: cf5eedc6e53c154382ce4716c863ce4a
     GuidInternal: 
-    m_lastTime: -8586264568109361409
+    m_lastTime: -8586221281609314541
     List:
+    - name: Aversion
+      guid: edddd185966c1a46ab6cd745d316d0f8
+      id: 3998377122
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Aversion
+        ObjectType: 7
+      Path: Default Work Unit\Aversion
+    - name: Fear
+      guid: 2f9b78e33088a04db6c5a215dfa23a7b
+      id: 3133847859
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fear
+        ObjectType: 7
+      Path: Default Work Unit\Fear
+    - name: Love
+      guid: 219d53ec6f25a647b223217da930b1a2
+      id: 271565449
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Love
+        ObjectType: 7
+      Path: Default Work Unit\Love
     - name: Main
       guid: c498ba4ec332254c8f39b3fc8cd9d66d
       id: 3161908922
@@ -47,10 +74,10 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 71960e2e778eb049be87a6930ee0f61e
     GuidInternal: 
-    m_lastTime: -8586264581550598421
+    m_lastTime: -8586221304092954563
     List:
     - name: ButtonPressed
-      guid: 0675b9ee399860479bd9e2b162b7cd6c
+      guid: 5ad9bfad15916d4ab48376984b479149
       id: 2821508605
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -61,33 +88,81 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: MainMenuOpen
+      guid: 92f22a32004ef540bc15f9fda7e71f02
+      id: 3658128575
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MainMenuOpen
+        ObjectType: 3
+      Path: Default Work Unit\MainMenuOpen
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartAversionMusic
+      guid: de363e078858a647a64524781363b304
+      id: 5682657
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StartAversionMusic
+        ObjectType: 3
+      Path: Default Work Unit\StartAversionMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartFearMusic
+      guid: 509f70cdaf04414da80fc94d5240df84
+      id: 20033646
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StartFearMusic
+        ObjectType: 3
+      Path: Default Work Unit\StartFearMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartLoveMusic
+      guid: f59f669698f0d34f97cfe3cd24747f41
+      id: 2486664568
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StartLoveMusic
+        ObjectType: 3
+      Path: Default Work Unit\StartLoveMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 305bff01cd266d468bda7766082d460b
     GuidInternal: 
-    m_lastTime: -8586264660713621241
+    m_lastTime: -8586264535044687182
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d05fea2ce3cd9244b7496de7026fcccf
     GuidInternal: 
-    m_lastTime: -8586264660713374112
+    m_lastTime: -8586264535016632416
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 846253be0357fe459765fddac040020e
     GuidInternal: 
-    m_lastTime: -8586264660713284349
+    m_lastTime: -8586264535017257652
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 49a7b43797b0d84fb57b4ba1df3247aa
     GuidInternal: 
-    m_lastTime: -8586264660713234474
+    m_lastTime: -8586264535017257652
     List: []
   ExpandedItems:
   - /CristalsOfEmpathy_WwiseProject

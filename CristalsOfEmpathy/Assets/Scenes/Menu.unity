@@ -1750,7 +1750,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 5483536210053316811}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634250317}
+  m_GameObject: {fileID: 1007787911}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9c11767d531eb948aaec092aeeb6d3e, type: 3}
@@ -1919,6 +1919,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940782526}
   m_CullTransparentMesh: 0
+--- !u!1 &1007787911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5483536210514489908, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5483536210053316811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1007787912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007787911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd0ea0d59530e974783b729f15d2c45c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 462e73900d8dbcd42b97cc91fbd32f69,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 1
+  saveDecodedBank: 1
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1013954378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2585,37 +2616,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587691627}
   m_CullTransparentMesh: 0
---- !u!1 &1634250317 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5483536210514489908, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-    type: 3}
-  m_PrefabInstance: {fileID: 5483536210053316811}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1634250320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634250317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0ea0d59530e974783b729f15d2c45c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: ae8d9d44
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 462e73900d8dbcd42b97cc91fbd32f69,
-      type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!1 &1635502214
 GameObject:
   m_ObjectHideFlags: 0

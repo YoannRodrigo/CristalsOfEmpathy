@@ -3,9 +3,12 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{EAFFA4CC-91DC-4A27-BB11-9EAC3459F109}">
 			<PropertyList>
+				<Property Name="Event Action List\{073E36DE-5888-47A6-A645-24781363B304}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2635907E-E094-4B0F-A393-6D4CD61EF318}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{322AF292-4E00-40F5-BC15-F9FDA7E71F02}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{96669FF5-F098-4FD3-97CF-E3CD24747F41}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{ADBFD95A-9115-4A6D-B483-76984B479149}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CD709F50-04AF-4D41-A80F-C94D5240DF84}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EEB97506-9839-4760-9BD9-E2B162B7CD6C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -27,7 +30,7 @@
 				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="0Pqz4gTlZU2YZip0tjRQ2Pz6rUWJEV1AqPkGUVnL6NU="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="xJi6TsMyJUyPObP8jNnWbQ=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="xJi6TsMyJUyPObP8jNnWbSGdU+xvJaZHsiMhfakwsaIvm3jjMIigTbbFohXfojp77d3RhZZsGkarbNdF0xbQ+A=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="xyWUZSqvyE+wohiZOHNTNAH/////////ycbBo/Cla0+8glUHf8cOWAH/////////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
