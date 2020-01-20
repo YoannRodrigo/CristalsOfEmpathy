@@ -3609,35 +3609,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personnas:
-  - avatarPortrait: {fileID: 21300000, guid: 07eaae85dfafe2c4c9bc10bc1fc74e77, type: 3}
+  - avatarPortrait: {fileID: 21300000, guid: f5e24c2b9eaa52749b5594f0994c195d, type: 3}
     name: Prof
     dialogues: A
     couple: 65
-  - avatarPortrait: {fileID: 21300000, guid: 6cf8a8282e2e67046add56257dd73a7d, type: 3}
+  - avatarPortrait: {fileID: 21300000, guid: 6e43ca9be5da7144bac8d145c4108219, type: 3}
     name: Scientifique
     dialogues: A
     couple: 65
-  - avatarPortrait: {fileID: 21300000, guid: 7a2f7cc05a792544a9fb8340a1275c28, type: 3}
+  - avatarPortrait: {fileID: 21300000, guid: ccf0193c6000bcf42b1edcbf54a278cd, type: 3}
     name: Agri
     dialogues: B
     couple: 66
-  - avatarPortrait: {fileID: 21300000, guid: 9d27ad0adbeeb064bbbaedf729699396, type: 3}
+  - avatarPortrait: {fileID: 21300000, guid: 027858711b902a44483e46cc408ced74, type: 3}
     name: "P\xEAcheur"
     dialogues: B
     couple: 66
-  - avatarPortrait: {fileID: 21300000, guid: 24db56b4495b06849a2a313ce4a06ac9, type: 3}
+  - avatarPortrait: {fileID: 21300000, guid: cd703a6fba9e48e4fa4f4ef8426841b1, type: 3}
     name: Musicienne
     dialogues: C
     couple: 67
-  - avatarPortrait: {fileID: 21300000, guid: b553262c898f4174ca2c3a0bd547b93b, type: 3}
+  - avatarPortrait: {fileID: 21300000, guid: a2b1b291513797446b1769e44dc52cd8, type: 3}
     name: Peintre
     dialogues: C
     couple: 67
-  - avatarPortrait: {fileID: 21300000, guid: 57e9e9ef0492cd8438d3070ba1c2f5d5, type: 3}
+  - avatarPortrait: {fileID: 21300000, guid: 246adc900b0472f4b8fefefb47b188f8, type: 3}
     name: Suzie
     dialogues: D
     couple: 68
-  - avatarPortrait: {fileID: 21300000, guid: 16ce7de2f1f7c34468cc4cf56d7c249a, type: 3}
+  - avatarPortrait: {fileID: 21300000, guid: 753eade6ff59c01409367be3730287b8, type: 3}
     name: Apo
     dialogues: D
     couple: 68
