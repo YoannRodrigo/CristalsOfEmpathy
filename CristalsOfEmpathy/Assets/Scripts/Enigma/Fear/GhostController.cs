@@ -33,7 +33,10 @@ public class GhostController : MonoBehaviour
 
     private void Update()
     {
-        if (playerLight != null && !playerLight.GetComponent<Light>().enabled) isEnlight = false;
+        if (playerLight != null && !playerLight.GetComponent<Light>().enabled)
+        {
+            isEnlight = false;
+        }
         if (isEnlight)
         {
             timeInEnlightment += Time.deltaTime;
@@ -57,6 +60,9 @@ public class GhostController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Light")) isEnlight = false;
+        if (other.CompareTag("Light"))
+        {
+            isEnlight = false;
+        }
     }
 }

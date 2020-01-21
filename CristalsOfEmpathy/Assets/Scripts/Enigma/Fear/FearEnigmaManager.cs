@@ -28,18 +28,17 @@ public class FearEnigmaManager : MonoBehaviour
     private void Update()
     {
         textMeshProUgui.text = "" + Mathf.Floor(currentBeatHeart);
-        timeSinceLastBeatRise += Time.deltaTime;
-
-
         currentBeatHeart += (isPlayerEnlight ? -1 : 1) * Time.deltaTime;
-
         if (isLastGhostSpawned && !lastGhost)
         {
             winScreen.SetActive(true);
             StartCoroutine(WaitToReturn());
         }
 
-        if (currentBeatHeart > 180) print("Dead");
+        if (currentBeatHeart > 180)
+        {
+            print("Dead");
+        }
     }
 
     private IEnumerator WaitToReturn()
