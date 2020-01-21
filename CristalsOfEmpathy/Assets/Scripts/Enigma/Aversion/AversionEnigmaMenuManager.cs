@@ -43,7 +43,7 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     }
     public void UpdateScore(float pointToAdd)
     {
-        currentScore += pointToAdd;
+        currentScore -= pointToAdd;
         scoreText.text = "" + currentScore;
     }
 
