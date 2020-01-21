@@ -1,8 +1,11 @@
 ﻿#region Using Directives
+
+using System;
 using UnityEngine;
+
 #endregion
 
-[System.Serializable]
+[Serializable]
 public class Dialogue
 {
     #region Member Variables
@@ -10,7 +13,8 @@ public class Dialogue
     public string pnjName;
     public bool isAnswerNeeded;
     public int nextTextId;
-    [TextArea(3, 10)] 
-    public string sentence;
+
+    [TextArea(3, 10)] public string sentence;
+
     #endregion
 }

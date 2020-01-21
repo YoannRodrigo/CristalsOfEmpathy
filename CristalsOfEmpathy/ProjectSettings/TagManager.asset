@@ -10,6 +10,12 @@ TagManager:
   - LevelChanger
   - Terrain
   - Berlingots
+  - Flower
+  - Guardian
+  - Tomato
+  - Maire
+  - Light
+  - Ghost
   layers:
   - Default
   - TransparentFX
@@ -19,7 +25,7 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - 
   - 
   - 
   - 

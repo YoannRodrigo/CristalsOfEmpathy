@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: TutoHelise
+  m_EditorClassIdentifier: 
+  dialogues:
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Toi, approche.. Tu es unique.. Tu es entier, j\u2019ai besoin de ton
+      aide. Je m\u2019appelle H\xE9lise, je suis la Gardienne des Sentiments mais
+      j\u2019ai failli \xE0 ma t\xE2che.. "
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Mon pendentif s'est bris\xE9, cr\xE9ant une fracture entre les mondes.
+      Les \xE9motions sont en danger. Il faut r\xE9cup\xE9rer tous les cristaux avant
+      qu'ils ne disparaissent. Sans \xE7a, nous sommes tous condamn\xE9s ! Tout est
+      sens dessus dessous, il faut agir vite !"
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Eh bien.. Euh.. A vrai dire, j'ai mang\xE9 un berlingo douteux et je
+      me suis retrouv\xE9e face \xE0 moi-m\xEAme ! Mon double a \xE9t\xE9 envoy\xE9
+      dans un autre monde qu'elle a appel\xE9 Dystopar. Elle r\xE8gne sur ses habitants
+      comme un tyran, elle leur a m\xEAme \xF4t\xE9 toutes leurs \xE9motions ! Certains
+      cristaux se trouvent l\xE0-bas."
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Toute qu\xEAte est dangereuse mais c'est dans le danger que r\xE9side
+      le secret de la vie. C'est une prise de risque, un saut dans le vide. Mais sache
+      que nous devons \xEAtre pr\xEAts \xE0 tout pour sauver Heimartilf !"
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: J'ai vraiment besoin de toi !
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 0
+    nextTextId: 6
+    sentence: "Je vais t\u2019accompagner tout au long de notre qu\xEAte. Nous allons
+      devoir explorer les terres d\u2019Heimartilf. Nous allons parler \xE0 ses habitants
+      pour retrouver tous les cristaux qu\u2019il nous faut afin de r\xE9parer le
+      Pendentif de Vie."
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 0
+    nextTextId: 7
+    sentence: "Mais attention ! Depuis le d\xE9doublement, les gens sont \xE9tranges.
+      Chaque conversation est importante et il faudra trouver les bons mots pour d\xE9lier
+      les langues. Plus tu trouveras de berlingots, plus je serai forte, et plus je
+      pourrais t\u2019aider dans tes choix ! J\u2019illuminerai tous les objets avec
+      lesquels tu peux interagir."
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Je dois encore manger 5 berlingots avant de pouvoir partir !\r"
+  - pnjName: "H\xE9lise"
+    isAnswerNeeded: 0
+    nextTextId: -2
+    sentence: "Mrmhm.. Merci ! \xC7a r\xE9chauffe l\u2019\xE2me et le corps ! Allons
+      au village le plus proche, celui de Tilfinn pour parler avec les villageois
+      !"
+  playerAnswers:
+  - playerAnswers:
+    - text: C'est parti !
+      nextTextId: 5
+      emotion: 4
+      influence: 0
+    - text: "Qu\u2019est-ce qui est arriv\xE9 ?"
+      nextTextId: 2
+      emotion: 4
+      influence: 0
+    - text: "C\u2019est dangereux ?"
+      nextTextId: 3
+      emotion: 4
+      influence: 0
+    - text: Je refuse ...
+      nextTextId: 4
+      emotion: 4
+      influence: 0

@@ -1,15 +1,13 @@
 ﻿#region Using Directives
+
 using UnityEngine;
+
 #endregion
 
 public class InteractibleObject : InteractibleItem
 {
-    #region Member Variables
-    public GameObject collectibleItem;
-    public Item item;
-    #endregion
-
     #region Methods
+
     protected override void OnTouch()
     {
         Debug.Log(canBeTouch ? "Touch" : "Too far");
@@ -18,11 +16,16 @@ public class InteractibleObject : InteractibleItem
         if (canBeTouch && collectibleItem.tag != "Berlingots")
         {
             bool wasPickedUp = Inventory.inventoryInstance.Add(item);
-            if (wasPickedUp)
-            {
-                Destroy(collectibleItem);
-            }
+            if (wasPickedUp) Destroy(collectibleItem);
         }
     }
+
+    #endregion
+
+    #region Member Variables
+
+    public GameObject collectibleItem;
+    public Item item;
+
     #endregion
 }

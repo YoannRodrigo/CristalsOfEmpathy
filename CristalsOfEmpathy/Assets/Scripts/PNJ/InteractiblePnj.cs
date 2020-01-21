@@ -9,13 +9,12 @@ public class InteractiblePnj : InteractibleItem
     #region Member Variables
 
     public DialogueManager dialogueManager;
-    public Dialogue[] dialogues;
-    public PlayerAnswers[] playerAnswers;
+    public ScriptablePNJ scriptablePnj;
 
-    public GameObject dialogueBox;
     #endregion
-    
+
     #region Methods
+
     protected override void OnTouch()
     {
         if (canBeTouch)
@@ -27,15 +26,16 @@ public class InteractiblePnj : InteractibleItem
 
     public void StartDialogue(int startId = 0)
     {
-        if(playerAnswers.Length == 0)
-        {
-            dialogueManager.StartDialogue(dialogues, startId);
-        }
+        dialogueManager.SetInteractiblePnj(this);
+        if (scriptablePnj.playerAnswers.Length == 0)
+            dialogueManager.StartDialogue(scriptablePnj.dialogues, startId);
         else
-        {
-            dialogueManager.StartDialogue(dialogues, playerAnswers, startId);
-        }
-        dialogueBox.SetActive(true); 
+            dialogueManager.StartDialogue(scriptablePnj.dialogues, scriptablePnj.playerAnswers, startId);
     }
+
+    public virtual void OnDialogEnded()
+    {
+    }
+
     #endregion
 }

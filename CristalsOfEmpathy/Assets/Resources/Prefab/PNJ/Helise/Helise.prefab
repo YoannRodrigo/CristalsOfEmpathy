@@ -1,5 +1,65 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1105657618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1105657619}
+  - component: {fileID: 1105657621}
+  - component: {fileID: 1105657620}
+  m_Layer: 0
+  m_Name: TutoEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1105657619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105657618}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.96, z: -0.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2277169644068753300}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1105657621
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105657618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1105657620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105657618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1c85835aec76144837d9405eaa57d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isNeededToBeDestroyed: 1
+  interactiblePnj: {fileID: 5364374150674270178}
+  dialogueToPlay: 8
 --- !u!1 &2277169644068590112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,8 +2281,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2277169644068753300}
   - component: {fileID: 2277169644078080510}
-  - component: {fileID: 2277169644068590517}
   - component: {fileID: 91092332}
+  - component: {fileID: 5364374150674270178}
   m_Layer: 0
   m_Name: Helise
   m_TagString: Untagged
@@ -2244,6 +2304,7 @@ Transform:
   - {fileID: 2277169644068752926}
   - {fileID: 2277169644068752924}
   - {fileID: 2277169644068752918}
+  - {fileID: 1105657619}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 174.893, z: 0}
@@ -2266,7 +2327,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2277169644068590517
+--- !u!114 &91092332
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2275,7 +2336,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2277169644068590516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dedd09dc9f17d86448696dae17f0be3d, type: 3}
+  m_Script: {fileID: 11500000, guid: e1787aa2bd2dfa34cb06189b54070396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSpeed: 4
+  tutorialManager: {fileID: 0}
+  endTutorialArea: {fileID: 0}
+--- !u!114 &5364374150674270178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2277169644068590516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5def0bef25fc32b48825f246d9969032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nearParticlesSystem: {fileID: 4363562844490038545, guid: df49b143a0c4fd342b7138947cc7adf4,
@@ -2311,8 +2387,8 @@ MonoBehaviour:
       que nous devons \xEAtre pr\xEAts \xE0 tout pour sauver Heimartilf !"
   - pnjName: "H\xE9lise"
     isAnswerNeeded: 0
-    nextTextId: -1
-    sentence: "Je vais devoir m'adresser \xE0 quelqu'un d'autre"
+    nextTextId: 0
+    sentence: J'ai vraiment besoin de toi !
   - pnjName: "H\xE9lise"
     isAnswerNeeded: 0
     nextTextId: 6
@@ -2331,41 +2407,31 @@ MonoBehaviour:
   - pnjName: "H\xE9lise"
     isAnswerNeeded: 0
     nextTextId: -1
-    sentence: "Je dois encore manger 5 berlingots avant de pouvoir partir !\r\n"
+    sentence: "Je dois encore manger 5 berlingots avant de pouvoir partir !\r"
   - pnjName: "H\xE9lise"
     isAnswerNeeded: 0
     nextTextId: -2
     sentence: "Mrmhm.. Merci ! \xC7a r\xE9chauffe l\u2019\xE2me et le corps ! Allons
       au village le plus proche, celui de Tilfinn pour parler avec les villageois
       !"
-  - pnjName: "H\xE9lise"
-    isAnswerNeeded: 0
-    nextTextId: -2
-    sentence: "F\xE9licitations humble troubadour, tu as r\xE9ussi le tutoriel, tu
-      vas maintenant \xEAtre t\xE9l\xE9port\xE9 directement dans le jeu !"
   playerAnswers:
-  - nextTextId1: 5
-    nextTextId2: 2
-    nextTextId3: 3
-    nextTextId4: 4
-    text1: "C\u2019est parti ! "
-    text2: "Qu\u2019est-ce qui est arriv\xE9 ?"
-    text3: "C\u2019est dangereux ?"
-    text4: Je refuse
-  dialogueBox: {fileID: 0}
---- !u!114 &91092332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2277169644068590516}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1787aa2bd2dfa34cb06189b54070396, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetSpeed: 0.15
+  - playerAnswers:
+    - text: C'est parti !
+      nextTextId: 5
+      emotion: 4
+      influence: 0
+    - text: "Qu\u2019est-ce qui est arriv\xE9 ?"
+      nextTextId: 2
+      emotion: 4
+      influence: 0
+    - text: "C\u2019est dangereux ?"
+      nextTextId: 3
+      emotion: 4
+      influence: 0
+    - text: Je refuse ...
+      nextTextId: 4
+      emotion: 4
+      influence: 0
 --- !u!1 &2277169644068590518
 GameObject:
   m_ObjectHideFlags: 0

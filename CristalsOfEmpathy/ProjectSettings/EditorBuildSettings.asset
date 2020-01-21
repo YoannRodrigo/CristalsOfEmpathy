@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 86cfe382fb557404b9046defa157057c
+  - enabled: 1
+    path: Assets/Scenes/LoveEnigma.unity
+    guid: ca47c802667009048bc63b0d36b19b2a
+  - enabled: 1
+    path: Assets/Scenes/AversionEnigma.unity
+    guid: ae0a992359e16ab47b41342c5fd57913
+  - enabled: 1
+    path: Assets/Scenes/FearEnigma.unity
+    guid: a9326cf78fbdec544a5a4b35b2b1c80f
   m_configObjects: {}

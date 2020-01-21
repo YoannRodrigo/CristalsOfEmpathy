@@ -19,6 +19,5 @@ public class JoystickManager : MonoBehaviour
         return joystick;
     }
 
-    
     #endregion
 }

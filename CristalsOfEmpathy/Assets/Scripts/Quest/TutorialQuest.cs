@@ -1,5 +1,7 @@
 ﻿#region Using Directives
+
 using UnityEngine;
+
 #endregion
 
 public class TutorialQuest : MonoBehaviour
@@ -15,6 +17,7 @@ public class TutorialQuest : MonoBehaviour
     #region Events
 
     public delegate void OnQuestBegin();
+
     public delegate void OnQuestFinished();
 
     public delegate void OnBerlingotsPickedUp();
@@ -27,6 +30,6 @@ public class TutorialQuest : MonoBehaviour
     #endregion
 
     #region Methods
-   
+
     #endregion
 }

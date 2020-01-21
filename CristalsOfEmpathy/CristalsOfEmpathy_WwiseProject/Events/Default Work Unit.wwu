@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="ButtonPressed" ID="{ADBFD95A-9115-4A6D-B483-76984B479149}">
+					<ChildrenList>
+						<Action Name="" ID="{303D180F-8705-4898-952D-9C176B9AA261}" ShortID="3880771">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button Hits" ID="{EE58CF3C-D110-49B7-B269-FE5FE9EE10D6}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MainMenuOpen" ID="{322AF292-4E00-40F5-BC15-F9FDA7E71F02}">
+					<ChildrenList>
+						<Action Name="" ID="{036DDB30-13C9-425A-B529-D04555304C5D}" ShortID="819101137">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenu" ID="{6E24405E-4910-4DCB-96C1-ADF79468B2FD}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StartLoveMusic" ID="{96669FF5-F098-4FD3-97CF-E3CD24747F41}">
+					<ChildrenList>
+						<Action Name="" ID="{D1D17121-0EBD-44FA-91F2-E661EDCFF9D0}" ShortID="1030121604">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Emotion Amour" ID="{F619B40D-DA13-4F04-B397-BABF81F4ED3A}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StartFearMusic" ID="{CD709F50-04AF-4D41-A80F-C94D5240DF84}">
+					<ChildrenList>
+						<Action Name="" ID="{E96DD7C3-DE94-4531-BDA4-E154D6A8AA3E}" ShortID="709058596">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoE - Emotion - Peur" ID="{BBF739B7-BB28-4D63-9946-E4C64B0E76AC}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StartAversionMusic" ID="{073E36DE-5888-47A6-A645-24781363B304}">
+					<ChildrenList>
+						<Action Name="" ID="{8B6D274E-68AA-43ED-BE21-00A367531B23}" ShortID="900673973">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoE - Emotion - Aversion et Dégoût" ID="{CDB4FA23-BB11-4C70-8423-8D2EAD683044}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

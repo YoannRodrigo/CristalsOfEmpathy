@@ -37,7 +37,6 @@ public class MainMenu : MonoBehaviour
             mainMenu.gameObject.SetActive(false);
             optionsSubMenu.gameObject.SetActive(true);
         }
-        
     }
 
     public void BackOptionsOnClick()
@@ -48,6 +47,7 @@ public class MainMenu : MonoBehaviour
             mainMenu.gameObject.SetActive(true);
         }
     }
+
     public void QuitGameOnClick()
     {
         Debug.Log("Quit");
