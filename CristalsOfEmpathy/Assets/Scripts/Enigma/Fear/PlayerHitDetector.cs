@@ -25,7 +25,7 @@ public class PlayerHitDetector : MonoBehaviour
         }
         else if (other.CompareTag("Ghost"))
         {
-            print("Dead");
+            fearEnigmaManager.Death();
         }
     }
 
