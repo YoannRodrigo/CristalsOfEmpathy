@@ -1945,9 +1945,9 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 462e73900d8dbcd42b97cc91fbd32f69,
       type: 2}
   decodeBank: 0
-  loadAsynchronous: 1
+  loadAsynchronous: 0
   saveDecodedBank: 1
-  unloadTriggerList: 958ca0ea
+  unloadTriggerList: 
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!1 &1013954378
