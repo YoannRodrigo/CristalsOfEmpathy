@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FearEnigmaManager : MonoBehaviour
 {
-    private const float TIME_BEETWEEN_BEAT_RISE = 1f;
     [Range(80, 180)] private float currentBeatHeart = 80;
     private bool isLastGhostSpawned;
     private bool isPlayerEnlight;
@@ -29,6 +28,12 @@ public class FearEnigmaManager : MonoBehaviour
     {
         textMeshProUgui.text = "" + Mathf.Floor(currentBeatHeart);
         currentBeatHeart += (isPlayerEnlight ? -1 : 1) * Time.deltaTime;
+        
+        if (currentBeatHeart < 80)
+        {
+            currentBeatHeart = 80;
+        }
+        
         if (isLastGhostSpawned && !lastGhost)
         {
             winScreen.SetActive(true);
