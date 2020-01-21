@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2486664568	StartLoveMusic			\Default Work Unit\StartLoveMusic	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	383016134	Emotion Amour	C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Android\SFX\CoE - Emotion - Amour_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Emotion Amour		15993664
-

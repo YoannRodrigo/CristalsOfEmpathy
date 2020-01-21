@@ -8,8 +8,8 @@ public class PipeController : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
-            particlesSystem.gameObject.SetActive(true);
             ParticleSystem.MainModule main = particlesSystem.main;
+            particlesSystem.GetComponent<Renderer>().enabled = true;
             main.loop = true;
             particlesSystem.Play();
         }

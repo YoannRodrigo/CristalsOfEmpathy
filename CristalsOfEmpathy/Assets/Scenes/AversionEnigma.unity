@@ -3109,7 +3109,7 @@ PrefabInstance:
     - target: {fileID: 9049808637993894881, guid: 534641249cbf0ff408f0b742ab90a44a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2203562485858184293, guid: 534641249cbf0ff408f0b742ab90a44a,
         type: 3}
@@ -3194,7 +3194,7 @@ PrefabInstance:
     - target: {fileID: 2203562485858184293, guid: 534641249cbf0ff408f0b742ab90a44a,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2203562485858184293, guid: 534641249cbf0ff408f0b742ab90a44a,
         type: 3}
@@ -3294,11 +3294,16 @@ PrefabInstance:
     - target: {fileID: 6169681972790904920, guid: 534641249cbf0ff408f0b742ab90a44a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275372261841827638, guid: 534641249cbf0ff408f0b742ab90a44a,
         type: 3}
       propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8275372261841827638, guid: 534641249cbf0ff408f0b742ab90a44a,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
