@@ -33,6 +33,7 @@ public class LoveEnigmaManager : MonoBehaviour
     public GameObject hearth;
     public Animator canvasAnimator;
     public GameObject victoryScreen;
+    public GameObject loseScreen;
     public LevelChanger levelChanger;
 
     private int currentLeftPersonna;
@@ -149,6 +150,11 @@ public class LoveEnigmaManager : MonoBehaviour
             hearth.SetActive(true);
             isCoupleOk = true;
             nbVictory++;
+        }
+        else
+        {
+            loseScreen.SetActive(true);
+            StartCoroutine(WaitToReturn());
         }
     }
 

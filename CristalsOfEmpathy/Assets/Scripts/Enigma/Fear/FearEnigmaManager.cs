@@ -12,6 +12,7 @@ public class FearEnigmaManager : MonoBehaviour
     public TextMeshProUGUI textMeshProUgui;
     private float timeSinceLastBeatRise;
     public GameObject winScreen;
+    public GameObject loseScreen;
 
     public void SetLastGhost(GameObject lastGhost)
     {
@@ -42,10 +43,15 @@ public class FearEnigmaManager : MonoBehaviour
 
         if (currentBeatHeart > 180)
         {
-            print("Dead");
+            Death();
         }
     }
 
+    public void Death()
+    {
+        loseScreen.SetActive(true);
+        StartCoroutine(WaitToReturn());
+    }
     private IEnumerator WaitToReturn()
     {
         yield return new WaitForSeconds(2);
