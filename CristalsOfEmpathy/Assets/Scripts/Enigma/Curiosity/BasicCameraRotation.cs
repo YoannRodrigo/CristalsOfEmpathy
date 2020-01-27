@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿#region Using Directives
 using UnityEngine;
+#endregion
 
 public class BasicCameraRotation : MonoBehaviour
 {
+    #region Methods
     public void RotateUpDown(float axis)
     {
         transform.RotateAround(transform.position, transform.right, -axis * Time.deltaTime);
@@ -14,4 +15,5 @@ public class BasicCameraRotation : MonoBehaviour
     {
         transform.RotateAround(transform.position, Vector3.up, -axis * Time.deltaTime);
     }
+    #endregion
 }

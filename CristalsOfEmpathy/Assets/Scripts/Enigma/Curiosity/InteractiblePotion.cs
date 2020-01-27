@@ -1,12 +1,22 @@
 ﻿#region Using Directives
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 #endregion
 
 public class InteractiblePotion : MonoBehaviour
 {
+    #region Member Variables
+    public GameObject nextRune;
+    public GameObject victoryScreen;
+    public GameObject nearParticlesSystem;
+
+    public LevelChanger levelChanger;
+    #endregion
+
     #region Methods
+    private void Awake()
+    {
+        Instantiate(nearParticlesSystem, transform);
+    }
     private void Update()
     {
         TouchRotation();
@@ -21,10 +31,29 @@ public class InteractiblePotion : MonoBehaviour
             {
                 if (raycastHit.collider.gameObject == gameObject && !PauseMenu.IsOnPause())
                 {
-                    Debug.Log("Potion Touched");
+                    CuriosityEnigmaProgression();
                 }
             }
         }
     }
+
+    private void CuriosityEnigmaProgression()
+    {
+        if (nextRune != null)
+        {
+            Debug.Log("Object Touched");
+            Destroy(this.gameObject);
+            nextRune.SetActive(true);
+        }
+
+        else
+        {
+            Debug.Log("Finished");
+            Destroy(this.gameObject);
+            victoryScreen.SetActive(true);
+            levelChanger.ChangeToLevelWithFade(0);
+        }
+    }
+
     #endregion
 }
