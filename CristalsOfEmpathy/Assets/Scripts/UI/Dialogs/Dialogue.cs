@@ -8,8 +8,9 @@ using UnityEngine;
 [Serializable]
 public class Dialogue
 {
-    #region Member Variables
+    #region Member Variable
 
+    public Sprite pnjPortrait;
     public string pnjName;
     public bool isAnswerNeeded;
     public int nextTextId;
