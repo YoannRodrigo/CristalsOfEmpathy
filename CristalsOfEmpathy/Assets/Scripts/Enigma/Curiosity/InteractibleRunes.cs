@@ -1,17 +1,21 @@
 ﻿#region Using Directives
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 #endregion
 
-public class InteractiblePotion : MonoBehaviour
+public class InteractibleRunes : MonoBehaviour
 {
     #region Member Variables
+    public CuriosityEnigmaMenuManager managerRef;
     public RunesCounter runesRef;
 
     public GameObject nextRune;
     public GameObject victoryScreen;
+
     public GameObject nearParticlesSystem;
+    public GameObject nearParticlesSystemHL;
+    public GameObject nearParticlesSystemML;
+    public GameObject nearParticlesSystemLL;
 
     public Image rune1;
     public Image rune1Filled;
@@ -30,8 +34,6 @@ public class InteractiblePotion : MonoBehaviour
 
     public Image rune6;
     public Image rune6Filled;
-
-    public LevelChanger levelChanger;
     #endregion
 
     #region Methods
@@ -39,6 +41,7 @@ public class InteractiblePotion : MonoBehaviour
     {
         Instantiate(nearParticlesSystem, transform);
     }
+
     private void Update()
     {
         TouchRotation();
@@ -60,7 +63,7 @@ public class InteractiblePotion : MonoBehaviour
         }
     }
 
-    public void CuriosityEnigmaProgression()
+    private void CuriosityEnigmaProgression()
     {
         if (nextRune != null)
         {
@@ -72,7 +75,7 @@ public class InteractiblePotion : MonoBehaviour
         }
     }
 
-    public void RunesProgression()
+    private void RunesProgression()
     {
         switch (runesRef.runesCount)
         {
@@ -94,17 +97,45 @@ public class InteractiblePotion : MonoBehaviour
             case 6:
                 rune6Filled.gameObject.SetActive(true);
                 victoryScreen.SetActive(true);
-                StartCoroutine(WaitToReturn());
+                managerRef.StartWaitToReturnCoroutine();
                 break;
             default:
                 break;
         }
     }
 
-    public IEnumerator WaitToReturn()
-    {
-        yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(0);
-    }
+    //private void RuneDistanceFromCamera()
+    //{
+    //    //Augmenter le scale à mesure qu'on s'approche de (x=>0.5 y=>0.5)
+    //    // X = 0.5 y = 0.5 correspond au centre de l'écran (caméra view)
+    //    // L'idée serait d'instancier les systèmes de particules à mesure qu'on tend vers les valeurs 0.5 
+    //    // 0.5 => intensité la plus lumineuse
+    //    // 0.65 => Intensité lumineuse
+    //    // 0.8 => Intensité légérement lumineuse
+    //    // 1 => Intensité à peine visible
+    //    // Au delà de 1 => R
+      
+    //    Vector3 viewPosition = Camera.main.WorldToViewportPoint(this.gameObject.transform.position);
+
+    //    if (viewPosition.x == 0.4f)
+    //    {
+            
+    //        Debug.Log("Center");
+    //    }
+
+    //    else if (viewPosition.x == 0.65f)
+    //    {
+           
+    //        Debug.Log("HL");
+    //    }
+
+    //    else
+    //    {
+    //        nearParticlesSystem.SetActive(true);
+    //        Debug.Log("Far");
+    //    }
+    //}
+
+    // SOMETHING WENT WRONG HERE, ViewPosition need to updated each frame
     #endregion
 }

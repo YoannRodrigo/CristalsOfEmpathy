@@ -11,13 +11,16 @@ GameObject:
   - component: {fileID: 484332}
   - component: {fileID: 3320972}
   - component: {fileID: 2374856}
+  - component: {fileID: 116642586}
+  - component: {fileID: 116642587}
+  - component: {fileID: 116642588}
   m_Layer: 0
   m_Name: 3_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &484332
 Transform:
   m_ObjectHideFlags: 0
@@ -27,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 126494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.2149167, y: 0.7703986, z: 0.18307287}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6871e28f73be94cc2ad06ea1d1c11d11, type: 2}
+  - {fileID: 2100000, guid: 81898172917eabd4b99f330712c19a6a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,3 +80,62 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &116642586
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.7857676
+  m_Center: {x: 0.035192072, y: -0.7744798, z: -0.03801799}
+--- !u!65 &116642587
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.342886, y: 3.571535, z: 2.367101}
+  m_Center: {x: 0.035192072, y: -0.7744798, z: -0.03801799}
+--- !u!114 &116642588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f66911f3d13ffb449422af1871c8713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managerRef: {fileID: 0}
+  runesRef: {fileID: 0}
+  nextRune: {fileID: 0}
+  victoryScreen: {fileID: 0}
+  nearParticlesSystem: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
+    type: 3}
+  nearParticlesSystemHL: {fileID: 0}
+  nearParticlesSystemML: {fileID: 0}
+  nearParticlesSystemLL: {fileID: 0}
+  rune1: {fileID: 0}
+  rune1Filled: {fileID: 0}
+  rune2: {fileID: 0}
+  rune2Filled: {fileID: 0}
+  rune3: {fileID: 0}
+  rune3Filled: {fileID: 0}
+  rune4: {fileID: 0}
+  rune4Filled: {fileID: 0}
+  rune5: {fileID: 0}
+  rune5Filled: {fileID: 0}
+  rune6: {fileID: 0}
+  rune6Filled: {fileID: 0}

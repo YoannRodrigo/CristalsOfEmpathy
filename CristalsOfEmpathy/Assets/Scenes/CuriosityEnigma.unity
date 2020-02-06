@@ -112,12 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &6754954 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1664956107}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &40939776
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,16 +328,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 484332, guid: 13665ea52ad8e424e98286404f85e9de, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 484332, guid: 13665ea52ad8e424e98286404f85e9de, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 484332, guid: 13665ea52ad8e424e98286404f85e9de, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 2374856, guid: 13665ea52ad8e424e98286404f85e9de, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 81898172917eabd4b99f330712c19a6a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13665ea52ad8e424e98286404f85e9de, type: 3}
 --- !u!1 &116642585 stripped
@@ -390,11 +388,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f66911f3d13ffb449422af1871c8713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerRef: {fileID: 0}
   runesRef: {fileID: 1387014588}
   nextRune: {fileID: 1122207578}
   victoryScreen: {fileID: 0}
   nearParticlesSystem: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
     type: 3}
+  nearParticlesSystemHL: {fileID: 0}
+  nearParticlesSystemML: {fileID: 0}
+  nearParticlesSystemLL: {fileID: 0}
   rune1: {fileID: 0}
   rune1Filled: {fileID: 829829291}
   rune2: {fileID: 0}
@@ -407,7 +409,6 @@ MonoBehaviour:
   rune5Filled: {fileID: 362016168}
   rune6: {fileID: 0}
   rune6Filled: {fileID: 349725892}
-  levelChanger: {fileID: 0}
 --- !u!4 &116642591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 484332, guid: 13665ea52ad8e424e98286404f85e9de,
@@ -524,6 +525,75 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &213034299
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5483536210514489908, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_Name
+      value: LevelChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea8b522b3050d9b459dbbdeb9250ca4a, type: 3}
 --- !u!1 &325383489
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +943,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05db1ac0b57644d43ac9e10b67af3609, type: 3}
+--- !u!1 &572123841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 572123842}
+  m_Layer: 0
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &572123842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572123841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 955.2031, y: 606.9369, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 597409920}
+  - {fileID: 695682811}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &587381777
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,7 +1030,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b167a80cca5e7a0498bf371c7099fdd5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b9226c519817824428a550eef49e302c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -969,12 +1071,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597409919}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.796875, y: 6.9368896, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 941453459}
-  m_Father: {fileID: 6754954}
-  m_RootOrder: 1
+  m_Father: {fileID: 572123842}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &601754355
 GameObject:
@@ -1010,7 +1112,7 @@ Transform:
   - {fileID: 1798438728}
   - {fileID: 1976224590}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &645395231
 GameObject:
@@ -1093,13 +1195,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695682810}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.796875, y: -6.9368896, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 195918320}
-  m_Father: {fileID: 6754954}
-  m_RootOrder: 2
+  m_Father: {fileID: 572123842}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &766956377
 GameObject:
@@ -1237,7 +1339,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &829829289
 GameObject:
@@ -1329,11 +1431,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f66911f3d13ffb449422af1871c8713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerRef: {fileID: 0}
   runesRef: {fileID: 0}
   nextRune: {fileID: 1976224584}
   victoryScreen: {fileID: 0}
   nearParticlesSystem: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
     type: 3}
+  nearParticlesSystemHL: {fileID: 0}
+  nearParticlesSystemML: {fileID: 0}
+  nearParticlesSystemLL: {fileID: 0}
   rune1: {fileID: 0}
   rune1Filled: {fileID: 0}
   rune2: {fileID: 0}
@@ -1346,7 +1452,6 @@ MonoBehaviour:
   rune5Filled: {fileID: 0}
   rune6: {fileID: 0}
   rune6Filled: {fileID: 0}
-  levelChanger: {fileID: 0}
 --- !u!135 &852662879
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1679,16 +1784,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 436480, guid: 196402c98b57249019523c992e4b8c1c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 436480, guid: 196402c98b57249019523c992e4b8c1c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 436480, guid: 196402c98b57249019523c992e4b8c1c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 2346532, guid: 196402c98b57249019523c992e4b8c1c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 288a3f65258718b4aacde5136af1f4b2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 196402c98b57249019523c992e4b8c1c, type: 3}
 --- !u!1 &1122207578 stripped
@@ -1735,11 +1844,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f66911f3d13ffb449422af1871c8713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerRef: {fileID: 0}
   runesRef: {fileID: 1387014588}
   nextRune: {fileID: 2060488667}
   victoryScreen: {fileID: 0}
   nearParticlesSystem: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
     type: 3}
+  nearParticlesSystemHL: {fileID: 0}
+  nearParticlesSystemML: {fileID: 0}
+  nearParticlesSystemLL: {fileID: 0}
   rune1: {fileID: 0}
   rune1Filled: {fileID: 829829291}
   rune2: {fileID: 0}
@@ -1752,7 +1865,6 @@ MonoBehaviour:
   rune5Filled: {fileID: 362016168}
   rune6: {fileID: 0}
   rune6Filled: {fileID: 349725892}
-  levelChanger: {fileID: 0}
 --- !u!4 &1122207584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 436480, guid: 196402c98b57249019523c992e4b8c1c,
@@ -1831,6 +1943,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149132880}
   m_CullTransparentMesh: 0
+--- !u!1 &1168926209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1168926210}
+  - component: {fileID: 1168926211}
+  m_Layer: 0
+  m_Name: CuriosityEnigmaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1168926210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168926209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 955.2031, y: 606.9369, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1168926211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168926209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b2761886a3a3343866685e27add87f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelChanger: {fileID: 1649353419}
+  runesCounter: {fileID: 1387014588}
 --- !u!1 &1213158089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,7 +2396,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1487087812
 PrefabInstance:
@@ -2251,6 +2408,10 @@ PrefabInstance:
     - target: {fileID: 100154, guid: d8ffb38a8d014f44da8c759bb01460e3, type: 3}
       propertyPath: m_Name
       value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 100154, guid: d8ffb38a8d014f44da8c759bb01460e3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400154, guid: d8ffb38a8d014f44da8c759bb01460e3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2298,85 +2459,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8ffb38a8d014f44da8c759bb01460e3, type: 3}
---- !u!1001 &1664956107
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5483536210514489908, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_Name
-      value: LevelChanger
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514489908, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 960
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 600
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5483536209104667059, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ea8b522b3050d9b459dbbdeb9250ca4a, type: 3}
+--- !u!114 &1649353419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5483536210514490313, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 213034299}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c11767d531eb948aaec092aeeb6d3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1730259723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2438,16 +2532,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 407912, guid: 289e85ca99e6d49a3b6da2eb3f662161, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 407912, guid: 289e85ca99e6d49a3b6da2eb3f662161, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 407912, guid: 289e85ca99e6d49a3b6da2eb3f662161, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 2384466, guid: 289e85ca99e6d49a3b6da2eb3f662161, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0529e4b51a7918c49bcc1111aaf34aeb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 289e85ca99e6d49a3b6da2eb3f662161, type: 3}
 --- !u!1 &1730259724 stripped
@@ -2494,11 +2592,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f66911f3d13ffb449422af1871c8713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerRef: {fileID: 1168926211}
   runesRef: {fileID: 1387014588}
   nextRune: {fileID: 1730259724}
   victoryScreen: {fileID: 597409919}
   nearParticlesSystem: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
     type: 3}
+  nearParticlesSystemHL: {fileID: 0}
+  nearParticlesSystemML: {fileID: 0}
+  nearParticlesSystemLL: {fileID: 0}
   rune1: {fileID: 0}
   rune1Filled: {fileID: 829829291}
   rune2: {fileID: 0}
@@ -2511,7 +2613,6 @@ MonoBehaviour:
   rune5Filled: {fileID: 362016168}
   rune6: {fileID: 1929005500}
   rune6Filled: {fileID: 349725892}
-  levelChanger: {fileID: 0}
 --- !u!4 &1730259730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 407912, guid: 289e85ca99e6d49a3b6da2eb3f662161,
@@ -2579,16 +2680,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455598, guid: dae4d9ec2c6e1401ab38ef045a2542c8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 455598, guid: dae4d9ec2c6e1401ab38ef045a2542c8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 455598, guid: dae4d9ec2c6e1401ab38ef045a2542c8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 2321690, guid: dae4d9ec2c6e1401ab38ef045a2542c8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6f27466ee12c0874ea889e7f3a674e9c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dae4d9ec2c6e1401ab38ef045a2542c8, type: 3}
 --- !u!1 &1798438722 stripped
@@ -2635,11 +2740,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f66911f3d13ffb449422af1871c8713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerRef: {fileID: 0}
   runesRef: {fileID: 1387014588}
   nextRune: {fileID: 116642585}
   victoryScreen: {fileID: 0}
   nearParticlesSystem: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
     type: 3}
+  nearParticlesSystemHL: {fileID: 0}
+  nearParticlesSystemML: {fileID: 0}
+  nearParticlesSystemLL: {fileID: 0}
   rune1: {fileID: 0}
   rune1Filled: {fileID: 829829291}
   rune2: {fileID: 1149132882}
@@ -2652,7 +2761,6 @@ MonoBehaviour:
   rune5Filled: {fileID: 362016168}
   rune6: {fileID: 0}
   rune6Filled: {fileID: 349725892}
-  levelChanger: {fileID: 0}
 --- !u!4 &1798438728 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 455598, guid: dae4d9ec2c6e1401ab38ef045a2542c8,
@@ -2864,16 +2972,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 480868, guid: cc3c2bd13e83640539641e149830fbc5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 480868, guid: cc3c2bd13e83640539641e149830fbc5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 480868, guid: cc3c2bd13e83640539641e149830fbc5, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 2388240, guid: cc3c2bd13e83640539641e149830fbc5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 068b441cb37c1a34399853a76e96116e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc3c2bd13e83640539641e149830fbc5, type: 3}
 --- !u!1 &1976224584 stripped
@@ -2920,10 +3032,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f66911f3d13ffb449422af1871c8713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerRef: {fileID: 0}
   runesRef: {fileID: 1387014588}
   nextRune: {fileID: 1798438722}
   victoryScreen: {fileID: 0}
   nearParticlesSystem: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
+    type: 3}
+  nearParticlesSystemHL: {fileID: 8791702328023386350, guid: aa900ffa54ed51949b73f87433315af1,
+    type: 3}
+  nearParticlesSystemML: {fileID: 3719483925268036648, guid: 5c7ba8bc96928704abeff218ed1557a7,
+    type: 3}
+  nearParticlesSystemLL: {fileID: 1494001380296342652, guid: d48e63c39717013469f1c803854bb0c4,
     type: 3}
   rune1: {fileID: 1851734363}
   rune1Filled: {fileID: 829829291}
@@ -2937,7 +3056,31 @@ MonoBehaviour:
   rune5Filled: {fileID: 362016168}
   rune6: {fileID: 0}
   rune6Filled: {fileID: 349725892}
-  levelChanger: {fileID: 0}
+--- !u!114 &1976224588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976224584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd0ea0d59530e974783b729f15d2c45c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c21947df0376bc442bd2bd09a32ec06e,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!4 &1976224590 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 480868, guid: cc3c2bd13e83640539641e149830fbc5,
@@ -3074,16 +3217,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 430262, guid: 30852025e26a6408089b70dde4a7b937, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 430262, guid: 30852025e26a6408089b70dde4a7b937, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 430262, guid: 30852025e26a6408089b70dde4a7b937, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 2336338, guid: 30852025e26a6408089b70dde4a7b937, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 047a00ae7b4d5bf4bbaebbbf383184d9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30852025e26a6408089b70dde4a7b937, type: 3}
 --- !u!1 &2060488667 stripped
@@ -3130,11 +3277,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f66911f3d13ffb449422af1871c8713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  managerRef: {fileID: 0}
   runesRef: {fileID: 1387014588}
   nextRune: {fileID: 1730259724}
   victoryScreen: {fileID: 0}
   nearParticlesSystem: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
     type: 3}
+  nearParticlesSystemHL: {fileID: 0}
+  nearParticlesSystemML: {fileID: 0}
+  nearParticlesSystemLL: {fileID: 0}
   rune1: {fileID: 0}
   rune1Filled: {fileID: 443598325}
   rune2: {fileID: 0}
@@ -3147,7 +3298,6 @@ MonoBehaviour:
   rune5Filled: {fileID: 362016168}
   rune6: {fileID: 0}
   rune6Filled: {fileID: 349725892}
-  levelChanger: {fileID: 0}
 --- !u!4 &2060488673 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 430262, guid: 30852025e26a6408089b70dde4a7b937,
