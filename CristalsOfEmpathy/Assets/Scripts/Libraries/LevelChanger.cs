@@ -18,7 +18,10 @@ public class LevelChanger : MonoBehaviour
 
     private bool isFadeBegan;
     private float timeSinceFadeBegan;
+
     private int levelId;
+    private string levelName;
+
     private Animator anim;
 
     #endregion
@@ -50,6 +53,14 @@ public class LevelChanger : MonoBehaviour
     {
         anim.SetBool(isFadeOutNeeded, true);
         this.levelId = levelId;
+        levelName = "";
+        isFadeBegan = true;
+    }
+    public void ChangeToLevelWithFade(string levelName)
+    {
+        anim.SetBool(isFadeOutNeeded, true);
+        levelId = -1;
+        this.levelName = levelName;
         isFadeBegan = true;
     }
 
@@ -60,11 +71,10 @@ public class LevelChanger : MonoBehaviour
             timeSinceFadeBegan += Time.deltaTime;
             if (timeSinceFadeBegan > TIME_BEFORE_FADE_ENDED)
             {
-                SceneManager.LoadScene(levelId);
+                if(levelId > -1) SceneManager.LoadScene(levelId);
+                else if(levelName != "") SceneManager.LoadScene(levelName);
             }
-            
         }
     }
-
     #endregion
 }

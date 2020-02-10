@@ -37,10 +37,11 @@ public class PortalEditor : Editor
         Portal portal = (Portal) target;
 
         portal.spawn = Handles.PositionHandle(portal.spawn, Quaternion.identity);
-
-		Handles.color = new Color32(0, 0, 0, 255);
+        /*
         GUI.skin.label.normal.textColor = new Color32(0, 0, 0, 255);
         Handles.Label(portal.spawn, "Apparition Point");
-        Handles.DrawLine(portal.spawn, portal.transform.position);
+        */
+		Handles.color = new Color32(0, 0, 0, 255);
+
     }
 }

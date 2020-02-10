@@ -3,12 +3,15 @@
     using UnityEditor;
 #endif
 
+[RequireComponent(typeof(SphereCollider))]
 public class Portal : MonoBehaviour
 {
     private SphereCollider sphere;
     [Header("Settings")]
-    public float range;
     public Vector3 spawn;
+
+    public bool activated = true;
+    public float range = 2f;
 
     public string levelDestination;
     public int portalDestination;
@@ -23,7 +26,7 @@ public class Portal : MonoBehaviour
     {
         if(other.GetComponent<PlayerMovement>() != null)
         {
-            // SWITCH SCENE AND SPAWN AT SPAWNER ID
+            GeneralGameManager.instance.Go(levelDestination, portalDestination);
         }
     }
 
@@ -36,16 +39,24 @@ public class Portal : MonoBehaviour
 
     public void OnDrawGizmos()
     {
-
-        if(Vector3.Distance(spawn, transform.position) < range) Handles.color = new Color32(255, 0, 0, 100);
-        else Handles.color = new Color32(0, 255, 0, 100);
-        Handles.DrawSolidArc(transform.position, Vector3.up, Vector3.right, 360f, range);
-
         Color c = new Color32(0, 0, 0, 255);
-        Handles.color = c;
-        GUI.skin.label.normal.textColor = c;
-        Handles.Label(transform.position, "Portal to : " + levelDestination);
-        Handles.DrawWireDisc(transform.position, Vector3.up, range);
+
+        if(activated)
+        {
+            if(Vector3.Distance(spawn, transform.position) < range) Handles.color = new Color32(255, 0, 0, 100);
+            else Handles.color = new Color32(0, 255, 0, 100);
+            Handles.DrawSolidArc(transform.position, Vector3.up, Vector3.right, 360f, range);
+
+            Handles.color = c;
+            GUI.skin.label.normal.textColor = c;
+            Handles.DrawWireDisc(transform.position, Vector3.up, range);
+            Handles.DrawWireDisc(spawn, Vector3.up, 0.5f);
+            Handles.Label(transform.position, "TO " + levelDestination);
+        }
+        else Handles.Label(transform.position, "Inactive Portal");
+        
+        Handles.DrawLine(spawn, transform.position);
+        Handles.Label(spawn, "Spawn");
     }
 #endif
 }
