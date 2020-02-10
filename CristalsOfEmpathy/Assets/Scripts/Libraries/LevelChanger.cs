@@ -25,6 +25,7 @@ public class LevelChanger : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
+        DontDestroyOnLoad(gameObject);
     }
 
     public void ChangeToLevelWithFade(int levelId)
