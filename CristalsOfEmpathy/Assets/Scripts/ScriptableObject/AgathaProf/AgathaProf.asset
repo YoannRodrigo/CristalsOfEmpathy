@@ -13,69 +13,69 @@ MonoBehaviour:
   m_Name: AgathaProf
   m_EditorClassIdentifier: 
   dialogues:
-  - pnjPortrait: {fileID: 0}
-    pnjName: Agatha
+  - profilePnj: {fileID: 11400000, guid: 9363bbd719985044c9989a8ea23d224e, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: "Qu'est-ce que vous faites dehors ? Les parents sont-ils tous devenus
       inconscients tout \xE0 coup ? Trainer pr\xE8s du manoir de Dante est une tr\xE8s
       mauvaise id\xE9e !"
-  - pnjPortrait: {fileID: 0}
-    pnjName: Agatha
+  - profilePnj: {fileID: 11400000, guid: 9363bbd719985044c9989a8ea23d224e, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
     sentence: "\xC0 croire que vous cherchez tous des ennuis ! Notre nouveau maire
       nous a d\xE9conseill\xE9 de s'approcher d'ici !"
-  - pnjPortrait: {fileID: 0}
-    pnjName: Agatha
+  - profilePnj: {fileID: 11400000, guid: 9363bbd719985044c9989a8ea23d224e, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "J'ai l'air d'aller bien ? Je me fais un sang d'encre ! Si vous pouviez
       passer voir Alberthus, \xE7a m'arrangerait..."
-  - pnjPortrait: {fileID: 0}
-    pnjName: Agatha
+  - profilePnj: {fileID: 11400000, guid: 9363bbd719985044c9989a8ea23d224e, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 4
     sentence: "Vous, les enfants, vous \xEAtes tous pareils, bien trop curieux pour
       votre propre bien et le bien de vos parents ! Je pr\xE9f\xE8re quand il y a
       \xE9cole... "
-  - pnjPortrait: {fileID: 0}
-    pnjName: 
+  - profilePnj: {fileID: 11400000, guid: 9363bbd719985044c9989a8ea23d224e, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 2
     sentence: "Au moins j'ai les \xE9l\xE8ves devant moi et je peux les surveiller
       ! Alice a encore disparu, et on dirait que je suis la seule \xE0 m'en soucier
       !"
-  - pnjPortrait: {fileID: 0}
-    pnjName: Agatha
+  - profilePnj: {fileID: 11400000, guid: 9363bbd719985044c9989a8ea23d224e, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Bien s\xFBr, que croyez-vous ? Si personne ne s'y approche, c'est pour
       une raison !"
-  - pnjPortrait: {fileID: 0}
-    pnjName: Agatha
+  - profilePnj: {fileID: 11400000, guid: 9363bbd719985044c9989a8ea23d224e, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: Alors allez-y, je ne vous retiens pas !
-  - pnjPortrait: {fileID: 0}
-    pnjName: Agatha
+  - profilePnj: {fileID: 11400000, guid: 9363bbd719985044c9989a8ea23d224e, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Vraiment ? Merci, je file de suite ! Elle va vraiment finir par me
       rendre malade, avec ses \xE2neries"
-  - pnjPortrait: {fileID: 0}
-    pnjName: Agatha
+  - profilePnj: {fileID: 11400000, guid: 9363bbd719985044c9989a8ea23d224e, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Si c'est pour faire des remarques d\xE9sobligeantes, vous pouvez partir
       !"
-  - pnjPortrait: {fileID: 0}
-    pnjName: Agatha
+  - profilePnj: {fileID: 11400000, guid: 9363bbd719985044c9989a8ea23d224e, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: Allez voir Alberthus et vous le saurez !
-  - pnjPortrait: {fileID: 0}
-    pnjName: Agatha
+  - profilePnj: {fileID: 0}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Oui... Mais je suis surtout une m\xE8re inqui\xE8te ! S'il vous pla\xEEt,
