@@ -32,13 +32,18 @@ public class LevelChanger : MonoBehaviour
     {
         if (instance == null)
         {
+            transform.parent = null;
             instance = this;
+            anim = GetComponent<Animator>();
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
     private void Start()
     {
-        anim = GetComponent<Animator>();
         DontDestroyOnLoad(gameObject);
     }
 
