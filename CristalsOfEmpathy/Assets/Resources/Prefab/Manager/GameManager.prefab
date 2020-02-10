@@ -43,4 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2526bb1ff797c74db29afe7882ae873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCharacterPrefabs:
+  - {fileID: 8317923702357841435, guid: f2bab57be2c85174d82fd7b466f251ad, type: 3}
+  - {fileID: 601445526444850932, guid: d4d8f20bd498f8040892d55526113ab6, type: 3}
+  - {fileID: 1359402928585372973, guid: be38c5a0d72281c4a909c2e30770b48d, type: 3}
+  cameraPrefab: {fileID: 6141993414393918099, guid: 29bbe8d9236e8d54583935d57e0b78e8,
+    type: 3}
+  playerPrefab: {fileID: 3246455781391322757, guid: 583acb067a221d94aa71ec7f932a79a6,
+    type: 3}
   playerSpawnerTransform: {fileID: 0}

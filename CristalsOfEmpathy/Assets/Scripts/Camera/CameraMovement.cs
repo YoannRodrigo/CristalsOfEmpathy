@@ -1,5 +1,6 @@
 ﻿#region Using Directives
 
+using System;
 using UnityEngine;
 
 #endregion
@@ -25,10 +26,20 @@ public class CameraMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (target == null)
+        {
+            Debug.LogException(new Exception("Target == null"));
+            return;
+        }
         Vector3 desiredPosition = target.position + offset;
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, SMOOTH_SPEED);
         transform.position = smoothedPosition;
         transform.LookAt(target);
+    }
+
+    public void SetTarget(Transform target)
+    {
+        this.target = target;
     }
 
     #endregion
