@@ -143,8 +143,7 @@ public class DialogueManager : MonoBehaviour
 
             else
             {
-                if (dialogues[currentTextId].nextTextId == -1 ||
-                    tutorialManager.isQuestAchieved && dialogues[currentTextId].nextTextId == -2)
+                if (dialogues[currentTextId].nextTextId == -1 || tutorialManager && tutorialManager.isQuestAchieved && dialogues[currentTextId].nextTextId == -2)
                     EndDialogue();
 
                 else
@@ -160,7 +159,8 @@ public class DialogueManager : MonoBehaviour
         UpdateDisplay(0);
         //QUEST ACTIVATION MAY LOCK && FIXING SHIT
 
-        tutorialManager.ActivateQuest();
+        if(tutorialManager)
+            tutorialManager.ActivateQuest();
     }
 
     public void Answer2OnClick()
