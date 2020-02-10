@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     public TutorialManager tutorialManager;
 
     public TextMeshProUGUI pnjNameText;
+    public Image pnjPortrait;
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI answer1;
     public TextMeshProUGUI answer2;
@@ -27,13 +28,13 @@ public class DialogueManager : MonoBehaviour
     public GameObject pauseButton;
     public GameObject inventoryButton;
 
+    public ScriptablePNJ currentPNJ;
+    
     private InteractiblePnj interactiblePnj;
     private int currentTextId;
     private int currentAnswerId;
     private bool isTextWritten;
     private bool isDialogueEnded = true;
-    public List<Dialogue> dialogues = new List<Dialogue>();
-    public List<PlayerAnswers> playerAnswers = new List<PlayerAnswers>();
 
     #endregion
 
@@ -51,23 +52,14 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue[] dialogues, int startId = 0)
     {
-        // QUEST LOCKING DIALOG & FIXING SHIT
         isDialogueEnded = false;
         dialogueBox.SetActive(true);
-        OnDialogueInteraction(dialogues);
+        OnDialogueInteraction(currentPNJ.dialogues);
         DisplayNextSentence(startId);
-        // SAMPLE DIALOG WHEN QUEST ACHIEVED & FIXING SHIT
-        /*if (tutorialManager.isQuestAchieved)
-        {
-            OnDialogueInteraction(dialogues);
-            DisplayNextSentence(8);
-            tutorialManager.isQuestSubmitted = true;
-        }*/
     }
 
     public void StartDialogue(Dialogue[] dialogues, PlayerAnswers[] playerAnswers, int startId = 0)
     {
-        foreach (PlayerAnswers playerAnswer in playerAnswers) this.playerAnswers.Add(playerAnswer);
         StartDialogue(dialogues, startId);
     }
 
@@ -76,28 +68,14 @@ public class DialogueManager : MonoBehaviour
         joystick.SetActive(false);
         pauseButton.SetActive(false);
         inventoryButton.SetActive(false);
-        foreach (Dialogue dialogue in dialogues) this.dialogues.Add(dialogue);
     }
 
     private void EndDialogue()
     {
         interactiblePnj.OnDialogEnded();
-        ResetVariables();
         ActivateGameUi();
     }
 
-    private void ResetVariables()
-    {
-        currentAnswerId = 0;
-        currentTextId = 0;
-        isTextWritten = false;
-        dialogues.Clear();
-        playerAnswers.Clear();
-        dialogueText.text = "";
-        pnjNameText.text = "";
-        isDialogueEnded = true;
-        interactiblePnj = null;
-    }
 
     private void ActivateGameUi()
     {
@@ -109,20 +87,25 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence(int id)
     {
+        if (id == -1)
+        {
+            EndDialogue();
+        }
         currentTextId = id;
-        pnjNameText.text = dialogues[id].pnjName;
-
+        pnjNameText.text = currentPNJ.dialogues[id].profilePnj.pnjName;
+        pnjPortrait.sprite = currentPNJ.dialogues[id].GetSpriteWithEmotion();
+        pnjPortrait.enabled = pnjPortrait.sprite != null;
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(dialogues[id].sentence));
+        StartCoroutine(TypeSentence(currentPNJ.dialogues[id].sentence));
     }
 
     public void DisplayAnswer(int id)
     {
         currentAnswerId = id;
-        answer1.text = playerAnswers[id].GetText(0);
-        answer2.text = playerAnswers[id].GetText(1);
-        answer3.text = playerAnswers[id].GetText(2);
-        answer4.text = playerAnswers[id].GetText(3);
+        answer1.text = currentPNJ.playerAnswers[id].GetText(0);
+        answer2.text = currentPNJ.playerAnswers[id].GetText(1);
+        answer3.text = currentPNJ.playerAnswers[id].GetText(2);
+        answer4.text = currentPNJ.playerAnswers[id].GetText(3);
     }
 
     public void NextSentenceOnClick()
@@ -134,20 +117,20 @@ public class DialogueManager : MonoBehaviour
         else
         {
             isTextWritten = false;
-            if (dialogues[currentTextId].isAnswerNeeded)
+            if (currentPNJ.dialogues[currentTextId].isAnswerNeeded)
             {
                 dialogueBox.SetActive(false);
                 answerBox.SetActive(true);
-                DisplayAnswer(dialogues[currentTextId].nextTextId);
+                DisplayAnswer(currentPNJ.dialogues[currentTextId].nextTextId);
             }
 
             else
             {
-                if (dialogues[currentTextId].nextTextId == -1 || tutorialManager && tutorialManager.isQuestAchieved && dialogues[currentTextId].nextTextId == -2)
+                if (currentPNJ.dialogues[currentTextId].nextTextId == -1 || tutorialManager && tutorialManager.isQuestAchieved && currentPNJ.dialogues[currentTextId].nextTextId == -2)
                     EndDialogue();
 
                 else
-                    DisplayNextSentence(dialogues[currentTextId].nextTextId);
+                    DisplayNextSentence(currentPNJ.dialogues[currentTextId].nextTextId);
             }
         }
     }
@@ -186,7 +169,7 @@ public class DialogueManager : MonoBehaviour
 
     private void UpdateDisplay(int answerId)
     {
-        PlayerAnswers playerAnswer = playerAnswers[currentAnswerId];
+        PlayerAnswers playerAnswer = currentPNJ.playerAnswers[currentAnswerId];
         DisplayNextSentence(playerAnswer.GetNextId(answerId));
         BarPointsHandler.UpdateEmotionPoints(playerAnswer.GetEmotion(answerId),
             playerAnswer.GetEmotionInfluence(answerId));
