@@ -74,5 +74,10 @@ public class PlayerChoiceManager : MonoBehaviour
         levelChanger.ChangeToLevelWithFade(6);
     }
 
+    public void CuriosityEnigmaOnClick()
+    {
+        levelChanger.ChangeToLevelWithFade(7);
+    }
+
     #endregion
 }
