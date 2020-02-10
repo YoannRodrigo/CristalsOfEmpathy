@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        LevelChanger.instance.FadeOut();
         SpawnPlayer();
     }
 

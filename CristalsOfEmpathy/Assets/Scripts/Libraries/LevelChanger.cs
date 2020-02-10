@@ -1,5 +1,6 @@
 ﻿#region Using Directives
 
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,8 @@ using UnityEngine.SceneManagement;
 public class LevelChanger : MonoBehaviour
 {
     #region Member Variables
+
+    public static LevelChanger instance;
 
     private const float TIME_BEFORE_FADE_ENDED = 1f;
     private static readonly int isFadeOutNeeded = Animator.StringToHash("isFadeOutNeeded");
@@ -22,12 +25,27 @@ public class LevelChanger : MonoBehaviour
 
     #region Methods
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
     private void Start()
     {
         anim = GetComponent<Animator>();
         DontDestroyOnLoad(gameObject);
     }
 
+    public void FadeOut()
+    {
+        timeSinceFadeBegan = 0;
+        anim.SetBool(isFadeOutNeeded, false);
+        isFadeBegan = false;
+    }
+    
     public void ChangeToLevelWithFade(int levelId)
     {
         anim.SetBool(isFadeOutNeeded, true);
@@ -40,7 +58,10 @@ public class LevelChanger : MonoBehaviour
         if (isFadeBegan)
         {
             timeSinceFadeBegan += Time.deltaTime;
-            if (timeSinceFadeBegan > TIME_BEFORE_FADE_ENDED) SceneManager.LoadScene(levelId);
+            if (timeSinceFadeBegan > TIME_BEFORE_FADE_ENDED)
+            {
+                SceneManager.LoadScene(levelId);
+            }
             
         }
     }
