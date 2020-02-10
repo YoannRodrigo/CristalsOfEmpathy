@@ -16,10 +16,10 @@ public class DialogueManager : MonoBehaviour
 
     public TextMeshProUGUI pnjNameText;
     public TextMeshProUGUI dialogueText;
-    public Text answer1;
-    public Text answer2;
-    public Text answer3;
-    public Text answer4;
+    public TextMeshProUGUI answer1;
+    public TextMeshProUGUI answer2;
+    public TextMeshProUGUI answer3;
+    public TextMeshProUGUI answer4;
 
     public GameObject dialogueBox;
     public GameObject answerBox;
