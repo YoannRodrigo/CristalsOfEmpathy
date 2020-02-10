@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -840,7 +840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &369313447
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1005,6 +1005,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2526bb1ff797c74db29afe7882ae873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCharacterPrefabs:
+  - {fileID: 8317923702357841435, guid: f2bab57be2c85174d82fd7b466f251ad, type: 3}
+  - {fileID: 601445526444850932, guid: d4d8f20bd498f8040892d55526113ab6, type: 3}
+  - {fileID: 1359402928585372973, guid: be38c5a0d72281c4a909c2e30770b48d, type: 3}
   playerSpawnerTransform: {fileID: 0}
 --- !u!4 &612173849
 Transform:
@@ -3835,7 +3839,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2143093371
 RectTransform:
   m_ObjectHideFlags: 0
