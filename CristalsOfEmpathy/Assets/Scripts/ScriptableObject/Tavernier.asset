@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: Tavernier
+  m_EditorClassIdentifier: 
+  dialogues:
+  - pnjPortrait: {fileID: 0}
+    pnjName: 'Taverniak, l''aubergiste '
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "J'vous sers quelque chose \xE0 boire ? "
+  - pnjPortrait: {fileID: 0}
+    pnjName: Taverniak, l'aubergiste
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: "Parfait, ne me d\xEEtes rien ! Je vais deviner ce que vous voulez boire
+      hm.. "
+  - pnjPortrait: {fileID: 0}
+    pnjName: Taverniak, l'aubergiste
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: "On a toujours le choix.. Parfois vous savez, il est bon de s'arr\xEAter
+      une minute pour r\xE9fl\xE9chir. Sans cette minute, qui sait ?"
+  - pnjPortrait: {fileID: 0}
+    pnjName: Taverniak, l'aubergiste
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "Vous pourriez peut-\xEAtre faire quelque chose que vous allez regretter. "
+  - pnjPortrait: {fileID: 0}
+    pnjName: 'Taverniak, l''aubergiste '
+    isAnswerNeeded: 0
+    nextTextId: 5
+    sentence: "*Le tavernier vous sert une chope. Les effluves aromatis\xE9es de son
+      contenu vous enchantent.*"
+  - pnjPortrait: {fileID: 0}
+    pnjName: Taverniak, l'aubergiste
+    isAnswerNeeded: 1
+    nextTextId: 2
+    sentence: "C'\xE9tait la boisson favorite de mon client pr\xE9f\xE9r\xE9.. Malheureusement,
+      il a disparu.. "
+  - pnjPortrait: {fileID: 0}
+    pnjName: Taverniak, l'aubergiste
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: 'De rien ! J''aimais beaucoup ce client.. '
+  - pnjPortrait: {fileID: 0}
+    pnjName: Taverniak, l'aubergiste
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "Aucune id\xE9e, il a disparu du jour au lendemain. Mais c'\xE9tait
+      un homme farouche, qui sait o\xF9 il peut se trouver. "
+  - pnjPortrait: {fileID: 0}
+    pnjName: Taverniak, l'aubergiste
+    isAnswerNeeded: 0
+    nextTextId: 9
+    sentence: "Il se fait appeler Ernest. Impossible de savoir si c'est son vrai pr\xE9nom.
+      Le bonhomme appr\xE9ciait les sobriquets et toutes autres inventions farfelues.
+      C'\xE9tait un homme de lettre, un \xE9crivain. "
+  - pnjPortrait: {fileID: 0}
+    pnjName: Taverniak, l'aubergisite
+    isAnswerNeeded: 0
+    nextTextId: 10
+    sentence: "Sa disparition est un coup dur. C'\xE9tait un bon ami et un tr\xE8s
+      bon client. Depuis qu'il a disparu, beaucoup moins de gens viennent boire. "
+  - pnjPortrait: {fileID: 0}
+    pnjName: 'Taverniak, l''aubergiste '
+    isAnswerNeeded: 1
+    nextTextId: 3
+    sentence: "C'est pas plus mal mais j'ai du mal \xE0 faire tourner la boutique.
+      Je peux vous demander un service ?"
+  - pnjPortrait: {fileID: 0}
+    pnjName: Taverniak, l'aubergiste
+    isAnswerNeeded: 1
+    nextTextId: 4
+    sentence: "Vu que les habitants consomment de moins en moins. Je vends de la bi\xE8re
+      aux forains situ\xE9s au sud-est. Pourriez-vous leur livrez la commande ? "
+  - pnjPortrait: {fileID: 0}
+    pnjName: Joueur
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Vous me d\xE9go\xFBtez. Toujours \xE0 ignorer les probl\xE8mes et les
+      noyer dans la boisson. Vous vendez seulement une illusion de bien-\xEAtre aux
+      villageois, monstre !"
+  - pnjPortrait: {fileID: 0}
+    pnjName: 'Taverniak, l''aubergiste '
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Merci beaucoup ! Revenez quand \xE7a sera fait, vous aurez un coup
+      gratuit !"
+  playerAnswers:
+  - playerAnswers:
+    - text: Volontiers !
+      nextTextId: 1
+      emotion: 0
+      influence: 1
+    - text: "J'ai pas le temps pour ces b\xEAtises !"
+      nextTextId: 2
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: "Vous me d\xE9go\xFBtez."
+      nextTextId: 12
+      emotion: 3
+      influence: 2
+    - text: Je vous ai dis non !
+      nextTextId: -1
+      emotion: 4
+      influence: 0
+    - text: 'Finalement, pourquoi pas ? '
+      nextTextId: 1
+      emotion: 2
+      influence: 1
+  - playerAnswers:
+    - text: "Que lui est-il arriv\xE9 ? "
+      nextTextId: 7
+      emotion: 2
+      influence: 1
+    - text: Merci beaucoup !
+      nextTextId: 8
+      emotion: 0
+      influence: 1
+  - playerAnswers:
+    - text: "Bien s\xFBr !"
+      nextTextId: 11
+      emotion: 0
+      influence: 1
+    - text: 'Quel genre de service ? '
+      nextTextId: 11
+      emotion: 0
+      influence: 1
+    - text: "On vient \xE0 peine de se rencontrer !"
+      nextTextId: -1
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: "Pas de probl\xE8mes !"
+      nextTextId: 13
+      emotion: 0
+      influence: 1
+    - text: "D\xE9sol\xE9.. Ils sont trop dangereux !"
+      nextTextId: -1
+      emotion: 1
+      influence: 1
