@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4109,14 +4109,42 @@ MonoBehaviour:
     name: Apo
     dialogues: D
     couple: 68
-  - avatarPortrait: {fileID: 21300000, guid: 3e86790ae07e49f43af941d7f5938168, type: 3}
+  - avatarPortrait: {fileID: 21300000, guid: 103a13ae667728442912662ea5a2e115, type: 3}
     name: Ermite
     dialogues: E
     couple: 69
-  - avatarPortrait: {fileID: 21300000, guid: 8564ad7cc788a394e8ebaa2a669879db, type: 3}
+  - avatarPortrait: {fileID: 21300000, guid: 156507cf5a8b8e34b8f29a94640686ee, type: 3}
     name: Maire
     dialogues: E
     couple: 69
+  - avatarPortrait: {fileID: 21300000, guid: 156507cf5a8b8e34b8f29a94640686ee, type: 3}
+    name: Maire
+    dialogues: E
+    couple: 69
+  - avatarPortrait: {fileID: 21300000, guid: 9649170a282f3d34abee3cb0dc048ec3, type: 3}
+    name: Renard
+    dialogues: F
+    couple: 70
+  - avatarPortrait: {fileID: 21300000, guid: 85e7d08b48e31c84d997148e5d96a976, type: 3}
+    name: Aubergiste
+    dialogues: F
+    couple: 70
+  - avatarPortrait: {fileID: 21300000, guid: a0e375ee721f8e14695774304335be8c, type: 3}
+    name: Nuien
+    dialogues: F
+    couple: 70
+  - avatarPortrait: {fileID: 21300000, guid: fe78fcc29b8b1ed4b8db89cd0bbd1ee0, type: 3}
+    name: Mage
+    dialogues: F
+    couple: 70
+  - avatarPortrait: {fileID: 21300000, guid: f7db10b12aca43843b9c9170f2810e3a, type: 3}
+    name: Halbertus
+    dialogues: F
+    couple: 70
+  - avatarPortrait: {fileID: 21300000, guid: b3756dc0f825db649a13051d8365af80, type: 3}
+    name: Mu-ien
+    dialogues: F
+    couple: 70
   couples:
   - couple: 65
     tip: "Le premier couple a un enfant du nom d'Alice. Blonde aux yeux bleus, elle
