@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: VillageFleuriste
+  m_EditorClassIdentifier: 
+  dialogues:
+  - pnjPortrait: {fileID: 0}
+    pnjName: Herbert, le fleuriste
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Prouvez votre amour avec ces roses d\xE9licates et b\xE9n\xE9ficiez
+      d\u2019une promotion incroyable, trois roses au prix de deux et deux au prix
+      d\u2019une !"
+  - pnjPortrait: {fileID: 0}
+    pnjName: 'Herbert, le fleuriste '
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: Une seule rose ? Allons ! Pour deux berlingots, vous pouvez en avoir
+      deux !
+  - pnjPortrait: {fileID: 0}
+    pnjName: Herbert, le fleuriste
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: "Tous les jours, j'ai d\xE9j\xE0 des commandes pour toute la semaine
+      et je vous avoue avoir eu quelques probl\xE8mes de stock ces derniers temps.."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Herbert, le fleuriste
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Depuis l'\xE9lection du nouveau maire, il y a de l'amour dans l'air
+      ! Vous voulez une rose alors ? C'est important de montrer aux autres qu'ils
+      comptent pour vous."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Herbert le fleuriste
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Vous avez l'air d'\xEAtre quelqu'un \xE0 qui l'amour ferait grand bien
+      ! Vous \xEAtes s\xFBr de ne pas vouloir de fleur ?"
+  - pnjPortrait: {fileID: 0}
+    pnjName: 'Herbert, le fleuriste '
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: Pour qui vous souhaiteriez acheter cette rose ? Dites-moi tout et je
+      trouverai celle qu'il vous faut !
+  - pnjPortrait: {fileID: 0}
+    pnjName: Herbert, le fleuriste
+    isAnswerNeeded: 0
+    nextTextId: 6
+    sentence: Je rigole l'ami ! Personne ne dupe personne ici, tout le monde s'entraide
+      !
+  - pnjPortrait: {fileID: 0}
+    pnjName: Herbert, le fleuriste
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: "Les roses de Tilfinn font partie de nos ressources les plus importantes.
+      Il ne faut pas n\xE9gliger leur pouvoir. C'est du bonheur \xE0 petit prix."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Herbert, le fleuriste
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: "Bien, dans ce cas je reste \xE0 votre disposition si vous changez d'avis.
+      Sachez qu'une rose peut changer une vie ! *dit-il avec un sourire niais renforc\xE9
+      par la confiance du n\xE9gociant*"
+  - pnjPortrait: {fileID: 0}
+    pnjName: Herbert, le fleuriste
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Tenez ! *le fleuriste vous donne une fleur en \xE9change d'un berlingot*"
+  - pnjPortrait: {fileID: 0}
+    pnjName: Herbert, le fleuriste
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Tenez ! *le fleuriste vous donne deux fleurs en \xE9change de deux
+      berlingots*"
+  playerAnswers:
+  - playerAnswers:
+    - text: Je veux en acheter une !
+      nextTextId: 1
+      emotion: 0
+      influence: 1
+    - text: Vous en vendez beaucoup ?
+      nextTextId: 2
+      emotion: 2
+      influence: 1
+    - text: "*Vous observez le fleuriste avec d\xE9dain*"
+      nextTextId: 4
+      emotion: 3
+      influence: 1
+    - text: Vous essayez de m'arnaquer ?
+      nextTextId: 6
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: Une seule oui !
+      nextTextId: 9
+      emotion: 0
+      influence: 1
+    - text: "Peut-\xEAtre deux alors.."
+      nextTextId: 10
+      emotion: 2
+      influence: 1
+  - playerAnswers:
+    - text: Oui !
+      nextTextId: 9
+      emotion: 0
+      influence: 1
+    - text: Non merci.
+      nextTextId: 8
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: Oui.
+      nextTextId: 8
+      emotion: 4
+      influence: 0
+    - text: Non.
+      nextTextId: 9
+      emotion: 0
+      influence: 1
