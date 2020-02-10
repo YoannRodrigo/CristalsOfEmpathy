@@ -12,8 +12,16 @@ public class GeneralGameManager : MonoBehaviour
     public static GeneralGameManager instance;
     public void Awake()
     {
-        instance = this;
-        DontDestroyOnLoad(gameObject);
+        if(instance == null)
+        {
+            transform.parent = null;
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public GameObject[] playerCharacterPrefabs;
