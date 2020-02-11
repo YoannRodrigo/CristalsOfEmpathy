@@ -6,19 +6,17 @@ using UnityEngine;
 #endregion
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
     #region Member Variables
 
-    private const float WALKING_SPEED_MAX = 4f;
-    private const float ROTATION_SPEED = 2f;
+    private const float MAX_SPEED = 5f;
+    public float rotation_speed;
     private SingleJoystick joystick;
     private Rigidbody rb;
     private Animator animator;
-    private static readonly int isPlayerRunning = Animator.StringToHash("isPlayerRunning");
-    private static readonly int isPlayerWalking = Animator.StringToHash("isPlayerWalking");
     private Vector3 joystickMovement;
+    private static readonly int speed = Animator.StringToHash("Speed");
 
     #endregion
 
@@ -28,7 +26,9 @@ public class PlayerMovement : MonoBehaviour
     {
         joystick = FindObjectOfType<SingleJoystick>();
         rb = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
+        animator = Instantiate(GeneralGameManager.instance.playerCharacterPrefabs[GeneralGameManager.instance.GetPlayerChoice()],
+            transform).GetComponentInChildren<Animator>();
+        
     }
 
     private void Update()
@@ -36,19 +36,26 @@ public class PlayerMovement : MonoBehaviour
         if (joystick)
         {
             joystickMovement = joystick.GetInputDirection();
+            if(Application.isEditor)
+            {
+                joystickMovement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"),0);
+            }
             if (Math.Abs(joystickMovement.magnitude) > 0.0f)
             {
                 Vector3 newLookDirection = new Vector3(joystickMovement.x, 0, joystickMovement.y);
-                transform.rotation = Quaternion.LookRotation(newLookDirection);
+                transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.LookRotation(newLookDirection),rotation_speed*Time.deltaTime);
             }
 
-            rb.velocity = new Vector3(joystickMovement.x * 5f, rb.velocity.y, joystickMovement.y * 5f);
+            rb.velocity = new Vector3(joystickMovement.x * MAX_SPEED, rb.velocity.y, joystickMovement.y * MAX_SPEED);
         }
 
         if (!joystick.gameObject.activeSelf) rb.velocity = Vector3.zero;
 
         Vector3 velocityOnGround = Vector3.Scale(rb.velocity, new Vector3(1, 0, 1));
-        if (Math.Abs(velocityOnGround.magnitude) <= 0.2f)
+        animator.SetFloat(speed, velocityOnGround.magnitude/MAX_SPEED);
+        Debug.Log(Mathf.Abs(velocityOnGround.x)/MAX_SPEED);
+        
+        /*if (Math.Abs(velocityOnGround.magnitude) <= 0.2f)
         {
             animator.SetBool(isPlayerRunning, false);
             animator.SetBool(isPlayerWalking, false);
@@ -68,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool(isPlayerRunning, true);
                 animator.SetBool(isPlayerWalking, false);
             }
-        }
+        }*/
     }
 
     #endregion
