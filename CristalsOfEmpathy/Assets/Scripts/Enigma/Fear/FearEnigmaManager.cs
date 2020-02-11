@@ -50,11 +50,17 @@ public class FearEnigmaManager : MonoBehaviour
     public void Death()
     {
         loseScreen.SetActive(true);
-        StartCoroutine(WaitToReturn());
+        StartCoroutine(WaitToReturnFearEnigma());
     }
     private IEnumerator WaitToReturn()
     {
         yield return new WaitForSeconds(2);
         levelChanger.ChangeToLevelWithFade(0);
+    }
+
+    private IEnumerator WaitToReturnFearEnigma()
+    {
+        yield return new WaitForSeconds(2);
+        levelChanger.ChangeToLevelWithFade(6);
     }
 }
