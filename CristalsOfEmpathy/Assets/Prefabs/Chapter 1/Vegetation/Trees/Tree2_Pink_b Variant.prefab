@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100014, guid: fe315a62d0f27f74089fad26276918a9, type: 3}
       propertyPath: m_Name
-      value: Tree2_Pink_b
+      value: Tree2_Pink_b Variant
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: fe315a62d0f27f74089fad26276918a9, type: 3}
       propertyPath: m_LocalPosition.x
