@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: ProsperDiscours
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: Mesdames, messieurs.. Je suis ici pour vous remercier de la confiance
+      que vous placez en moi. Tilfinn et ses habitants sont tout pour moi.
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 2
+    sentence: "Nous vivons dans un cadre idyllique. Notre symbiose est totale et je
+      vous jure de tout mettre en oeuvre pour assurer la p\xE9rennit\xE9 de notre
+      bonheur."
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: "J\u2019entends vos maux, j\u2019entends vos malheurs et je vous promets
+      qu\u2019ils s\u2019estomperont au profit de notre bien-\xEAtre. Acceptez-vous,
+      aimez-vous et marchons ensemble vers un avenir meilleur."
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Mesdames messieurs, je serai \xE0 l'H\xF4tel de Ville si vous d\xE9sirez
+      me parler de fa\xE7on plus intime. Je vous souhaite \xE0 toutes et \xE0 tous
+      une douce journ\xE9e."
+  playerAnswers: []
