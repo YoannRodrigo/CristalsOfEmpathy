@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
   m_Name: CuriosityEnigma
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: c70d73b84f6b80242a046921d3986b83, type: 2}
+    emotion: 1
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: Start Curiosity
   playerAnswers: []

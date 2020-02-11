@@ -18,7 +18,12 @@ public class LevelManager : MonoBehaviour
 
     public void SpawnPlayer()
     {
-        GameObject player = Instantiate(GeneralGameManager.instance.playerPrefab, portals[portalIndex].spawn, Quaternion.identity);
-        Instantiate(GeneralGameManager.instance.cameraPrefab, portals[portalIndex].spawn, Quaternion.identity).GetComponent<CameraMovement>().SetTarget(player.transform);
+        if(portals.Count > 0)
+        {
+            GameObject player = Instantiate(GeneralGameManager.instance.playerPrefab, portals[portalIndex].spawn,
+                Quaternion.identity);
+            Instantiate(GeneralGameManager.instance.cameraPrefab, portals[portalIndex].spawn, Quaternion.identity)
+                .GetComponent<CameraMovement>().SetTarget(player.transform);
+        }
     }
 }

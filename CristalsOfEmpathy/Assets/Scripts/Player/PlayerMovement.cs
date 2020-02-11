@@ -53,29 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 velocityOnGround = Vector3.Scale(rb.velocity, new Vector3(1, 0, 1));
         animator.SetFloat(speed, velocityOnGround.magnitude/MAX_SPEED);
-        Debug.Log(Mathf.Abs(velocityOnGround.x)/MAX_SPEED);
         
-        /*if (Math.Abs(velocityOnGround.magnitude) <= 0.2f)
-        {
-            animator.SetBool(isPlayerRunning, false);
-            animator.SetBool(isPlayerWalking, false);
-        }
-        else
-        {
-            Quaternion velocityAngle =
-                Quaternion.Euler(0, Vector3.SignedAngle(transform.forward, velocityOnGround, Vector3.up), 0);
-            transform.rotation = Quaternion.Slerp(transform.rotation, velocityAngle, ROTATION_SPEED * Time.deltaTime);
-            if (Math.Abs(velocityOnGround.magnitude) < WALKING_SPEED_MAX)
-            {
-                animator.SetBool(isPlayerRunning, false);
-                animator.SetBool(isPlayerWalking, true);
-            }
-            else
-            {
-                animator.SetBool(isPlayerRunning, true);
-                animator.SetBool(isPlayerWalking, false);
-            }
-        }*/
     }
 
     #endregion

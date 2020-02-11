@@ -2283,6 +2283,8 @@ GameObject:
   - component: {fileID: 2277169644068753300}
   - component: {fileID: 2277169644078080510}
   - component: {fileID: 8224345874947510737}
+  - component: {fileID: 2611353374523387294}
+  - component: {fileID: 2459575484789807840}
   m_Layer: 0
   m_Name: EndHelise
   m_TagString: Untagged
@@ -2343,6 +2345,35 @@ MonoBehaviour:
     type: 3}
   dialogueManager: {fileID: 0}
   scriptablePnj: {fileID: 0}
+--- !u!135 &2611353374523387294
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2277169644068590516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &2459575484789807840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2277169644068590516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1c85835aec76144837d9405eaa57d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isNeededToBeDestroyed: 0
+  forceOnStart: 0
+  interactiblePnj: {fileID: 8224345874947510737}
+  dialogueToPlay: 0
 --- !u!1 &2277169644068590518
 GameObject:
   m_ObjectHideFlags: 0
