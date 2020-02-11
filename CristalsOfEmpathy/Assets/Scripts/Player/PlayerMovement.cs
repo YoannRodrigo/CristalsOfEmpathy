@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 velocityOnGround = Vector3.Scale(rb.velocity, new Vector3(1, 0, 1));
         animator.SetFloat(speed, velocityOnGround.magnitude/MAX_SPEED);
-        Debug.Log(Mathf.Abs(velocityOnGround.x)/MAX_SPEED);
+        //Debug.Log(Mathf.Abs(velocityOnGround.x)/MAX_SPEED);
         
         /*if (Math.Abs(velocityOnGround.magnitude) <= 0.2f)
         {
