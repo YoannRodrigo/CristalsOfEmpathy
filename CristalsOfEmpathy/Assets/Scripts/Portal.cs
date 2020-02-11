@@ -21,13 +21,17 @@ public class Portal : MonoBehaviour
         sphere = GetComponent<SphereCollider>();
     }
 
-
     private void OnTriggerEnter(Collider other)
     {
-        if(other.GetComponent<PlayerMovement>() != null)
+        if(activated && other.GetComponent<PlayerMovement>() != null)
         {
             GeneralGameManager.instance.Go(levelDestination, portalDestination);
         }
+    }
+
+    public Vector3 GetDirection()
+    {
+        return (spawn - transform.position).normalized;
     }
 
 #if UNITY_EDITOR
@@ -35,6 +39,8 @@ public class Portal : MonoBehaviour
     {
         sphere = GetComponent<SphereCollider>();
         sphere.radius = range;
+        sphere.isTrigger = true;
+        sphere.enabled = activated;
     }
 
     public void OnDrawGizmos()

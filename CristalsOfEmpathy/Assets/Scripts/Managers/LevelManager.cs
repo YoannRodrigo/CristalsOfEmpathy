@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,7 +17,25 @@ public class LevelManager : MonoBehaviour
 
     public void SpawnPlayer()
     {
-        GameObject player = Instantiate(GeneralGameManager.instance.playerPrefab, portals[portalIndex].spawn, Quaternion.identity);
-        Instantiate(GeneralGameManager.instance.cameraPrefab, portals[portalIndex].spawn, Quaternion.identity).GetComponent<CameraMovement>().SetTarget(player.transform);
+        GameObject p = AppearOnPortal();
+        GeneralGameManager.instance.CallCamera(p.transform);
     }
+
+    public GameObject AppearOnPortal()
+    {
+        return Spawn(GetCurrentPortal().spawn, GetCurrentPortal().GetDirection());
+    }
+
+    public Portal GetCurrentPortal()
+    {
+        return portals[portalIndex];
+    }
+
+    public GameObject Spawn(Vector3 position = new Vector3(), Vector3 direction = new Vector3())
+    {
+        GameObject o = Instantiate(GeneralGameManager.instance.playerPrefab, position, Quaternion.identity);
+        o.transform.forward = direction;
+        return o;
+    }
+
 }

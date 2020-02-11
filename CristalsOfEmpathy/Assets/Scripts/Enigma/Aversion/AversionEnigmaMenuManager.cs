@@ -58,7 +58,7 @@ public class AversionEnigmaMenuManager : MonoBehaviour
         if (currentScore <= -1500)
         {
             loseScreen.SetActive(true);
-            StartCoroutine(WaitToReturn());
+            StartCoroutine(WaitToReturnAversionEnigma());
         }
         switch (gameState)
         {
@@ -123,6 +123,12 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         levelChanger.ChangeToLevelWithFade(0);
+    }
+
+    private IEnumerator WaitToReturnAversionEnigma()
+    {
+        yield return new WaitForSeconds(2);
+        levelChanger.ChangeToLevelWithFade(5);
     }
 
     #endregion

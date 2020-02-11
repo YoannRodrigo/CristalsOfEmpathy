@@ -42,3 +42,9 @@ sysinfo.txt
 *.zip
 *.tar
 *.rar
+
+*.meta
+*Icon
+*.DS_Store
+
+CristalsOfEmpathy/.vscode/

@@ -154,7 +154,7 @@ public class LoveEnigmaManager : MonoBehaviour
         else
         {
             loseScreen.SetActive(true);
-            StartCoroutine(WaitToReturn());
+            StartCoroutine(WaitToReturnLoveEnigma());
         }
     }
 
@@ -216,6 +216,13 @@ public class LoveEnigmaManager : MonoBehaviour
         yield return new WaitForSeconds(2);
         levelChanger.ChangeToLevelWithFade(0);
     }
+
+    private IEnumerator WaitToReturnLoveEnigma()
+    {
+        yield return new WaitForSeconds(2);
+        levelChanger.ChangeToLevelWithFade(4);
+    }
+
 
     #endregion
 }

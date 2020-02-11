@@ -25,6 +25,11 @@ public class BarPointsHandler : MonoBehaviour
         NONE
     }
 
+
+    #endregion
+
+    #region Methods
+
     public int LoveBarPoints
     {
         get => _loveBarPoints;
@@ -59,7 +64,9 @@ public class BarPointsHandler : MonoBehaviour
         if (_instance != null && _instance != this)
             Destroy(gameObject);
         else
+        {
             _instance = this;
+        }
     }
 
     public static void UpdateEmotionPoints(Emotions emotion, int influence)
@@ -68,15 +75,31 @@ public class BarPointsHandler : MonoBehaviour
         {
             case Emotions.LOVE:
                 _loveBarPoints += influence;
+                if (EmotionBarReachValues(_loveBarPoints))
+                {
+                    EndGameManager.instance.SpawnHelise(Emotions.LOVE);
+                }
                 break;
             case Emotions.FEAR:
                 _fearBarPoints += influence;
+                if (EmotionBarReachValues(_fearBarPoints))
+                {
+                    EndGameManager.instance.SpawnHelise(Emotions.FEAR);
+                }
                 break;
             case Emotions.AVERSION:
                 _aversionBarPoints += influence;
+                if (EmotionBarReachValues(_aversionBarPoints))
+                {
+                    EndGameManager.instance.SpawnHelise(Emotions.AVERSION);
+                }
                 break;
             case Emotions.CURIOSITY:
                 _curiosityBarPoints += influence;
+                if (EmotionBarReachValues(_curiosityBarPoints))
+                {
+                    EndGameManager.instance.SpawnHelise(Emotions.CURIOSITY);
+                }
                 break;
             case Emotions.NONE:
                 break;
@@ -85,9 +108,9 @@ public class BarPointsHandler : MonoBehaviour
         }
     }
 
-    #endregion
-
-    #region Methods
-
+    private static bool EmotionBarReachValues(int emotionBar)
+    {
+        return emotionBar > 60;
+    }
     #endregion
 }

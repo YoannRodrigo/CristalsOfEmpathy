@@ -1,6 +1,4 @@
 ﻿#region Using Directives
-
-using System;
 using UnityEngine;
 
 #endregion
@@ -10,6 +8,18 @@ public class GeneralGameManager : MonoBehaviour
     #region Member Variables
 
     public static GeneralGameManager instance;
+
+    public GameObject[] playerCharacterPrefabs;
+    public GameObject cameraPrefab;
+    public GameObject playerPrefab;
+
+    public Transform playerSpawnerTransform;
+    private static int _playerPrefabChoice = 0;
+    private int nextPortalIndex = 0;
+    #endregion
+
+    #region Methods
+
     public void Awake()
     {
         if(instance == null)
@@ -23,18 +33,6 @@ public class GeneralGameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    public GameObject[] playerCharacterPrefabs;
-    public GameObject cameraPrefab;
-    public GameObject playerPrefab;
-
-    public Transform playerSpawnerTransform;
-    private static int _playerPrefabChoice = 0;
-    private int nextPortalIndex = 0;
-    #endregion
-
-    #region Methods
-
     public void Go(string level, int portal = 0)
     {
         LevelChanger.instance.ChangeToLevelWithFade(level);
@@ -51,6 +49,7 @@ public class GeneralGameManager : MonoBehaviour
     {
         _playerPrefabChoice = playerPrefab;
     }
+    
 
     public int GetPlayerChoice()
     {
@@ -62,7 +61,11 @@ public class GeneralGameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    
+    public void CallCamera(Transform target)
+    {
+        Instantiate(GeneralGameManager.instance.cameraPrefab, target.position, Quaternion.identity)
+        .GetComponent<CameraMovement>().SetTarget(target);
+    }
     
     #endregion
 }

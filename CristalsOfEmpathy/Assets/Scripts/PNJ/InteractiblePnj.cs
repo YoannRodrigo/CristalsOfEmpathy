@@ -1,5 +1,6 @@
 ﻿#region Using Directives
 
+using System;
 using UnityEngine;
 
 #endregion
@@ -14,6 +15,14 @@ public class InteractiblePnj : InteractibleItem
     #endregion
 
     #region Methods
+
+    private void Start()
+    {
+        if (dialogueManager == null)
+        {
+            dialogueManager = FindObjectOfType<DialogueManager>();
+        }
+    }
 
     protected override void OnTouch()
     {
