@@ -44,3 +44,5 @@ sysinfo.txt
 *.rar
 
 *.meta
+*Icon
+*.DS_Store
