@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2e329f31d95bee469400c870028cbde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 21
+  THROW_FORCE: 1
 --- !u!222 &8301852242407567053
 CanvasRenderer:
   m_ObjectHideFlags: 0
