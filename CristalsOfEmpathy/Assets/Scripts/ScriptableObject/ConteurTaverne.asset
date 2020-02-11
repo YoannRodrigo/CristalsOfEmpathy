@@ -1,0 +1,228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: ConteurTaverne
+  m_EditorClassIdentifier: 
+  dialogues:
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Vous arrivez \xE0 me voir ? En voici une\r bonne nouvelle ! Je d\xE9p\xE9ris
+      ici depuis un long\r moment, souffrant de mon invisibilit\xE9."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Mes seuls\r divertissements sont les ragots des habitants qui\r passent
+      \xE0 la taverne, heureusement qu\u2019ils sont\r nombreux !"
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "M\u2019aider ? Vous \xEAtes bien gentil mais je\r crains que \xE7a
+      ne soit possible. Je suis condamn\xE9.\r Vous pouvez toujours boire avec moi,
+      cela serait\r tr\xE8s appr\xE9ciable."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 1
+    nextTextId: 2
+    sentence: "J\u2019en suis bel et bien un. Le fant\xF4me d\u2019un\r \xE9crivain,
+      celui d\u2019un conteur, d\u2019un homme aux milles\r histoires. C\u2019est
+      pour continuer \xE0 les conter que je\r\nsuis encore ici, mais personne ne pr\xEAte
+      l\u2019ou\xEFe."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 1
+    nextTextId: 3
+    sentence: "Ainsi soit-il vagabond. Mais sache que ton\r m\xE9pris ne t\u2019aidera
+      pas dans la vie. Tu avanceras\r avec d\xE9termination mais jamais dans la bonne\r
+      direction."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 0
+    nextTextId: 6
+    sentence: "La peur, c\u2019est pas seulement ce coup\r de poing qui vous remue
+      les intestins. C\u2019est pas\r seulement ce froid qui vous traverse jusqu\u2019\xE0
+      l\u2019os\r et vous fait vibrer les rotules. C\u2019est l\u2019art de\r s\u2019inventer
+      des histoires et croyez-moi, je m\u2019y\r connais en histoires ! "
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 1
+    nextTextId: 4
+    sentence: "Vous voulez avoir peur ?\r Alors installez-vous car j\u2019ai moult
+      histoires\r terrifiantes \xE0 vous conter ! Approchez, n\u2019ayez\r crainte..
+      Apr\xE8s tout, que pourrais-je vous faire ?\r Je ne suis pas vraiment l\xE0."
+  - pnjPortrait: {fileID: 0}
+    pnjName: 'Ernest, le conteur '
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "J\u2019\xE9tais dans la for\xEAt, je prenais\r des notes en observant
+      une charmante\r cr\xE9ature. Alors qu\u2019elle mangeait, tout se brouilla d\u2019un
+      coup et je fus aspir\xE9 par les\r cieux avant d\u2019\xEAtre recrach\xE9 ici,
+      \xE0 la\r taverne, le comble."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 0
+    nextTextId: 12
+    sentence: "Je m\u2019appelle Ernest Beaurivage,\r humble scribouilleur au service
+      du peuple,\r de l\u2019art et du savoir. Je gribouille sur moult\r sujets mais
+      mon pr\xE9f\xE9r\xE9 est le suivant.."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 0
+    nextTextId: 12
+    sentence: ".. Les\r \xE9motions. Elles sont comme les fils qui\r manipulent un
+      pantin. Ce sont, selon mon\r oeuvre majeure, Les Rouages\r Gargantuesques de
+      l\u2019Insaisissable."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 0
+    nextTextId: 12
+    sentence: "La mort est douloureuse, sur\rtout pour ceux qui restent vivants. Je
+      suis\r dans une condition particuli\xE8re, ni mort,\r ni vivant. Ne me prenez
+      pas comme\r exemple !"
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 0
+    nextTextId: 12
+    sentence: "Je n\u2019en suis pas certain mais il\r semblerait qu\u2019en effet,
+      je sois un fant\xF4me.\r Personne ne me voit ni m\u2019entend, sauf\r vous.
+      Peut-\xEAtre \xEAtes-vous d\xE9j\xE0 mort vous\r aussi."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 1
+    nextTextId: 5
+    sentence: "Trinquons camarade ! Il nous reste\r encore \xE0 d\xE9terminer pour
+      quelle raison\r hm.."
+  - pnjPortrait: {fileID: 0}
+    pnjName: 'Ernest, le conteur '
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Ne jugez pas \xE0 un homme \xE0 sa\r condition, jugez-le sur ses actions.
+      La\r v\xF4tre aura \xE9t\xE9 de juger les autres."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Ernest, le conteur
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Il n\u2019y a pas r\xE9ellement de bonne\r voie, il y a surtout celle
+      que l\u2019on d\xE9cide\r d\u2019emprunter. Ecoutez votre coeur et tout\r se
+      passera bien."
+  - pnjPortrait: {fileID: 0}
+    pnjName: Joueur
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: "Laissez-moi tranquille sale monstre ! Je n'ai pas de temps \xE0 perdre
+      avec les morts !"
+  playerAnswers:
+  - playerAnswers:
+    - text: Je peux vous aider ?
+      nextTextId: 1
+      emotion: 0
+      influence: 1
+    - text: "Vous \xEAtes un fant\xF4me ? "
+      nextTextId: 2
+      emotion: 2
+      influence: 1
+    - text: Laissez-moi tranquille !
+      nextTextId: 3
+      emotion: 3
+      influence: 1
+    - text: "Vous me fa\xEEtes peur..."
+      nextTextId: 4
+      emotion: 1
+      influence: 1
+  - playerAnswers:
+    - text: "Que vous est-il arriv\xE9 ? "
+      nextTextId: 7
+      emotion: 2
+      influence: 1
+    - text: 'C''est douloureux de mourir ? '
+      nextTextId: 10
+      emotion: 2
+      influence: 1
+    - text: "Vous \xEAtes un fant\xF4me ? "
+      nextTextId: 11
+      emotion: 2
+      influence: 1
+    - text: Buvons ensemble !
+      nextTextId: 12
+      emotion: 0
+      influence: 1
+  - playerAnswers:
+    - text: "Que vous est-il arriv\xE9 ? "
+      nextTextId: 7
+      emotion: 2
+      influence: 1
+    - text: "Qui \xEAtes-vous ? "
+      nextTextId: 8
+      emotion: 2
+      influence: 1
+    - text: 'Vous avez eu mal ? '
+      nextTextId: 10
+      emotion: 2
+      influence: 1
+    - text: Buvons ensemble !
+      nextTextId: 12
+      emotion: 0
+      influence: 1
+  - playerAnswers:
+    - text: "*Lass\xE9, vous partez*"
+      nextTextId: -1
+      emotion: 3
+      influence: 1
+    - text: "Vous \xEAtes un fant\xF4me ? "
+      nextTextId: 11
+      emotion: 0
+      influence: 1
+    - text: "Vous allez m'aider \xE0 trouver la bonne voix ? "
+      nextTextId: 14
+      emotion: 0
+      influence: 1
+    - text: "Vous \xEAtes all\xE9 dans la bonne direction vous peut-\xEAtre !"
+      nextTextId: 13
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: "Que vous est-il arriv\xE9 ? "
+      nextTextId: 7
+      emotion: 2
+      influence: 1
+    - text: "Vous \xEAtes un fant\xF4me ? "
+      nextTextId: 11
+      emotion: 2
+      influence: 1
+    - text: "Qui \xEAtes-vous ? "
+      nextTextId: 8
+      emotion: 2
+      influence: 1
+    - text: "*Trop effray\xE9, vous partez*"
+      nextTextId: -1
+      emotion: 1
+      influence: 1
+  - playerAnswers:
+    - text: Aux affres de la mort !
+      nextTextId: -1
+      emotion: 4
+      influence: 0
+    - text: A la vie !
+      nextTextId: -1
+      emotion: 2
+      influence: 1
+    - text: "Aux imb\xE9ciles du village !"
+      nextTextId: -1
+      emotion: 3
+      influence: 1
+    - text: A l'amour !
+      nextTextId: -1
+      emotion: 0
+      influence: 1
