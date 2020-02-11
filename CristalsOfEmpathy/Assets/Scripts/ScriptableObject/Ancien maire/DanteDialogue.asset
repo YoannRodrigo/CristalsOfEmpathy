@@ -13,51 +13,51 @@ MonoBehaviour:
   m_Name: DanteDialogue
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 1
     nextTextId: 0
     sentence: "Que faites-vous ici ? Mon manoir est une propri\xE9t\xE9 priv\xE9e
       ! Retournez parmi les fous et laissez-moi tranquille."
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 5
     sentence: "Ce qui leur arrive ? Ne voyez-vous donc rien ? Vous aussi, vous \xEAtes
       aveugl\xE9 par l'amour ?!"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 5
     sentence: "Vous osez poser la question ? Je suis le dernier rempart \xE0 la chute
       de Tilfinn ! Je suis Dante, le seul et vrai maire que ce village ai jamais eu
       !"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 5
     sentence: "Me calmer ? Impossible tant que ces fous d\xE9truisent tout ce que
       j'ai mis en place."
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 5
     sentence: "J'y compte bien ! Vous aussi \xEAtes corrompu par le mal\xE9fice qui
       frappe le village. Restez loin de moi et ne revenez plus ici !"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "Si vous retournez l\xE0-bas, vous n'allez plus jamais en revenir. Plus
       vous y restez plus vous serez corrompu ! Si vous restez avec moi, nous pouvons
       peut-\xEAtre les sauver. "
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 7
     sentence: "C'est simple. Il faut identifier le d\xE9nominateur commun et le supprimer.
       Dans notre cas, le probl\xE8me est simple."
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1
@@ -65,12 +65,12 @@ MonoBehaviour:
       ! C'\xE9tait un simple mendiant avant tout \xE7a, un vagabond sans foi ni loi,
       adepte de la poudre de perlimpinpin. Si nous voulons sauver le village, il faut
       tuer le maire !"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 9
     sentence: "Lorsque vous vivez parmi les fous, les hommes sens\xE9s semblent cingl\xE9s."
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 10
@@ -83,39 +83,39 @@ MonoBehaviour:
     nextTextId: -1
     sentence: Vous me croyez fou ? Alors partez ! Maintenant que vous savez tout,
       je ne peux plus rien faire pour vous.
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 12
     sentence: Vous devriez faire comme moi. Il ne s'agit pas d'amour, mais de manipulation,
       probablement de magie noire !
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 13
     sentence: "Je soup\xE7onne un complot d'envergure. Le nouveau maire et ces pr\xE9tendus
       mages ont perverti toute la pl\xE8be. Il faut tous les tuer. "
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Si vous d\xE9couvrez la source de cette folie, fuyez-la ! Trouvez les
       forains, ils sont de mon avis, ils pourront vous aider !"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 15
     sentence: "Qui ne dit mot consent. Sans peur, le courage n'existe pas ! La peur
       n'est pas uniquement mauvaise, elle permet aux hommes de r\xE9primer leurs plus
       bas instincts."
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 16
     sentence: "Elle leur permet de craindre les cons\xE9quences de leursa ctions.
       Ne pensez pas qu'avoir peur fait de vous un faible. A l'inverse, c'est elle
       qui vous forgera. Utilisez cette peur, surmontez la !"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1
@@ -124,12 +124,12 @@ MonoBehaviour:
       premi\xE8re cible \xE0 abattre, il est \xE0 l'origine de la grangr\xE8ne ! D\xE9guerpissez
       ! Si vous voulez m'aider, trouvez les forains et m\xE9prisez les villageois
       ! Adieu !"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: "Je cherche \xE0 comprendre ce qu'il arrive au village et ses habitants. "
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3
