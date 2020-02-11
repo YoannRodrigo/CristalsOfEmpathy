@@ -10,7 +10,6 @@ public class PlayerChoiceManager : MonoBehaviour
     #region Member Variables
     private const int SPLASHSCREEN_ID = 1;
     private PlayerChoice playerChoice = PlayerChoice.NONE;
-    public List<GameObject> playerPrefabs = new List<GameObject>();
     public GeneralGameManager generalGameManager;
     public LevelChanger levelChanger;
 

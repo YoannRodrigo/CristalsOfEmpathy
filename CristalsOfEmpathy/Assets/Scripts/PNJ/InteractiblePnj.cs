@@ -27,6 +27,7 @@ public class InteractiblePnj : InteractibleItem
     public void StartDialogue(int startId = 0)
     {
         dialogueManager.SetInteractiblePnj(this);
+        dialogueManager.currentPNJ = scriptablePnj;
         if (scriptablePnj.playerAnswers.Length == 0)
             dialogueManager.StartDialogue(scriptablePnj.dialogues, startId);
         else

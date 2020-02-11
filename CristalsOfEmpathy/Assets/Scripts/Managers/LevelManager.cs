@@ -5,34 +5,20 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-
     public static LevelManager instance;
-
-    public List<Transform> spawnPoints;
-    public int spawnPointIndex;
-    
-    
-    private void Awake()
-    {
-        instance = this;
-    }
+    public List<Portal> portals;
+    public int portalIndex = 0;
+    private void Awake(){instance = this;}
 
     private void Start()
     {
-        SpawnPlayer();
+        LevelChanger.instance.FadeOut();
+        GeneralGameManager.instance.OnLevelLoaded();
     }
 
-    private void SpawnPlayer()
+    public void SpawnPlayer()
     {
-        GameObject player = Instantiate(GeneralGameManager.instance.playerPrefab,
-            spawnPoints[spawnPointIndex].position,
-            spawnPoints[spawnPointIndex].rotation);
-        GameObject camera = Instantiate(GeneralGameManager.instance.cameraPrefab,
-            spawnPoints[spawnPointIndex].position,
-            spawnPoints[spawnPointIndex].rotation);
-        camera.GetComponent<CameraMovement>().SetTarget(player.transform);
+        GameObject player = Instantiate(GeneralGameManager.instance.playerPrefab, portals[portalIndex].spawn, Quaternion.identity);
+        Instantiate(GeneralGameManager.instance.cameraPrefab, portals[portalIndex].spawn, Quaternion.identity).GetComponent<CameraMovement>().SetTarget(player.transform);
     }
-
-    
-    
 }

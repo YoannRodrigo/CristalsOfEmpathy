@@ -12,8 +12,16 @@ public class GeneralGameManager : MonoBehaviour
     public static GeneralGameManager instance;
     public void Awake()
     {
-        instance = this;
-        DontDestroyOnLoad(gameObject);
+        if(instance == null)
+        {
+            transform.parent = null;
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public GameObject[] playerCharacterPrefabs;
@@ -22,9 +30,22 @@ public class GeneralGameManager : MonoBehaviour
 
     public Transform playerSpawnerTransform;
     private static int _playerPrefabChoice = 0;
+    private int nextPortalIndex = 0;
     #endregion
 
     #region Methods
+
+    public void Go(string level, int portal = 0)
+    {
+        LevelChanger.instance.ChangeToLevelWithFade(level);
+        nextPortalIndex = portal; 
+    }
+
+    public void OnLevelLoaded()
+    {
+        LevelManager.instance.portalIndex = nextPortalIndex;
+        LevelManager.instance.SpawnPlayer();
+    }
 
     public void SetPlayerPrefab(int playerPrefab)
     {
