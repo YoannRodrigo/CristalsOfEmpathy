@@ -1,6 +1,4 @@
 ﻿#region Using Directives
-
-using System;
 using UnityEngine;
 
 #endregion
@@ -62,7 +60,11 @@ public class GeneralGameManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    
+    public void CallCamera(Transform target)
+    {
+        Instantiate(GeneralGameManager.instance.cameraPrefab, target.position, Quaternion.identity)
+        .GetComponent<CameraMovement>().SetTarget(target);
+    }
     
     #endregion
 }
