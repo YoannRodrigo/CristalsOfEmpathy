@@ -13,7 +13,6 @@ public class GeneralGameManager : MonoBehaviour
     public GameObject cameraPrefab;
     public GameObject playerPrefab;
 
-    public Transform playerSpawnerTransform;
     private static int _playerPrefabChoice = 0;
     private int nextPortalIndex = 0;
     #endregion
