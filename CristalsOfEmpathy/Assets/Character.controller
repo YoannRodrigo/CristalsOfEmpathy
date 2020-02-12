@@ -6,7 +6,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NPC_Animator
+  m_Name: Character
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -14,7 +14,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -37,7 +37,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 5896efdcde80af942bc7e07bfc746425, type: 3}
+    m_Motion: {fileID: 7400000, guid: b82b2b094430bb043afdf226f246246d, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -45,7 +45,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2232e7dc463d2754e8d2b69ff07f0a1f, type: 3}
+    m_Motion: {fileID: 7400000, guid: 53557b4bf4c7e334395425e16172ca42, type: 2}
     m_Threshold: 0.5
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -53,7 +53,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 6ed1548966dfff249bf763beeee329d9, type: 3}
+    m_Motion: {fileID: 7400000, guid: a24d6afb130b7a74daa7f3e5cdfd36a8, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
