@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 3988872515225393668}
   - component: {fileID: 3988872515232658916}
   m_Layer: 0
-  m_Name: Av_Male_TPOSE
+  m_Name: Player_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,7 +89,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3988872515225355812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.440453, y: 17.79329, z: -9.757954}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children:
   - {fileID: 3988872515225393692}
@@ -107,7 +107,7 @@ Animator:
   m_GameObject: {fileID: 3988872515225355812}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d9f19ec3f03d2d744b0aba6f43635e85, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
