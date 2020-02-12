@@ -143,11 +143,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2319607630011438465}
     m_Modifications:
-    - target: {fileID: 751336788000770433, guid: 859eb82682a3d8a44b1248ca43cf8c88,
-        type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
     - target: {fileID: 751336788000770439, guid: 859eb82682a3d8a44b1248ca43cf8c88,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -203,16 +198,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 751336788000770433, guid: 859eb82682a3d8a44b1248ca43cf8c88,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
     - target: {fileID: 751336788000770438, guid: 859eb82682a3d8a44b1248ca43cf8c88,
         type: 3}
       propertyPath: playerCharacterPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 100000, guid: 5099a37c167349146a5d0c583da9c895, type: 3}
+      objectReference: {fileID: 3767665074962278967, guid: 413efa2a9d28d78409643aec869150a7,
+        type: 3}
+    - target: {fileID: 751336788000770438, guid: 859eb82682a3d8a44b1248ca43cf8c88,
+        type: 3}
+      propertyPath: playerCharacterPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 7245934649722680806, guid: 1678b07eba2744242b8fa5f04437a9e3,
+        type: 3}
     - target: {fileID: 751336788000770438, guid: 859eb82682a3d8a44b1248ca43cf8c88,
         type: 3}
       propertyPath: playerCharacterPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 100000, guid: e4c58ad486bb95a4dae99c7c8eb7ab7b, type: 3}
+      objectReference: {fileID: 7245934649722680806, guid: 923c4294270063d45ae7e1f8ea02e089,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 859eb82682a3d8a44b1248ca43cf8c88, type: 3}
 --- !u!4 &2319607630746128576 stripped
@@ -228,11 +236,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2319607630011438465}
     m_Modifications:
-    - target: {fileID: 5483536210514489908, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
-        type: 3}
-      propertyPath: m_Name
-      value: LevelChanger
-      objectReference: {fileID: 0}
     - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -287,6 +290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483536210514489908, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_Name
+      value: LevelChanger
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea8b522b3050d9b459dbbdeb9250ca4a, type: 3}
