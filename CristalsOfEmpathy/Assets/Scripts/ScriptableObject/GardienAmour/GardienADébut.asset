@@ -10,55 +10,55 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
-  m_Name: "GardienADe\u0301but"
+  m_Name: "GardienAD\xE9but"
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 11400000, guid: 2fe43d856a18f454596874d05355532a, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: "H\xE9ros, oui c'est \xE0 vous que je m'adresse ! Je suis le gardien
       du cristal de l'amour et j'ai besoin de vous pour le reconstituer. En l'\xE9tat
       il ne peut \xEAtre d'aucune utilit\xE9 \xE0 la Gardienne des Sentiments."
-  - profilePnj: {fileID: 11400000, guid: 2fe43d856a18f454596874d05355532a, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 2
     sentence: "Autrefois, un amour pur unissait les gens de ce village paisible, et
       il est maintenant temps pour vous de r\xE9tablir l'\xE9quilibre en ces lieux..."
-  - profilePnj: {fileID: 11400000, guid: 2fe43d856a18f454596874d05355532a, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
     sentence: "Je vous demande un dernier effort h\xE9ros. Vous devez aider les habitants
       de Tilfinn \xE0 retrouver leurs \xE2mes soeurs, c'est le seul moyen de reconstituer
       le cristal bris\xE9..."
-  - profilePnj: {fileID: 11400000, guid: 2fe43d856a18f454596874d05355532a, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "Ne vous pr\xE9cipitez pas, il vous faut \xEAtre calme pour r\xE9soudre
       ces \xE9nigmes... Souhaitez-vous commencer ?"
-  - profilePnj: {fileID: 11400000, guid: 2fe43d856a18f454596874d05355532a, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "Il vous faudra r\xE9pondre \xE0 une s\xE9rie d'\xE9nigmes qui concerne
       les couples originels de ce village... Souhaitez-vous commencer ?"
-  - profilePnj: {fileID: 11400000, guid: 2fe43d856a18f454596874d05355532a, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 6
     sentence: "Le cristal de l'amour a un grand pouvoir, et entre de mauvaises mains,
       il peut \xEAtre dangereux. Avant que Prosper ne le r\xE9cup\xE8re, il r\xE9gnait
       un amour pur entre les habitants..."
-  - profilePnj: {fileID: 11400000, guid: 2fe43d856a18f454596874d05355532a, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "C'est \xE0 vous maintenant de le restaurer... Souhaitez-vous commencer
       ?"
-  - profilePnj: {fileID: 11400000, guid: 2fe43d856a18f454596874d05355532a, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 1
