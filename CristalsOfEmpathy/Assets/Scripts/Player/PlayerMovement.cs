@@ -52,8 +52,9 @@ public class PlayerMovement : MonoBehaviour
         if (!joystick.gameObject.activeSelf) rb.velocity = Vector3.zero;
 
         Vector3 velocityOnGround = Vector3.Scale(rb.velocity, new Vector3(1, 0, 1));
-        animator.SetFloat(speed, velocityOnGround.magnitude/MAX_SPEED);
-        
+
+		if(animator != null)
+			animator.SetFloat(speed, velocityOnGround.magnitude/MAX_SPEED);
     }
 
     #endregion
