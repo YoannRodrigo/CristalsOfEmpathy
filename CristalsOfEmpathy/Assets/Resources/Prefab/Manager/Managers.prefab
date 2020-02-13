@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2319607630170787359}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -650.19556, y: -334.3511, z: 151.25}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2319607630011438465}
@@ -109,7 +109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2319607631465861907}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -650.19556, y: -334.3511, z: 151.25}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2319607630011438465}
@@ -144,17 +144,17 @@ PrefabInstance:
     - target: {fileID: 751336788000770439, guid: 859eb82682a3d8a44b1248ca43cf8c88,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -650.19556
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 751336788000770439, guid: 859eb82682a3d8a44b1248ca43cf8c88,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -332.8511
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 751336788000770439, guid: 859eb82682a3d8a44b1248ca43cf8c88,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 151.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 751336788000770439, guid: 859eb82682a3d8a44b1248ca43cf8c88,
         type: 3}
@@ -200,19 +200,19 @@ PrefabInstance:
         type: 3}
       propertyPath: playerCharacterPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 3767665074962278967, guid: 413efa2a9d28d78409643aec869150a7,
+      objectReference: {fileID: 3767665074962278967, guid: 0038874635550d543ad924eeceac9997,
         type: 3}
     - target: {fileID: 751336788000770438, guid: 859eb82682a3d8a44b1248ca43cf8c88,
         type: 3}
       propertyPath: playerCharacterPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 7245934649722680806, guid: 1678b07eba2744242b8fa5f04437a9e3,
+      objectReference: {fileID: 7245934649722680806, guid: dd4d2b281c0f1d0458eb32724048d39d,
         type: 3}
     - target: {fileID: 751336788000770438, guid: 859eb82682a3d8a44b1248ca43cf8c88,
         type: 3}
       propertyPath: playerCharacterPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 7245934649722680806, guid: 923c4294270063d45ae7e1f8ea02e089,
+      objectReference: {fileID: 7245934649722680806, guid: a85ea31f6b01d7e45b690b4cec78c29d,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 859eb82682a3d8a44b1248ca43cf8c88, type: 3}
@@ -237,12 +237,12 @@ PrefabInstance:
     - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 960
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 600
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
         type: 3}
