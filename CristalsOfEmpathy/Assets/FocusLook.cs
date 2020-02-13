@@ -39,18 +39,25 @@ public class FocusLook : MonoBehaviour
 		}
 		else targetOut = false;
 
-        currentDirection = Vector3.Lerp(currentDirection, targetDirection, Time.deltaTime * speed);
-        head.forward = currentDirection;
-        head.Rotate(adjustment);
+        Look();
     }
 
     // FOCUS ON
     public void FocusOn(Vector3 position)
     {
         LooseFocus();
+        Look();
         positionTarget = position;
         isFocused = true;
     }
+
+    public void Look()
+    {
+        currentDirection = Vector3.Lerp(currentDirection, targetDirection, Time.deltaTime * speed);
+        head.forward = currentDirection;
+        head.Rotate(adjustment);
+    }
+
     public void FocusOn(Transform transform)
     {
         LooseFocus();

@@ -87,7 +87,11 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence(int id)
     {
-        if (id == -1) EndDialogue();
+        if (id == -1) 
+        {
+           EndDialogue();
+           return;
+        }
 
         sentencesHolder.SetActive(true);
         currentTextId = id;
