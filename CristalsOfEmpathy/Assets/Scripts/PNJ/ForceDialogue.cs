@@ -7,28 +7,18 @@ using UnityEngine;
 
 public class ForceDialogue : MonoBehaviour
 {
-    
-    #region Methods
+    public bool destroyAfter;
+    public bool forceOnStart;
+    public InteractiblePnj interactiblePnj;
 
     private void OnTriggerEnter(Collider other)
     {
-        interactiblePnj.StartDialogue(dialogueToPlay);
-        if (isNeededToBeDestroyed) Destroy(gameObject);
+        interactiblePnj.Speak();
+        if (destroyAfter) Destroy(gameObject);
     }
 
     private void Start()
     {
-        if(forceOnStart) interactiblePnj.StartDialogue(dialogueToPlay);
+        if(forceOnStart) interactiblePnj.Speak();
     }
-
-    #endregion
-
-    #region Member Variables
-
-    public bool isNeededToBeDestroyed;
-    public bool forceOnStart;
-    public InteractiblePnj interactiblePnj;
-    public int dialogueToPlay;
-
-    #endregion
 }

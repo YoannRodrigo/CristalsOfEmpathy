@@ -24,11 +24,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        joystick = FindObjectOfType<SingleJoystick>();
+        joystick = InterfaceManager.instance.joystick;
         rb = GetComponent<Rigidbody>();
         animator = Instantiate(GeneralGameManager.instance.playerCharacterPrefabs[GeneralGameManager.instance.GetPlayerChoice()],
             transform).GetComponentInChildren<Animator>();
-        
     }
 
     private void Update()

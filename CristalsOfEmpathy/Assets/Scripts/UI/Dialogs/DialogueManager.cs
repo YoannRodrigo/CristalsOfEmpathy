@@ -11,101 +11,100 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     #region Member Variables
+    public static DialogueManager instance;
+    void Awake() {instance = this;}
 
     public TutorialManager tutorialManager;
-
+    [Header("References")]
+    public Image portrait;
     public TextMeshProUGUI pnjNameText;
-    public Image pnjPortrait;
     public TextMeshProUGUI dialogueText;
-    public TextMeshProUGUI answer1;
-    public TextMeshProUGUI answer2;
-    public TextMeshProUGUI answer3;
-    public TextMeshProUGUI answer4;
+    [Header("Holders")]
+    public GameObject dialogueholder;
+    public GameObject sentencesHolder;
+    public GameObject answersHolder;
 
-    public GameObject dialogueBox;
-    public GameObject answerBox;
-    public GameObject joystick;
-    public GameObject pauseButton;
-    public GameObject inventoryButton;
-
-    public ScriptablePNJ currentPNJ;
-    
-    private InteractiblePnj interactiblePnj;
+    // Une action C# qui peut contenir plusieurs petit bout de "code" et être executé quand tu veux
+    public System.Action onDialogueEnd;
+    private GameObject answerPrefab;
+    List<AnswerButton> answerButtons = new List<AnswerButton>();
+    private ScriptablePNJ speaker;
     private int currentTextId;
     private int currentAnswerId;
     private bool isTextWritten;
-    private bool isDialogueEnded = true;
 
-    #endregion
-
-    #region Methods
-
-    public void SetInteractiblePnj(InteractiblePnj interactiblePnj)
+    public void Start()
     {
-        this.interactiblePnj = interactiblePnj;
+        answerPrefab = answersHolder.transform.GetChild(0).gameObject;
+        answerPrefab.SetActive(false);
     }
 
-    public bool IsDialogueEnded()
+    public void Initialize(ScriptablePNJ dialogue, int start = 0, System.Action onEnd = null)
     {
-        return isDialogueEnded;
-    }
+        Debug.Log("Initializing " + dialogue);
 
-    public void StartDialogue(Dialogue[] dialogues, int startId = 0)
-    {
-        isDialogueEnded = false;
-        dialogueBox.SetActive(true);
-        OnDialogueInteraction(currentPNJ.dialogues);
-        DisplayNextSentence(startId);
-    }
-
-    public void StartDialogue(Dialogue[] dialogues, PlayerAnswers[] playerAnswers, int startId = 0)
-    {
-        StartDialogue(dialogues, startId);
-    }
-
-    public void OnDialogueInteraction(Dialogue[] dialogues)
-    {
-        joystick.SetActive(false);
-        pauseButton.SetActive(false);
-        inventoryButton.SetActive(false);
+        InterfaceManager.instance.GameUI(false);
+        dialogueholder.SetActive(true);
+        speaker = dialogue;
+        DisplayNextSentence(start);
+        // Tu peux en faire un argument et plug n'importe quel fonction dedans, le += ajoute ton bout de code au reste de l'event
+        if(onEnd != null) onDialogueEnd += onEnd;
     }
 
     private void EndDialogue()
     {
-        interactiblePnj.OnDialogEnded();
-        ActivateGameUi();
-    }
+        InterfaceManager.instance.GameUI(true);
+        dialogueholder.SetActive(false);
 
-
-    private void ActivateGameUi()
-    {
-        dialogueBox.SetActive(false);
-        joystick.SetActive(true);
-        pauseButton.SetActive(true);
-        inventoryButton.SetActive(true);
+        // L'event se lance et on le réinitialise :)
+        if(onDialogueEnd != null)
+        {
+            onDialogueEnd.Invoke();
+            onDialogueEnd = null;
+        }
     }
 
     public void DisplayNextSentence(int id)
     {
-        if (id == -1)
-        {
-            EndDialogue();
-        }
+        if (id == -1) EndDialogue();
+
+        sentencesHolder.SetActive(true);
         currentTextId = id;
-        pnjNameText.text = currentPNJ.dialogues[id].profilePnj.pnjName;
-        pnjPortrait.sprite = currentPNJ.dialogues[id].GetSpriteWithEmotion();
-        pnjPortrait.enabled = pnjPortrait.sprite != null;
+        pnjNameText.text = speaker.dialogues[id].profilePnj.pnjName;
+        portrait.sprite = speaker.dialogues[id].GetSpriteWithEmotion();
+        portrait.enabled = portrait.sprite != null;
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(currentPNJ.dialogues[id].sentence));
+        StartCoroutine(TypeSentence(speaker.dialogues[id].sentence));
     }
 
-    public void DisplayAnswer(int id)
+    public void DestroyAnswers()
     {
+        foreach(AnswerButton b in answerButtons) Destroy(b.gameObject);
+        answerButtons.Clear();
+    }
+
+    public void DisplayAnswers(int id)
+    {
+        DestroyAnswers();
+        sentencesHolder.SetActive(false);
+        answersHolder.SetActive(true);
         currentAnswerId = id;
-        answer1.text = currentPNJ.playerAnswers[id].GetText(0);
-        answer2.text = currentPNJ.playerAnswers[id].GetText(1);
-        answer3.text = currentPNJ.playerAnswers[id].GetText(2);
-        answer4.text = currentPNJ.playerAnswers[id].GetText(3);
+        int count = 0;
+        foreach(PlayerAnswer pa in speaker.playerAnswers[id].playerAnswers)
+        {
+            CreateAnswerButton(pa.text, count);
+            count++;
+        }
+    }
+
+    public void CreateAnswerButton(string text, int id)
+    {
+        AnswerButton answer = Instantiate(answerPrefab, answersHolder.transform).GetComponent<AnswerButton>();
+        answer.gameObject.SetActive(true);
+        answer.text.text = text;
+        answer.button.onClick.RemoveAllListeners();
+        answer.button.onClick.AddListener(() => {this.Answer(id);});
+        answerButtons.Add(answer);
     }
 
     public void NextSentenceOnClick()
@@ -117,62 +116,42 @@ public class DialogueManager : MonoBehaviour
         else
         {
             isTextWritten = false;
-            if (currentPNJ.dialogues[currentTextId].isAnswerNeeded)
+            if (speaker.dialogues[currentTextId].isAnswerNeeded)
             {
-                dialogueBox.SetActive(false);
-                answerBox.SetActive(true);
-                DisplayAnswer(currentPNJ.dialogues[currentTextId].nextTextId);
+                sentencesHolder.SetActive(false);
+                answersHolder.SetActive(true);
+                DisplayAnswers(speaker.dialogues[currentTextId].nextTextId);
             }
 
             else
             {
-                if (currentPNJ.dialogues[currentTextId].nextTextId == -1 || tutorialManager && tutorialManager.isQuestAchieved && currentPNJ.dialogues[currentTextId].nextTextId == -2)
+                if (speaker.dialogues[currentTextId].nextTextId == -1 || tutorialManager && tutorialManager.isQuestAchieved && speaker.dialogues[currentTextId].nextTextId == -2)
                     EndDialogue();
 
                 else
-                    DisplayNextSentence(currentPNJ.dialogues[currentTextId].nextTextId);
+                    DisplayNextSentence(speaker.dialogues[currentTextId].nextTextId);
             }
         }
     }
 
-    public void Answer1OnClick()
+    public void Answer(int id)
     {
-        dialogueBox.SetActive(true);
-        answerBox.SetActive(false);
-        UpdateDisplay(0);
+        sentencesHolder.SetActive(true);
+        answersHolder.SetActive(false);
+        UpdateDisplay(id);
+
         //QUEST ACTIVATION MAY LOCK && FIXING SHIT
-
-        if(tutorialManager)
+        if(id == 0 && tutorialManager)
             tutorialManager.ActivateQuest();
-    }
-
-    public void Answer2OnClick()
-    {
-        dialogueBox.SetActive(true);
-        answerBox.SetActive(false);
-        UpdateDisplay(1);
-    }
-
-    public void Answer3OnClick()
-    {
-        dialogueBox.SetActive(true);
-        answerBox.SetActive(false);
-        UpdateDisplay(2);
-    }
-
-    public void Answer4OnClick()
-    {
-        dialogueBox.SetActive(true);
-        answerBox.SetActive(false);
-        UpdateDisplay(3);
     }
 
     private void UpdateDisplay(int answerId)
     {
-        PlayerAnswers playerAnswer = currentPNJ.playerAnswers[currentAnswerId];
-        DisplayNextSentence(playerAnswer.GetNextId(answerId));
-        BarPointsHandler.UpdateEmotionPoints(playerAnswer.GetEmotion(answerId),
-            playerAnswer.GetEmotionInfluence(answerId));
+        PlayerAnswers playerAnswer = speaker.playerAnswers[currentAnswerId];
+
+        DisplayNextSentence(speaker.playerAnswers[currentAnswerId].GetNextId(answerId));
+
+        BarPointsHandler.UpdateEmotionPoints(playerAnswer.GetEmotion(answerId), playerAnswer.GetEmotionInfluence(answerId));
     }
 
     private IEnumerator TypeSentence(string sentence)

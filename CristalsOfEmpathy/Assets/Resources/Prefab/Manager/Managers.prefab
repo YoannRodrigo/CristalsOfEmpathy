@@ -78,19 +78,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialManager: {fileID: 0}
+  portrait: {fileID: 0}
   pnjNameText: {fileID: 0}
-  pnjPortrait: {fileID: 0}
   dialogueText: {fileID: 0}
-  answer1: {fileID: 0}
-  answer2: {fileID: 0}
-  answer3: {fileID: 0}
-  answer4: {fileID: 0}
-  dialogueBox: {fileID: 0}
-  answerBox: {fileID: 0}
-  joystick: {fileID: 0}
-  pauseButton: {fileID: 0}
-  inventoryButton: {fileID: 0}
-  currentPNJ: {fileID: 0}
+  dialogueholder: {fileID: 0}
+  sentencesHolder: {fileID: 0}
+  answersHolder: {fileID: 0}
 --- !u!1 &2319607631465861907
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,6 +136,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2319607630011438465}
     m_Modifications:
+    - target: {fileID: 751336788000770433, guid: 859eb82682a3d8a44b1248ca43cf8c88,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
     - target: {fileID: 751336788000770439, guid: 859eb82682a3d8a44b1248ca43cf8c88,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -198,11 +196,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 751336788000770433, guid: 859eb82682a3d8a44b1248ca43cf8c88,
-        type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
     - target: {fileID: 751336788000770438, guid: 859eb82682a3d8a44b1248ca43cf8c88,
         type: 3}
       propertyPath: playerCharacterPrefabs.Array.data[0]
@@ -236,6 +229,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2319607630011438465}
     m_Modifications:
+    - target: {fileID: 5483536210514489908, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+        type: 3}
+      propertyPath: m_Name
+      value: LevelChanger
+      objectReference: {fileID: 0}
     - target: {fileID: 5483536210514490314, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -291,10 +289,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5483536210514489908, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
+    - target: {fileID: 5483536209104667063, guid: ea8b522b3050d9b459dbbdeb9250ca4a,
         type: 3}
-      propertyPath: m_Name
-      value: LevelChanger
+      propertyPath: m_RenderMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea8b522b3050d9b459dbbdeb9250ca4a, type: 3}
