@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: Suzie
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Coucou mon mignon ! J'imagine que tu n'es pas l\xE0, \xE0 cause d'un
+      coeur bris\xE9, tu es bien trop jeune pour \xE7a !  Tu t'es perdu ? \r\nC'est
+      rare de voir des nouvelles t\xEAtes ici, et crois moi, je connais tous les habitants
+      de ce village ! Tu as pu les rencontrer ? Ne sont-ils pas magnifiques ?"
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "Oh ma ch\xE9rie, pardonne moi ! Ne le prend pas mal, j'appelle tout
+      le monde de cette fa\xE7on !"
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 2
+    sentence: "Oh tu me flattes, merci beaucoup ! Tu sais ce qui me ferait encore
+      plus plaisir ? Un cadeau de chez monsieur le fleuriste... Si tu as le temps
+      et l'envie... Je resterais ici ! Je suis ravie que tu ne sois pas l'un de ceux
+      qui sont insensibles \xE0 la beaut\xE9 que nous offre la vie !"
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Comment \xE7a ? Tu n'as pas du bien les regarder. Tout le monde \xE0
+      Tilfinn est splendide que ce soit int\xE9rieurement ou ext\xE9rieurement ! Mais
+      tu es peut \xEAtre de ceux qui sont insensibles \xE0 la beaut\xE9 que nous offre
+      la vie... En tout cas, si tu cherches \xE0 t'immuniser contre l'amour, notre
+      apothicaire pourra t'aider."
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 3
+    sentence: "Oh... mais tu n'as pas \xE0 rougir ! Je suis contente de faire ta connaissance
+      en tout cas ! Tu t'appelles comment ?"
+  - profilePnj: {fileID: 0}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 4
+    sentence: "Je ne dirais pas non \xE0 des fleurs... Si tu as le temps et l'envie,
+      je resterai ici ! En tout cas, je suis ravie que tu ne sois pas de ceux qui
+      sont insensibles \xE0 la beaut\xE9 que nous offre la vie !"
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "D'habitude \xE7a ne d\xE9range pas les gens... \xC0 moins d'\xEAtre
+      de ceux qui sont insensibles \xE0 la beaut\xE9 que nous offre la vie... Vous
+      ressemblez \xE9trangement \xE0 cet apothicaire de malheur ! Comme si je faisais
+      quelque chose de d\xE9plac\xE9... Vous n'avez qu'\xE0 aller le voir, plut\xF4t
+      que de me juger !"
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 5
+    sentence: "Certaines personnes d\xE9plorent mon comportement enjou\xE9... Mais
+      depuis que nous avons eu la chance d'avoir un nouveau maire, tout nous sourit
+      ! Je ne comprends pas leurs attitudes. L'apothicaire du village, par exemple,
+      me fait beaucoup de reproches. Pourtant, je n'ai rien fait de mal ! Il me dit
+      sans cesse que j'ai besoin d'un traitement ! Vous le croyez vous ?"
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 1
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Oh mais ne t'\xE9nerve pas... C'est dommage, je pensais me faire un
+      nouvel ami, mais on dirait que tu fais parti de ceux qui sont insensibles \xE0
+      la beaut\xE9 que nous offre la vie...  En tout cas, si tu cherches \xE0 t'immuniser
+      contre l'amour, notre apothicaire pourra t'aider... Sois en s\xFBr."
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 1
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Oh merci ! Tu es chou ! Je vais aller montrer ton cadeau \xE0 tout
+      le monde, pour montrer combien tu es adorable !"
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Je ne pense pas que ce soit si utile, que \xE7a... Concentrez-vous
+      plut\xF4t sur les fleurs !"
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: Oui ! moi non plus ! Bon ces fleurs, elles ne vont pas tomber du ciel
+      ! J'attends !
+  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Pff. Je crois qu'on en a termin\xE9 ici..."
+  playerAnswers:
+  - playerAnswers:
+    - text: "H\xE9 je suis une fille !"
+      nextTextId: 1
+      emotion: 4
+      influence: 0
+    - text: "Vous \xEAtes ravissante en tout cas !"
+      nextTextId: 2
+      emotion: 0
+      influence: 1
+    - text: "Je pense \xE0 un autre adjectif.."
+      nextTextId: 3
+      emotion: 3
+      influence: 1
+    - text: '*rougir*'
+      nextTextId: 4
+      emotion: 0
+      influence: 1
+  - playerAnswers:
+    - text: 'Vous avez besoin de quelque chose ? '
+      nextTextId: 5
+      emotion: 0
+      influence: 1
+    - text: 'Ne m''appelez pas tout court '
+      nextTextId: 6
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: Je vais voir ce que je peux faire
+      nextTextId: -1
+      emotion: 0
+      influence: 1
+    - text: 'De qui parlez-vous ? '
+      nextTextId: 7
+      emotion: 2
+      influence: 1
+  - playerAnswers:
+    - text: '...'
+      nextTextId: -1
+      emotion: 1
+      influence: 1
+    - text: Cela ne vous regarde pas !
+      nextTextId: 8
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: Tiens, cadeau !
+      nextTextId: 9
+      emotion: 0
+      influence: 2
+    - text: "D'accord \xE0 plus tard !"
+      nextTextId: -1
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: 'Vous voulez que j''aille le voir ? '
+      nextTextId: 10
+      emotion: 0
+      influence: 1
+    - text: '...'
+      nextTextId: 11
+      emotion: 1
+      influence: 1
+    - text: Hm, oui
+      nextTextId: 12
+      emotion: 3
+      influence: 1
