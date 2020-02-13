@@ -12,8 +12,20 @@ public class DialogueManager : MonoBehaviour
 {
     #region Member Variables
     public static DialogueManager instance;
-    void Awake() {instance = this;}
-
+    public void Awake()
+    {
+        if(instance == null)
+        {
+            transform.parent = null;
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    
     public TutorialManager tutorialManager;
     [Header("References")]
     public Image portrait;
@@ -32,6 +44,8 @@ public class DialogueManager : MonoBehaviour
     private int currentTextId;
     private int currentAnswerId;
     private bool isTextWritten;
+
+
 
     public void Start()
     {

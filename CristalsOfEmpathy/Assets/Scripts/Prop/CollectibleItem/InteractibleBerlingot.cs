@@ -28,7 +28,7 @@ public class InteractibleBerlingot : InteractibleItem
 
         if (canBeTouch && berlingotItem.CompareTag("Berlingots") && isQuestActivated)
         {
-            bool wasPickedUp = Inventory.inventoryInstance.Add(item);
+            bool wasPickedUp = Inventory.instance.Add(item);
 
             if (wasPickedUp) Destroy(berlingotItem.gameObject);
         }

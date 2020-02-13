@@ -4,7 +4,19 @@ using UnityEngine.UI;
 public class InterfaceManager : MonoBehaviour
 {
     public static InterfaceManager instance;
-    void Awake() {instance = this;}
+    public void Awake()
+    {
+        if(instance == null)
+        {
+            transform.parent = null;
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     [Header("References")]
     public SingleJoystick joystick;
