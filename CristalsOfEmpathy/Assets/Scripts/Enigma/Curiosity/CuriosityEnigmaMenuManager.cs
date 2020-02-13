@@ -47,13 +47,13 @@ public class CuriosityEnigmaMenuManager : MonoBehaviour
     public IEnumerator WaitToReturnMenu()
     {
         yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(0);
+        LevelChanger.instance.ChangeToLevelWithFade(0);
     }
 
     public IEnumerator WaitToReturnEnigma()
     {
         yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(7);
+        LevelChanger.instance.ChangeToLevelWithFade(7);
     }
 
     public void StartWaitToReturnCoroutine()

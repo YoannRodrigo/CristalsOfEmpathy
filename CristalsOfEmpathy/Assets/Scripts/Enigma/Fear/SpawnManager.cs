@@ -117,6 +117,7 @@ public class SpawnManager : MonoBehaviour
                 break;
             case 19:
                 lastGhost = SpawnAGhost(4, 5, 6);
+                lastGhost.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
                 fearEnigmaManager.SetLastGhost(lastGhost);
                 break;
         }
