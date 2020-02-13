@@ -12,5 +12,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
   m_Name: Scientifique
   m_EditorClassIdentifier: 
-  dialogues: []
-  playerAnswers: []
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 9e22b7fc3859b40e68a841a99ec420d8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Incroyable, je n'arrive pas \xE0 le croire... C'est quand m\xEAme curieux,
+      tr\xE8s curieux m\xEAme. Oh vous vouliez me parler peut-\xEAtre ?"
+  - profilePnj: {fileID: 11400000, guid: 9e22b7fc3859b40e68a841a99ec420d8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 2
+    sentence: "Oh excusez-moi, j'\xE9tais plong\xE9 dans mes pens\xE9es. Depuis peu,
+      je m\xE8ne des exp\xE9riences sur les habitants de ce village... Enfin, disons
+      plut\xF4t que je les observe. J'ai l'impression que le breuvage servi \xE0 la
+      taverne provoque chez nos chers habitants des troubles qui sortent de l'ordinaire. "
+  - profilePnj: {fileID: 11400000, guid: 9e22b7fc3859b40e68a841a99ec420d8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "L'euphorie li\xE9e \xE0 l'\xE9lection du nouveau maire engendre des
+      comportements sociaux plus qu'\xE9trange. Je suis en train d'examiner \xE7a
+      de plus pr\xE8s..."
+  - profilePnj: {fileID: 11400000, guid: 9e22b7fc3859b40e68a841a99ec420d8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "J'encourage toujours les \xE2mes curieuses, mais pour cette fois, je
+      pr\xE9f\xE8re travailler seul. Mais rien ne vous emp\xEAche de faire vos observations
+      de votre c\xF4t\xE9, vous devriez aller \xE0 la rencontre des habitants ! Posez
+      leur des questions, car n'oubliez pas, la curiosit\xE9 est le plus beau des
+      d\xE9fauts."
+  - profilePnj: {fileID: 11400000, guid: 9e22b7fc3859b40e68a841a99ec420d8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Moi fou ? Sachez que je me laisse guider par la curiosit\xE9, et comme
+      j'ai l'habitude de dire, la curiosit\xE9 est le plus beau des d\xE9fauts ! Tu
+      devrais en prendre de la graine, maintenant file !"
+  - profilePnj: {fileID: 11400000, guid: 9e22b7fc3859b40e68a841a99ec420d8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Je suis en phase d'observation pour le moment. \xC0 votre \xE2ge, ne
+      me dites pas que cela vous effraie ? O\xF9 est donc pass\xE9e la fougue de la
+      jeunesse ? Ouvrez un petit peu votre esprit... Croyez-moi, la curiosit\xE9 est
+      le plus beau des d\xE9fauts."
+  - profilePnj: {fileID: 11400000, guid: 9e22b7fc3859b40e68a841a99ec420d8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Moi s\xE9nile ? Sachez que je me laisse guider par la curiosit\xE9,
+      et comme j'ai l'habitude de dire, la curiosit\xE9 est le plus beau des d\xE9fauts
+      ! Tu devrais en prendre de la graine, maintenant file !"
+  playerAnswers:
+  - playerAnswers:
+    - text: De quoi parlez-vous ?
+      nextTextId: 1
+      emotion: 2
+      influence: 1
+    - text: "Vous faites des exp\xE9riences en pleine nature ?"
+      nextTextId: 5
+      emotion: 1
+      influence: 1
+    - text: "Vous \xEAtes pas un peu jeune pour \xEAtre s\xE9nile ?"
+      nextTextId: 6
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: Je peux vous aider ?
+      nextTextId: 3
+      emotion: 0
+      influence: 1
+    - text: Vous avez l'air d'un fou...
+      nextTextId: 4
+      emotion: 3
+      influence: 1
+    - text: "Vous faites des exp\xE9riences sur les habitants ?"
+      nextTextId: 5
+      emotion: 1
+      influence: 1

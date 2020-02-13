@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: Alberthus
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: f421b65f2d6984e07990afeba1606e93, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "H\xE9 l'ami, viens voir par ici ! Tu aurais pas vu une petite fille
+      \xE0 l'or\xE9e du bois par hasard ? Elle s'appelle Alice, je crains qu'elle
+      ait pris ma requ\xEAte trop \xE0 coeur et Agatha s'inqui\xE8te !"
+  - profilePnj: {fileID: 11400000, guid: f421b65f2d6984e07990afeba1606e93, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Si tu pouvais rassurer sa m\xE8re, cela m'arrangerait beaucoup ! Agatha
+      se fait un sang d'encre... Je m'en veux d'avoir embarqu\xE9 Alice dans cette
+      histoire. La mar\xE9chauss\xE9e m'a indiqu\xE9 tout \xE0 l'heure qu'Agatha se
+      trouvait pr\xE8s du manoir de l'ancien maire, vous la trouverez un peu plus
+      loin ! Si vous pouviez la pr\xE9venir..."
+  - profilePnj: {fileID: 11400000, guid: f421b65f2d6984e07990afeba1606e93, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Merci \xE0 toi ! Elle devrait \xEAtre \xE0 l'entr\xE9e du village,
+      si tu la vois, passe voir Agatha, je crois qu'elle se trouve pr\xE8s du manoir
+      de l'ancien maire !"
+  - profilePnj: {fileID: 11400000, guid: f421b65f2d6984e07990afeba1606e93, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "Oui, mais il n'y en a pas beaucoup ici. Personnellement je les laisse
+      libre de se promener o\xF9 ils veulent ! M\xEAme si Philom\xE8ne, notre agricultrice,
+      n'a pas le m\xEAme avis l\xE0 dessus, surtout ces derniers temps...Je ne sais
+      pas ce qu'il se passe mais ils n'en font qu'\xE0 leur t\xEAte ! Ils doivent
+      sentir quelque chose que nous ne percevons pas, mais quoi ?"
+  - profilePnj: {fileID: 0}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 2
+    sentence: "Insupportable ? disons qu'elle est plut\xF4t motiv\xE9e \xE0 l'id\xE9e
+      de retrouver ce mouton... C'est une enfant apr\xE8s tout, on ne peut pas lui
+      en vouloir d'\xEAtre enthousiaste ! Pouvez-vous simplement pr\xE9venir Agatha
+      si vous la voyiez ?"
+  - profilePnj: {fileID: 11400000, guid: f421b65f2d6984e07990afeba1606e93, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "La jeunesse est curieuse \xE0 ce que je vois, \xE7a fait plaisir. Dans
+      votre qu\xEAte, n'oubliez pas de pr\xE9venir Agatha si vous la croisez. Oh et
+      si vous trouvez ce fameux mouton, revenez me voir !"
+  - profilePnj: {fileID: 11400000, guid: f421b65f2d6984e07990afeba1606e93, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Mon enfant, soyez sans crainte ! Je crois en notre bonne \xE9toile,
+      si quelque chose se trame, la nature fera en sorte de nous prot\xE9ger ! En
+      attendant, il faut que je retrouve ce mouton..."
+  - profilePnj: {fileID: 0}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Vous \xEAtes taquin \xE0 ce que je vois... Croyez le ou non mais ce
+      n'est pas la premi\xE8re fois qu'on me traite de fou ! En fait, vous devriez
+      bien vous entendre avec Philom\xE8ne ! N'h\xE9sitez pas \xE0 aller la voir pour
+      \xE9changer \xE0 mon sujet, \xE7a lui fera plaisir ! Pendant ce temps, je vais
+      m'occuper de mes animaux !"
+  playerAnswers:
+  - playerAnswers:
+    - text: "Vous voulez que j'aille la pr\xE9venir ?"
+      nextTextId: 1
+      emotion: 0
+      influence: 1
+    - text: Une petite fille ?  Je vais aller voir !
+      nextTextId: 2
+      emotion: 0
+      influence: 1
+    - text: "Tous les animaux sont \xE0 vous ?"
+      nextTextId: 3
+      emotion: 2
+      influence: 1
+    - text: "Cette gamine \xE9tait insupportable..."
+      nextTextId: 4
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: "Je vais enqu\xEAter l\xE0 dessus !"
+      nextTextId: 5
+      emotion: 2
+      influence: 1
+    - text: Quelque chose de grave se trame ?
+      nextTextId: 6
+      emotion: 1
+      influence: 1
+    - text: "Je per\xE7ois surtout votre folie..."
+      nextTextId: 7
+      emotion: 1
+      influence: 1
+  - playerAnswers:
+    - text: "Peut-\xEAtre, si je la croise"
+      nextTextId: -1
+      emotion: 4
+      influence: 0
+    - text: Non, ne comptez pas sur moi !
+      nextTextId: -1
+      emotion: 3
+      influence: 1
