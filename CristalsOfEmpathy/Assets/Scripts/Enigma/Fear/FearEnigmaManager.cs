@@ -60,12 +60,12 @@ public class FearEnigmaManager : MonoBehaviour
     private IEnumerator WaitToReturn()
     {
         yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(0);
+        LevelChanger.instance.ChangeToLevelWithFade(0);
     }
 
     private IEnumerator WaitToReturnFearEnigma()
     {
         yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(6);
+        LevelChanger.instance.ChangeToLevelWithFade(6);
     }
 }
