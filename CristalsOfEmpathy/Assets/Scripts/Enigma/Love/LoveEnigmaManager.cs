@@ -52,6 +52,7 @@ public class LoveEnigmaManager : MonoBehaviour
 
     private void Start()
     {
+        LevelChanger.instance.FadeOut();
         AkSoundEngine.PostEvent("StartLoveMusic", gameObject);
         currentCouple = couples[0];
         ChooseRandomPersonna();

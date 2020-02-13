@@ -19,6 +19,7 @@ public class CuriosityEnigmaMenuManager : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1;
+        LevelChanger.instance.FadeOut();
     }
     public void LeaveButtonOnClick()
     {

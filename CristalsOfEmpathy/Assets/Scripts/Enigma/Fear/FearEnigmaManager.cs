@@ -14,6 +14,11 @@ public class FearEnigmaManager : MonoBehaviour
     public GameObject winScreen;
     public GameObject loseScreen;
 
+    private void Start()
+    {
+        LevelChanger.instance.FadeOut();
+    }
+    
     public void SetLastGhost(GameObject lastGhost)
     {
         this.lastGhost = lastGhost;
