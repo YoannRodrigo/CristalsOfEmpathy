@@ -41,6 +41,7 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     private void Start()
     {
         AkSoundEngine.PostEvent("StartAversionMusic", gameObject);
+        LevelChanger.instance.FadeOut();
     }
     public void UpdateScore(float pointToAdd)
     {
