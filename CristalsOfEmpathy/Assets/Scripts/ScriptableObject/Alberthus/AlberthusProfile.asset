@@ -9,8 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
-  m_Name: Alberthus
+  m_Script: {fileID: 11500000, guid: ed0fc4ffadc5d434db286b052d3ce931, type: 3}
+  m_Name: AlberthusProfile
   m_EditorClassIdentifier: 
-  dialogues: []
-  playerAnswers: []
+  pnjName: Alberthus
+  happyFace: {fileID: 0}
+  sadFace: {fileID: 0}
+  confuseFace: {fileID: 0}
+  angryFace: {fileID: 0}
+  fearFace: {fileID: 0}

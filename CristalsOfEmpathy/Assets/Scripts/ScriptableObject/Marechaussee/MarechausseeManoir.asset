@@ -1,0 +1,280 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: MarechausseeManoir
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Nuien ! Regarde qui voil\xE0... Comme par hasard !"
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Tiens donc, qu'est-ce que tu fais ici ? On dirait que tu as d\xE9j\xE0
+      pris tes marques... Personne ne s'aventure ici habituellement ! Je suis s\xFBr
+      que tu as quelque chose \xE0 voir avec la disparition du moumou... \xC0 moins
+      que ce soit ce vampire de Dante..."
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: "Oui... Tu te prom\xE8nes \xE0 l'\xE9cart de l'euphorie ambiante, dans
+      l'ombre du manoir... Qui pr\xE9f\xE9rerait passer du temps ici, plut\xF4t que
+      de participer aux festivit\xE9s ? \n"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "Des personnes \xE9tranges... Des personnes \xE0 surveiller. J'imagine
+      que tu es venu parler aux esprits c'est \xE7a ? Si \xE7a ne tenait qu'\xE0 nous,
+      on fermerait cette zone aux gens comme toi..."
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 5
+    sentence: "Le manoir de l'ancien maire est hant\xE9, tout le monde le sait...
+      Ne me fais pas croire que tu le d\xE9couvres !"
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Tu es ici pour attiser leur haine contre nous c'est \xE7a ? On a pas
+      encore de preuves de tes actes, mais sache que quand on en aura, on s'occupera
+      de ton cas ! En attendant, Muien, on a des choses \xE0 r\xE9gler et des enqu\xEAtes
+      \xE0 mener ! Quand \xE0 toi, je te dis \xE0 tr\xE8s bient\xF4t..."
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 7
+    sentence: "Elle est bien dr\xF4le celle l\xE0... Ne crois pas que tu es le premier
+      \xE0 vouloir nous berner. On sait rep\xE9rer les menteurs dans ton genre, on
+      t'a \xE0 l'oeil depuis le d\xE9but. "
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 2
+    sentence: "Le moumou disparu a \xE9t\xE9 aper\xE7u ici m\xEAme il y a quelques
+      heures... Tu vas me dire que c'est une co\xEFncidence si on te retrouve pile
+      \xE0 l'endroit o\xF9 il a \xE9t\xE9 aper\xE7u derni\xE8rement ? Sans personne
+      d'autre aux alentours ?"
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 9
+    sentence: "Tu nous prends pour des idiots ? Bien s\xFBr qu'on sait ce que c'est
+      un moumou !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Oui... Bien s\xFBr que nous le savons ! Maintenant, laisse nous enqu\xEAter
+      petit ! On a pas besoin de tes remarques ! Et si tu t'avises d'\xEAtre encore
+      \xE0 un endroit o\xF9 tu ne devrais pas \xEAtre, nous serons l\xE0 pour te rappeler
+      \xE0 l'ordre ! Maintenant file ! Nous avons \xE0 faire !"
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 11
+    sentence: "\xC7a suffit maintenant... On a pas de temps \xE0 perdre avec toi..."
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Oui... On a pas encore de preuves de tes actes, mais sache que quand
+      on en aura, on s'occupera de ton cas ! En attendant, Muien, on a des choses
+      \xE0 r\xE9gler et des enqu\xEAtes \xE0 mener ! Quand \xE0 toi, je te dis \xE0
+      tr\xE8s bient\xF4t..."
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 13
+    sentence: "Tu te prends pour un professionnel ? Tu crois que n'importe qui peut
+      nous aider \xE0 enqu\xEAter ? C'est un m\xE9tier, c'est pas \xE0 la port\xE9e
+      de n'importe qui ! Nous aider... Non mais t'y crois toi Muien ?"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Incroyable... Rappelle toi qu'on est des professionnels, quand tu chercheras
+      \xE0 nuire au village et que quand on aura les preuves de ta culpabilit\xE9,
+      ton petit jeu d'acteur ne servira \xE0 rien ! Maintenant file ! Nous avons \xE0
+      faire !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 15
+    sentence: "Autre chose \xE0 faire que d'enqu\xEAter sur une disparition importante
+      ? Autre chose \xE0 faire que de pr\xE9server la s\xE9curit\xE9 de notre village
+      ? Mais enfin, qu'est-ce qui ne va pas chez toi ?\n"
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 4
+    sentence: "Le village est en pleine crise ! \xC0 cette disparition myst\xE9rieuse
+      vient s'ajouter les esprits ,les exp\xE9riences douteuses de Simon et des mages...
+      Sans compter que nous devons maintenant  surveiller les gens pernicieux de ton
+      acabit... Alors non... Nous n'avons pas autre chose \xE0 faire !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 17
+    sentence: "Parano\xEFaques ? Tu veux dire professionnels !  Tu crois que ce village
+      serait si paisible sans nos interventions ? \n"
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Laisse le Muien, il ne sait pas ce qu'il dit ! Mais garde \xE0 l'esprit
+      que nous sommes des professionnels et quand tu chercheras \xE0 nuire au village,
+      nous serons l\xE0... Maintenant file ! Nous avons \xE0 faire !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 19
+    sentence: "Le manoir de l'ancien maire est hant\xE9, tout le monde le sait...
+      Ne me fais pas croire que tu le d\xE9couvres !"
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: "Tu es ici pour attiser leur haine contre nous c'est \xE7a ? On a pas
+      encore de preuves de tes actes, mais sache que quand on en aura, on s'occupera
+      de ton cas ! En attendant, Muien, on a des choses \xE0 r\xE9gler et des enqu\xEAtes
+      \xE0 mener ! Quand \xE0 toi, je te dis \xE0 tr\xE8s bient\xF4t..."
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 21
+    sentence: "Oui bien s\xFBr...  Bon on a perdu suffisamment de temps avec toi !
+      Viens Muien !\n"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Oui... On a pas encore de preuves de tes actes, mais sache que quand
+      on en aura, on s'occupera de ton cas ! En attendant, Muien, on a des choses
+      \xE0 r\xE9gler et des enqu\xEAtes \xE0 mener ! Quand \xE0 toi, je te dis \xE0
+      tr\xE8s bient\xF4t..."
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 23
+    sentence: 'C''est un marrant celui-ci ! Tout le monde est au courant de la disparition
+      du moumou ! Ne jouez pas au plus malin avec nous !
+
+'
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 3
+    sentence: "Le moumou disparu a \xE9t\xE9 aper\xE7u ici m\xEAme il y a quelques
+      heures... Tu vas me dire que tu n'as rien vu c'est \xE7a ?"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 25
+    sentence: "Oui, fais donc \xE7a... Laisse nous enqu\xEAter tranquillement !\n"
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Nous gardons un oeil sur toi, m\xEAme au village, on est partout !
+      Bon, allons-y Muien, nous avons des choses \xE0 r\xE9gler et des enqu\xEAtes
+      \xE0  mener !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 27
+    sentence: "\xC7a ne nous fait pas plaisir de te parler non plus, tu sais... Mais
+      les personnes dans ton genre requi\xE8rent notre attention. Si tu repr\xE9sentes
+      une menace pour le village, alors il est de notre devoir de t'interroger !"
+  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Ton comportement est plus que suspect ! Nous allons garder un oeil
+      sur toi, et cela m\xEAme au village ! Crois moi, nous sommes partout ! Bon,
+      allons-y Muien, nous avons des choses \xE0 r\xE9gler et des enqu\xEAtes \xE0
+      mener en attendant..."
+  playerAnswers:
+  - playerAnswers:
+    - text: Je ne fais que me promener !
+      nextTextId: 2
+      emotion: 0
+      influence: 1
+    - text: "Je n'ai rien \xE0 voir avec \xE7a !"
+      nextTextId: 6
+      emotion: 1
+      influence: 1
+    - text: De quoi parlez-vous ?
+      nextTextId: 22
+      emotion: 2
+      influence: 1
+    - text: "Vous avez pas autre chose \xE0 faire ?"
+      nextTextId: 14
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: Aux esprits ?
+      nextTextId: 4
+      emotion: 2
+      influence: 1
+    - text: Je vais retourner au village...
+      nextTextId: 24
+      emotion: 1
+      influence: 1
+    - text: Si vous pouviez juste ne plus me parler...
+      nextTextId: 26
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: Vous savez au moins ce que c'est un moumou ?
+      nextTextId: 8
+      emotion: 3
+      influence: 1
+    - text: Mais je ne vous mens pas !
+      nextTextId: 10
+      emotion: 1
+      influence: 1
+    - text: "Je peux vous aider \xE0 enqu\xEAter ?"
+      nextTextId: 12
+      emotion: 0
+      influence: 1
+  - playerAnswers:
+    - text: Vous savez au moins ce que c'est un moumou ?
+      nextTextId: 8
+      emotion: 3
+      influence: 1
+    - text: Non je n'ai rien vu !
+      nextTextId: 10
+      emotion: 1
+      influence: 1
+    - text: "Je peux vous aider \xE0 enqu\xEAter ?"
+      nextTextId: 12
+      emotion: 0
+      influence: 1
+  - playerAnswers:
+    - text: "Vous \xEAtes parano\xEFaques !"
+      nextTextId: 16
+      emotion: 3
+      influence: 1
+    - text: Des esprits ?
+      nextTextId: 4
+      emotion: 2
+      influence: 1
+    - text: Pardon... Je ne savais pas...
+      nextTextId: 20
+      emotion: 1
+      influence: 1
