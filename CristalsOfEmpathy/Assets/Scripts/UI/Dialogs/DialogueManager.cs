@@ -28,7 +28,7 @@ public class DialogueManager : MonoBehaviour
     public System.Action onDialogueEnd;
     private GameObject answerPrefab;
     List<AnswerButton> answerButtons = new List<AnswerButton>();
-    private ScriptablePNJ speaker;
+    private ScriptablePNJ dialogue;
     private int currentTextId;
     private int currentAnswerId;
     private bool isTextWritten;
@@ -45,7 +45,7 @@ public class DialogueManager : MonoBehaviour
 
         InterfaceManager.instance.GameUI(false);
         dialogueholder.SetActive(true);
-        speaker = dialogue;
+        this.dialogue = dialogue;
         DisplayNextSentence(start);
         // Tu peux en faire un argument et plug n'importe quel fonction dedans, le += ajoute ton bout de code au reste de l'event
         if(onEnd != null) onDialogueEnd += onEnd;
@@ -70,11 +70,20 @@ public class DialogueManager : MonoBehaviour
 
         sentencesHolder.SetActive(true);
         currentTextId = id;
-        pnjNameText.text = speaker.dialogues[id].profilePnj.pnjName;
-        portrait.sprite = speaker.dialogues[id].GetSpriteWithEmotion();
+        if(dialogue.dialogues[id].profilePnj == null)
+        {
+            pnjNameText.text = "Speaker Unknown";
+            Debug.Log("No dialogue found in sentence with id : " + id + ", in the " + dialogue + " dialogue.");
+        }
+        else
+        {
+            pnjNameText.text = dialogue.dialogues[id].profilePnj.pnjName;    
+        }
+        
+        portrait.sprite = dialogue.dialogues[id].GetSpriteWithEmotion();
         portrait.enabled = portrait.sprite != null;
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(speaker.dialogues[id].sentence));
+        StartCoroutine(TypeSentence(dialogue.dialogues[id].sentence));
     }
 
     public void DestroyAnswers()
@@ -90,7 +99,7 @@ public class DialogueManager : MonoBehaviour
         answersHolder.SetActive(true);
         currentAnswerId = id;
         int count = 0;
-        foreach(PlayerAnswer pa in speaker.playerAnswers[id].playerAnswers)
+        foreach(PlayerAnswer pa in dialogue.playerAnswers[id].playerAnswers)
         {
             CreateAnswerButton(pa.text, count);
             count++;
@@ -116,20 +125,20 @@ public class DialogueManager : MonoBehaviour
         else
         {
             isTextWritten = false;
-            if (speaker.dialogues[currentTextId].isAnswerNeeded)
+            if (dialogue.dialogues[currentTextId].isAnswerNeeded)
             {
                 sentencesHolder.SetActive(false);
                 answersHolder.SetActive(true);
-                DisplayAnswers(speaker.dialogues[currentTextId].nextTextId);
+                DisplayAnswers(dialogue.dialogues[currentTextId].nextTextId);
             }
 
             else
             {
-                if (speaker.dialogues[currentTextId].nextTextId == -1 || tutorialManager && tutorialManager.isQuestAchieved && speaker.dialogues[currentTextId].nextTextId == -2)
+                if (dialogue.dialogues[currentTextId].nextTextId == -1 || tutorialManager && tutorialManager.isQuestAchieved && dialogue.dialogues[currentTextId].nextTextId == -2)
                     EndDialogue();
 
                 else
-                    DisplayNextSentence(speaker.dialogues[currentTextId].nextTextId);
+                    DisplayNextSentence(dialogue.dialogues[currentTextId].nextTextId);
             }
         }
     }
@@ -147,9 +156,9 @@ public class DialogueManager : MonoBehaviour
 
     private void UpdateDisplay(int answerId)
     {
-        PlayerAnswers playerAnswer = speaker.playerAnswers[currentAnswerId];
+        PlayerAnswers playerAnswer = dialogue.playerAnswers[currentAnswerId];
 
-        DisplayNextSentence(speaker.playerAnswers[currentAnswerId].GetNextId(answerId));
+        DisplayNextSentence(dialogue.playerAnswers[currentAnswerId].GetNextId(answerId));
 
         BarPointsHandler.UpdateEmotionPoints(playerAnswer.GetEmotion(answerId), playerAnswer.GetEmotionInfluence(answerId));
     }
