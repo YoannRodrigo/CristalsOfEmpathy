@@ -45,7 +45,7 @@ MonoBehaviour:
       n'a pas le m\xEAme avis l\xE0 dessus, surtout ces derniers temps...Je ne sais
       pas ce qu'il se passe mais ils n'en font qu'\xE0 leur t\xEAte ! Ils doivent
       sentir quelque chose que nous ne percevons pas, mais quoi ?"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: f421b65f2d6984e07990afeba1606e93, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 2
@@ -67,7 +67,7 @@ MonoBehaviour:
     sentence: "Mon enfant, soyez sans crainte ! Je crois en notre bonne \xE9toile,
       si quelque chose se trame, la nature fera en sorte de nous prot\xE9ger ! En
       attendant, il faut que je retrouve ce mouton..."
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: f421b65f2d6984e07990afeba1606e93, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
