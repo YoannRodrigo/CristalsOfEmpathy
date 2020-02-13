@@ -4,13 +4,24 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Hemi
+    100004: Hemi.001
+    100006: well
     400000: //RootNode
+    400002: Hemi
+    400004: Hemi.001
+    400006: well
     2100000: well__wizardTowerDiff
+    2100002: well
     2300000: //RootNode
+    2300002: well
     3300000: //RootNode
+    3300002: well
     4300000: well
     7400000: Default Take
     9500000: //RootNode
+    10800000: Hemi
+    10800002: Hemi.001
   externalObjects: {}
   materials:
     importMaterials: 1
