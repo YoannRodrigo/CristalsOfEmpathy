@@ -13,12 +13,17 @@ public class ForceDialogue : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        interactiblePnj.Speak();
-        if (destroyAfter) Destroy(gameObject);
+        Force();
     }
 
     private void Start()
     {
-        if(forceOnStart) interactiblePnj.Speak();
+        if(forceOnStart) Force();
+    }
+
+    private void Force()
+    {
+        interactiblePnj.Speak();
+        if (destroyAfter) Destroy(gameObject);
     }
 }
