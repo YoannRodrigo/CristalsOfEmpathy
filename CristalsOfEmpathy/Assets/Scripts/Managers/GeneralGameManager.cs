@@ -8,17 +8,6 @@ public class GeneralGameManager : MonoBehaviour
     #region Member Variables
 
     public static GeneralGameManager instance;
-
-    public GameObject[] playerCharacterPrefabs;
-    public GameObject cameraPrefab;
-    public GameObject playerPrefab;
-
-    private static int _playerPrefabChoice = 0;
-    private int nextPortalIndex = 0;
-    #endregion
-
-    #region Methods
-
     public void Awake()
     {
         if(instance == null)
@@ -32,6 +21,19 @@ public class GeneralGameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    public GameObject[] playerCharacterPrefabs;
+    public GameObject cameraPrefab;
+    public GameObject playerPrefab;
+
+    private static int _playerPrefabChoice = 0;
+    private int nextPortalIndex = 0;
+    #endregion
+
+    #region Methods
+
+
+
     public void Go(string level, int portal = 0)
     {
         LevelChanger.instance.ChangeToLevelWithFade(level);

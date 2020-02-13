@@ -35,6 +35,7 @@ public class LevelManager : MonoBehaviour
     {
         GameObject o = Instantiate(GeneralGameManager.instance.playerPrefab, position, Quaternion.identity);
         o.transform.forward = direction;
+        InterfaceManager.instance.GameUI(true);
         return o;
     }
 

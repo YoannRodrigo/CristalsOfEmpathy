@@ -18,6 +18,8 @@ public abstract class InteractibleItem : MonoBehaviour
 
     private void Update()
     {
+        if(!canBeTouch) return;
+
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
             if (Camera.main != null)
             {

@@ -7,45 +7,20 @@ using UnityEngine;
 
 public class InteractiblePnj : InteractibleItem
 {
-    #region Member Variables
-
-    public DialogueManager dialogueManager;
-    public ScriptablePNJ scriptablePnj;
-
-    #endregion
-
-    #region Methods
-
-    private void Start()
-    {
-        if (dialogueManager == null)
-        {
-            dialogueManager = FindObjectOfType<DialogueManager>();
-        }
-    }
+    public ScriptablePNJ dialogue;
 
     protected override void OnTouch()
     {
-        if (canBeTouch)
+        Speak();
+    }
+
+    public void Speak()
+    {
+        if(dialogue != null) 
         {
-            Debug.Log("Interacting with a PNJ...");
-            StartDialogue();
+            DialogueManager.instance.Initialize(dialogue, 0, () => {this.OnDialogEnded();});
         }
     }
 
-    public void StartDialogue(int startId = 0)
-    {
-        dialogueManager.SetInteractiblePnj(this);
-        dialogueManager.currentPNJ = scriptablePnj;
-        if (scriptablePnj.playerAnswers.Length == 0)
-            dialogueManager.StartDialogue(scriptablePnj.dialogues, startId);
-        else
-            dialogueManager.StartDialogue(scriptablePnj.dialogues, scriptablePnj.playerAnswers, startId);
-    }
-
-    public virtual void OnDialogEnded()
-    {
-    }
-
-    #endregion
+    public virtual void OnDialogEnded(){}
 }
