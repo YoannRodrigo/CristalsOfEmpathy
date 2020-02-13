@@ -918,22 +918,6 @@ PrefabInstance:
       propertyPath: path
       value: 
       objectReference: {fileID: 1247707066}
-    - target: {fileID: 2390368018228209084, guid: 6c2c4dd2054984941b21468f10d7ddbe,
-        type: 3}
-      propertyPath: range
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2390368018228209084, guid: 6c2c4dd2054984941b21468f10d7ddbe,
-        type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 11400000, guid: aabd9d346f809c84c8fd5ffdad5eb829,
-        type: 2}
-    - target: {fileID: 2390368018228209075, guid: 6c2c4dd2054984941b21468f10d7ddbe,
-        type: 3}
-      propertyPath: m_Radius
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c2c4dd2054984941b21468f10d7ddbe, type: 3}
 --- !u!1001 &3397156172094664996
