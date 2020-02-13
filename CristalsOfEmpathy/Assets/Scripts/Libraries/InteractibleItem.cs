@@ -1,12 +1,25 @@
 ﻿using UnityEngine;
+#if UNITY_EDITOR
+    using UnityEditor;
+#endif
+
+[RequireComponent(typeof(SphereCollider))]
 public abstract class InteractibleItem : MonoBehaviour
 {
     protected bool canBeTouch;
-    public GameObject particlePrefab;
     protected ParticleSystem particle;
+    protected SphereCollider sphere;
+
+    public float range;
+    public GameObject particlePrefab;
+
+
 
     public virtual void Start()
     {
+        sphere = GetComponent<SphereCollider>();
+
+
         if(particlePrefab != null)
         {
             particle = Instantiate(particlePrefab, transform).GetComponent<ParticleSystem>();
@@ -75,4 +88,21 @@ public abstract class InteractibleItem : MonoBehaviour
         canBeTouch = false;
         LevelManager.instance.player.look.LooseFocus();
     }
+
+#if UNITY_EDITOR
+    public virtual void OnValidate()
+    {
+        sphere = GetComponent<SphereCollider>();
+        if(range < 0f) range = 0f;
+        sphere.radius = range;
+    }
+
+    public virtual void OnDrawGizmos()
+    {
+        Handles.color = new Color32(255, 255, 255, 255);
+        Handles.DrawWireDisc(transform.position, Vector3.up, range);
+        Handles.color = new Color32(0, 150, 0, 50);
+        Handles.DrawSolidArc(transform.position, Vector3.up, Vector3.right, 360f, range);
+    }
+#endif
 }

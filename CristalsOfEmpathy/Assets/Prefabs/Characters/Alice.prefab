@@ -107,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particlePrefab: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
     type: 3}
+  range: 0
   dialogue: {fileID: 11400000, guid: 7caf86eeb4559634684c2bdfa496fee1, type: 2}
 --- !u!135 &3627055631616518773
 SphereCollider:
@@ -119,7 +120,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.5
+  m_Radius: 0
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3627055631616518762
 MonoBehaviour:

@@ -1,9 +1,8 @@
-﻿#region Using Directives
-
+﻿#if UNITY_EDITOR
+    using UnityEditor;
+#endif
 using System;
 using UnityEngine;
-
-#endregion
 
 [RequireComponent(typeof(SphereCollider))]
 public class InteractiblePnj : InteractibleItem
@@ -65,4 +64,20 @@ public class InteractiblePnj : InteractibleItem
             npc.look.LooseFocus();
         }
     }
+#if UNITY_EDITOR
+    public override void OnDrawGizmos()
+    {  
+        GUI.skin.label.normal.textColor = new Color32(255, 255, 255, 255);
+        if(dialogue != null)
+        {
+            base.OnDrawGizmos();
+            Handles.Label(transform.position, dialogue.name);
+        }
+        else
+        {
+            Handles.Label(transform.position, "No Dialogue assigned");
+        }
+
+    }
+#endif
 }
