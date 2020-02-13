@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
-  m_Name: "GardienAD\xE9but"
+  m_Name: GardienAmourIntro
   m_EditorClassIdentifier: 
   dialogues:
   - profilePnj: {fileID: 0}

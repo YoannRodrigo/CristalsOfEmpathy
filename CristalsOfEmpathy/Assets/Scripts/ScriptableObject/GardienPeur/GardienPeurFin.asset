@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: GardienPeurFin
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 7a8aa5edfa09840bcb32bd78aa22cb36, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Bravo \xE0 vous h\xE9ros ! Je dois admettre que je suis plut\xF4t surpris
+      de votre r\xE9ussite. Allons, vous en faites une t\xEAte... Ressaisissez vous,
+      le cristal semble vous faire suffisamment confiance, pour appara\xEEtre devant
+      vous, c'est plus qu'une r\xE9ussite, croyez-moi ! Prenez-le h\xE9ros, mais faites
+      attention au fant\xF4me derri\xE8re vous."
+  - profilePnj: {fileID: 11400000, guid: 7a8aa5edfa09840bcb32bd78aa22cb36, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "\xC0 vous de voir... Il est plut\xF4t d\xE9sagr\xE9able de se faire
+      traverser par un fant\xF4me. Mais votre r\xE9ussite aveugle, vous a peut \xEAtre
+      fait perdre tout sens de la raison."
+  - profilePnj: {fileID: 11400000, guid: 7a8aa5edfa09840bcb32bd78aa22cb36, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Vous allez me manquer, h\xE9ros... H\xE9lise, je peux vous confier
+      le cristal ? Et \xE0 l'avenir, soyez plus prudente. Pour l'heure, il vous reste
+      d'autres cristaux \xE0 r\xE9cup\xE9rer, je compte sur vous ! Et puis, vous \xEAtes
+      finalement bien accompagn\xE9 !"
+  - profilePnj: {fileID: 11400000, guid: 7a8aa5edfa09840bcb32bd78aa22cb36, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Vous allez me manquer, h\xE9ros... H\xE9lise, je peux vous confier
+      le cristal ? Et \xE0 l'avenir, soyez plus prudente. Pour l'heure, il vous reste
+      d'autres cristaux \xE0 r\xE9cup\xE9rer, je compte sur vous ! Et puis, vous \xEAtes
+      finalement bien accompagn\xE9 !"
+  - profilePnj: {fileID: 11400000, guid: 7a8aa5edfa09840bcb32bd78aa22cb36, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Bon tr\xE8s bien... Moi qui voulait m'amuser un petit peu, avant de
+      retourner \xE0 mon \xE9tat de sommeil, j'imagine que c'est rat\xE9 ! H\xE9lise,
+      je peux vous confier le cristal ? Et \xE0 l'avenir, soyez plus prudente. Pour
+      l'heure, il vous reste d'autres cristaux \xE0 r\xE9cup\xE9rer, je compte sur
+      vous ! Et puis, vous \xEAtes finalement bien accompagn\xE9 !"
+  playerAnswers:
+  - playerAnswers:
+    - text: "Je pr\xE9f\xE8re ne pas y toucher..."
+      nextTextId: 4
+      emotion: 4
+      influence: 0
+    - text: "\xC7a suffit, \xE7a ne prend pas !"
+      nextTextId: 1
+      emotion: 0
+      influence: 0
+    - text: '*Faire volte-face*'
+      nextTextId: 2
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: "*Jeter un coup d'oeil en arri\xE8re*"
+      nextTextId: 3
+      emotion: 4
+      influence: 0
+    - text: '...'
+      nextTextId: 4
+      emotion: 4
+      influence: 0
