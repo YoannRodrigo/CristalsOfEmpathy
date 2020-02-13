@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2865028227941328960}
+  - component: {fileID: 114659819017361242}
   m_Layer: 0
   m_Name: Player_FEMALE
   m_TagString: Untagged
@@ -31,6 +32,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114659819017361242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3767665074962278967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6677aabcddfc2ce48b50ef3e29736983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 9161695709964067210}
+  adjustment: {x: 0, y: 210, z: -90}
+  angleMax: 90
+  speed: 10
+  isFocused: 0
 --- !u!1001 &9161695709964466960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107,6 +125,12 @@ PrefabInstance:
 --- !u!4 &9161695709964067216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 924c1dcf9a1b1074da50eed740c06cef,
+    type: 3}
+  m_PrefabInstance: {fileID: 9161695709964466960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9161695709964067210 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400026, guid: 924c1dcf9a1b1074da50eed740c06cef,
     type: 3}
   m_PrefabInstance: {fileID: 9161695709964466960}
   m_PrefabAsset: {fileID: 0}

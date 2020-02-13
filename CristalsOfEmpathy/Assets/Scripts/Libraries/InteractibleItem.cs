@@ -1,54 +1,78 @@
-﻿#region Using Directives
-
-using UnityEngine;
-
-#endregion
-
+﻿using UnityEngine;
 public abstract class InteractibleItem : MonoBehaviour
 {
-    #region Member Variables
-
     protected bool canBeTouch;
-    private GameObject spawnedParticlesSystem;
-    public GameObject nearParticlesSystem;
+    public GameObject particlePrefab;
+    protected ParticleSystem particle;
 
-    #endregion
-
-    #region Methods
+    public virtual void Start()
+    {
+        if(particlePrefab != null)
+        {
+            particle = Instantiate(particlePrefab, transform).GetComponent<ParticleSystem>();
+            particle.Stop();
+        }
+    }
 
     private void Update()
     {
         if(!canBeTouch) return;
 
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            if (Camera.main != null)
+        if(Application.isEditor)
+        {
+            if(Input.GetMouseButtonDown(0))
             {
-                Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-                if (Physics.Raycast(raycast, out RaycastHit raycastHit))
-                    if (raycastHit.collider.gameObject == gameObject && !PauseMenu.IsOnPause())
-                        OnTouch();
+                if(Check(Input.mousePosition)) OnTouch();
             }
+        }
+        else
+        {
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                if(Check(Input.GetTouch(0).position)) OnTouch();
+            }
+        }
+    }
+
+    private bool Check(Vector2 position)
+    {
+        if (Camera.main != null)
+        {
+            Ray raycast = Camera.main.ScreenPointToRay(position);
+            if (Physics.Raycast(raycast, out RaycastHit raycastHit))
+            {
+                if (raycastHit.collider.gameObject == gameObject && !PauseMenu.IsOnPause()) 
+                {
+                    return true;
+                }
+                else return false;
+            }
+            else return false;
+        }
+        else return false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            if (!spawnedParticlesSystem) spawnedParticlesSystem = Instantiate(nearParticlesSystem, transform);
-            canBeTouch = true;
-        }
+        if (other.gameObject.CompareTag("Player")) Enter();
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            if (spawnedParticlesSystem) Destroy(spawnedParticlesSystem);
-            canBeTouch = false;
-        }
+        if (other.gameObject.CompareTag("Player")) Exit();
     }
 
     protected abstract void OnTouch();
-
-    #endregion
+    protected virtual void Enter()
+    {
+        if (particle) particle.Play();
+        canBeTouch = true;
+        LevelManager.instance.player.look.FocusOn(gameObject.transform);
+    }
+    protected virtual void Exit()
+    {
+        if (particle) particle.Stop();
+        canBeTouch = false;
+        LevelManager.instance.player.look.LooseFocus();
+    }
 }
