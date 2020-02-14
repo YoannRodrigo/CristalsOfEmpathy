@@ -17,7 +17,17 @@ ModelImporter:
     3300002: object2
     4300000: object1
     4300002: object2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Canvas
+    second: {fileID: 2100018, guid: 6cbb3de7e0e99bc44a455e33c967a5b3, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_Dark
+    second: {fileID: 2100008, guid: 3af9e32c030ffbe43b2900dd2b830e83, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
