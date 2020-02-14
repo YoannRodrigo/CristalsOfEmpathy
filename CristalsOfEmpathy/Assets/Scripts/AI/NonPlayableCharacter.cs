@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class NonPlayableCharacter : MonoBehaviour
 {
-    private AgentMovement movement;
-    private Animator animator;
+    [HideInInspector] public FocusLook look;
+    [HideInInspector] public AgentMovement movement;
+    [HideInInspector] public Animator animator;
+
+    [Header("References")]
     public AIPath path;
 
     public void Awake()
     {
+        look = GetComponent<FocusLook>();
         movement = GetComponent<AgentMovement>();
         animator = GetComponentInChildren<Animator>();
     }

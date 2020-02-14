@@ -53,9 +53,14 @@ public class DialogueManager : MonoBehaviour
         answerPrefab.SetActive(false);
     }
 
-    public void Initialize(ScriptablePNJ dialogue, int start = 0, System.Action onEnd = null)
+    public bool Initialize(ScriptablePNJ dialogue, int start = 0, System.Action onEnd = null)
     {
-        Debug.Log("Initializing " + dialogue);
+        if(this.dialogue != null )
+        {
+            Debug.Log("Dialogue is already playing.");
+            return false;
+        }
+        else Debug.Log("Initializing " + dialogue);
 
         InterfaceManager.instance.GameUI(false);
         dialogueholder.SetActive(true);
@@ -63,13 +68,15 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence(start);
         // Tu peux en faire un argument et plug n'importe quel fonction dedans, le += ajoute ton bout de code au reste de l'event
         if(onEnd != null) onDialogueEnd += onEnd;
+
+        return true;
     }
 
     private void EndDialogue()
     {
         InterfaceManager.instance.GameUI(true);
         dialogueholder.SetActive(false);
-
+        dialogue = null;
         // L'event se lance et on le réinitialise :)
         if(onDialogueEnd != null)
         {
@@ -80,7 +87,11 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence(int id)
     {
-        if (id == -1) EndDialogue();
+        if (id == -1) 
+        {
+           EndDialogue();
+           return;
+        }
 
         sentencesHolder.SetActive(true);
         currentTextId = id;

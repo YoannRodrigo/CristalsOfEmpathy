@@ -56,11 +56,11 @@ public class Portal : MonoBehaviour
             Handles.color = c;
             GUI.skin.label.normal.textColor = c;
             Handles.DrawWireDisc(transform.position, Vector3.up, range);
-            Handles.DrawWireDisc(spawn, Vector3.up, 0.5f);
             Handles.Label(transform.position, "TO " + levelDestination);
         }
         else Handles.Label(transform.position, "Inactive Portal");
         
+        Handles.DrawWireDisc(spawn, Vector3.up, 0.5f);
         Handles.DrawLine(spawn, transform.position);
         Handles.Label(spawn, "Spawn");
     }
