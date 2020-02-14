@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   head: {fileID: 9161695709964067210}
   adjustment: {x: 0, y: 210, z: -90}
-  angleMax: 90
+  angleMax: 60
   speed: 10
   isFocused: 0
 --- !u!1001 &9161695709964466960
@@ -56,10 +56,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2865028227941328960}
     m_Modifications:
-    - target: {fileID: 100000, guid: 924c1dcf9a1b1074da50eed740c06cef, type: 3}
-      propertyPath: m_Name
-      value: Av_Fem_TPOSE
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 924c1dcf9a1b1074da50eed740c06cef, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -115,6 +111,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 924c1dcf9a1b1074da50eed740c06cef, type: 3}
       propertyPath: m_LocalScale.z
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 924c1dcf9a1b1074da50eed740c06cef, type: 3}
+      propertyPath: m_Name
+      value: Av_Fem_TPOSE
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 924c1dcf9a1b1074da50eed740c06cef, type: 3}
       propertyPath: m_Controller

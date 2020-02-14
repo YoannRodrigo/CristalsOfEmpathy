@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6677aabcddfc2ce48b50ef3e29736983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  head: {fileID: 0}
+  head: {fileID: 4383826326911993203}
   adjustment: {x: 0, y: 0, z: 0}
   angleMax: 60
   speed: 10

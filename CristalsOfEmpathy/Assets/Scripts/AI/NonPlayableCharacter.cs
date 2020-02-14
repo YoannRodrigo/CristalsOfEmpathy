@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
 public class NonPlayableCharacter : MonoBehaviour
 {
     [HideInInspector] public FocusLook look;
     [HideInInspector] public AgentMovement movement;
     [HideInInspector] public Animator animator;
+    [HideInInspector] public Face face;
 
     [Header("References")]
     public AIPath path;
@@ -16,6 +14,7 @@ public class NonPlayableCharacter : MonoBehaviour
         look = GetComponent<FocusLook>();
         movement = GetComponent<AgentMovement>();
         animator = GetComponentInChildren<Animator>();
+        face = GetComponentInChildren<Face>();
     }
 
     public void Start()
@@ -27,5 +26,15 @@ public class NonPlayableCharacter : MonoBehaviour
     public void Update()
     {
         movement.Tick();
+    }
+
+    public void Speak()
+    {
+        if(face != null) face.Speak();
+    }
+
+    public void ShutUp()
+    {
+        if(face != null) face.ShutUp();
     }
 }

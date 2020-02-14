@@ -26,7 +26,12 @@ public class InteractiblePnj : InteractibleItem
         if(dialogue != null) 
         {
             bool success = DialogueManager.instance.Initialize(dialogue, 0, () => {this.OnDialogEnded();});
-            if(success) LookAtPlayerOfTheLevel();
+            if(success)
+            {
+                if(particle != null) particle.Stop();
+                if(npc != null) npc.Speak();
+                LookAtPlayerOfTheLevel();
+            }
         }
     }
 
@@ -44,7 +49,11 @@ public class InteractiblePnj : InteractibleItem
     public virtual void OnDialogEnded()
     {
         LevelManager.instance.player.UnFreeze();
-        if(npc != null && npc.path != null) npc.movement.FollowPath(npc.path);
+        if(npc != null) 
+        {  
+            npc.ShutUp();
+            if(npc.path != null) npc.movement.FollowPath(npc.path);
+        }
     }
 
     protected override void Enter()

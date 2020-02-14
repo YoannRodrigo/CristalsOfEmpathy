@@ -56,10 +56,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8576344345924827025}
     m_Modifications:
-    - target: {fileID: 100000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
-      propertyPath: m_Name
-      value: Av_Male_TPOSE
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -103,6 +99,22 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
+      propertyPath: m_Name
+      value: Av_Male_TPOSE
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
       propertyPath: m_Controller
