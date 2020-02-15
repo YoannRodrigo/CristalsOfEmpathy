@@ -37,6 +37,7 @@ public class Face : MonoBehaviour
     [Range(0f, 1f)]public float eyeBrowHeight;
     [Range(0f, 1f)]public float eyeBrowDepth;
     public bool eyebrowFlip = false;
+    public Color eyebrowColor;
     [Header("Mouth")]
     [Range(0f, 1f)]public float mouthSize;
     [Range(0f, 1f)]public float mouthHeight;
@@ -132,8 +133,11 @@ public class Face : MonoBehaviour
         else
         {
             leftEyeBrow.sprite = null;
-            leftEyeBrow.sprite = null;
+            rightEyeBrow.sprite = null;
         }
+
+        leftEyeBrow.color = eyebrowColor;
+        rightEyeBrow.color = eyebrowColor;
     }
     public void SetEyes()
     {
