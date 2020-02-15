@@ -93,8 +93,11 @@ public abstract class InteractibleItem : MonoBehaviour
     public virtual void OnValidate()
     {
         sphere = GetComponent<SphereCollider>();
-        if(range < 0f) range = 0f;
-        sphere.radius = range;
+        if(sphere != null)
+        {
+            if(range < 0f) range = 0f;
+            sphere.radius = range;
+        }
     }
 
     public virtual void OnDrawGizmos()

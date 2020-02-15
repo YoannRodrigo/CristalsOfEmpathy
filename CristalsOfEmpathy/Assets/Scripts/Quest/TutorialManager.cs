@@ -10,7 +10,9 @@ public class TutorialManager : MonoBehaviour
     //HANDLING TUTORIAL QUEST && BERLINGOTS COUNT
 
     #region Member Variables
-
+    public static TutorialManager instance;
+    private void Awake() {instance = this;}
+    
     public bool isQuestActivated;
     public bool isQuestAchieved;
     public bool isQuestSubmitted;

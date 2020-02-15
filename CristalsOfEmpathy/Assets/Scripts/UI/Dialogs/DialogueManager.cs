@@ -26,7 +26,6 @@ public class DialogueManager : MonoBehaviour
         }
     }
     
-    public TutorialManager tutorialManager;
     [Header("References")]
     public Image portrait;
     public TextMeshProUGUI pnjNameText;
@@ -159,7 +158,7 @@ public class DialogueManager : MonoBehaviour
 
             else
             {
-                if (dialogue.dialogues[currentTextId].nextTextId == -1 || tutorialManager && tutorialManager.isQuestAchieved && dialogue.dialogues[currentTextId].nextTextId == -2)
+                if (dialogue.dialogues[currentTextId].nextTextId == -1 || TutorialManager.instance && TutorialManager.instance.isQuestAchieved && dialogue.dialogues[currentTextId].nextTextId == -2)
                     EndDialogue();
 
                 else
@@ -175,8 +174,8 @@ public class DialogueManager : MonoBehaviour
         UpdateDisplay(id);
 
         //QUEST ACTIVATION MAY LOCK && FIXING SHIT
-        if(id == 0 && tutorialManager)
-            tutorialManager.ActivateQuest();
+        if(id == 0 && TutorialManager.instance != null)
+            TutorialManager.instance.ActivateQuest();
     }
 
     private void UpdateDisplay(int answerId)
