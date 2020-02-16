@@ -18,7 +18,7 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: "Nuien ! Regarde qui voil\xE0... Comme par hasard !"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
       pris tes marques... Personne ne s'aventure ici habituellement ! Je suis s\xFBr
       que tu as quelque chose \xE0 voir avec la disparition du moumou... \xC0 moins
       que ce soit ce vampire de Dante..."
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3
@@ -46,7 +46,7 @@ MonoBehaviour:
     nextTextId: 5
     sentence: "Le manoir de l'ancien maire est hant\xE9, tout le monde le sait...
       Ne me fais pas croire que tu le d\xE9couvres !"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
@@ -61,7 +61,7 @@ MonoBehaviour:
     sentence: "Elle est bien dr\xF4le celle l\xE0... Ne crois pas que tu es le premier
       \xE0 vouloir nous berner. On sait rep\xE9rer les menteurs dans ton genre, on
       t'a \xE0 l'oeil depuis le d\xE9but. "
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 2
@@ -69,7 +69,7 @@ MonoBehaviour:
       heures... Tu vas me dire que c'est une co\xEFncidence si on te retrouve pile
       \xE0 l'endroit o\xF9 il a \xE9t\xE9 aper\xE7u derni\xE8rement ? Sans personne
       d'autre aux alentours ?"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 9
@@ -83,7 +83,7 @@ MonoBehaviour:
       petit ! On a pas besoin de tes remarques ! Et si tu t'avises d'\xEAtre encore
       \xE0 un endroit o\xF9 tu ne devrais pas \xEAtre, nous serons l\xE0 pour te rappeler
       \xE0 l'ordre ! Maintenant file ! Nous avons \xE0 faire !"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 11
@@ -96,7 +96,7 @@ MonoBehaviour:
       on en aura, on s'occupera de ton cas ! En attendant, Muien, on a des choses
       \xE0 r\xE9gler et des enqu\xEAtes \xE0 mener ! Quand \xE0 toi, je te dis \xE0
       tr\xE8s bient\xF4t..."
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 13
@@ -118,7 +118,7 @@ MonoBehaviour:
     sentence: "Autre chose \xE0 faire que d'enqu\xEAter sur une disparition importante
       ? Autre chose \xE0 faire que de pr\xE9server la s\xE9curit\xE9 de notre village
       ? Mais enfin, qu'est-ce qui ne va pas chez toi ?\n"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 4
@@ -132,7 +132,7 @@ MonoBehaviour:
     nextTextId: 17
     sentence: "Parano\xEFaques ? Tu veux dire professionnels !  Tu crois que ce village
       serait si paisible sans nos interventions ? \n"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
@@ -145,7 +145,7 @@ MonoBehaviour:
     nextTextId: 19
     sentence: "Le manoir de l'ancien maire est hant\xE9, tout le monde le sait...
       Ne me fais pas croire que tu le d\xE9couvres !"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
       encore de preuves de tes actes, mais sache que quand on en aura, on s'occupera
       de ton cas ! En attendant, Muien, on a des choses \xE0 r\xE9gler et des enqu\xEAtes
       \xE0 mener ! Quand \xE0 toi, je te dis \xE0 tr\xE8s bient\xF4t..."
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 21
@@ -167,7 +167,7 @@ MonoBehaviour:
       on en aura, on s'occupera de ton cas ! En attendant, Muien, on a des choses
       \xE0 r\xE9gler et des enqu\xEAtes \xE0 mener ! Quand \xE0 toi, je te dis \xE0
       tr\xE8s bient\xF4t..."
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 23
@@ -175,7 +175,7 @@ MonoBehaviour:
       du moumou ! Ne jouez pas au plus malin avec nous !
 
 '
-  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 3
@@ -186,7 +186,7 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: 25
     sentence: "Oui, fais donc \xE7a... Laisse nous enqu\xEAter tranquillement !\n"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
@@ -200,7 +200,7 @@ MonoBehaviour:
     sentence: "\xC7a ne nous fait pas plaisir de te parler non plus, tu sais... Mais
       les personnes dans ton genre requi\xE8rent notre attention. Si tu repr\xE9sentes
       une menace pour le village, alors il est de notre devoir de t'interroger !"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1

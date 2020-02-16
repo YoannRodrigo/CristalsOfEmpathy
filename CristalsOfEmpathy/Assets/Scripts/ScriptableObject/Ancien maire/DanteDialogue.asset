@@ -74,10 +74,10 @@ MonoBehaviour:
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 10
-    sentence: "La village a \xE9t\xE9 rendu fou par la magie ! Les esprits r\xF4dent..
+    sentence: "Le village a \xE9t\xE9 rendu fou par la magie ! Les esprits r\xF4dent..
       Je les entends parcourir ces murs. Ils me chuchotent des choses. Ils me disent
       que le seul moyen de sauver le village est de tuer le maire. "
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1
@@ -124,12 +124,12 @@ MonoBehaviour:
       premi\xE8re cible \xE0 abattre, il est \xE0 l'origine de la grangr\xE8ne ! D\xE9guerpissez
       ! Si vous voulez m'aider, trouvez les forains et m\xE9prisez les villageois
       ! Adieu !"
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: "Je cherche \xE0 comprendre ce qu'il arrive au village et ses habitants. "
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3
