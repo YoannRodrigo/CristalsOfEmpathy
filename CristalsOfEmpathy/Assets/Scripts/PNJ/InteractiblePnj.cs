@@ -41,14 +41,21 @@ public class InteractiblePnj : InteractibleItem
         {
             npc.movement.Stop();
             npc.transform.forward = -(npc.transform.position - LevelManager.instance.player.transform.position).normalized;
-            LevelManager.instance.player.OrientTowards(npc.transform.position);
-            LevelManager.instance.player.Freeze();
+
+            if(LevelManager.instance != null && LevelManager.instance.player != null)
+            {
+                LevelManager.instance.player.OrientTowards(npc.transform.position);
+                LevelManager.instance.player.Freeze();
+            }
         }
     }
 
     public virtual void OnDialogEnded()
     {
-        LevelManager.instance.player.UnFreeze();
+        if(LevelManager.instance != null && LevelManager.instance.player != null)
+        {
+            LevelManager.instance.player.UnFreeze();
+        }
         if(npc != null) 
         {  
             npc.ShutUp();
