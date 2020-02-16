@@ -10,7 +10,7 @@ public abstract class InteractibleItem : MonoBehaviour
     protected ParticleSystem particle;
     protected SphereCollider sphere;
 
-    public float range;
+    public float range = 2f;
     public GameObject particlePrefab;
 
 
