@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: MagesPostComa
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Si je vous dis que je n'arrive plus \xE0 le d\xE9chiffrer, c'est que
+      c'est vrai ! C'est franchement illisible ! Qu'avez-vous fait \xE0 mon beau grimoire
+      ?"
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 2
+    sentence: "On s'est un peu amus\xE9s hier soir Eudes, d\xE9tends-toi ! Et puis
+      qui utilise encore des grimoires de nos jours ? "
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Les mages, Arthos... Les mages utilisent des grimoires. Tu veux bien
+      te concentrer un peu, s'il te plait. Le village va d\xE9j\xE0 assez mal comme
+      \xE7a, on a pas besoin d'un probl\xE8me suppl\xE9mentaire dans notre propre
+      camp !"
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 4
+    sentence: Oh tiens... On a un revenant !
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 5
+    sentence: "H\xE9 salut l'ami ! T'as loup\xE9 une bonne partie de la soir\xE9e...
+      C'est dommage ! C'\xE9tait plut\xF4t sympa !\n"
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Jusqu'\xE0 ce que tu ruines ce grimoire, Arthos... Je suis d\xE9sol\xE9
+      mais on doit discuter. Reviens plus tard !"
+  playerAnswers:
+  - playerAnswers:
+    - text: "Qu'est-ce qu'il s'est pass\xE9 ?"
+      nextTextId: 3
+      emotion: 2
+      influence: 1
+    - text: Euh... Bonjour ?
+      nextTextId: 3
+      emotion: 0
+      influence: 1

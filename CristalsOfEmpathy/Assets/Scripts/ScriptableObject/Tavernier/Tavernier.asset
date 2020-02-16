@@ -13,85 +13,85 @@ MonoBehaviour:
   m_Name: Tavernier
   m_EditorClassIdentifier: 
   dialogues:
-  - pnjPortrait: {fileID: 0}
-    pnjName: 'Taverniak, l''aubergiste '
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
     sentence: "J'vous sers quelque chose \xE0 boire ? "
-  - pnjPortrait: {fileID: 0}
-    pnjName: Taverniak, l'aubergiste
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 0
     sentence: "Parfait, ne me d\xEEtes rien ! Je vais deviner ce que vous voulez boire
       hm.. "
-  - pnjPortrait: {fileID: 0}
-    pnjName: Taverniak, l'aubergiste
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3
     sentence: "On a toujours le choix.. Parfois vous savez, il est bon de s'arr\xEAter
       une minute pour r\xE9fl\xE9chir. Sans cette minute, qui sait ?"
-  - pnjPortrait: {fileID: 0}
-    pnjName: Taverniak, l'aubergiste
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "Vous pourriez peut-\xEAtre faire quelque chose que vous allez regretter. "
-  - pnjPortrait: {fileID: 0}
-    pnjName: 'Taverniak, l''aubergiste '
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 5
     sentence: "*Le tavernier vous sert une chope. Les effluves aromatis\xE9es de son
       contenu vous enchantent.*"
-  - pnjPortrait: {fileID: 0}
-    pnjName: Taverniak, l'aubergiste
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 2
     sentence: "C'\xE9tait la boisson favorite de mon client pr\xE9f\xE9r\xE9.. Malheureusement,
       il a disparu.. "
-  - pnjPortrait: {fileID: 0}
-    pnjName: Taverniak, l'aubergiste
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 8
     sentence: 'De rien ! J''aimais beaucoup ce client.. '
-  - pnjPortrait: {fileID: 0}
-    pnjName: Taverniak, l'aubergiste
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 8
     sentence: "Aucune id\xE9e, il a disparu du jour au lendemain. Mais c'\xE9tait
       un homme farouche, qui sait o\xF9 il peut se trouver. "
-  - pnjPortrait: {fileID: 0}
-    pnjName: Taverniak, l'aubergiste
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 9
     sentence: "Il se fait appeler Ernest. Impossible de savoir si c'est son vrai pr\xE9nom.
       Le bonhomme appr\xE9ciait les sobriquets et toutes autres inventions farfelues.
       C'\xE9tait un homme de lettre, un \xE9crivain. "
-  - pnjPortrait: {fileID: 0}
-    pnjName: Taverniak, l'aubergisite
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 10
     sentence: "Sa disparition est un coup dur. C'\xE9tait un bon ami et un tr\xE8s
       bon client. Depuis qu'il a disparu, beaucoup moins de gens viennent boire. "
-  - pnjPortrait: {fileID: 0}
-    pnjName: 'Taverniak, l''aubergiste '
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 3
     sentence: "C'est pas plus mal mais j'ai du mal \xE0 faire tourner la boutique.
       Je peux vous demander un service ?"
-  - pnjPortrait: {fileID: 0}
-    pnjName: Taverniak, l'aubergiste
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 4
     sentence: "Vu que les habitants consomment de moins en moins. Je vends de la bi\xE8re
       aux forains situ\xE9s au sud-est. Pourriez-vous leur livrez la commande ? "
-  - pnjPortrait: {fileID: 0}
-    pnjName: Joueur
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Vous me d\xE9go\xFBtez. Toujours \xE0 ignorer les probl\xE8mes et les
       noyer dans la boisson. Vous vendez seulement une illusion de bien-\xEAtre aux
       villageois, monstre !"
-  - pnjPortrait: {fileID: 0}
-    pnjName: 'Taverniak, l''aubergiste '
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Merci beaucoup ! Revenez quand \xE7a sera fait, vous aurez un coup

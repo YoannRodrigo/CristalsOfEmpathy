@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Artistes
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 11400000, guid: aa2b8c6553325964da721c2a32610247, type: 2}
+  - profilePnj: {fileID: 11400000, guid: fe8a547b209894621816d8d544a86d3e, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
@@ -21,21 +21,21 @@ MonoBehaviour:
       se pr\xE9pare pour la f\xEAte d'investiture du nouveau maire. Il m\xE9rite le
       meilleur ! Et ne comptez pas sur Astor pour vous r\xE9pondre non plus, \xE7a
       n'a jamais \xE9t\xE9 son fort !\r\n"
-  - profilePnj: {fileID: 11400000, guid: 5cf3a9603b7fbb7468a94ab989efc6cd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: f878ac0858f8046df8de12395be32fe3, type: 2}
     emotion: 3
     isAnswerNeeded: 1
     nextTextId: 0
     sentence: "H\xE9 je t'entends tu sais ! Si tu crois qu'on va avancer en discutant
       ! On ne peut se permettre aucun retard, le maire a fait appel \xE0 nous pour
       une raison !"
-  - profilePnj: {fileID: 11400000, guid: 5cf3a9603b7fbb7468a94ab989efc6cd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: f878ac0858f8046df8de12395be32fe3, type: 2}
     emotion: 3
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "T'entends \xE7a Iseult, le petit pense qu'il peut nous aider ! Vous
       croyez que peindre est \xE0 la port\xE9e de n'importe qui ? Dites moi alors...
       comment repr\xE9senteriez-vous l'amour sur cette toile ?"
-  - profilePnj: {fileID: 11400000, guid: aa2b8c6553325964da721c2a32610247, type: 2}
+  - profilePnj: {fileID: 11400000, guid: fe8a547b209894621816d8d544a86d3e, type: 2}
     emotion: 3
     isAnswerNeeded: 1
     nextTextId: 2
@@ -43,76 +43,76 @@ MonoBehaviour:
       Nous travaillons en unisson avec la nature. La nature, l'\xE2me humaine et les
       \xE9motions qui en d\xE9coulent ont toutes une place singuli\xE8re sur nos toiles
       !"
-  - profilePnj: {fileID: 11400000, guid: aa2b8c6553325964da721c2a32610247, type: 2}
+  - profilePnj: {fileID: 11400000, guid: fe8a547b209894621816d8d544a86d3e, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 5
     sentence: Pardon ?
-  - profilePnj: {fileID: 11400000, guid: 5cf3a9603b7fbb7468a94ab989efc6cd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: f878ac0858f8046df8de12395be32fe3, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 6
     sentence: "C'est vrai qu'Iseult a eu une perte d'inspiration derni\xE8rement...
       Apr\xE8s tout l'amour est difficile \xE0 cerner en art, comme dans la vie...\r\n"
-  - profilePnj: {fileID: 11400000, guid: aa2b8c6553325964da721c2a32610247, type: 2}
+  - profilePnj: {fileID: 11400000, guid: fe8a547b209894621816d8d544a86d3e, type: 2}
     emotion: 3
     isAnswerNeeded: 1
     nextTextId: 3
     sentence: Tu veux parler d'amour ? Tu n'as jamais compris l'amour !
-  - profilePnj: {fileID: 11400000, guid: 5cf3a9603b7fbb7468a94ab989efc6cd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: f878ac0858f8046df8de12395be32fe3, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 8
     sentence: "Suzie ? Je crois que \xE7a ne plaira pas \xE0 tout le monde... et puis
       la beaut\xE9 ne repr\xE9sente pas forc\xE9ment l'amour... \r\n"
-  - profilePnj: {fileID: 11400000, guid: aa2b8c6553325964da721c2a32610247, type: 2}
+  - profilePnj: {fileID: 11400000, guid: fe8a547b209894621816d8d544a86d3e, type: 2}
     emotion: 3
     isAnswerNeeded: 1
     nextTextId: 4
     sentence: "Attends... Qu'est-ce que tu veux dire par l\xE0 ? Et puis tout le monde
       sait que la plus belle personne du village c'est Prosper !"
-  - profilePnj: {fileID: 11400000, guid: 5cf3a9603b7fbb7468a94ab989efc6cd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: f878ac0858f8046df8de12395be32fe3, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 9
     sentence: "Vous n'avez vraiment aucun esprit ! C'est f\xE2cheux mais malheureusement,
       l'\xE2me de l'artiste ne peut pas habiter tout le monde !\r\n"
-  - profilePnj: {fileID: 11400000, guid: aa2b8c6553325964da721c2a32610247, type: 2}
+  - profilePnj: {fileID: 11400000, guid: fe8a547b209894621816d8d544a86d3e, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Cessez de nous faire perdre notre temps, le maire attend de nous une
       oeuvre \xE0 la hauteur de son charisme !"
-  - profilePnj: {fileID: 11400000, guid: aa2b8c6553325964da721c2a32610247, type: 2}
+  - profilePnj: {fileID: 11400000, guid: fe8a547b209894621816d8d544a86d3e, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 12
     sentence: "Vous m'agacez avec vos questions... L'art ne se questionne pas !\r\n"
-  - profilePnj: {fileID: 11400000, guid: 5cf3a9603b7fbb7468a94ab989efc6cd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: f878ac0858f8046df8de12395be32fe3, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Seule votre pr\xE9sence se questionne en ce moment. Vous n'avez pas
       autre chose \xE0 faire ?"
-  - profilePnj: {fileID: 11400000, guid: aa2b8c6553325964da721c2a32610247, type: 2}
+  - profilePnj: {fileID: 11400000, guid: fe8a547b209894621816d8d544a86d3e, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 15
     sentence: "\xC7a ira merci... Je sens que l'inspiration me revient, d'ailleurs,
       elle n'a jamais \xE9t\xE9 aussi forte que depuis que vous comptiez partir !\r"
-  - profilePnj: {fileID: 11400000, guid: 5cf3a9603b7fbb7468a94ab989efc6cd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: f878ac0858f8046df8de12395be32fe3, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Nous n'avons pas besoin de votre n\xE9gativit\xE9 ici ! Vous \xEAtes
       aussi but\xE9 que Didier ! D\xE9barrassez le plancher !"
-  - profilePnj: {fileID: 11400000, guid: 5cf3a9603b7fbb7468a94ab989efc6cd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: f878ac0858f8046df8de12395be32fe3, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Elle n'a pas tort ! Un artiste a besoin d'espace apr\xE8s tout, on
       se reverra plus tard !"
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1

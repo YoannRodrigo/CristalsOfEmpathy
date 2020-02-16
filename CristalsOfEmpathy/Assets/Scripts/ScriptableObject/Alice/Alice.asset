@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Alice
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 11400000, guid: ee6371ce022a3459e845bd988c924b46, type: 2}
+  - profilePnj: {fileID: 11400000, guid: b6bee0604e035414f85c824c0af6207b, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
@@ -21,60 +21,60 @@ MonoBehaviour:
       Alberthus est vraiment pas content, je suis s\xFBre que c'est encore un coup
       de l'ancien maire\u2026 mais t'es nouveau dans le coin non ? je t'ai jamais
       vu trainer ici ?"
-  - profilePnj: {fileID: 11400000, guid: ee6371ce022a3459e845bd988c924b46, type: 2}
+  - profilePnj: {fileID: 11400000, guid: b6bee0604e035414f85c824c0af6207b, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 2
     sentence: "Tu connais pas Alberthus ? il prot\xE8ge tous les animaux ici ! faut
       vraiment que tu le rencontres ! Tu le trouveras au sud d'ici !"
-  - profilePnj: {fileID: 11400000, guid: ee6371ce022a3459e845bd988c924b46, type: 2}
+  - profilePnj: {fileID: 11400000, guid: b6bee0604e035414f85c824c0af6207b, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Il t'apprendra tout ce qu'il y a \xE0 savoir sur le mouton disparu
       ! Bon, moi je te laisse, je dois continuer les recherches !"
-  - profilePnj: {fileID: 11400000, guid: ee6371ce022a3459e845bd988c924b46, type: 2}
+  - profilePnj: {fileID: 11400000, guid: b6bee0604e035414f85c824c0af6207b, type: 2}
     emotion: 3
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "H\xE9 t'es vraiment grognon toi ! et puis t'as quel \xE2ge d'abord
       pour me dire \xE7a ?"
-  - profilePnj: {fileID: 11400000, guid: ee6371ce022a3459e845bd988c924b46, type: 2}
+  - profilePnj: {fileID: 11400000, guid: b6bee0604e035414f85c824c0af6207b, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: Y'a un mouton qui a disparu ! Avec Alberthus on le cherche partout...
       si tu le vois, reviens me voir, je reste dans le coin !
-  - profilePnj: {fileID: 11400000, guid: ee6371ce022a3459e845bd988c924b46, type: 2}
+  - profilePnj: {fileID: 11400000, guid: b6bee0604e035414f85c824c0af6207b, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 6
     sentence: "T'es de m\xE8che avec la mar\xE9chauss\xE9e ou quoi ? Un mouton c'est
       pas dangereux ! La seule personne \xE0 pr\xE9venir, c'est Alberthus !"
-  - profilePnj: {fileID: 11400000, guid: ee6371ce022a3459e845bd988c924b46, type: 2}
+  - profilePnj: {fileID: 11400000, guid: b6bee0604e035414f85c824c0af6207b, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Il est plus au sud, tu peux passer le voir !  Moi je vais continuer
       \xE0 le chercher, \xE0 plus tard !"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: b6bee0604e035414f85c824c0af6207b, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: 'Un moumou ? Non j''ai rien vu, et c''est qui Alberthus ? '
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: b6bee0604e035414f85c824c0af6207b, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3
     sentence: "J'ai pas de compte \xE0 te rendre\u2026 puis tu devrais pas \xEAtre
       \xE0 l'\xE9cole ? "
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 4
     sentence: "Oui, je suis un peu perdu mais je veux bien t'aider, qu'est-ce qui
       s'est pass\xE9 ?"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 5

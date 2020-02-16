@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: HeliseAmour
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: c70d73b84f6b80242a046921d3986b83, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "H\xE9, je crois que tu as fait le tour des habitants. Quelque chose
+      ne tourne vraiment pas rond ici, tu as d\xFB le remarquer toi aussi ! Je crois
+      qu'il est temps d'aller voir le maire, pour lui poser quelques questions sur
+      ses habitants !"
+  - profilePnj: {fileID: 11400000, guid: c70d73b84f6b80242a046921d3986b83, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: "Dans ce cas, continue d'explorer. Mais ne tra\xEEne pas trop ! surtout
+      si c'est pour ramasser des berlingots...  Ne fais pas la m\xEAme erreur que
+      moi !"
+  playerAnswers:
+  - playerAnswers:
+    - text: C'est vrai, allons le voir !
+      nextTextId: -1
+      emotion: 0
+      influence: 2
+    - text: "Mais je ne pense pas avoir tout d\xE9couvert..."
+      nextTextId: 1
+      emotion: 2
+      influence: 2
