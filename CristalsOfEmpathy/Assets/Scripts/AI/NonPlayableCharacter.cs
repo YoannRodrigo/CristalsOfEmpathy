@@ -23,11 +23,6 @@ public class NonPlayableCharacter : MonoBehaviour
         if(animator != null) movement.animator = animator;
     }
 
-    public void Update()
-    {
-        movement.Tick();
-    }
-
     public void Speak()
     {
         if(face != null) face.Speak();
