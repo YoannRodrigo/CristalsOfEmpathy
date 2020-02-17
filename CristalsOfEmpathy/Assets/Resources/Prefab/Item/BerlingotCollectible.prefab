@@ -106,10 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a78b906903e674d8d7d6ca00fa7315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nearParticlesSystem: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
-    type: 3}
-  tutorialManager: {fileID: 0}
-  dialogueManager: {fileID: 0}
+  range: 0
+  particlePrefab: {fileID: 0}
   berlingotItem: {fileID: 8447002172417320584}
   item: {fileID: 11400000, guid: 8d41db352ea41b04da413d8c6a7fd1f4, type: 2}
 --- !u!135 &8447002172417320590
@@ -123,5 +121,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 0
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
