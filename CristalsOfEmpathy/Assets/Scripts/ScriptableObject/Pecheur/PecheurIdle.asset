@@ -10,7 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
-  m_Name: GardienIntro
+  m_Name: PecheurIdle
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "J\u2019ai h\xE2te de partir en mer, loin d\u2019ici, tr\xE8s loin d\u2019ici
+      !\n"
   playerAnswers: []

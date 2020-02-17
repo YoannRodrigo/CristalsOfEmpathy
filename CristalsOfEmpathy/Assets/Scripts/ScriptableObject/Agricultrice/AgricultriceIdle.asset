@@ -10,7 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
-  m_Name: GardienIntro
+  m_Name: AgricultriceIdle
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 5ea7b953ec34e6646910859d242006ca, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Des l\xE9gumes, des fruits, encore des l\xE9gumes\u2026 Ce march\xE9
+      a vraiment chang\xE9...\n"
   playerAnswers: []

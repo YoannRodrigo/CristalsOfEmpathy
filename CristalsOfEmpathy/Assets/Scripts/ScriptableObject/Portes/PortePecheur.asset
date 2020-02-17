@@ -10,7 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
-  m_Name: GardienIntro
+  m_Name: PortePecheur
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 7471d30e76443489c9043b9f35663cc6, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "La porte est entrouverte, personne n'est \xE0 l'int\xE9rieur. Il semblerait
+      que le capitaine soit parti dans la pr\xE9cipitation..."
   playerAnswers: []
