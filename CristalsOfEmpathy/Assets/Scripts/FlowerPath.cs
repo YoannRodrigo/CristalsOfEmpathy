@@ -64,7 +64,7 @@ public class FlowerPath : MonoBehaviour
     
     void Appear(int index)
     {
-        if(index < 0 || index > flowers.Count) return;
+        if(index < 0 || index >= flowers.Count) return;
         flowers[index].SetActive(true);
         Destroy(Instantiate(appearParticle, flowers[index].transform.position, Quaternion.identity), 1f);
         growing = true;
