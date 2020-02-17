@@ -41,12 +41,12 @@ public class InteractiblePnj : InteractibleItem
         {
             npc.movement.Stop();
             npc.transform.forward = -(npc.transform.position - LevelManager.instance.player.transform.position).normalized;
+        }
 
-            if(LevelManager.instance != null && LevelManager.instance.player != null)
-            {
-                LevelManager.instance.player.OrientTowards(npc.transform.position);
-                LevelManager.instance.player.Freeze();
-            }
+        if(LevelManager.instance != null && LevelManager.instance.player != null)
+        {
+            LevelManager.instance.player.Freeze();
+            LevelManager.instance.player.OrientTowards(transform.position);
         }
     }
 

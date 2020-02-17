@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   head: {fileID: 2390368017875147897}
-  adjustment: {x: 0, y: 210, z: -90}
+  adjustment: {x: 0, y: 180, z: -90}
   angleMax: 70
   speed: 10
   isFocused: 1
