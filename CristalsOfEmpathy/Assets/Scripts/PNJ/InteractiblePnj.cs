@@ -21,11 +21,11 @@ public class InteractiblePnj : InteractibleItem
         Speak();
     }
 
-    public void Speak()
+    public void Speak(int start = 0)
     {
         if(dialogue != null) 
         {
-            bool success = DialogueManager.instance.Initialize(dialogue, 0, () => {this.OnDialogEnded();});
+            bool success = DialogueManager.instance.Initialize(dialogue, start, () => {this.OnDialogEnded();});
             if(success)
             {
                 if(particle != null) particle.Stop();

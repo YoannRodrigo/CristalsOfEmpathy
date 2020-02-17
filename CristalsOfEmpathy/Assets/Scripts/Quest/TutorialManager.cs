@@ -19,7 +19,7 @@ public class TutorialManager : MonoBehaviour
     public FlyablePnj heliseFly;
     public List<GameObject> berlingotsList = new List<GameObject>();
     public GameObject dialogueLauncher;
-
+    public Portal portalToFlorist;
     #endregion
 
     #region Methods
@@ -36,6 +36,7 @@ public class TutorialManager : MonoBehaviour
         {
             heliseFly.AllowPnjToFly();
             isQuestAchieved = true;
+            portalToFlorist.activated = true;
             if (dialogueLauncher) dialogueLauncher.SetActive(true);
         }
     }

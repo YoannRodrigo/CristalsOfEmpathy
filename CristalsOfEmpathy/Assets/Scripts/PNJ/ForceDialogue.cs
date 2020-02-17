@@ -10,6 +10,7 @@ public class ForceDialogue : MonoBehaviour
     public bool destroyAfter;
     public bool forceOnStart;
     public InteractiblePnj interactiblePnj;
+    public int textIdToBegin = 0;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,7 +24,7 @@ public class ForceDialogue : MonoBehaviour
 
     private void Force()
     {
-        interactiblePnj.Speak();
+        interactiblePnj.Speak(textIdToBegin);
         if (destroyAfter) Destroy(gameObject);
     }
 }
