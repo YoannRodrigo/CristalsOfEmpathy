@@ -12,6 +12,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject ghostPrefab;
     private bool isMusicPlaying;
     private GameObject lastGhost;
+    private GameObject tryGost;
     public Transform playerTransform;
     public List<Transform> spawnersTransform = new List<Transform>();
     private float timeSinceBegin;
