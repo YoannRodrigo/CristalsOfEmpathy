@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: MaireHeliseAmour
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Alors, vous appr\xE9ciez votre s\xE9jour ici ? Tout le village est
+      en effervescence mais j'esp\xE8re que mes habitants ont su vous montrer l'hospitalit\xE9
+      qui leur est propre ! Que puis-je faire pour vous ?"
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "\xC9tranges ? Vous voulez dire joyeux ? Quel mal y a-t-il a \xE7a ?
+      On ne vit pas souvent ce genre d'\xE9v\xE9nement dans un village aussi petit,
+      vous savez ! Il est normal de le f\xEAter !"
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 2
+    sentence: "Les \xE9v\xE9nements font que les habitants ont voulu du changement.
+      Je ne peux pas les bl\xE2mer, vous auriez vu l'ancien maire..."
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 3
+    sentence: "Le nouveau normal ici c'est l'amour et l'euphorie ! Qui y a-t-il de
+      mal \xE0 \xE7a ?"
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 3
+    sentence: "Et vous semblez surpris ! Sachez qu'il n'y a rien d'\xE9tonnant \xE0
+      cela ! Je compte bien leur apporter tout ce dont je leur ai promis ! L'amour,
+      la paix et la s\xE9r\xE9nit\xE9... L'euphorie que vous avez pu percevoir dans
+      le village, est la r\xE9ponse directe \xE0 mon \xE9lection et je ne pourrais
+      jamais assez les remercier pour la confiance qu'ils m'ont montr\xE9 !"
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 3
+    sentence: "Ma foi, non... Mes habitants sont euphoriques, grand bien leur fasse
+      ! Qui y a-t-il de mal \xE0 \xE7a ?"
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 4
+    sentence: "Oh... Eh bien... En fait... Je... Je n'\xE9tais pas vraiment destin\xE9
+      \xE0 \xEAtre maire, mais les habitants ont parl\xE9, et me voici \xE0 pr\xE9sent
+      maire ! La vie nous r\xE9serve parfois de belles surprises !"
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "Fichtre, ce que vous pouvez en poser des questions !\nVous semblez
+      \xEAtre atteint du m\xEAme mal que les mages, toujours s'interroger sur des
+      choses farfelues ! Vous m'excuserez mais je suis tr\xE8s occup\xE9 ces temps-ci,
+      donc je vais devoir remettre cette conversation \xE0 plus tard !"
+  - profilePnj: {fileID: 11400000, guid: c70d73b84f6b80242a046921d3986b83, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Le maire nous cache d\xE9finitivement quelque chose ! J'ai senti quelque
+      chose d'\xE9trange quand tu discutais avec lui... Allons voir les mages, dans
+      leurs campements, ils auront s\xFBrement des r\xE9ponses \xE0 tes questions
+      farfelues..."
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 5
+    sentence: "Je suis quelqu'un de r\xE9serv\xE9... Je ne d\xE9voile pas ma vie \xE0
+      tout le monde ! Je suis un homme nouveau \xE0 pr\xE9sent, et j'en suis plus
+      qu'heureux !"
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 6
+    sentence: "\xC9trange ? Que dites-vous l\xE0 ? Je suis quelqu'un de plut\xF4t
+      r\xE9serv\xE9, vous savez. Je pr\xE9f\xE8re oublier ma vie d'antan... Je n'avais
+      pas une vie tr\xE8s facile, pourtant je m'y complaisais... Aujourd'hui je suis
+      un homme nouveau !"
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "Bien s\xFBr que je suis mal \xE0 l'aise, j'ai l'impression d'avoir
+      affaire \xE0 la mar\xE9chauss\xE9e avec toutes ces questions ! Vous semblez
+      \xEAtre atteint du m\xEAme mal que les mages, toujours \xE0 poser des questions
+      farfelues... Maintenant laissez-moi, j'ai \xE0 faire !"
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "Quel est le but de cette conversation \xE0 la fin ? Que me voulez-vous
+      avec toutes vos questions ? Pourquoi ne profitez-vous pas comme tout le monde
+      de l'ambiance g\xE9n\xE9rale ! Vous semblez \xEAtre atteint du m\xEAme mal que
+      les mages, toujours \xE0 poser des questions farfelues... Maintenant laissez-moi,
+      j'ai \xE0 faire !"
+  - profilePnj: {fileID: 11400000, guid: 4247fc14ab066984fb5a1e4442d965cd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "Je ne suis pas contrari\xE9... J'ai simplement l'impression de subir
+      un interrogatoire de la mar\xE9chauss\xE9e ! Vous semblez \xEAtre atteint du
+      m\xEAme mal que les mages, toujours \xE0 poser des questions farfelues... Maintenant
+      laissez-moi, j'ai \xE0 faire !"
+  playerAnswers:
+  - playerAnswers:
+    - text: "Ils m'ont sembl\xE9 plut\xF4t \xE9tranges en fait..."
+      nextTextId: 1
+      emotion: 4
+      influence: 0
+    - text: "Comment avez-vous \xE9t\xE9 \xE9lu ?"
+      nextTextId: 2
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: "L'atmosph\xE8re n'est pas normale pourtant..."
+      nextTextId: 3
+      emotion: 4
+      influence: 0
+    - text: "Les habitants semblent beaucoup vous appr\xE9cier..."
+      nextTextId: 4
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: "Les habitants semblent beaucoup vous appr\xE9cier..."
+      nextTextId: 4
+      emotion: 4
+      influence: 0
+    - text: "Vous n'avez pas remarqu\xE9 quelque chose de diff\xE9rent ?"
+      nextTextId: 5
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: "Que faisiez-vous avant d'\xEAtre maire ?"
+      nextTextId: 6
+      emotion: 4
+      influence: 0
+    - text: "Vous ne trouvez pas votre \xE9lection surprenante ?"
+      nextTextId: 7
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: "Vous n'avez pas vraiment r\xE9pondu \xE0 ma question..."
+      nextTextId: 9
+      emotion: 4
+      influence: 0
+    - text: "Je vois... C'est \xE9trange..."
+      nextTextId: 10
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: "Vous avez l'air mal \xE0 l'aise..."
+      nextTextId: 11
+      emotion: 4
+      influence: 0
+    - text: "Nouveau ? Qu'est-ce qui a chang\xE9 ?"
+      nextTextId: 12
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: Pourquoi vouloir oublier ?
+      nextTextId: 12
+      emotion: 4
+      influence: 0
+    - text: Je ne voulais pas vous contrariez...
+      nextTextId: 13
+      emotion: 4
+      influence: 0

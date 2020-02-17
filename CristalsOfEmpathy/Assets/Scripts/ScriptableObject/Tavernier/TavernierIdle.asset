@@ -10,7 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
-  m_Name: GardienIntro
+  m_Name: TavernierIdle
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "J\u2019aimerais que certains de mes clients ne prennent pas cette taverne
+      pour une auberge\u2026 Je crois que certains feraient mieux d\u2019aller dormir
+      chez eux !\n"
   playerAnswers: []
