@@ -64,7 +64,7 @@ public class FlowerPath : MonoBehaviour
     
     void Appear(int index)
     {
-        if(index < 0 || index > flowers.Count) return;
+        if(index < 0 || index >= flowers.Count) return;
         flowers[index].SetActive(true);
         Destroy(Instantiate(appearParticle, flowers[index].transform.position, Quaternion.identity), 1f);
         growing = true;
@@ -155,6 +155,7 @@ public class FlowerPathEditor : Editor
                 GameObject newFlower = Instantiate(path.GetLastElement(), path.GetLastElement().transform.position + new Vector3(0f, 0f, 2f), Quaternion.identity);
                 newFlower.transform.rotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
                 newFlower.name = "Flower";
+                newFlower.transform.SetParent(path.transform);
                 path.flowers.Add(newFlower);
             }
             if(GUILayout.Button("Remove Last"))
