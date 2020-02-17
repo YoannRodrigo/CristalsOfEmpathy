@@ -10,22 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
-  m_Name: SuzieQuete
+  m_Name: PecheurQuete
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
-    sentence: 'Salut ! '
-  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
-    emotion: 0
-    isAnswerNeeded: 0
-    nextTextId: -1
-    sentence: "Oh ! C'est pour moi ? Merci beaucoup ! T'es adorable !\r\n"
+    sentence: "H\xE9 gamin ! Je vois que tu as trouv\xE9 ce qu'il fallait \xE0 la
+      scierie ! Merci \xE0 toi ! Je vais enfin pouvoir partir \xE0 l'aventure et rendre
+      ma femme fi\xE8re !\n"
   playerAnswers:
   - playerAnswers:
-    - text: Voici ta fleur !
-      nextTextId: 1
+    - text: Bonne chance dans votre aventure !
+      nextTextId: -1
       emotion: 0
-      influence: 2
+      influence: 3

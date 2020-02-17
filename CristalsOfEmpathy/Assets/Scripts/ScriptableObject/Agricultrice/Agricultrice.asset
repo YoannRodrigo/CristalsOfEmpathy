@@ -13,42 +13,42 @@ MonoBehaviour:
   m_Name: Agricultrice
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 11400000, guid: 7a212450c8f59a34fb4da2df826d9632, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 5ea7b953ec34e6646910859d242006ca, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
     sentence: "Salut ! Alors gringalet tu veux un peu de prot\xE9ine ? J'ai beaucoup
       de viande en stock. Plus personne n'en mange ces jours-ci..."
-  - profilePnj: {fileID: 11400000, guid: 7a212450c8f59a34fb4da2df826d9632, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 5ea7b953ec34e6646910859d242006ca, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 2
     sentence: "Depuis que tout le monde est joyeux.. Les villageois refusent de tuer
       les b\xEAtes pour les manger. Tout va moisir, c'est horrible.."
-  - profilePnj: {fileID: 11400000, guid: 7a212450c8f59a34fb4da2df826d9632, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 5ea7b953ec34e6646910859d242006ca, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Prends quelques morceaux et vas les jeter au lac, \xE7a attirera les
       poissons et \xE7a fera plaisir au Capitaine hihi. Allez, j'ai des b\xEAtes \xE0
       c\xE2liner, au revoir !"
-  - profilePnj: {fileID: 11400000, guid: 7a212450c8f59a34fb4da2df826d9632, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 5ea7b953ec34e6646910859d242006ca, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 2
     sentence: Allons bon, il faut bien manger ! Tout va pourrir sinon.. Si tu n'en
       veux pas..
-  - profilePnj: {fileID: 11400000, guid: 7a212450c8f59a34fb4da2df826d9632, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 5ea7b953ec34e6646910859d242006ca, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 5
     sentence: "Ah, enfin quelqu'un qui mange de la viande ! \xC7a fait plaisir ! "
-  - profilePnj: {fileID: 11400000, guid: 7a212450c8f59a34fb4da2df826d9632, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 5ea7b953ec34e6646910859d242006ca, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 6
     sentence: "*Vous donne une pi\xE8ce de viande enroul\xE9e dans un tissu pourpre*"
-  - profilePnj: {fileID: 11400000, guid: 7a212450c8f59a34fb4da2df826d9632, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 5ea7b953ec34e6646910859d242006ca, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 2
