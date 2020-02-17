@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(Vector3 direction)
     {
+        direction = Vector3.ClampMagnitude(direction, 1f);
         rb.velocity = new Vector3(direction.x * MAX_SPEED, rb.velocity.y, direction.y * MAX_SPEED);
         orientation = Quaternion.Slerp(orientation, Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.y)), rotationLerpSpeed * Time.deltaTime);
     }
