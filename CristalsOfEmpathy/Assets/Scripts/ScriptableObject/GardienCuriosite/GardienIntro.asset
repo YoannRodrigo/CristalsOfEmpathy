@@ -12,5 +12,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
   m_Name: GardienIntro
   m_EditorClassIdentifier: 
-  dialogues: []
-  playerAnswers: []
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 0c002006fde611242bd9509fe77ee9fd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Vous avez parcouru les terres d'Heimartilf arm\xE9 de la plus belle
+      des armes, votre curiosit\xE9. C'est en comprenant l'univers dans lequel vous
+      \xE9voluez que vous parviendrez \xE0 d\xE9couvrir qui vous \xEAtes vraiment.\r\n"
+  - profilePnj: {fileID: 11400000, guid: 0c002006fde611242bd9509fe77ee9fd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Existe-t-il quelque chose d'aussi beau, d'aussi prenant que la question
+      ? La soif du savoir doit \xEAtre guid\xE9e par la curiosit\xE9, non pas par
+      l'avidit\xE9 ou la qu\xEAte de pouvoir. Apprenez \xE0 apprendre, appr\xE9ciez
+      vos d\xE9couvertes et voyez \xF4 combien celles-ci vous nourissent et vous grandissent."
+  - profilePnj: {fileID: 11400000, guid: 0c002006fde611242bd9509fe77ee9fd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: "Les mages veillent sur mon cristal. Il fut un temps o\xF9 ils \xE9taient
+      curieux, o\xF9 ils inventaient pour repousser les limites du possible. Aujourd'hui,
+      ils sont trop pr\xE9occup\xE9s, trop investis pour se laisser aller \xE0 la
+      perdition."
+  - profilePnj: {fileID: 11400000, guid: 0c002006fde611242bd9509fe77ee9fd, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Aidez-les \xE0 retrouver leurs runes pour qu'ils puissent \xE0 nouveau
+      se d\xE9lecter du savoir. Si vous y parvenez, je vous donnerai le cristal de
+      la curiosit\xE9. Ouvrez bien les yeux."
+  playerAnswers:
+  - playerAnswers:
+    - text: 'Que dois-je faire ? '
+      nextTextId: 2
+      emotion: 4
+      influence: 0
+    - text: 'Je veux apprendre '
+      nextTextId: 2
+      emotion: 4
+      influence: 0
