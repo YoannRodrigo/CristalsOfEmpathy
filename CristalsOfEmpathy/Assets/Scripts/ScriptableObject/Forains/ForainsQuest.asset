@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: ForainsQuest
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: af4db0510a9c58f41b27e5f1e7e2681a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: S'lut toi !
+  - profilePnj: {fileID: 11400000, guid: af4db0510a9c58f41b27e5f1e7e2681a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Oh m'rci l'ami on va pouvoir s'amuser ! Allez j'amm\xE8ne \xE7a aux
+      autres, \xE0 la r'voyure !"
+  playerAnswers:
+  - playerAnswers:
+    - text: "J'ai votre bi\xE8re !"
+      nextTextId: 2
+      emotion: 2
+      influence: 1

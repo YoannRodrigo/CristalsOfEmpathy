@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: DanteMarechaussee
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Merci messieurs de m'avoir rapport\xE9 la source de tous ces probl\xE8mes
+      ! Je savais que je n'aurais jamais d\xFB vous parler, \xE9tranger !\r\n"
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 2
+    sentence: "En plus d'avoir sem\xE9 la pagaille dans ma demeure, vous avez abus\xE9
+      de ma confiance... Jamais plus, je ne laisserai un \xE9tranger me berner ! Messieurs,
+      qu'attendez-vous pour ch\xE2tier ce moins que rien de mon village ?"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: "Dante calmez-vous, nous g\xE9rons la situation \xE0 notre mani\xE8re
+      ! Nous sommes des professionnels faites nous confiance !\r\n"
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "En plus, ce marmot doit r\xE9pondre d'autres actes, il n'a pas seulement
+      cambriol\xE9 votre manoir. Il est aussi responsable de bien d'autres d\xE9lits
+      ! Qu'avez-vous \xE0 dire pour votre d\xE9fense ?"
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 5
+    sentence: "\xC7a suffit maintenant, ce petit jeu ne prend pas avec moi !\r\nRegardez
+      le, il respire la culpabilit\xE9 ! Les esprits en sont certains, ils me l'ont
+      murmur\xE9..."
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 6
+    sentence: "Des esprits... int\xE9ressant, je ne savais pas que nous avions affaire
+      \xE0 un mage noir ! Dante, rassurez-vous, nous allons nous charger de lui !\r\n"
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "Des esprits, des disparitions, vos promenades suspectes aux quatre
+      coins du village, vos questions pernicieuses pos\xE9es aux habitants... Vous
+      \xEAtes un v\xE9ritable fl\xE9au pour ce village ! On aurait jamais d\xFB vous
+      laisser en libert\xE9 dans ce village ! Muien, nous devrions toujours nous fier
+      \xE0 notre instinct \xE0 l'avenir !"
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "Ah non ? Et qu'est-ce que vous \xEAtes alors ? \r"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 9
+    sentence: "C'est un menteur voil\xE0 tout ! en plus, il ne nie pas son implication
+      dans les autres d\xE9lits !"
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 2
+    sentence: "Les esprits me l'ont aussi murmur\xE9... et ils ont toujours raison
+      ! Nous avons affaire \xE0 un voleur, un voyou, tout ce qu'il y a de plus m\xE9prisable.
+      Je vous en conjure, saisissez-vous de lui, avant qu'il ne s'en prenne \xE0 mes
+      habitants !"
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 11
+    sentence: "Rien fait du tout ? Comme c'est curieux... Il semblerait pourtant que
+      mon manoir ne se soit pas cambriol\xE9 tout seul ! En plus de \xE7a, les esprits
+      vous ont vu ! Ils m'ont tout racont\xE9 !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: "C'est un menteur doubl\xE9 d'un voleur... Dante laissez-nous, nous
+      charger de lui.\r\n"
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 3
+    sentence: "NUIEN: Nous en avons assez de vos mensonges... Des esprits, des disparitions,
+      vos promenades suspectes aux quatre coins du village, vos questions pernicieuses
+      pos\xE9es aux habitants... Vous \xEAtes un v\xE9ritable fl\xE9au pour ce village
+      ! On aurait jamais d\xFB vous laisser en libert\xE9 dans ce village ! Muien,
+      nous devrions toujours nous fier \xE0 notre instinct \xE0 l'avenir !"
+  - profilePnj: {fileID: 11400000, guid: 92b60c2894dd5994db269d4be7e76d3a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 14
+    sentence: "Qui ne dit mot consent ! Votre silence en dit beaucoup... Les esprits
+      me le confirment ! Muien et Nuien, je vous en prie, vous devez d\xE9barrasser
+      mon magnifique village de cette menace !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 15
+    sentence: "Vous avez raison, nous avons d\xE9j\xE0 trop train\xE9 ! Il serait
+      dangereux de le laisser en libert\xE9...\r\n"
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 4
+    sentence: "Entre les esprits, les disparitions myst\xE9rieuses, vos promenades
+      suspectes aux quatre coins du village et vos questions pernicieuses pos\xE9es
+      aux habitants... Muien, saisis-toi de lui !"
+  playerAnswers:
+  - playerAnswers:
+    - text: Mais enfin de quoi parlez-vous ?
+      nextTextId: 4
+      emotion: 4
+      influence: 0
+    - text: Je ne suis pas un cambrioleur !
+      nextTextId: 7
+      emotion: 4
+      influence: 0
+    - text: Je n'ai rien fait du tout !
+      nextTextId: 10
+      emotion: 4
+      influence: 0
+    - text: '...'
+      nextTextId: 13
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: "Arr\xEAtez ! Je suis innocent !"
+      nextTextId: -1
+      emotion: 4
+      influence: 0
+    - text: Mais c'est lui qui entend des esprits !
+      nextTextId: -1
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: S'il vous plait ! je n'ai rien fait !
+      nextTextId: -1
+      emotion: 4
+      influence: 0
+    - text: "C'est lui ! il est compl\xE8tement fou !"
+      nextTextId: -1
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: '*Implorer*'
+      nextTextId: -1
+      emotion: 4
+      influence: 0
+    - text: "Arr\xEAtez ! C'est lui le fou !"
+      nextTextId: -1
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: "Je vous en prie ! Arr\xEAtez !"
+      nextTextId: -1
+      emotion: 4
+      influence: 0
+    - text: '*Tenter de fuir*'
+      nextTextId: -1
+      emotion: 4
+      influence: 0

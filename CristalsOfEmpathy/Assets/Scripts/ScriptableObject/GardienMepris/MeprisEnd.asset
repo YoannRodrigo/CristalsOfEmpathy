@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: MeprisEnd
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: c6eead84f0b8f694282bb7115a00f5ba, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Je suis impressionn\xE9 par ce revirement de situation. La sagesse
+      te serait-elle tomb\xE9e sur la t\xEAte ?"
+  - profilePnj: {fileID: 11400000, guid: c6eead84f0b8f694282bb7115a00f5ba, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Tu as m\xE9rit\xE9 ce cristal. Tu as compris que la haine n'en valait
+      pas la peine. Ta r\xE9demption ne sera pas veine, voici ta r\xE9compense."
+  playerAnswers: []
