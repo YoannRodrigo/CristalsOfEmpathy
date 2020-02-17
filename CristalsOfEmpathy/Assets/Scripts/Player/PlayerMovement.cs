@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OrientTowards(Vector3 position)
     {
-        transform.forward = (position - transform.position).normalized;
+        orientation = Quaternion.LookRotation((position - transform.position).normalized);
         //Vector3 dir = (position - transform.position).normalized;
         //orientation = Quaternion.Slerp(orientation, Quaternion.LookRotation(new Vector3(dir.x, 0f, dir.y)), rotationLerpSpeed * Time.deltaTime);
     }
