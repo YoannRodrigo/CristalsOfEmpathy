@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: ForainsPostcoma
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "*Le joueur se r\xE9veille \xE0 l'or\xE9e des bois, pr\xE8s du campement
+      des forains. Un colosse s'approche de vous*"
+  - profilePnj: {fileID: 11400000, guid: af4db0510a9c58f41b27e5f1e7e2681a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 2
+    sentence: "J'llais t'poser la m\xEAme question. T'es chez nous ! Dans l'beau campement
+      de Cocagne. L'maison d'ceux qu'les villageois appellent les forains."
+  - profilePnj: {fileID: 11400000, guid: ebe2fa5e34be150408f2163109a49a1b, type: 2}
+    emotion: 3
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: "C'satan\xE9s villageois qui nous portent le mauvais \u0153il. Depuis
+      l'arriv\xE9e du nouveau maire, ils nous d\xE9testent sans aucune raison. Ils
+      disent que nous sommes responsables du moindre p'tit probl\xE8me qu'ils ont
+      !"
+  - profilePnj: {fileID: 11400000, guid: ebe2fa5e34be150408f2163109a49a1b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 4
+    sentence: "'Lors j'esp\xE8re qu't'es pas un probl\xE8me toi. Pa'c'qu'un villageois
+      qui s'r\xE9veille ici sans savoir pourquoi \xE7a peut vite d\xE9raper, hein
+      Didier ?"
+  - profilePnj: {fileID: 11400000, guid: af4db0510a9c58f41b27e5f1e7e2681a, type: 2}
+    emotion: 3
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Ouais P'tit Did. Alors toi l\xE0 tu vas t'tirer d'ici en vitesse. Allez,
+      du vent !"
+  - profilePnj: {fileID: 11400000, guid: af4db0510a9c58f41b27e5f1e7e2681a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 6
+    sentence: Je n'suis personne, s'l'ment un'humble b'nhomme. Mes amis m'appellent
+      Didy et mes enn'mis l'Grand D'dier.
+  - profilePnj: {fileID: 11400000, guid: ebe2fa5e34be150408f2163109a49a1b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 7
+    sentence: "Et moi j'suis le p'tit Did, c'est moi l'a\xEEn\xE9."
+  - profilePnj: {fileID: 11400000, guid: af4db0510a9c58f41b27e5f1e7e2681a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: Nous sommes ce que tes copains appellent les forains. Ils nous prennent
+      pour des voleurs, des moins que rien alors que nous sommes de simples voyageurs.
+  - profilePnj: {fileID: 11400000, guid: ebe2fa5e34be150408f2163109a49a1b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 9
+    sentence: "C'est la faute du nouveau maire. L'bougre passait beaucoup de temps
+      avec nous avant qu'il soit \xE9lu et maintenant il nous ignore et dit m\xEAme
+      \xE0 ses villageois que nous sommes de bandits !"
+  - profilePnj: {fileID: 11400000, guid: af4db0510a9c58f41b27e5f1e7e2681a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Donc t'sais quoi ? On est d'v'nu des bandits et si tu files pas d'l\xE0,
+      on va t'faire les poches."
+  - profilePnj: {fileID: 11400000, guid: af4db0510a9c58f41b27e5f1e7e2681a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 11
+    sentence: V'vous faites bien assez mal tout seul j'l'impression.
+  - profilePnj: {fileID: 11400000, guid: ebe2fa5e34be150408f2163109a49a1b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 12
+    sentence: "M'vez l'air aussi timbr\xE9 que les autres du village. Quelque chose
+      cloche chez vous !"
+  - profilePnj: {fileID: 11400000, guid: af4db0510a9c58f41b27e5f1e7e2681a, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 13
+    sentence: "Quand la machine fait cling, \xE7a fait clonk !"
+  - profilePnj: {fileID: 11400000, guid: ebe2fa5e34be150408f2163109a49a1b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 14
+    sentence: J'te traduis. L'maire c'est l'cling, et le village c'est l'clonk. Tout
+      est parti en s'cette d'puis qu'Tilfinn a un nouveau maire.
+  - profilePnj: {fileID: 11400000, guid: af4db0510a9c58f41b27e5f1e7e2681a, type: 2}
+    emotion: 3
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Et moi j're-traduis, t'pas l'bienvenu ici maraud ! On va encore payer
+      les pots cass\xE9 ! Alors oust !"
+  playerAnswers:
+  - playerAnswers:
+    - text: 'Qu''est-ce que je fais ici ? '
+      nextTextId: 1
+      emotion: 2
+      influence: 1
+    - text: "Qui \xEAtes-vous ? "
+      nextTextId: 5
+      emotion: 2
+      influence: 1
+    - text: Ne me faites pas de mal..
+      nextTextId: 10
+      emotion: 1
+      influence: 1
