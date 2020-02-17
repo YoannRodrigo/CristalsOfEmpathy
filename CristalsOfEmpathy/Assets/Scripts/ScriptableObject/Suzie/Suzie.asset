@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Suzie
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
@@ -21,13 +21,13 @@ MonoBehaviour:
       coeur bris\xE9, tu es bien trop jeune pour \xE7a !  Tu t'es perdu ? \r\nC'est
       rare de voir des nouvelles t\xEAtes ici, et crois moi, je connais tous les habitants
       de ce village ! Tu as pu les rencontrer ? Ne sont-ils pas magnifiques ?"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "Oh ma ch\xE9rie, pardonne moi ! Ne le prend pas mal, j'appelle tout
       le monde de cette fa\xE7on !"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 2
@@ -35,7 +35,7 @@ MonoBehaviour:
       plus plaisir ? Un cadeau de chez monsieur le fleuriste... Si tu as le temps
       et l'envie... Je resterais ici ! Je suis ravie que tu ne sois pas l'un de ceux
       qui sont insensibles \xE0 la beaut\xE9 que nous offre la vie !"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
@@ -44,20 +44,20 @@ MonoBehaviour:
       tu es peut \xEAtre de ceux qui sont insensibles \xE0 la beaut\xE9 que nous offre
       la vie... En tout cas, si tu cherches \xE0 t'immuniser contre l'amour, notre
       apothicaire pourra t'aider."
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 3
     sentence: "Oh... mais tu n'as pas \xE0 rougir ! Je suis contente de faire ta connaissance
       en tout cas ! Tu t'appelles comment ?"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 4
     sentence: "Je ne dirais pas non \xE0 des fleurs... Si tu as le temps et l'envie,
       je resterai ici ! En tout cas, je suis ravie que tu ne sois pas de ceux qui
       sont insensibles \xE0 la beaut\xE9 que nous offre la vie !"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
@@ -66,7 +66,7 @@ MonoBehaviour:
       ressemblez \xE9trangement \xE0 cet apothicaire de malheur ! Comme si je faisais
       quelque chose de d\xE9plac\xE9... Vous n'avez qu'\xE0 aller le voir, plut\xF4t
       que de me juger !"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 5
@@ -75,7 +75,7 @@ MonoBehaviour:
       ! Je ne comprends pas leurs attitudes. L'apothicaire du village, par exemple,
       me fait beaucoup de reproches. Pourtant, je n'ai rien fait de mal ! Il me dit
       sans cesse que j'ai besoin d'un traitement ! Vous le croyez vous ?"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 1
     isAnswerNeeded: 0
     nextTextId: -1
@@ -83,25 +83,25 @@ MonoBehaviour:
       nouvel ami, mais on dirait que tu fais parti de ceux qui sont insensibles \xE0
       la beaut\xE9 que nous offre la vie...  En tout cas, si tu cherches \xE0 t'immuniser
       contre l'amour, notre apothicaire pourra t'aider... Sois en s\xFBr."
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 1
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Oh merci ! Tu es chou ! Je vais aller montrer ton cadeau \xE0 tout
       le monde, pour montrer combien tu es adorable !"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Je ne pense pas que ce soit si utile, que \xE7a... Concentrez-vous
       plut\xF4t sur les fleurs !"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: Oui ! moi non plus ! Bon ces fleurs, elles ne vont pas tomber du ciel
       ! J'attends !
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1

@@ -13,129 +13,129 @@ MonoBehaviour:
   m_Name: Pecheur
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: "Tiens donc, c'pas tous les jours qu'on voit d\xE9barquer quelqu'un
       ! D'habitude y'a que ma femme qui vient ici , mais avec tout ce qu'il se passe
       au village... "
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
     sentence: "J'ai l'impression qu'elle est plus occup\xE9e avec ses animaux qu'avec
       moi !  C'est \xE0 croire que j'fais encore plus peur que ce maudit poulpe !
       \ Que viens tu faire par ici, gamin ?"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3
     sentence: "M'enfin... du poulpe qui vit dans ce lac d'puis le dernier Maelstrom...
       \xE7a fait des ann\xE9es que j'attends qu'il montre une de ses tentacules... "
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "Ma femme arr\xEAte pas de me dire que je vais me transformer moi m\xEAme
       en poisson, \xE0 rester ici toute la journ\xE9e... mais elle est mal plac\xE9e
       pour parler..."
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 2
     sentence: "Si t'es capable de faire appara\xEEtre ce maudit poulpe, alors ouais...
       mais \xE7a m'\xE9tonnerait que tu sois un ma\xEEtre de l'eau, gamin. Sinon...
       tu pourrais toujours m'aider \xE0 r\xE9parer ma barque !"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 6
     sentence: "Ahahahaha ! elle est bien bonne celle l\xE0... Tu devrais aller voir
       l'ancien maire... crois moi qu'il fait bien plus peur que moi gamin !"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 3
     sentence: "En plus, son manoir est pas si loin ! En attendant, je dois pr\xE9parer
       mon exp\xE9dition !"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 3
     isAnswerNeeded: 1
     nextTextId: 4
     sentence: "... File d'ici gamin, avant que je m'\xE9nerve !"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 9
     sentence: "Tu plaisantes, gamin ! Ce soir, j'ai l'intention de manger du poulpe,
       et crois moi qu'il va pas se p\xEAcher tout seul ! "
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 3
     isAnswerNeeded: 1
     nextTextId: 5
     sentence: "En plus, les villageois sont compl\xE8tement cingl\xE9s ! T'peux me
       croire, plus jamais j'retourne dans ce foutu village."
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Tu te crois dr\xF4le gamin ? T'as qu'\xE0 retourner au village, ou
       aller voir les forains, je suis certain que tu t'entendrais bien avec eux !
       Moi, j'ai plus rien \xE0 te dire !"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Faudrait que tu passes \xE0 la scierie pour me rapporter du bois, \xE7a
       m'aiderait beaucoup, gamin !"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Fou ? Moi ? Tu devrais retourner au village, tu verras ce que c'est
       la folie ! Crois moi que je pr\xE9f\xE8re ce poulpe \xE0 la moiti\xE9 des villageois
       !"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "L'ancien maire t'int\xE9resse vraiment ? En tout cas tu trouveras son
       manoir au sud du village !"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Ouais \xE7a... j'ai besoin de bois, mais pour \xE7a faudrait que j'aille
       \xE0 la scierie ! Si tu pouvais m'en apporter gamin, je te donnerais mon meilleur
       poisson !"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 16
     sentence: "D'puis un certain temps, plus personne ach\xE8te ma poiscaille, ils
       jurent que par les algues ! T'as bien d\xFB remarquer que quelque chose tournait
       pas rond, non ?"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "T'as vu l'\xE9tat de ma barque en plus ? J'peux plus rien p\xEAcher
       ! Si jamais tu passes \xE0 la scierie, sois gentil et rapporte moi du bois !
       Faut que je pr\xE9pare mon exp\xE9dition !"
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 18
     sentence: "C'bien gamin, j'vois qu'on est sur la m\xEAme longueur d'onde ! Si
       j'peux te donner un conseil, reste pas trop pr\xE8s du village..."
-  - profilePnj: {fileID: 11400000, guid: 92445aee119bd4f5792fc7f702ff3f08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 795d89475c393d44e853b7c458b86a61, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Tu devrais plut\xF4t visiter les alentours ! T'as moins de risque d'y
       croiser ces cingl\xE9s !"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 7

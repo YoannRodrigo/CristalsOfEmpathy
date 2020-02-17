@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: MageAmour
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Ah vous revoil\xE0 ! Que nous vaut donc cette charmante visite ?\n"
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 2
+    sentence: "On s'est d\xE9j\xE0 rencontr\xE9s ?"
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: " ... Ne faites pas attention \xE0 lui, il a un peu trop abus\xE9 de
+      l'euphorie ambiante !"
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 4
+    sentence: 'Content que quelqu''un d''autre le remarque... En effet, le nouveau
+      maire porte en lui un secret qui...
+
+'
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 5
+    sentence: "Cesse les phrases \xE9nigmatiques Eudes, on a pas le temps pour \xE7a.
+      En fait, \xE7a fait un petit moment que nous observons de pr\xE8s ce qu'il se
+      passe au village, et quelque chose a drastiquement chang\xE9 depuis que le nouveau
+      maire est en place... L'\xE9quilibre est comme perturb\xE9..."
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "\xC7a oui ! Mon \xE9quilibre est tout chamboul\xE9 !"
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 7
+    sentence: "Allons bon, enfin une \xE2me sens\xE9e ! Je ne voulais plus y croire.
+      Voil\xE0 quelques jours que nous observons le village de pr\xE8s et nous sommes
+      du m\xEAme avis.\n"
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "Plus ou moins... Il est certain que les habitants de ce village sont
+      influenc\xE9s par le pouvoir du cristal de l'amour, et le nouveau maire semble
+      \xEAtre un des suspects les plus probables."
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 2
+    sentence: Il y a un nouveau maire au village ?
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 10
+    sentence: "Content de te l'entendre dire ! Nous sommes souvent consid\xE9r\xE9s
+      comme les personnes les plus \xE9tranges des alentours ! Mais depuis que le
+      nouveau maire a \xE9t\xE9 \xE9lu..."
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 11
+    sentence: "Depuis que le nouveau maire a \xE9t\xE9 \xE9lu, Eudes, tu as de la
+      concurrence en effet !"
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 3
+    sentence: ' Il y a un nouveau maire au village ?'
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 13
+    sentence: 'Le connaissant, le raisonner ne sera pas simple. Il serait en effet
+      plus sage de vous accompagner...
+
+'
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 14
+    sentence: "Si le nouveau maire poss\xE8de r\xE9ellement le cristal, nous devrions
+      partir imm\xE9diatement..."
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Ah on va enfin pouvoir assister aux festivit\xE9s !"
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 16
+    sentence: "Ah mais vous parlez du bon vieux Prosper ! Bah, c'est peu de le dire
+      ! J'ai perdu bon nombre de potions aux cartes avec lui... c'est un pi\xE8tre
+      n\xE9gociateur si vous voulez mon avis !"
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 17
+    sentence: "On aimerait bien que tu sois moins ouvert \xE0 la discussion toi par
+      contre, Arthos..."
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Si le maire n'est pas tr\xE8s ouvert \xE0 la discussion, c'est parce
+      qu'il cache quelque chose... nous devons d\xE9couvrir s'il cache vraiment ce
+      cristal. Il est temps d'avoir une conversation avec lui, allons-y !"
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 19
+    sentence: "Que c'est un imposteur, doubl\xE9 d'un manipulateur... \n"
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 20
+    sentence: "Allons Jaron, nous ne sommes encore s\xFBrs de rien... Il faudrait
+      aller le questionner pour en \xEAtre certain."
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Il d\xE9tient le cristal de l'amour, il n'y plus de doute l\xE0 dessus
+      ! Nous ne sommes plus seuls \xE0 penser que quelque chose cloche, il est temps
+      de r\xE9gler cette histoire... Allons lui rendre une petite visite de courtoisie
+      !"
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 22
+    sentence: "Allons bon, enfin une \xE2me sens\xE9e ! Je ne voulais plus y croire.
+      Voil\xE0 quelques jours que nous observons le village de pr\xE8s et nous sommes
+      du m\xEAme avis..."
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 23
+    sentence: "Plus ou moins... Il est certain que les habitants de ce village sont
+      influenc\xE9s par le pouvoir du cristal de l'amour, et le nouveau maire semble
+      \xEAtre un des suspects les plus probables. Pour en avoir le coeur net, il vaudrait
+      mieux s'y rendre imm\xE9diatement... Allons voir Prosper !"
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: Prosper est devenu maire ?
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 25
+    sentence: "Probablement l'un des cristaux d'empathie, et vu le comportement des
+      habitants, je pense au cristal de l'amour ! Si vous aussi vous l'avez remarqu\xE9,
+      alors notre th\xE9orie se confirme... Il faut agir vite ! Je sugg\xE8re que
+      nous allions voir Prosper ensemble !\n"
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 26
+    sentence: 'Oui, ne trainons pas... '
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Ah on va enfin pouvoir assister aux festivit\xE9s !"
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 28
+    sentence: C'est rien qu'un vagabond, une imposteur ce nouveau maire, mais il faut
+      bien avouer qu'il cache de belles bouteilles dans sa demeure !
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 29
+    sentence: "Je ne parlais pas de ce genre de secret, Arthos, mais plut\xF4t du
+      cristal que nous soup\xE7onnons qu'il d\xE9tienne..."
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Oui, nous pensons qu'il poss\xE8de le cristal de l'amour, et votre
+      suspicion ne fait que confirmer notre th\xE9orie... Je crois qu'il est temps
+      que nous lui rendions tous une petite visite. En route !"
+  playerAnswers:
+  - playerAnswers:
+    - text: Quelque chose cloche avec le nouveau maire !
+      nextTextId: 3
+      emotion: 4
+      influence: 0
+    - text: Je crois qu'un des cristaux se trouve au village !
+      nextTextId: 6
+      emotion: 4
+      influence: 0
+    - text: "Vous n'avez rien remarqu\xE9 d'\xE9trange ?"
+      nextTextId: 9
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: "Qu'est-ce qui est \xE0 l'origine de \xE7a ?"
+      nextTextId: 24
+      emotion: 4
+      influence: 0
+    - text: Un secret ?
+      nextTextId: 27
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: '*Demander leur aide pour parler au maire*'
+      nextTextId: 12
+      emotion: 4
+      influence: 0
+    - text: "Le maire n'a pas l'air tr\xE8s ouvert \xE0 la discussion..."
+      nextTextId: 15
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: Que savez-vous sur le nouveau maire ?
+      nextTextId: 18
+      emotion: 4
+      influence: 0
+    - text: "\xC7a a un rapport avec les cristaux ?"
+      nextTextId: 21
+      emotion: 4
+      influence: 0

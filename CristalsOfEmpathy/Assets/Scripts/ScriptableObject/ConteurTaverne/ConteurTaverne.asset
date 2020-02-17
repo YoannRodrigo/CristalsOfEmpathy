@@ -13,112 +13,112 @@ MonoBehaviour:
   m_Name: ConteurTaverne
   m_EditorClassIdentifier: 
   dialogues:
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: "Vous arrivez \xE0 me voir ? En voici une\r bonne nouvelle ! Je d\xE9p\xE9ris
       ici depuis un long\r moment, souffrant de mon invisibilit\xE9."
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
     sentence: "Mes seuls\r divertissements sont les ragots des habitants qui\r passent
       \xE0 la taverne, heureusement qu\u2019ils sont\r nombreux !"
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "M\u2019aider ? Vous \xEAtes bien gentil mais je\r crains que \xE7a
       ne soit possible. Je suis condamn\xE9.\r Vous pouvez toujours boire avec moi,
       cela serait\r tr\xE8s appr\xE9ciable."
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 2
     sentence: "J\u2019en suis bel et bien un. Le fant\xF4me d\u2019un\r \xE9crivain,
       celui d\u2019un conteur, d\u2019un homme aux milles\r histoires. C\u2019est
       pour continuer \xE0 les conter que je\r\nsuis encore ici, mais personne ne pr\xEAte
       l\u2019ou\xEFe."
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 3
     sentence: "Ainsi soit-il vagabond. Mais sache que ton\r m\xE9pris ne t\u2019aidera
       pas dans la vie. Tu avanceras\r avec d\xE9termination mais jamais dans la bonne\r
       direction."
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 6
     sentence: "La peur, c\u2019est pas seulement ce coup\r de poing qui vous remue
       les intestins. C\u2019est pas\r seulement ce froid qui vous traverse jusqu\u2019\xE0
       l\u2019os\r et vous fait vibrer les rotules. C\u2019est l\u2019art de\r s\u2019inventer
       des histoires et croyez-moi, je m\u2019y\r connais en histoires ! "
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 4
     sentence: "Vous voulez avoir peur ?\r Alors installez-vous car j\u2019ai moult
       histoires\r terrifiantes \xE0 vous conter ! Approchez, n\u2019ayez\r crainte..
       Apr\xE8s tout, que pourrais-je vous faire ?\r Je ne suis pas vraiment l\xE0."
-  - pnjPortrait: {fileID: 0}
-    pnjName: 'Ernest, le conteur '
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "J\u2019\xE9tais dans la for\xEAt, je prenais\r des notes en observant
       une charmante\r cr\xE9ature. Alors qu\u2019elle mangeait, tout se brouilla d\u2019un
       coup et je fus aspir\xE9 par les\r cieux avant d\u2019\xEAtre recrach\xE9 ici,
       \xE0 la\r taverne, le comble."
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 12
     sentence: "Je m\u2019appelle Ernest Beaurivage,\r humble scribouilleur au service
       du peuple,\r de l\u2019art et du savoir. Je gribouille sur moult\r sujets mais
       mon pr\xE9f\xE9r\xE9 est le suivant.."
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 12
     sentence: ".. Les\r \xE9motions. Elles sont comme les fils qui\r manipulent un
       pantin. Ce sont, selon mon\r oeuvre majeure, Les Rouages\r Gargantuesques de
       l\u2019Insaisissable."
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 12
     sentence: "La mort est douloureuse, sur\rtout pour ceux qui restent vivants. Je
       suis\r dans une condition particuli\xE8re, ni mort,\r ni vivant. Ne me prenez
       pas comme\r exemple !"
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 12
     sentence: "Je n\u2019en suis pas certain mais il\r semblerait qu\u2019en effet,
       je sois un fant\xF4me.\r Personne ne me voit ni m\u2019entend, sauf\r vous.
       Peut-\xEAtre \xEAtes-vous d\xE9j\xE0 mort vous\r aussi."
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 1
     nextTextId: 5
     sentence: "Trinquons camarade ! Il nous reste\r encore \xE0 d\xE9terminer pour
       quelle raison\r hm.."
-  - pnjPortrait: {fileID: 0}
-    pnjName: 'Ernest, le conteur '
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Ne jugez pas \xE0 un homme \xE0 sa\r condition, jugez-le sur ses actions.
       La\r v\xF4tre aura \xE9t\xE9 de juger les autres."
-  - pnjPortrait: {fileID: 0}
-    pnjName: Ernest, le conteur
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Il n\u2019y a pas r\xE9ellement de bonne\r voie, il y a surtout celle
       que l\u2019on d\xE9cide\r d\u2019emprunter. Ecoutez votre coeur et tout\r se
       passera bien."
-  - pnjPortrait: {fileID: 0}
-    pnjName: Joueur
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3
     sentence: "Laissez-moi tranquille sale monstre ! Je n'ai pas de temps \xE0 perdre
