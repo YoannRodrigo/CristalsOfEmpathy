@@ -8,6 +8,7 @@ using UnityEngine;
 public class InteractiblePnj : InteractibleItem
 {
     public ScriptablePNJ dialogue;
+    public ScriptablePNJ dialogueIdle;
     private NonPlayableCharacter npc;
 
     public override void Start()
@@ -60,6 +61,11 @@ public class InteractiblePnj : InteractibleItem
         {  
             npc.ShutUp();
             if(npc.path != null) npc.movement.FollowPath(npc.path);
+        }
+
+        if (dialogueIdle != null)
+        {
+            dialogue = dialogueIdle;
         }
     }
 
