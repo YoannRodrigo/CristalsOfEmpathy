@@ -5,10 +5,10 @@ labels:
 - shader
 - Material
 - PBR
+timeCreated: 1489240532
+licenseType: Store
 ShaderImporter:
-  externalObjects: {}
   defaultTextures: []
-  nonModifiableTextures: []
   userData: 
   assetBundleName: 
   assetBundleVariant: 
