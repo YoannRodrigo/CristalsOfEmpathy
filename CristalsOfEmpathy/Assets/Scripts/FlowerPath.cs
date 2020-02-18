@@ -50,9 +50,9 @@ public class FlowerPath : MonoBehaviour
         if(growing)
         {
             timer += Time.deltaTime;
-            if(timer < timeToGrow)
+            if(timer < timeToGrow && current >= 0 && current < flowers.Count)
             {
-                flowers[current].transform.localScale = scaleAnimationCurve.Evaluate(timer/timeToGrow) * Vector3.one * scaleMultiplier;
+                flowers[current].transform.localScale = Vector3.one * (scaleAnimationCurve.Evaluate(timer/timeToGrow) * scaleMultiplier);
             }
             else
             {
