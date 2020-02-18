@@ -6,6 +6,7 @@
 [RequireComponent(typeof(SphereCollider))]
 public abstract class InteractibleItem : MonoBehaviour
 {
+    protected bool activated = true;
     protected bool canBeTouch;
     protected ParticleSystem particle;
     protected SphereCollider sphere;
@@ -13,13 +14,15 @@ public abstract class InteractibleItem : MonoBehaviour
     public float range = 2f;
     public GameObject particlePrefab;
 
-
+    public void Desactivate()
+    {
+        Exit();
+        activated = false;
+    }
 
     public virtual void Start()
     {
         sphere = GetComponent<SphereCollider>();
-
-
         if(particlePrefab != null)
         {
             particle = Instantiate(particlePrefab, transform).GetComponent<ParticleSystem>();
@@ -78,12 +81,16 @@ public abstract class InteractibleItem : MonoBehaviour
     protected abstract void OnTouch();
     protected virtual void Enter()
     {
+        if(!activated) return;
+
         if (particle) particle.Play();
         canBeTouch = true;
         LevelManager.instance.player.look.FocusOn(gameObject.transform);
     }
     protected virtual void Exit()
     {
+        if(!activated) return;
+
         if (particle) particle.Stop();
         canBeTouch = false;
         LevelManager.instance.player.look.LooseFocus();

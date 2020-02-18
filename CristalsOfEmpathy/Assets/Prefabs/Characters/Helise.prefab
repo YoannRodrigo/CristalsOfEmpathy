@@ -147,11 +147,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6609098155600658984}
-  - component: {fileID: 4909515648619313360}
   - component: {fileID: 1031341521237658206}
   - component: {fileID: 6609098155600633355}
   - component: {fileID: 6609098155600633354}
   - component: {fileID: 6609098155600633353}
+  - component: {fileID: 1402238925}
+  - component: {fileID: 1402238921}
   m_Layer: 0
   m_Name: Helise
   m_TagString: Untagged
@@ -175,21 +176,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0.87600005, y: 183.16199, z: 0.127}
---- !u!114 &4909515648619313360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6609098155600633352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1787aa2bd2dfa34cb06189b54070396, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetSpeed: 4
-  tutorialManager: {fileID: 0}
-  endTutorialArea: {fileID: 0}
 --- !u!114 &1031341521237658206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,9 +188,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5def0bef25fc32b48825f246d9969032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 2
-  particlePrefab: {fileID: 0}
+  range: 2.34
+  particlePrefab: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
+    type: 3}
   dialogue: {fileID: 11400000, guid: 38c8303c3eb8fff4393e44716715495a, type: 2}
+  dialogueIdle: {fileID: 0}
 --- !u!114 &6609098155600633355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +250,36 @@ MonoBehaviour:
   going: 0
   reached: 0
   animator: {fileID: 0}
+--- !u!135 &1402238925
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609098155600633352}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.34
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1402238921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609098155600633352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094c7a2721fdaab439baad0e9046d2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  look: {fileID: 0}
+  movement: {fileID: 0}
+  animator: {fileID: 0}
+  face: {fileID: 0}
+  path: {fileID: 0}
 --- !u!1 &7053764920409120160
 GameObject:
   m_ObjectHideFlags: 0

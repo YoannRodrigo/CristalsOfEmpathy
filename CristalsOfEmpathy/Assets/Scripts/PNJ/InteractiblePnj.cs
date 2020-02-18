@@ -9,7 +9,7 @@ public class InteractiblePnj : InteractibleItem
 {
     public ScriptablePNJ dialogue;
     public ScriptablePNJ dialogueIdle;
-    private NonPlayableCharacter npc;
+    internal NonPlayableCharacter npc;
 
     public override void Start()
     {

@@ -117,7 +117,7 @@ public class AgentMovement : MonoBehaviour
                 onDestinationReached = null;
             }
 
-            if(currentIndexOnPath == path.points.Count - 1)
+            if(path != null && currentIndexOnPath == path.points.Count - 1)
             {
                 if(onPathCompleted != null)
                 {
