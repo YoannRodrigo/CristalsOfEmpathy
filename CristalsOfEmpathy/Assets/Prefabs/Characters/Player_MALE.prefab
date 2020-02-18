@@ -106,15 +106,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 15
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 15
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 15
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 0b9bef89efcf2954ea74778af69bb63e, type: 3}
       propertyPath: m_Controller
