@@ -21,11 +21,11 @@ public class InteractiblePnj : InteractibleItem
         Speak();
     }
 
-    public void Speak()
+    public void Speak(int start = 0)
     {
         if(dialogue != null) 
         {
-            bool success = DialogueManager.instance.Initialize(dialogue, 0, () => {this.OnDialogEnded();});
+            bool success = DialogueManager.instance.Initialize(dialogue, start, () => {this.OnDialogEnded();});
             if(success)
             {
                 if(particle != null) particle.Stop();
@@ -41,12 +41,12 @@ public class InteractiblePnj : InteractibleItem
         {
             npc.movement.Stop();
             npc.transform.forward = -(npc.transform.position - LevelManager.instance.player.transform.position).normalized;
+        }
 
-            if(LevelManager.instance != null && LevelManager.instance.player != null)
-            {
-                LevelManager.instance.player.OrientTowards(npc.transform.position);
-                LevelManager.instance.player.Freeze();
-            }
+        if(LevelManager.instance != null && LevelManager.instance.player != null)
+        {
+            LevelManager.instance.player.Freeze();
+            LevelManager.instance.player.OrientTowards(transform.position);
         }
     }
 

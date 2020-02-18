@@ -16,26 +16,23 @@ public class TutorialManager : MonoBehaviour
     public bool isQuestActivated;
     public bool isQuestAchieved;
     public bool isQuestSubmitted;
-    public FlyablePnj heliseFly;
+    public HeliseIaTutoMovement heliseMovement;
     public List<GameObject> berlingotsList = new List<GameObject>();
     public GameObject dialogueLauncher;
-
+    public Portal portalToFlorist;
     #endregion
 
     #region Methods
 
-    private void Start()
-    {
-        heliseFly.AllowPnjToFly(false);
-    }
 
     private void Update()
     {
         berlingotsList.RemoveAll(item => item == null);
         if (berlingotsList.Count == 0)
         {
-            heliseFly.AllowPnjToFly();
+            heliseMovement.AllowHeliseToMove();
             isQuestAchieved = true;
+            portalToFlorist.activated = true;
             if (dialogueLauncher) dialogueLauncher.SetActive(true);
         }
     }
