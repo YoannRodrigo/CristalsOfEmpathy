@@ -41,6 +41,7 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     private void Start()
     {
         AkSoundEngine.PostEvent("StartAversionMusic", gameObject);
+        LevelChanger.instance.FadeOut();
     }
     public void UpdateScore(float pointToAdd)
     {
@@ -122,13 +123,13 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     private IEnumerator WaitToReturn()
     {
         yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(0);
+        LevelChanger.instance.ChangeToLevelWithFade(0);
     }
 
     private IEnumerator WaitToReturnAversionEnigma()
     {
         yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(5);
+        LevelChanger.instance.ChangeToLevelWithFade(5);
     }
 
     #endregion

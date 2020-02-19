@@ -11,49 +11,70 @@ public class PlayerMovement : MonoBehaviour
     #region Member Variables
 
     private const float MAX_SPEED = 5f;
-    public float rotation_speed;
+    public float rotationLerpSpeed = 10f;
+    private Quaternion orientation;
     private SingleJoystick joystick;
     private Rigidbody rb;
     private Animator animator;
-    private Vector3 joystickMovement;
+    [HideInInspector] public FocusLook look;
     private static readonly int speed = Animator.StringToHash("Speed");
-
+    private bool frozen;
+    public void Freeze(){frozen = true;}
+    public void UnFreeze(){frozen = false;}
     #endregion
 
     #region Methods
 
     private void Start()
     {
-        joystick = FindObjectOfType<SingleJoystick>();
+        joystick = InterfaceManager.instance.joystick;
         rb = GetComponent<Rigidbody>();
         animator = Instantiate(GeneralGameManager.instance.playerCharacterPrefabs[GeneralGameManager.instance.GetPlayerChoice()],
             transform).GetComponentInChildren<Animator>();
-        
+
+        look = GetComponentInChildren<FocusLook>();
+    }
+
+    public void OrientTowards(Vector3 position)
+    {
+        orientation = Quaternion.LookRotation((position - transform.position).normalized);
+        //Vector3 dir = (position - transform.position).normalized;
+        //orientation = Quaternion.Slerp(orientation, Quaternion.LookRotation(new Vector3(dir.x, 0f, dir.y)), rotationLerpSpeed * Time.deltaTime);
+    }
+
+
+    public void Move(Vector3 direction)
+    {
+        direction = Vector3.ClampMagnitude(direction, 1f);
+        rb.velocity = new Vector3(direction.x * MAX_SPEED, rb.velocity.y, direction.y * MAX_SPEED);
+        orientation = Quaternion.Slerp(orientation, Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.y)), rotationLerpSpeed * Time.deltaTime);
     }
 
     private void Update()
     {
-        if (joystick)
-        {
-            joystickMovement = joystick.GetInputDirection();
-            if(Application.isEditor)
-            {
-                joystickMovement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"),0);
-            }
-            if (Math.Abs(joystickMovement.magnitude) > 0.0f)
-            {
-                Vector3 newLookDirection = new Vector3(joystickMovement.x, 0, joystickMovement.y);
-                transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.LookRotation(newLookDirection),rotation_speed*Time.deltaTime);
-            }
+        transform.rotation = Quaternion.Slerp(transform.rotation, orientation, rotationLerpSpeed * Time.deltaTime);
 
-            rb.velocity = new Vector3(joystickMovement.x * MAX_SPEED, rb.velocity.y, joystickMovement.y * MAX_SPEED);
+        if(frozen) return;
+
+        Vector3 moveVector = new Vector3();
+        if(Application.isEditor) moveVector = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
+        else
+        {
+            moveVector = joystick.GetInputDirection();
+            if (!joystick.gameObject.activeSelf) rb.velocity = Vector3.zero;
         }
 
-        if (!joystick.gameObject.activeSelf) rb.velocity = Vector3.zero;
+        if (Math.Abs(moveVector.magnitude) > 0.0f)
+        {
+            Move(moveVector);
+        }
+    }
 
+    private void FixedUpdate()
+    {
         Vector3 velocityOnGround = Vector3.Scale(rb.velocity, new Vector3(1, 0, 1));
-        animator.SetFloat(speed, velocityOnGround.magnitude/MAX_SPEED);
-        
+		if(animator != null)
+			animator.SetFloat(speed, velocityOnGround.magnitude/MAX_SPEED);
     }
 
     #endregion

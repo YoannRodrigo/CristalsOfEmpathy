@@ -1,32 +1,29 @@
-﻿#region Using Directives
+﻿using UnityEngine;
 
-using UnityEngine;
-
-#endregion
-
-public class InteractibleGuardian : InteractiblePnj
+public class FoxGuardian : InteractiblePnj
 {
-    #region Member Variables
+    public AgentMovement movement;
+    public Transform pointToGoAfter;
 
-    private bool isDialogueEndedGuardian;
-
-    #endregion
-
-    #region Methods
+    public override void Start()
+    {
+        base.Start();
+        if(movement != null) movement.animator = gameObject.GetComponentInChildren<Animator>();
+    }
 
     public override void OnDialogEnded()
     {
-        isDialogueEndedGuardian = true;
-    }
+        base.OnDialogEnded();
 
-    private void Update()
-    {
-        if (isDialogueEndedGuardian)
+        if(movement == null || pointToGoAfter == null) 
         {
-            transform.position -= new Vector3(2f * Time.deltaTime, 0, 0);
-            Destroy(gameObject, 22f);
+            Debug.Log("Fox isn't set properly, exterminating it.");
+            Destroy(gameObject);
+            return;
         }
+
+        movement.GoThere(pointToGoAfter.position);
+        movement.onDestinationReached += () => {Destroy(gameObject);};
     }
 
-    #endregion
 }

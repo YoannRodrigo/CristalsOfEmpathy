@@ -14,6 +14,11 @@ public class FearEnigmaManager : MonoBehaviour
     public GameObject winScreen;
     public GameObject loseScreen;
 
+    private void Start()
+    {
+        LevelChanger.instance.FadeOut();
+    }
+    
     public void SetLastGhost(GameObject lastGhost)
     {
         this.lastGhost = lastGhost;
@@ -55,12 +60,12 @@ public class FearEnigmaManager : MonoBehaviour
     private IEnumerator WaitToReturn()
     {
         yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(0);
+        LevelChanger.instance.ChangeToLevelWithFade(0);
     }
 
     private IEnumerator WaitToReturnFearEnigma()
     {
         yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(6);
+        LevelChanger.instance.ChangeToLevelWithFade(6);
     }
 }
