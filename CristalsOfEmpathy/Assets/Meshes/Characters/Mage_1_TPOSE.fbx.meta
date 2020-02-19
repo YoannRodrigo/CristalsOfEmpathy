@@ -1,21 +1,21 @@
 fileFormatVersion: 2
-guid: 7ee3dddfc568f0c47a4f8096431bda66
+guid: fd0186b5cb9814876ac25b560d96c765
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Conteur
-    100002: //RootNode
-    100004: Head_J
-    100006: Hip_J
-    100008: L_Ankle_J
-    100010: L_Clavicle_J
-    100012: L_Elbow_J
-    100014: L_Fingers_J
-    100016: L_Knee_J
-    100018: L_Leg_J
-    100020: L_Shoulder_J
-    100022: L_Toe_J
-    100024: L_Wrist_J
+    100000: Head_J
+    100002: Hip_J
+    100004: L_Ankle_J
+    100006: L_Clavicle_J
+    100008: L_Elbow_J
+    100010: L_Fingers_J
+    100012: L_Knee_J
+    100014: L_Leg_J
+    100016: L_Shoulder_J
+    100018: L_Toe_J
+    100020: L_Wrist_J
+    100022: Mage
+    100024: //RootNode
     100026: Neck_J
     100028: R_Ankle_J
     100030: R_Clavicle_J
@@ -30,19 +30,19 @@ ModelImporter:
     100048: Spine2_J
     100050: Spine3_J
     100052: Spine_J
-    400000: Conteur
-    400002: //RootNode
-    400004: Head_J
-    400006: Hip_J
-    400008: L_Ankle_J
-    400010: L_Clavicle_J
-    400012: L_Elbow_J
-    400014: L_Fingers_J
-    400016: L_Knee_J
-    400018: L_Leg_J
-    400020: L_Shoulder_J
-    400022: L_Toe_J
-    400024: L_Wrist_J
+    400000: Head_J
+    400002: Hip_J
+    400004: L_Ankle_J
+    400006: L_Clavicle_J
+    400008: L_Elbow_J
+    400010: L_Fingers_J
+    400012: L_Knee_J
+    400014: L_Leg_J
+    400016: L_Shoulder_J
+    400018: L_Toe_J
+    400020: L_Wrist_J
+    400022: Mage
+    400024: //RootNode
     400026: Neck_J
     400028: R_Ankle_J
     400030: R_Clavicle_J
@@ -57,18 +57,14 @@ ModelImporter:
     400048: Spine2_J
     400050: Spine3_J
     400052: Spine_J
-    2100000: M_Bleu2Hair
-    2100002: M_OrangeCloth
-    2100004: M_BleuHair
-    2100006: M_BordeauxCloth
-    2100008: M_Skin1
-    2100010: lambert27
-    2100012: M_BrunCloth
-    2100014: M_Blanc
-    4300000: Conteur
+    2100000: M_Blue2Cloth
+    2100002: M_BlueCloth5
+    2100004: lambert45
+    2100006: M_BlackCloth
+    4300000: Mage
     7400000: mixamo.com
     9500000: //RootNode
-    13700000: Conteur
+    13700000: Mage
   externalObjects: {}
   materials:
     importMaterials: 1
