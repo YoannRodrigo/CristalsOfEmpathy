@@ -6,7 +6,7 @@
 [RequireComponent(typeof(SphereCollider))]
 public abstract class InteractibleItem : MonoBehaviour
 {
-    protected bool activated = true;
+    public bool activated = true;
     protected bool canBeTouch;
     protected ParticleSystem particle;
     protected SphereCollider sphere;

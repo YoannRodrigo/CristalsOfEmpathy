@@ -172,10 +172,6 @@ public class DialogueManager : MonoBehaviour
         sentencesHolder.SetActive(true);
         answersHolder.SetActive(false);
         UpdateDisplay(id);
-
-        //QUEST ACTIVATION MAY LOCK && FIXING SHIT
-        if(id == 0 && TutorialManager.instance != null)
-            TutorialManager.instance.ActivateQuest();
     }
 
     private void UpdateDisplay(int answerId)
