@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneInBuild/Scene_1_Fleuriste.unity
     guid: 733a2a9f37a74be48888b1bfdb2509a6
   - enabled: 1
-    path: Assets/Scenes/LoveEnigma.unity
+    path: Assets/Scenes/SceneInBuild/LoveEnigma.unity
     guid: ca47c802667009048bc63b0d36b19b2a
   - enabled: 1
     path: Assets/Scenes/SceneInBuild/AversionEnigma.unity
