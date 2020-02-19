@@ -4612,7 +4612,7 @@ MonoBehaviour:
   activated: 1
   range: 5
   levelDestination: Scene_1_Fleuriste
-  portalDestination: 0
+  portalDestination: 1
 --- !u!135 &585637562
 SphereCollider:
   m_ObjectHideFlags: 0
