@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1db438eabc5029c41915c2f80e62bb71
+guid: a3db1c5fbc920405890faa93da0957f2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -14,7 +14,7 @@ ModelImporter:
     100016: L_Shoulder_J
     100018: L_Toe_J
     100020: L_Wrist_J
-    100022: Mage_1
+    100022: Mage
     100024: //RootNode
     100026: Neck_J
     100028: R_Ankle_J
@@ -41,7 +41,7 @@ ModelImporter:
     400016: L_Shoulder_J
     400018: L_Toe_J
     400020: L_Wrist_J
-    400022: Mage_1
+    400022: Mage
     400024: //RootNode
     400026: Neck_J
     400028: R_Ankle_J
@@ -57,13 +57,30 @@ ModelImporter:
     400048: Spine2_J
     400050: Spine3_J
     400052: Spine_J
-    2100000: lambert45
+    2100000: M_Blue2Cloth
     2100002: M_BlueCloth5
-    4300000: Mage_1
+    2100004: lambert45
+    2100006: M_BlackCloth
+    4300000: Mage
     7400000: mixamo.com
     9500000: //RootNode
-    13700000: Mage_1
-  externalObjects: {}
+    13700000: Mage
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_BlackCloth
+    second: {fileID: 2100006, guid: fd0186b5cb9814876ac25b560d96c765, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Blue2Cloth
+    second: {fileID: 2100000, guid: fab97b6f6a68e554f9880d1f24338878, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_BlueCloth5
+    second: {fileID: 2100000, guid: 78167832c8faa6b4995038eb0b6d960c, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
