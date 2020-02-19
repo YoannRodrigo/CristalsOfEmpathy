@@ -9,20 +9,8 @@ public class Inventory : MonoBehaviour
 {
     #region Singleton
 
-    public static Inventory instance;
-    public void Awake()
-    {
-        if(instance == null)
-        {
-            transform.parent = null;
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    public static Inventory inventoryInstance;
+
     #endregion
 
     #region Member Variables
@@ -41,6 +29,17 @@ public class Inventory : MonoBehaviour
     #endregion
 
     #region Methods
+
+    private void Awake()
+    {
+        if (inventoryInstance != null)
+        {
+            Debug.LogWarning("More than one instance of Inventory found!");
+            return;
+        }
+
+        inventoryInstance = this;
+    }
 
     public bool Add(Item item)
     {

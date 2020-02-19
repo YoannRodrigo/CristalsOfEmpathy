@@ -4,7 +4,6 @@ using UnityEngine.AI;
 using UnityEditor;
 #endif
 
-[RequireComponent(typeof(NavMeshAgent))]
 public class AgentMovement : MonoBehaviour
 {
     [Header("Settings")]
@@ -52,11 +51,6 @@ public class AgentMovement : MonoBehaviour
     public void StopFollowingPath()
     {
         followingPath = false;
-    }
-
-    public void Update()
-    {
-        Tick();
     }
 
 	public void ResetSpeed()
@@ -117,7 +111,7 @@ public class AgentMovement : MonoBehaviour
                 onDestinationReached = null;
             }
 
-            if(path != null && currentIndexOnPath == path.points.Count - 1)
+            if(currentIndexOnPath == path.points.Count - 1)
             {
                 if(onPathCompleted != null)
                 {

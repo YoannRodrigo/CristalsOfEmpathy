@@ -1,20 +1,17 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
 public class NonPlayableCharacter : MonoBehaviour
 {
-    [HideInInspector] public FocusLook look;
-    [HideInInspector] public AgentMovement movement;
-    [HideInInspector] public Animator animator;
-    [HideInInspector] public Face face;
-
-    [Header("References")]
+    private AgentMovement movement;
+    private Animator animator;
     public AIPath path;
 
     public void Awake()
     {
-        look = GetComponent<FocusLook>();
         movement = GetComponent<AgentMovement>();
         animator = GetComponentInChildren<Animator>();
-        face = GetComponentInChildren<Face>();
     }
 
     public void Start()
@@ -23,13 +20,8 @@ public class NonPlayableCharacter : MonoBehaviour
         if(animator != null) movement.animator = animator;
     }
 
-    public void Speak()
+    public void Update()
     {
-        if(face != null) face.Speak();
-    }
-
-    public void ShutUp()
-    {
-        if(face != null) face.ShutUp();
+        movement.Tick();
     }
 }

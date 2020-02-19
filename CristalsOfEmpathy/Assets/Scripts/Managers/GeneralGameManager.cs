@@ -5,30 +5,18 @@ using UnityEngine;
 
 public class GeneralGameManager : MonoBehaviour
 {
+    #region Member Variables
 
     public static GeneralGameManager instance;
-    
-    
+
     public GameObject[] playerCharacterPrefabs;
     public GameObject cameraPrefab;
     public GameObject playerPrefab;
 
+    public Transform playerSpawnerTransform;
     private static int _playerPrefabChoice = 0;
     private int nextPortalIndex = 0;
-
-    [Header("PNJ Quests")] 
-    public bool hasPlayerMetAlice;
-    public bool hasPlayerMetAlberthus;
-    public bool hasPlayerMetGarderner;
-    public bool hasPlayerAcceptedApoQuest;
-    public bool hasPlayerAcceptedFloristQuest;
-    public bool hasPlayerAcceptedBartenderQuest;
-    public bool hasPlayerAcceptedFishermanQuest;
-    public bool isApoQuestFinished;
-    public bool isFloristQuestFinished;
-    public bool isBartenderQuestFinished;
-    public bool isFishermanQuestFinished;
-    
+    #endregion
 
     #region Methods
 
@@ -45,7 +33,6 @@ public class GeneralGameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
     public void Go(string level, int portal = 0)
     {
         LevelChanger.instance.ChangeToLevelWithFade(level);

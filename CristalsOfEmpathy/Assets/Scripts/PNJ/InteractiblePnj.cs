@@ -1,105 +1,51 @@
-﻿#if UNITY_EDITOR
-    using UnityEditor;
-#endif
+﻿#region Using Directives
+
 using System;
 using UnityEngine;
 
-[RequireComponent(typeof(SphereCollider))]
+#endregion
+
 public class InteractiblePnj : InteractibleItem
 {
-    public ScriptablePNJ dialogue;
-    public ScriptablePNJ dialogueIdle;
-    internal NonPlayableCharacter npc;
+    #region Member Variables
 
-    public override void Start()
+    public DialogueManager dialogueManager;
+    public ScriptablePNJ scriptablePnj;
+
+    #endregion
+
+    #region Methods
+
+    private void Start()
     {
-        base.Start();
-        npc = GetComponent<NonPlayableCharacter>();
+        if (dialogueManager == null)
+        {
+            dialogueManager = FindObjectOfType<DialogueManager>();
+        }
     }
 
     protected override void OnTouch()
     {
-        Speak();
-    }
-
-    public void Speak(int start = 0)
-    {
-        if(dialogue != null) 
+        if (canBeTouch)
         {
-            bool success = DialogueManager.instance.Initialize(dialogue, start, () => {this.OnDialogEnded();});
-            if(success)
-            {
-                if(particle != null) particle.Stop();
-                if(npc != null) npc.Speak();
-                LookAtPlayerOfTheLevel();
-            }
+            Debug.Log("Interacting with a PNJ...");
+            StartDialogue();
         }
     }
 
-    public void LookAtPlayerOfTheLevel()
+    public void StartDialogue(int startId = 0)
     {
-        if(npc != null)
-        {
-            npc.movement.Stop();
-            npc.transform.forward = -(npc.transform.position - LevelManager.instance.player.transform.position).normalized;
-        }
-
-        if(LevelManager.instance != null && LevelManager.instance.player != null)
-        {
-            LevelManager.instance.player.Freeze();
-            LevelManager.instance.player.OrientTowards(transform.position);
-        }
+        dialogueManager.SetInteractiblePnj(this);
+        dialogueManager.currentPNJ = scriptablePnj;
+        if (scriptablePnj.playerAnswers.Length == 0)
+            dialogueManager.StartDialogue(scriptablePnj.dialogues, startId);
+        else
+            dialogueManager.StartDialogue(scriptablePnj.dialogues, scriptablePnj.playerAnswers, startId);
     }
 
     public virtual void OnDialogEnded()
     {
-        if(LevelManager.instance != null && LevelManager.instance.player != null)
-        {
-            LevelManager.instance.player.UnFreeze();
-        }
-        if(npc != null) 
-        {  
-            npc.ShutUp();
-            if(npc.path != null) npc.movement.FollowPath(npc.path);
-        }
-
-        if (dialogueIdle != null)
-        {
-            dialogue = dialogueIdle;
-        }
     }
 
-    protected override void Enter()
-    {
-        base.Enter();
-        if(npc != null)
-        {
-            LevelManager.instance.player.look.FocusOn(npc.look.head);
-            npc.look.FocusOn(LevelManager.instance.player.look.head.transform);
-        }
-    }
-    protected override void Exit()
-    {
-        base.Exit();
-        if(npc != null)
-        {
-            npc.look.LooseFocus();
-        }
-    }
-#if UNITY_EDITOR
-    public override void OnDrawGizmos()
-    {  
-        GUI.skin.label.normal.textColor = new Color32(255, 255, 255, 255);
-        if(dialogue != null)
-        {
-            base.OnDrawGizmos();
-            Handles.Label(transform.position, dialogue.name);
-        }
-        else
-        {
-            Handles.Label(transform.position, "No Dialogue assigned");
-        }
-
-    }
-#endif
+    #endregion
 }

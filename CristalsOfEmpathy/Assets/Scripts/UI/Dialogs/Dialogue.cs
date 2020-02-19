@@ -28,12 +28,6 @@ public class Dialogue
 
     public Sprite GetSpriteWithEmotion()
     {
-        if(profilePnj == null)
-        {
-            Debug.Log("No PNJ profile was found for this sentence.");
-            return null;
-        }
-
         switch (emotion)
         {
             case Emotion.HAPPY:
@@ -47,7 +41,7 @@ public class Dialogue
             case Emotion.FEAR:
                 return profilePnj.fearFace;
             default:
-                return null;
+                throw new ArgumentOutOfRangeException();
         }
     }
     
