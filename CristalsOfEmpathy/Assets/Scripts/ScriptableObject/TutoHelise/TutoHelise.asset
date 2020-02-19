@@ -27,7 +27,7 @@ MonoBehaviour:
     sentence: "Mon pendentif s'est bris\xE9, cr\xE9ant une fracture entre les mondes.
       Les \xE9motions sont en danger. Il faut r\xE9cup\xE9rer tous les cristaux avant
       qu'ils ne disparaissent. Sans \xE7a, nous sommes tous condamn\xE9s ! Tout est
-      sens dessus dessous, il faut agir vite !"
+      sans dessus dessous, il faut agir vite !"
   - profilePnj: {fileID: 11400000, guid: c70d73b84f6b80242a046921d3986b83, type: 2}
     emotion: 2
     isAnswerNeeded: 1
