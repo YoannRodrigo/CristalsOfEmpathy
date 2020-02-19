@@ -12,7 +12,6 @@ public class SpawnManager : MonoBehaviour
     public GameObject ghostPrefab;
     private bool isMusicPlaying;
     private GameObject lastGhost;
-    private GameObject tryGost;
     public Transform playerTransform;
     public List<Transform> spawnersTransform = new List<Transform>();
     private float timeSinceBegin;
@@ -118,7 +117,6 @@ public class SpawnManager : MonoBehaviour
                 break;
             case 19:
                 lastGhost = SpawnAGhost(4, 5, 6);
-                lastGhost.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
                 fearEnigmaManager.SetLastGhost(lastGhost);
                 break;
         }

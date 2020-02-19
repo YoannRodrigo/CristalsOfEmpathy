@@ -12,20 +12,6 @@ public class LevelChanger : MonoBehaviour
     #region Member Variables
 
     public static LevelChanger instance;
-    public void Awake()
-    {
-        if(instance == null)
-        {
-            transform.parent = null;
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-        anim = GetComponent<Animator>();
-    }
 
     private const float TIME_BEFORE_FADE_ENDED = 1f;
     private static readonly int isFadeOutNeeded = Animator.StringToHash("isFadeOutNeeded");
@@ -41,6 +27,20 @@ public class LevelChanger : MonoBehaviour
     #endregion
 
     #region Methods
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            transform.parent = null;
+            instance = this;
+            anim = GetComponent<Animator>();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {

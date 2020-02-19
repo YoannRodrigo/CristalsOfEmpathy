@@ -10,6 +10,8 @@ public class PlayerChoiceManager : MonoBehaviour
     #region Member Variables
     private const int SPLASHSCREEN_ID = 1;
     private PlayerChoice playerChoice = PlayerChoice.NONE;
+    public GeneralGameManager generalGameManager;
+    public LevelChanger levelChanger;
 
     #endregion
 
@@ -49,28 +51,28 @@ public class PlayerChoiceManager : MonoBehaviour
 
     private void ValidateOnClick()
     {
-        GeneralGameManager.instance.SetPlayerPrefab((int) playerChoice);
-        LevelChanger.instance.ChangeToLevelWithFade(SPLASHSCREEN_ID);
+        generalGameManager.SetPlayerPrefab((int) playerChoice);
+        levelChanger.ChangeToLevelWithFade(SPLASHSCREEN_ID);
     }
 
     public void LoveEnigmaOnClick()
     {
-		LevelChanger.instance.ChangeToLevelWithFade(4);
+        levelChanger.ChangeToLevelWithFade(4);
     }
 
     public void AversionEnigmaOnClick()
     {
-		LevelChanger.instance.ChangeToLevelWithFade(5);
+        levelChanger.ChangeToLevelWithFade(5);
     }
 
     public void FearEnigmaOnClick()
     {
-		LevelChanger.instance.ChangeToLevelWithFade(6);
+        levelChanger.ChangeToLevelWithFade(6);
     }
 
     public void CuriosityEnigmaOnClick()
     {
-		LevelChanger.instance.ChangeToLevelWithFade(7);
+        levelChanger.ChangeToLevelWithFade(7);
     }
 
     #endregion

@@ -1,118 +1,52 @@
-﻿using UnityEngine;
-#if UNITY_EDITOR
-    using UnityEditor;
-#endif
+﻿#region Using Directives
 
-[RequireComponent(typeof(SphereCollider))]
+using UnityEngine;
+
+#endregion
+
 public abstract class InteractibleItem : MonoBehaviour
 {
-    public bool activated = true;
+    #region Member Variables
+
     protected bool canBeTouch;
-    protected ParticleSystem particle;
-    protected SphereCollider sphere;
+    private GameObject spawnedParticlesSystem;
+    public GameObject nearParticlesSystem;
 
-    public float range = 2f;
-    public GameObject particlePrefab;
+    #endregion
 
-    public void Desactivate()
-    {
-        Exit();
-        activated = false;
-    }
-
-    public virtual void Start()
-    {
-        sphere = GetComponent<SphereCollider>();
-        if(particlePrefab != null)
-        {
-            particle = Instantiate(particlePrefab, transform).GetComponent<ParticleSystem>();
-            particle.Stop();
-        }
-    }
+    #region Methods
 
     private void Update()
     {
-        if(!canBeTouch) return;
-
-        if(Application.isEditor)
-        {
-            if(Input.GetMouseButtonDown(0))
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            if (Camera.main != null)
             {
-                if(Check(Input.mousePosition)) OnTouch();
+                Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+                if (Physics.Raycast(raycast, out RaycastHit raycastHit))
+                    if (raycastHit.collider.gameObject == gameObject && !PauseMenu.IsOnPause())
+                        OnTouch();
             }
-        }
-        else
-        {
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-                if(Check(Input.GetTouch(0).position)) OnTouch();
-            }
-        }
-    }
-
-    private bool Check(Vector2 position)
-    {
-        if (Camera.main != null)
-        {
-            Ray raycast = Camera.main.ScreenPointToRay(position);
-            if (Physics.Raycast(raycast, out RaycastHit raycastHit))
-            {
-                if (raycastHit.collider.gameObject == gameObject && !PauseMenu.IsOnPause()) 
-                {
-                    return true;
-                }
-                else return false;
-            }
-            else return false;
-        }
-        else return false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player")) Enter();
+        if (other.gameObject.CompareTag("Player"))
+        {
+            if (!spawnedParticlesSystem) spawnedParticlesSystem = Instantiate(nearParticlesSystem, transform);
+            canBeTouch = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player")) Exit();
-    }
-
-    protected abstract void OnTouch();
-    protected virtual void Enter()
-    {
-        if(!activated) return;
-
-        if (particle) particle.Play();
-        canBeTouch = true;
-        LevelManager.instance.player.look.FocusOn(gameObject.transform);
-    }
-    protected virtual void Exit()
-    {
-        if(!activated) return;
-
-        if (particle) particle.Stop();
-        canBeTouch = false;
-        LevelManager.instance.player.look.LooseFocus();
-    }
-
-#if UNITY_EDITOR
-    public virtual void OnValidate()
-    {
-        sphere = GetComponent<SphereCollider>();
-        if(sphere != null)
+        if (other.gameObject.CompareTag("Player"))
         {
-            if(range < 0f) range = 0f;
-            sphere.radius = range;
+            if (spawnedParticlesSystem) Destroy(spawnedParticlesSystem);
+            canBeTouch = false;
         }
     }
 
-    public virtual void OnDrawGizmos()
-    {
-        Handles.color = new Color32(255, 255, 255, 255);
-        Handles.DrawWireDisc(transform.position, Vector3.up, range);
-        Handles.color = new Color32(0, 150, 0, 50);
-        Handles.DrawSolidArc(transform.position, Vector3.up, Vector3.right, 360f, range);
-    }
-#endif
+    protected abstract void OnTouch();
+
+    #endregion
 }

@@ -31,16 +31,16 @@ public class EndGameManager : MonoBehaviour
         switch (emotion)
         {
             case BarPointsHandler.Emotions.LOVE:
-                helise.GetComponent<InteractibleEndGameHelise>().dialogue = loveEnigmaText;
+                helise.GetComponent<InteractibleEndGameHelise>().scriptablePnj = loveEnigmaText;
                 break;
             case BarPointsHandler.Emotions.FEAR:
-                helise.GetComponent<InteractibleEndGameHelise>().dialogue = fearEnigmaText;
+                helise.GetComponent<InteractibleEndGameHelise>().scriptablePnj = fearEnigmaText;
                 break;
             case BarPointsHandler.Emotions.CURIOSITY:
-                helise.GetComponent<InteractibleEndGameHelise>().dialogue = curiosityEnigmaText;
+                helise.GetComponent<InteractibleEndGameHelise>().scriptablePnj = curiosityEnigmaText;
                 break;
             case BarPointsHandler.Emotions.AVERSION:
-                helise.GetComponent<InteractibleEndGameHelise>().dialogue = aversionEnigmaText;
+                helise.GetComponent<InteractibleEndGameHelise>().scriptablePnj = aversionEnigmaText;
                 break;
             case BarPointsHandler.Emotions.NONE:
                 break;

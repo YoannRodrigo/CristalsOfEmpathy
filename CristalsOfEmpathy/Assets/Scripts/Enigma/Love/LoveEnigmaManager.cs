@@ -52,7 +52,6 @@ public class LoveEnigmaManager : MonoBehaviour
 
     private void Start()
     {
-        LevelChanger.instance.FadeOut();
         AkSoundEngine.PostEvent("StartLoveMusic", gameObject);
         currentCouple = couples[0];
         ChooseRandomPersonna();
@@ -215,13 +214,13 @@ public class LoveEnigmaManager : MonoBehaviour
     private IEnumerator WaitToReturn()
     {
         yield return new WaitForSeconds(2);
-        LevelChanger.instance.ChangeToLevelWithFade(0);
+        levelChanger.ChangeToLevelWithFade(0);
     }
 
     private IEnumerator WaitToReturnLoveEnigma()
     {
         yield return new WaitForSeconds(2);
-        LevelChanger.instance.ChangeToLevelWithFade(4);
+        levelChanger.ChangeToLevelWithFade(4);
     }
 
 
