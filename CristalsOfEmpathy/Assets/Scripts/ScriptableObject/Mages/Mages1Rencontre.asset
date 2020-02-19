@@ -13,24 +13,24 @@ MonoBehaviour:
   m_Name: Mages1Rencontre
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 11400000, guid: 46af93d6d6993174b995ac6bda2b69ab, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: "Salutations jeune \xE2me. Que venez-vous donc faire par ici ?\r\n"
-  - profilePnj: {fileID: 11400000, guid: 8e5b5b497e7fda1498f7d20304158d4e, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: 2
     sentence: "Il n'y a rien \xE0 voler ici fripouille ! Nous vivons de la plus asc\xE9tique
       des mani\xE8res.\r\n"
-  - profilePnj: {fileID: 11400000, guid: c8e5e8d6a3401b4429032d4022836664, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3
     sentence: "Du calme mes amis, n'oublions pas le principe d'hospitalit\xE9 de mise
       en soci\xE9t\xE9."
-  - profilePnj: {fileID: 11400000, guid: 46af93d6d6993174b995ac6bda2b69ab, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
@@ -38,92 +38,92 @@ MonoBehaviour:
       Voici mes pairs, Jaron de Mart ainsi qu'Arthos Ilwid. Nous sommes les membres
       du C\xE9nacle et veillons \xE0 ce que la magie et l'\xE9quilibre du monde soit
       respect\xE9s. Que voulez-vous ?"
-  - profilePnj: {fileID: 11400000, guid: c8e5e8d6a3401b4429032d4022836664, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 5
     sentence: "Existe-t-il un ordre mieux que les autres ? Le chaos n'est-il pas la
       meilleure des organisations ? \r\n"
-  - profilePnj: {fileID: 11400000, guid: 8e5b5b497e7fda1498f7d20304158d4e, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
     emotion: 3
     isAnswerNeeded: 1
     nextTextId: 1
     sentence: "Tais-toi Arthos bon sang. Qu'entends-tu par r\xE9tablir l'ordre ?"
-  - profilePnj: {fileID: 11400000, guid: c8e5e8d6a3401b4429032d4022836664, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 7
     sentence: "Il faut savoir se perdre pour d\xE9couvrir o\xF9 l'on veut aller.\r\n"
-  - profilePnj: {fileID: 11400000, guid: 46af93d6d6993174b995ac6bda2b69ab, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 2
     sentence: Que cherchez-vous ?
-  - profilePnj: {fileID: 11400000, guid: 8e5b5b497e7fda1498f7d20304158d4e, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 9
     sentence: "Notre groupuscule s'occupe de r\xE9glementer l'usage de la magie. Certaines
       personnes dont je tairai les noms pensent qu'elle est accessible \xE0 tout le
       monde, baliverne !"
-  - profilePnj: {fileID: 11400000, guid: c8e5e8d6a3401b4429032d4022836664, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 10
     sentence: "Nous sommes aussi en qu\xEAte de v\xE9rit\xE9. Les \xE9motions ont
       \xE9t\xE9 alt\xE9r\xE9es. Les cristaux perdus.."
-  - profilePnj: {fileID: 11400000, guid: 46af93d6d6993174b995ac6bda2b69ab, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 11
     sentence: ".. Ainsi, notre Conseil a pour mission imminente de les retrouver avant
       que la situation ne soit irr\xE9parable.\r\n"
-  - profilePnj: {fileID: 11400000, guid: 8e5b5b497e7fda1498f7d20304158d4e, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 14
     sentence: "Le pendentif s'est bris\xE9 et ses cristaux ont \xE9t\xE9 \xE9parpill\xE9s."
-  - profilePnj: {fileID: 11400000, guid: 46af93d6d6993174b995ac6bda2b69ab, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 13
     sentence: "Vous a-t-elle dit que nous avions cr\xE9e le Pendentif avec elle ?\r\n"
-  - profilePnj: {fileID: 11400000, guid: 8e5b5b497e7fda1498f7d20304158d4e, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 14
     sentence: "Tout allait bien jusqu'\xE0 ce qu'elle fasse quelque chose de stupide.
       Enfin.. Il faut retrouver tous les cristaux, et vite."
-  - profilePnj: {fileID: 11400000, guid: 46af93d6d6993174b995ac6bda2b69ab, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 15
     sentence: "Je suis persuad\xE9 qu'un membre du village abuse des pouvoirs d'un
       cristal."
-  - profilePnj: {fileID: 11400000, guid: 8e5b5b497e7fda1498f7d20304158d4e, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 16
     sentence: "Allez voir tous les habitants et essayez de trouver qui en a r\xE9cup\xE9r\xE9
       un !\r\n"
-  - profilePnj: {fileID: 11400000, guid: 46af93d6d6993174b995ac6bda2b69ab, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Dans tous les cas, les cristaux sont aux environs.. Faites attention
       \xE0 vos \xE9motions, elles vous guideront vers l'un d'entre eux."
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "C'est H\xE9lise qui m'envoie. Elle m'a dit que son pendentif s'\xE9tait
       bris\xE9."
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 19
     sentence: "Il faut gu\xE9rir tous les villageois, ils sont tous cingl\xE9s !"
-  - profilePnj: {fileID: 11400000, guid: c8e5e8d6a3401b4429032d4022836664, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 12

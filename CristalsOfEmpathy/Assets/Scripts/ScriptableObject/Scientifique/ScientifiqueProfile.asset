@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0fc4ffadc5d434db286b052d3ce931, type: 3}
   m_Name: ScientifiqueProfile
   m_EditorClassIdentifier: 
-  pnjName: Simon
+  pnjName: Simon, le scientifique
   happyFace: {fileID: 0}
   sadFace: {fileID: 0}
   confuseFace: {fileID: 0}

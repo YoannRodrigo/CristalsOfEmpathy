@@ -110,41 +110,41 @@ MonoBehaviour:
     nextTextId: -1
     sentence: "Une maladie, un mal\xE9fice, une force ext\xE9rieure. Rien d'autre
       n'aurait pu briser notre amour.. Il \xE9tait si pur.. "
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: Vous n'y comprenez rien.. Laissez-moi tranquille.
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: "Bonjour. Vous avez remarqu\xE9 quelque chose d'\xE9trange dans le village
       ces derniers temps ?"
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3
     sentence: "Apothi-quoi ? Vous fa\xEEtes des poisons c'est \xE7a ? "
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 4
     sentence: "Vous avez arr\xEAt\xE9 de travailler ou quoi ? Ils sont tous malades
       ! "
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 10
     sentence: "C'est pas avec des mixtures que vous allez r\xE9soudre ce probl\xE8me.
       Vous avez entendu parler des cristaux d'\xE9motions ? "
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 12
     sentence: "Vous allez faire boire des potions \xE0 tout le monde ? Vous faites
       piti\xE9.. Tournez la page, \xE7a sera mieux pour vous !"
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 0}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 15

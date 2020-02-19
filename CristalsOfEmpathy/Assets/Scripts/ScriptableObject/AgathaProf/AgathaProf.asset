@@ -74,7 +74,7 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: Allez voir Alberthus et vous le saurez !
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 9363bbd719985044c9989a8ea23d224e, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1

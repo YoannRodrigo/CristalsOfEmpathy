@@ -18,7 +18,7 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: "H\xE9 vous l\xE0 ! Oui vous, l'\xE9tranger !"
-  - profilePnj: {fileID: 11400000, guid: 6f64eccd532cfcb46b2046bec34b1171, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 2
@@ -36,7 +36,7 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: 4
     sentence: Si tu le dis alors, on te croit ! Moi c'est Muien et lui c'est...
-  - profilePnj: {fileID: 11400000, guid: 6f64eccd532cfcb46b2046bec34b1171, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 11
@@ -47,13 +47,13 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: 6
     sentence: "Ils ne comprennent pas qu'ici tout le monde s'entraide et s'appr\xE9cie."
-  - profilePnj: {fileID: 11400000, guid: 6f64eccd532cfcb46b2046bec34b1171, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 13
     sentence: "A croire que chez eux, ils se tirent dans les pattes ! Mais on est
       membre de la mar\xE9chauss\xE9e nous, on veille au grain ! C'est nous la loi. "
-  - profilePnj: {fileID: 11400000, guid: 6f64eccd532cfcb46b2046bec34b1171, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 8
@@ -64,7 +64,7 @@ MonoBehaviour:
     nextTextId: 15
     sentence: "Tu sais pas \xE0 qui tu parles. Nous sommes les repr\xE9sentants de
       la loi, ton pire cauchemar si tu continues \xE0 agir comme \xE7a !"
-  - profilePnj: {fileID: 11400000, guid: 6f64eccd532cfcb46b2046bec34b1171, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 10
@@ -81,7 +81,7 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: 12
     sentence: "T'as l'air d'\xEAtre gentil toi. Alors on va te confier un truc.."
-  - profilePnj: {fileID: 11400000, guid: 6f64eccd532cfcb46b2046bec34b1171, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 20
@@ -93,7 +93,7 @@ MonoBehaviour:
     nextTextId: 14
     sentence: "C'est surtout qu'on a eu des probl\xE8mes avec les voyageurs. Des vols,
       des insultes publiques."
-  - profilePnj: {fileID: 11400000, guid: 6f64eccd532cfcb46b2046bec34b1171, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 23
@@ -105,7 +105,7 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: 16
     sentence: "On t'a \xE0 l'oeil. "
-  - profilePnj: {fileID: 11400000, guid: 6f64eccd532cfcb46b2046bec34b1171, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 17
@@ -116,7 +116,7 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: 26
     sentence: Alors baisse d'un ton !
-  - profilePnj: {fileID: 11400000, guid: 6f64eccd532cfcb46b2046bec34b1171, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 19
@@ -133,7 +133,7 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: 21
     sentence: "C'est pas tout l'ami mais on a une affaire \xE0 r\xE9soudre."
-  - profilePnj: {fileID: 11400000, guid: 6f64eccd532cfcb46b2046bec34b1171, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
@@ -144,7 +144,7 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: 23
     sentence: "Il a dit que c'\xE9tait un voleur. Notre maire ? Un malandrin ?!"
-  - profilePnj: {fileID: 11400000, guid: 6f64eccd532cfcb46b2046bec34b1171, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 24
@@ -166,12 +166,12 @@ MonoBehaviour:
     nextTextId: -1
     sentence: "Et si c'est toi qui l'a kidnapp\xE9, tu ferais mieux de le rendre en
       vitesse. A la revoyure ordure !"
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 7
     sentence: "Ils sont jaloux d'une bande de fous ? L\xE2chez-moi la grappe !"
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 8

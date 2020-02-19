@@ -167,7 +167,7 @@ MonoBehaviour:
       on en aura, on s'occupera de ton cas ! En attendant, Muien, on a des choses
       \xE0 r\xE9gler et des enqu\xEAtes \xE0 mener ! Quand \xE0 toi, je te dis \xE0
       tr\xE8s bient\xF4t..."
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 23

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GardienFin
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 11400000, guid: 0c002006fde611242bd9509fe77ee9fd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 1fdd515890c1ed74d8b35c98743a31af, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
@@ -21,20 +21,20 @@ MonoBehaviour:
       qu\xEAte, faire preuve d'une grande curiosit\xE9. Vous avez emprunt\xE9 tous
       les sentiers et vous n'avez pas succomb\xE9 \xE0 vos \xE9motions primaires.
       Vous avez vaincu vos pr\xE9jug\xE9s pour apprendre des autres."
-  - profilePnj: {fileID: 11400000, guid: 0c002006fde611242bd9509fe77ee9fd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 1fdd515890c1ed74d8b35c98743a31af, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 2
     sentence: "Vous avez compris que chaque histoire est unique et qu'elles m\xE9ritent
       toutes d'\xEAtre connues. C'est ainsi que vous pourrez faire preuve d'empathie."
-  - profilePnj: {fileID: 11400000, guid: 0c002006fde611242bd9509fe77ee9fd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 1fdd515890c1ed74d8b35c98743a31af, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3
     sentence: "Je suis fier de vous remettre ce cristal. Vous avez prouv\xE9 que ce
       monde peut encore \xEAtre sauv\xE9. Gr\xE2ce \xE0 vous, la curiosit\xE9 peut
       retrouver sa place dans l'univers."
-  - profilePnj: {fileID: 11400000, guid: 0c002006fde611242bd9509fe77ee9fd, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 1fdd515890c1ed74d8b35c98743a31af, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
