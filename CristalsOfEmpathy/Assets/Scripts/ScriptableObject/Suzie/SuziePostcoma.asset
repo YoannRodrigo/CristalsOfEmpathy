@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SuziePostcoma
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
@@ -23,13 +23,13 @@ MonoBehaviour:
       \ ! En tout cas le nouveau maire \xE9tait incroyable, tu l'aurais vu danser...
       Allez l\xE8ve toi, et rejoins moi, je suis d'humeur \xE0 danser et je ne veux
       pas que l'euphorie de la nuit ne me quitte tout de suite !"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Oh... D'accord... Apr\xE8s tout tu dois \xEAtre fatigu\xE9. On se voit
       plus tard !"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
@@ -39,12 +39,12 @@ MonoBehaviour:
       dommage que tu sois venu ici pour t'endormir comme \xE7a, j'ai bien essay\xE9
       de te r\xE9veiller mais rien \xE0 faire ! \r\n\r\nTu en fais une t\xEAte...
       Je vais te laisser te reposer, reviens me voir plus tard !"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Laisse moi deviner... tu n'es pas du matin c'est \xE7a ?"
-  - profilePnj: {fileID: 11400000, guid: 3c0e47e8688ea914ea2149a778c7596f, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1

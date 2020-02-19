@@ -20,13 +20,13 @@ MonoBehaviour:
     sentence: "Tiens, comme on se retrouve... Qu'est-ce que tu fais pr\xE8s de l'H\xF4tel
       de ville comme \xE7a... Tu es jaloux de la prestance de notre nouveau maire
       ?"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
     sentence: "Nous ne tol\xE9rerons pas la jalousie ici ! Tu ferais mieux de ne pas
       te faire trop remarquer !"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3
@@ -37,7 +37,7 @@ MonoBehaviour:
     nextTextId: -1
     sentence: "On garde un oeil sur toi... T'\xE9loignes pas trop du droit chemin
       ! File maintenant !"
-  - profilePnj: {fileID: 11400000, guid: c74fd23f1a50d41dca7de9c32cc59b08, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 5

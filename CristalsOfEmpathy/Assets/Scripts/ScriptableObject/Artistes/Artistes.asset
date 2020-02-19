@@ -112,7 +112,7 @@ MonoBehaviour:
     nextTextId: -1
     sentence: "Elle n'a pas tort ! Un artiste a besoin d'espace apr\xE8s tout, on
       se reverra plus tard !"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 3
     isAnswerNeeded: 0
     nextTextId: -1

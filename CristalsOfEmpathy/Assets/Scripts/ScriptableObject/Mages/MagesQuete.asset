@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: MagesQuete
   m_EditorClassIdentifier: 
   dialogues:
-  - profilePnj: {fileID: 11400000, guid: 46af93d6d6993174b995ac6bda2b69ab, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
     emotion: 0
     isAnswerNeeded: 1
     nextTextId: 0
     sentence: "Je vous salue jeune \xE2me. Que voulez-vous ? "
-  - profilePnj: {fileID: 11400000, guid: 46af93d6d6993174b995ac6bda2b69ab, type: 2}
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Merci bien, nous en avions besoin pour des exp\xE9riences de la plus
       haute importance. L'heure est grave. Je dois vous laisser, nous devons nous
       concerter !"
-  - profilePnj: {fileID: 11400000, guid: a480326001e877540a4e521e05852ba7, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
