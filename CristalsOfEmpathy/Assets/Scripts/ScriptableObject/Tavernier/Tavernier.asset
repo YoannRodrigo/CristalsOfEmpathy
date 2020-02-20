@@ -21,7 +21,7 @@ MonoBehaviour:
   - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
     emotion: 0
     isAnswerNeeded: 0
-    nextTextId: 0
+    nextTextId: 4
     sentence: "Parfait, ne me d\xEEtes rien ! Je vais deviner ce que vous voulez boire
       hm.. "
   - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
@@ -96,6 +96,16 @@ MonoBehaviour:
     nextTextId: -1
     sentence: "Merci beaucoup ! Revenez quand \xE7a sera fait, vous aurez un coup
       gratuit !"
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: J'vous laisse boire tranquillement alors.
+  - profilePnj: {fileID: 11400000, guid: f295ef61d6caf7a4bb43ac4c5f6e3593, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: 'Bien, je vous laisse tranquille. '
   playerAnswers:
   - playerAnswers:
     - text: Volontiers !
@@ -112,7 +122,7 @@ MonoBehaviour:
       emotion: 3
       influence: 2
     - text: Je vous ai dis non !
-      nextTextId: -1
+      nextTextId: 15
       emotion: 4
       influence: 0
     - text: 'Finalement, pourquoi pas ? '
@@ -138,7 +148,7 @@ MonoBehaviour:
       emotion: 0
       influence: 1
     - text: "On vient \xE0 peine de se rencontrer !"
-      nextTextId: -1
+      nextTextId: 14
       emotion: 3
       influence: 1
   - playerAnswers:
