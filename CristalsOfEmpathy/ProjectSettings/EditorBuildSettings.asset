@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneInBuild/Scene_6_Fairground.unity
     guid: 9a60af177f6c4eb4a80bf33343dad0ce
+  - enabled: 1
+    path: Assets/Scenes/SceneInBuild/Scene_7_FishingZone.unity
+    guid: 912f4cfa4424d174d9a59cacb9a2d802
   m_configObjects: {}
