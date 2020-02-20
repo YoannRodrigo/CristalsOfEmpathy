@@ -74,7 +74,7 @@ MonoBehaviour:
   - profilePnj: {fileID: 11400000, guid: f878ac0858f8046df8de12395be32fe3, type: 2}
     emotion: 3
     isAnswerNeeded: 0
-    nextTextId: 9
+    nextTextId: 10
     sentence: "Vous n'avez vraiment aucun esprit ! C'est f\xE2cheux mais malheureusement,
       l'\xE2me de l'artiste ne peut pas habiter tout le monde !\r\n"
   - profilePnj: {fileID: 11400000, guid: fe8a547b209894621816d8d544a86d3e, type: 2}
@@ -93,7 +93,7 @@ MonoBehaviour:
     isAnswerNeeded: 0
     nextTextId: -1
     sentence: "Seule votre pr\xE9sence se questionne en ce moment. Vous n'avez pas
-      autre chose \xE0 faire ?"
+      autre chose \xE0 faire ? Du balai"
   - profilePnj: {fileID: 11400000, guid: fe8a547b209894621816d8d544a86d3e, type: 2}
     emotion: 3
     isAnswerNeeded: 0

@@ -152,8 +152,8 @@ MonoBehaviour:
       C'est m\xEAme horrible de faire \xE7a ! "
   playerAnswers:
   - playerAnswers:
-    - text: "[Curiosit\xE9]"
-      nextTextId: 17
+    - text: Vous avez vu quelque chose... ?
+      nextTextId: 16
       emotion: 2
       influence: 1
     - text: 'Je peux vous aider ? '
@@ -161,10 +161,10 @@ MonoBehaviour:
       emotion: 0
       influence: 1
     - text: Apothi-quoi ?
-      nextTextId: 16
+      nextTextId: 17
       emotion: 1
       influence: 1
-    - text: "[M\xE9pris]"
+    - text: "Vous \xEAtes pas dou\xE9..."
       nextTextId: 18
       emotion: 3
       influence: 1
