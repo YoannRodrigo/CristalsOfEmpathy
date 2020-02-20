@@ -9,13 +9,14 @@ public class BarPointsHandler : MonoBehaviour
 {
     #region Member Variables
 
-    private static BarPointsHandler _instance;
+    public static BarPointsHandler _instance;
 
     private static int _loveBarPoints;
     private static int _fearBarPoints;
     private static int _curiosityBarPoints;
     private static int _aversionBarPoints;
-
+    
+    
     public enum Emotions
     {
         LOVE,
@@ -75,31 +76,15 @@ public class BarPointsHandler : MonoBehaviour
         {
             case Emotions.LOVE:
                 _loveBarPoints += influence;
-                if (EmotionBarReachValues(_loveBarPoints))
-                {
-                    EndGameManager.instance.SpawnHelise(Emotions.LOVE);
-                }
                 break;
             case Emotions.FEAR:
                 _fearBarPoints += influence;
-                if (EmotionBarReachValues(_fearBarPoints))
-                {
-                    EndGameManager.instance.SpawnHelise(Emotions.FEAR);
-                }
                 break;
             case Emotions.AVERSION:
                 _aversionBarPoints += influence;
-                if (EmotionBarReachValues(_aversionBarPoints))
-                {
-                    EndGameManager.instance.SpawnHelise(Emotions.AVERSION);
-                }
                 break;
             case Emotions.CURIOSITY:
                 _curiosityBarPoints += influence;
-                if (EmotionBarReachValues(_curiosityBarPoints))
-                {
-                    EndGameManager.instance.SpawnHelise(Emotions.CURIOSITY);
-                }
                 break;
             case Emotions.NONE:
                 break;
@@ -108,9 +93,15 @@ public class BarPointsHandler : MonoBehaviour
         }
     }
 
-    private static bool EmotionBarReachValues(int emotionBar)
+    public static Emotions GetMaxBar()
     {
-        return emotionBar > 60;
+        int maxNum = Mathf.Max(_loveBarPoints, _aversionBarPoints, _curiosityBarPoints, _fearBarPoints);
+        
+        return maxNum == _fearBarPoints ? Emotions.FEAR : 
+            maxNum == _curiosityBarPoints ? Emotions.CURIOSITY : 
+            maxNum == _aversionBarPoints ? Emotions.AVERSION :
+            maxNum == _loveBarPoints ? Emotions.LOVE : Emotions.NONE;
     }
+    
     #endregion
 }

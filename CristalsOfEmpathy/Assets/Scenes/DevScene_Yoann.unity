@@ -4152,20 +4152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fff14bcf82e7454ba79a9ecf7c87701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorialManager: {fileID: 0}
+  portrait: {fileID: 0}
   pnjNameText: {fileID: 5235183169017928143}
-  pnjPortrait: {fileID: 9004614468162570206}
   dialogueText: {fileID: 5085109293071618165}
-  answer1: {fileID: 9004614467708914432}
-  answer2: {fileID: 9004614467653482260}
-  answer3: {fileID: 9004614466736657906}
-  answer4: {fileID: 9004614467750843717}
-  dialogueBox: {fileID: 9004614466337207873}
-  answerBox: {fileID: 9004614467656251514}
-  joystick: {fileID: 2898597152901485971}
-  pauseButton: {fileID: 99672846797690674}
-  inventoryButton: {fileID: 4059322644593023796}
-  currentPNJ: {fileID: 0}
+  lastId: 0
+  dialogueholder: {fileID: 0}
+  sentencesHolder: {fileID: 0}
+  answersHolder: {fileID: 0}
 --- !u!4 &6629712392375298132
 Transform:
   m_ObjectHideFlags: 0
@@ -4218,6 +4211,21 @@ MonoBehaviour:
     type: 3}
   playerPrefab: {fileID: 3246455781391322757, guid: 583acb067a221d94aa71ec7f932a79a6,
     type: 3}
+  hasPlayerHeardSpeach: 0
+  hasPlayerMetAgatha: 0
+  hasPlayerMetAlice: 0
+  hasPlayerMetAlberthus: 0
+  hasPlayerMetGarderner: 0
+  hasPlayerAcceptedApoQuest: 0
+  hasPlayerAcceptedFloristQuest: 0
+  hasPlayerAcceptedBartenderQuest: 0
+  hasPlayerAcceptedFishermanQuest: 0
+  hasPlayerGetWoods: 0
+  isApoQuestFinished: 0
+  isFloristQuestFinished: 0
+  isBartenderQuestFinished: 0
+  isFishermanQuestFinished: 0
+  nbFlowerBuy: 0
 --- !u!4 &6629712392953394829
 Transform:
   m_ObjectHideFlags: 0
@@ -4244,8 +4252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a6961856f11914bbb41d9c57770456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helisePrefab: {fileID: 2277169644068590516, guid: 69926ff00d4261e4983bd8ddfc41bd4c,
-    type: 3}
+  pnjNames: []
+  guardianPrefab: {fileID: 0}
   loveEnigmaText: {fileID: 11400000, guid: 3fe29e9282f1cb04ab5b53f459f5de76, type: 2}
   fearEnigmaText: {fileID: 11400000, guid: dc5681965da728f40afbf7b207daaa8c, type: 2}
   aversionEnigmaText: {fileID: 11400000, guid: 71deba814d25b5940aef36b1f1021b91, type: 2}
@@ -6264,7 +6272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.079956055, y: -0.079956055}
+  m_AnchoredPosition: {x: 0.079833984, y: -0.079956055}
   m_SizeDelta: {x: 0.16, y: 0.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9004614466337207903
@@ -7417,7 +7425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.079956055, y: -0.079956055}
+  m_AnchoredPosition: {x: 0.079833984, y: -0.079956055}
   m_SizeDelta: {x: 0.16, y: 0.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9004614467708914432

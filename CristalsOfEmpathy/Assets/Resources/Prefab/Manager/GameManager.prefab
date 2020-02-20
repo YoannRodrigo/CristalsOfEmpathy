@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 751336788000770439}
   - component: {fileID: 751336788000770438}
+  - component: {fileID: 96573525037454823}
+  - component: {fileID: 8223704712616399996}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -51,6 +53,8 @@ MonoBehaviour:
     type: 3}
   playerPrefab: {fileID: 3246455781391322757, guid: 583acb067a221d94aa71ec7f932a79a6,
     type: 3}
+  hasPlayerHeardSpeach: 0
+  hasPlayerMetAgatha: 0
   hasPlayerMetAlice: 0
   hasPlayerMetAlberthus: 0
   hasPlayerMetGarderner: 0
@@ -58,7 +62,36 @@ MonoBehaviour:
   hasPlayerAcceptedFloristQuest: 0
   hasPlayerAcceptedBartenderQuest: 0
   hasPlayerAcceptedFishermanQuest: 0
+  hasPlayerGetWoods: 0
   isApoQuestFinished: 0
   isFloristQuestFinished: 0
   isBartenderQuestFinished: 0
   isFishermanQuestFinished: 0
+  nbFlowerBuy: 0
+--- !u!114 &96573525037454823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751336788000770433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a6961856f11914bbb41d9c57770456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pnjNames: []
+  guardianPrefab: {fileID: 2729369899121476733, guid: 5b5cc3402f383704f9c7281627d74ba4,
+    type: 3}
+--- !u!114 &8223704712616399996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751336788000770433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57196502e58a2744b8941531410608c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

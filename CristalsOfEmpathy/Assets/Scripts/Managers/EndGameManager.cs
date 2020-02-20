@@ -1,15 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EndGameManager : MonoBehaviour
 {
-    public GameObject helisePrefab;
-    public ScriptablePNJ loveEnigmaText;
-    public ScriptablePNJ fearEnigmaText;
-    public ScriptablePNJ aversionEnigmaText;
-    public ScriptablePNJ curiosityEnigmaText;
+    public List<string> pnjNames = new List<string>();
+    public GameObject guardianPrefab;
 
     public static EndGameManager instance;
+    private BarPointsHandler.Emotions maxEmotion;
+    private bool isGuardianAlreadySpawned;
 
     private void Awake()
     {
@@ -23,30 +23,38 @@ public class EndGameManager : MonoBehaviour
         }
     }
 
-    public void SpawnHelise(BarPointsHandler.Emotions emotion)
+    private void Update()
     {
-        Transform playerTransform = FindObjectOfType<PlayerMovement>().transform;
-        GameObject helise = Instantiate(helisePrefab, playerTransform.position + 0.8f * playerTransform.forward,
-            playerTransform.rotation);
-        switch (emotion)
+        if (pnjNames.Count > 11 && !isGuardianAlreadySpawned)
         {
-            case BarPointsHandler.Emotions.LOVE:
-                helise.GetComponent<InteractibleEndGameHelise>().dialogue = loveEnigmaText;
-                break;
-            case BarPointsHandler.Emotions.FEAR:
-                helise.GetComponent<InteractibleEndGameHelise>().dialogue = fearEnigmaText;
-                break;
-            case BarPointsHandler.Emotions.CURIOSITY:
-                helise.GetComponent<InteractibleEndGameHelise>().dialogue = curiosityEnigmaText;
-                break;
-            case BarPointsHandler.Emotions.AVERSION:
-                helise.GetComponent<InteractibleEndGameHelise>().dialogue = aversionEnigmaText;
-                break;
-            case BarPointsHandler.Emotions.NONE:
-                break;
-            default:
-                throw new ArgumentOutOfRangeException(nameof(emotion), emotion, null);
+            isGuardianAlreadySpawned = true;
+            CheckBar();
+            switch (maxEmotion)
+            {
+                case BarPointsHandler.Emotions.LOVE:
+                    Instantiate(guardianPrefab).GetComponent<InteractibleLoveGardien>().Speak();
+                    break;
+                case BarPointsHandler.Emotions.FEAR:
+                    Instantiate(guardianPrefab).GetComponent<InteractibleFearGardien>().Speak();
+                    break;
+                case BarPointsHandler.Emotions.CURIOSITY:
+                    Instantiate(guardianPrefab).GetComponent<InteractibleCuriosityGardien>().Speak();
+                    break;
+                case BarPointsHandler.Emotions.AVERSION:
+                    Instantiate(guardianPrefab).GetComponent<InteractibleAversionGardien>().Speak();
+                    break;
+                case BarPointsHandler.Emotions.NONE:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
-        helise.GetComponent<InteractibleEndGameHelise>().SetEmotion(emotion);
     }
+
+    private void CheckBar()
+    {
+        maxEmotion = BarPointsHandler.GetMaxBar();
+    }
+    
+    
 }

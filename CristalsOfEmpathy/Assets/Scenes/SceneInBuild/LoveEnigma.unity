@@ -677,7 +677,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -492, y: 262}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &192932175
 MonoBehaviour:
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "Philom\xE8ne, l'agricultrice"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -766,7 +766,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 192932175}
-    characterCount: 8
+    characterCount: 25
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
@@ -903,8 +903,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -216, y: 301}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -74, y: 301}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &217370305
 MonoBehaviour:
@@ -2043,8 +2043,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 167, y: -175}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 11, y: -175}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &640548218
 MonoBehaviour:
@@ -2537,7 +2537,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 492, y: 262}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &859546498
 MonoBehaviour:
@@ -4078,72 +4078,85 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   personnas:
   - avatarPortrait: {fileID: 21300000, guid: f5e24c2b9eaa52749b5594f0994c195d, type: 3}
-    name: Prof
-    dialogues: A
+    name: Agatha, la prof
+    dialogues: "\"Au moins j'ai les \xE9l\xE8ves devant moi et je peux les surveiller
+      ! Alice a encore disparu, et on dirait que je suis la seule \xE0 m'en soucier
+      !\""
     couple: 65
   - avatarPortrait: {fileID: 21300000, guid: 6e43ca9be5da7144bac8d145c4108219, type: 3}
-    name: Scientifique
-    dialogues: A
+    name: Simon, le scientifique
+    dialogues: "\"La curiosit\xE9 m'emp\xEAche de transmettre mon savoir, heureusement
+      que j'ai quelqu'un dou\xE9 pour le faire !\""
     couple: 65
   - avatarPortrait: {fileID: 21300000, guid: ccf0193c6000bcf42b1edcbf54a278cd, type: 3}
-    name: Agri
-    dialogues: B
+    name: "Philom\xE8ne, l'agricultrice"
+    dialogues: "\"Depuis que tout le monde est joyeux.. Les villageois refusent de
+      tuer les b\xEAtes pour les manger. Tout va moisir, c'est horrible..\""
     couple: 66
   - avatarPortrait: {fileID: 21300000, guid: 027858711b902a44483e46cc408ced74, type: 3}
-    name: "P\xEAcheur"
-    dialogues: B
+    name: "Taros, le p\xEAcheur"
+    dialogues: "\"J'ai l'impression que ma femme est plus occup\xE9e avec ses animaux
+      qu'avec moi !  C'est \xE0 croire que j'fais encore plus peur que ce maudit poulpe
+      ! \""
     couple: 66
   - avatarPortrait: {fileID: 21300000, guid: cd703a6fba9e48e4fa4f4ef8426841b1, type: 3}
-    name: Musicienne
-    dialogues: C
+    name: Iseult, la musicienne
+    dialogues: "\"Vous \xEAtes aveugle ? L'amour se refl\xE8te sur chacune de nos
+      toiles. Nous travaillons en unisson avec la nature.\""
     couple: 67
   - avatarPortrait: {fileID: 21300000, guid: a2b1b291513797446b1769e44dc52cd8, type: 3}
-    name: Peintre
-    dialogues: C
+    name: Astor, le peintre
+    dialogues: "\"C'est vrai qu'Iseult a eu une perte d'inspiration derni\xE8rement...
+      Apr\xE8s tout l'amour est difficile \xE0 cerner en art, comme dans la vie\r\""
     couple: 67
   - avatarPortrait: {fileID: 21300000, guid: 246adc900b0472f4b8fefefb47b188f8, type: 3}
     name: Suzie
-    dialogues: D
+    dialogues: "\"Vous ressemblez \xE9trangement \xE0 cet apothicaire de malheur !
+      Comme si je faisais quelque chose de d\xE9plac\xE9... Vous n'avez qu'\xE0 aller
+      le voir, plut\xF4t que de me juger !\""
     couple: 68
   - avatarPortrait: {fileID: 21300000, guid: 753eade6ff59c01409367be3730287b8, type: 3}
-    name: Apo
-    dialogues: D
+    name: Hyppolite, l'apothicaire
+    dialogues: "\"Nous sommes tous frapp\xE9s par la folie de l'amour. Ma ch\xE8re
+      Suzie a compl\xE8tement chang\xE9e.\""
     couple: 68
+  - avatarPortrait: {fileID: 21300000, guid: 156507cf5a8b8e34b8f29a94640686ee, type: 3}
+    name: Dante, l'ancien maire
+    dialogues: "\"Je suis le dernier rempart \xE0 la chute de Tilfinn ! Je suis Dante,
+      le seul et vrai maire que ce village ai jamais eu !\""
+    couple: 69
   - avatarPortrait: {fileID: 21300000, guid: 103a13ae667728442912662ea5a2e115, type: 3}
-    name: Ermite
-    dialogues: E
-    couple: 69
-  - avatarPortrait: {fileID: 21300000, guid: 156507cf5a8b8e34b8f29a94640686ee, type: 3}
-    name: Maire
-    dialogues: E
-    couple: 69
-  - avatarPortrait: {fileID: 21300000, guid: 156507cf5a8b8e34b8f29a94640686ee, type: 3}
-    name: Maire
-    dialogues: E
+    name: Prosper, le maire
+    dialogues: '"Mesdames, messieurs.. Je suis ici pour vous remercier de la confiance
+      que vous placez en moi. Tilfinn et ses habitants sont tout pour moi."'
     couple: 69
   - avatarPortrait: {fileID: 21300000, guid: 9649170a282f3d34abee3cb0dc048ec3, type: 3}
     name: Renard
-    dialogues: F
+    dialogues: '"C''est juste un renard"'
     couple: 70
   - avatarPortrait: {fileID: 21300000, guid: 85e7d08b48e31c84d997148e5d96a976, type: 3}
-    name: Aubergiste
-    dialogues: F
+    name: Taverniak, le tenancier
+    dialogues: "\"J'vous sers quelque chose \xE0 boire ? \""
     couple: 70
   - avatarPortrait: {fileID: 21300000, guid: a0e375ee721f8e14695774304335be8c, type: 3}
     name: Nuien
-    dialogues: F
+    dialogues: "\"Le manoir de l'ancien maire est hant\xE9, tout le monde le sait...
+      Ne me fais pas croire que tu le d\xE9couvres !\""
     couple: 70
   - avatarPortrait: {fileID: 21300000, guid: fe78fcc29b8b1ed4b8db89cd0bbd1ee0, type: 3}
-    name: Mage
-    dialogues: F
+    name: Arthos, le mage
+    dialogues: '"Existe-t-il un ordre mieux que les autres ? Le chaos n''est-il pas
+      la meilleure des organisations ?"'
     couple: 70
   - avatarPortrait: {fileID: 21300000, guid: f7db10b12aca43843b9c9170f2810e3a, type: 3}
-    name: Halbertus
-    dialogues: F
+    name: Alberthus
+    dialogues: "\"Je crois en notre bonne \xE9toile, si quelque chose se trame, la
+      nature fera en sorte de nous prot\xE9ger !\""
     couple: 70
   - avatarPortrait: {fileID: 21300000, guid: b3756dc0f825db649a13051d8365af80, type: 3}
-    name: Mu-ien
-    dialogues: F
+    name: Muien
+    dialogues: "\"\xC7a s\u2019voit peut-\xEAtre pas mais on est occup\xE9s \xE0 enqu\xEAter
+      l\xE0 !\""
     couple: 70
   couples:
   - couple: 65

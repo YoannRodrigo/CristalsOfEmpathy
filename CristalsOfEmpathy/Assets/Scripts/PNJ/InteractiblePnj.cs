@@ -1,7 +1,6 @@
 ﻿#if UNITY_EDITOR
     using UnityEditor;
 #endif
-using System;
 using UnityEngine;
 
 [RequireComponent(typeof(SphereCollider))]
@@ -66,6 +65,10 @@ public class InteractiblePnj : InteractibleItem
         if (dialogueIdle != null)
         {
             dialogue = dialogueIdle;
+        }
+        if(!EndGameManager.instance.pnjNames.Contains(gameObject.name))
+        {
+            EndGameManager.instance.pnjNames.Add(gameObject.name);
         }
     }
 
