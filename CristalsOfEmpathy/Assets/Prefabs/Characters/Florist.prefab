@@ -68,6 +68,7 @@ MonoBehaviour:
     type: 3}
   dialogue: {fileID: 11400000, guid: a04fb99b2f4140a4c94f7612ea4a537e, type: 2}
   dialogueIdle: {fileID: 0}
+  currentDialogue: {fileID: 0}
 --- !u!114 &619248720188686111
 MonoBehaviour:
   m_ObjectHideFlags: 0

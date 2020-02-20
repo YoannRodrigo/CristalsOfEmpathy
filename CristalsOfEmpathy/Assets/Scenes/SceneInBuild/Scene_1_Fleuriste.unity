@@ -53798,6 +53798,8 @@ MonoBehaviour:
     type: 3}
   dialogue: {fileID: 11400000, guid: 3b2a76f2032a7437388e5fe78b179abc, type: 2}
   dialogueIdle: {fileID: 11400000, guid: ee0c695291b2f44e1b8f3412a37ee189, type: 2}
+  dialogueQuest: {fileID: 11400000, guid: ed6bebbb86c4e4c5da2ce4efb936340e, type: 2}
+  dialoguePostComa: {fileID: 11400000, guid: 311f8c79142ad4bb0ad3f1c658621a2b, type: 2}
 --- !u!135 &1155309090
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -97763,6 +97765,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
         type: 3}
+    - target: {fileID: 619248720188686110, guid: 32a59b5e71cf0004292c67b4284be272,
+        type: 3}
+      propertyPath: currentDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: a04fb99b2f4140a4c94f7612ea4a537e,
+        type: 2}
     - target: {fileID: 619248720188686111, guid: 32a59b5e71cf0004292c67b4284be272,
         type: 3}
       propertyPath: path

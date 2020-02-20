@@ -22,8 +22,8 @@ MonoBehaviour:
       d\u2019une !"
   - profilePnj: {fileID: 11400000, guid: 6e33e9ce09e524b42b9ea14c7d14811c, type: 2}
     emotion: 0
-    isAnswerNeeded: 1
-    nextTextId: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
     sentence: Une seule rose ? Allons ! Pour deux berlingots, vous pouvez en avoir
       deux !
   - profilePnj: {fileID: 11400000, guid: 6e33e9ce09e524b42b9ea14c7d14811c, type: 2}

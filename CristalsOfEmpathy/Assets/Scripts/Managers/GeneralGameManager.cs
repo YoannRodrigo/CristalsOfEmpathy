@@ -32,6 +32,7 @@ public class GeneralGameManager : MonoBehaviour
     public bool isFloristQuestFinished;
     public bool isBartenderQuestFinished;
     public bool isFishermanQuestFinished;
+    public int nbFlowerBuy;
     
 
     #region Methods
