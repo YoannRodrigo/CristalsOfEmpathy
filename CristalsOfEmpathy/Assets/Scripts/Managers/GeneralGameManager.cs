@@ -37,6 +37,10 @@ public class GeneralGameManager : MonoBehaviour
 
     #region Methods
 
+    public void SetPortalIndex(int id)
+    {
+        nextPortalIndex = id;
+    }
     public void Awake()
     {
         if(instance == null)

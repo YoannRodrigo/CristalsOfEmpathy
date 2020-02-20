@@ -7,6 +7,11 @@ public class EndGameManager : MonoBehaviour
     public List<string> pnjNames = new List<string>();
     public GameObject guardianPrefab;
 
+    public bool inLoveBranch;
+    public bool inAversionBranch;
+    public bool inFearBranch;
+    public bool inCuriosityBranch;
+
     public static EndGameManager instance;
     private BarPointsHandler.Emotions maxEmotion;
     private bool isGuardianAlreadySpawned;
