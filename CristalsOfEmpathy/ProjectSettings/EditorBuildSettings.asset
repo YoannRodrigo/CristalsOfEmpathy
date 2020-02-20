@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneInBuild/Scene_4_Tavern.unity
     guid: 64439fb764ff058408c0da13e5c3dce1
   - enabled: 1
+    path: Assets/Scenes/SceneInBuild/Scene_5_Magicians.unity
+    guid: cb57a652fa4aa654ca72eb306053f6ba
+  - enabled: 1
     path: Assets/Scenes/SceneInBuild/Scene_6_Fairground.unity
     guid: 9a60af177f6c4eb4a80bf33343dad0ce
   m_configObjects: {}
