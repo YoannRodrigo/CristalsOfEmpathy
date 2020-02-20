@@ -25,6 +25,7 @@ public class GeneralGameManager : MonoBehaviour
     public bool hasPlayerAcceptedFloristQuest;
     public bool hasPlayerAcceptedBartenderQuest;
     public bool hasPlayerAcceptedFishermanQuest;
+    public bool hasPlayerGetWoods;
     public bool isApoQuestFinished;
     public bool isFloristQuestFinished;
     public bool isBartenderQuestFinished;
