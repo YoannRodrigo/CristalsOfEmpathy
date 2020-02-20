@@ -31,6 +31,7 @@ public class DialogueManager : MonoBehaviour
     public Image portrait;
     public TextMeshProUGUI pnjNameText;
     public TextMeshProUGUI dialogueText;
+    public int lastId;
     [Header("Holders")]
     public GameObject dialogueholder;
     public GameObject sentencesHolder;
@@ -96,6 +97,8 @@ public class DialogueManager : MonoBehaviour
            EndDialogue();
            return;
         }
+        
+        lastId = id;
 
         sentencesHolder.SetActive(true);
         currentTextId = id;

@@ -60,7 +60,7 @@ MonoBehaviour:
   - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
     emotion: 0
     isAnswerNeeded: 0
-    nextTextId: 0
+    nextTextId: -1
     sentence: "Attention, \xE0 premi\xE8re vue, ils peuvent para\xEEtre tr\xE8s \xE9tranges
       mais, m\xEAme s'ils tiennent des propos d\xE9routants, je suis persuad\xE9 qu'ils
       \u0153uvrent pour la p\xE9rennit\xE9 du village. Selon eux.."
@@ -80,27 +80,27 @@ MonoBehaviour:
   - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
     emotion: 0
     isAnswerNeeded: 0
-    nextTextId: 0
+    nextTextId: -1
     sentence: "Les mages m'en ont parl\xE9 mais je n'ai pas compris grand chose..
       En tout cas, je n'ai jamais rien vu de tel ! Seule la science peut nous aider.
       Ces mythes ne feront que nous divertir !"
   - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
     emotion: 0
     isAnswerNeeded: 0
-    nextTextId: 0
+    nextTextId: -1
     sentence: "Merci \xE0 vous. Pour trouver les mages, vous devez trouver leur campement
       au nord-est et r\xE9ussir \xE0 les tirer de leurs chaumi\xE8res !"
   - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
     emotion: 0
     isAnswerNeeded: 0
-    nextTextId: 0
+    nextTextId: -1
     sentence: "Vous \xEAtes perfide. Connaissez-vous seulement quelque chose \xE0
       l'amour ? Avez-vous d\xE9j\xE0 \xE9prouv\xE9, en voyant une personne, ce sentiment
       si puissant qui vous fait fondre ! "
   - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
     emotion: 0
     isAnswerNeeded: 0
-    nextTextId: 0
+    nextTextId: -1
     sentence: "J'\xE9tais pr\xEAt \xE0 tout pour elle. Je fr\xE9missais \xE0 chacun
       de ses regards, chacun de ses sourires. Une fusion des esprits ! Tous les instants,
       qui peuvent para\xEEtre banals, deviennent des \xE9clats de toute beaut\xE9."
@@ -144,7 +144,7 @@ MonoBehaviour:
     nextTextId: 12
     sentence: "Vous allez faire boire des potions \xE0 tout le monde ? Vous faites
       piti\xE9.. Tournez la page, \xE7a sera mieux pour vous !"
-  - profilePnj: {fileID: 0}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 15

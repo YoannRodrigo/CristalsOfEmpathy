@@ -10,7 +10,7 @@ public class InteractiblePnj : InteractibleItem
     public ScriptablePNJ dialogue;
     public ScriptablePNJ dialogueIdle;
     internal NonPlayableCharacter npc;
-
+    protected int lastId;
     public override void Start()
     {
         base.Start();
@@ -26,7 +26,7 @@ public class InteractiblePnj : InteractibleItem
     {
         if(dialogue != null) 
         {
-            bool success = DialogueManager.instance.Initialize(dialogue, start, () => {this.OnDialogEnded();});
+            bool success = DialogueManager.instance.Initialize(dialogue, start,OnDialogEnded);
             if(success)
             {
                 if(particle != null) particle.Stop();
