@@ -16,6 +16,8 @@ public class GeneralGameManager : MonoBehaviour
     private static int _playerPrefabChoice = 0;
     private int nextPortalIndex = 0;
 
+
+    public bool hasPlayerHeardSpeach;
     [Header("PNJ Quests")] 
     public bool hasPlayerMetAgatha;
     public bool hasPlayerMetAlice;
