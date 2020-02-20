@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 47f9e7e645ecebb47855f14cae5b4712
-labels:
-- lowpoly
-- survival
-timeCreated: 1515783703
+guid: 3dfabecee5d404544a56dc2d38a81093
+timeCreated: 1524568446
 licenseType: Store
 NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
