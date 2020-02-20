@@ -33452,7 +33452,7 @@ MonoBehaviour:
   range: 2
   particlePrefab: {fileID: 1844191813266838, guid: 47253fd8d6e4d2e4cb838863c98f16ea,
     type: 3}
-  dialogue: {fileID: 11400000, guid: b9137e62d765642829164e5f42b2a2c3, type: 2}
+  dialogue: {fileID: 11400000, guid: fcd3d350230811b4e82cade96796ba69, type: 2}
   dialogueIdle: {fileID: 11400000, guid: b9137e62d765642829164e5f42b2a2c3, type: 2}
 --- !u!135 &1585812363
 SphereCollider:
