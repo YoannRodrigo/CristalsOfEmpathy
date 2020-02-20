@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AgricultriceProfile
   m_EditorClassIdentifier: 
   pnjName: "Philom\xE8ne, l'agricultrice"
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: 0fc895ad68aed4e19ac3a4655d59194b, type: 3}
+  sadFace: {fileID: 21300000, guid: 0fc895ad68aed4e19ac3a4655d59194b, type: 3}
+  confuseFace: {fileID: 21300000, guid: 0fc895ad68aed4e19ac3a4655d59194b, type: 3}
+  angryFace: {fileID: 21300000, guid: 51b3beaee163440f4b3cf7225eea3538, type: 3}
+  fearFace: {fileID: 21300000, guid: 0fc895ad68aed4e19ac3a4655d59194b, type: 3}

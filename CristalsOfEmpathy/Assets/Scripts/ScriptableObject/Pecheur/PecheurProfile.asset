@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PecheurProfile
   m_EditorClassIdentifier: 
   pnjName: "Cap'taine Taros, le p\xEAcheur"
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: 9456e7220747043bdbe17fef4295b617, type: 3}
+  sadFace: {fileID: 21300000, guid: 9456e7220747043bdbe17fef4295b617, type: 3}
+  confuseFace: {fileID: 21300000, guid: 9456e7220747043bdbe17fef4295b617, type: 3}
+  angryFace: {fileID: 21300000, guid: d27ef49797d864921b60369111c38180, type: 3}
+  fearFace: {fileID: 21300000, guid: 9456e7220747043bdbe17fef4295b617, type: 3}

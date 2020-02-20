@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DidierProfile
   m_EditorClassIdentifier: 
   pnjName: L'grand Didier
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: 060f393ef571f46a78a7e785093e52bc, type: 3}
+  sadFace: {fileID: 21300000, guid: 060f393ef571f46a78a7e785093e52bc, type: 3}
+  confuseFace: {fileID: 21300000, guid: 060f393ef571f46a78a7e785093e52bc, type: 3}
+  angryFace: {fileID: 21300000, guid: c105a73d2b94c48faa917fb5b96f3243, type: 3}
+  fearFace: {fileID: 21300000, guid: 060f393ef571f46a78a7e785093e52bc, type: 3}

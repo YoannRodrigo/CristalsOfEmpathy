@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AgathaProfil
   m_EditorClassIdentifier: 
   pnjName: Agatha, l'institutrice
-  happyFace: {fileID: 21300000, guid: f5e24c2b9eaa52749b5594f0994c195d, type: 3}
-  sadFace: {fileID: 21300000, guid: f5e24c2b9eaa52749b5594f0994c195d, type: 3}
-  confuseFace: {fileID: 21300000, guid: f5e24c2b9eaa52749b5594f0994c195d, type: 3}
-  angryFace: {fileID: 21300000, guid: f5e24c2b9eaa52749b5594f0994c195d, type: 3}
-  fearFace: {fileID: 21300000, guid: f5e24c2b9eaa52749b5594f0994c195d, type: 3}
+  happyFace: {fileID: 21300000, guid: c541002a9e1b3407ab4bb9fb6c9473eb, type: 3}
+  sadFace: {fileID: 21300000, guid: 39219c0b90e2540849f78a89d669bd3d, type: 3}
+  confuseFace: {fileID: 21300000, guid: 39219c0b90e2540849f78a89d669bd3d, type: 3}
+  angryFace: {fileID: 21300000, guid: 2043c1fb2909c4b93869a852477fd77c, type: 3}
+  fearFace: {fileID: 21300000, guid: 39219c0b90e2540849f78a89d669bd3d, type: 3}

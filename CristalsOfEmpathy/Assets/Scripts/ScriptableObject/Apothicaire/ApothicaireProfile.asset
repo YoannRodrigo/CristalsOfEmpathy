@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ApothicaireProfile
   m_EditorClassIdentifier: 
   pnjName: Hyppolite, l'apothicaire
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: e1fca90f09b2c4fcbb2caf05dc85ab9a, type: 3}
+  sadFace: {fileID: 21300000, guid: cb9a64c1e1eea4606b7263837cb80445, type: 3}
+  confuseFace: {fileID: 21300000, guid: e1fca90f09b2c4fcbb2caf05dc85ab9a, type: 3}
+  angryFace: {fileID: 21300000, guid: e1fca90f09b2c4fcbb2caf05dc85ab9a, type: 3}
+  fearFace: {fileID: 21300000, guid: e1fca90f09b2c4fcbb2caf05dc85ab9a, type: 3}

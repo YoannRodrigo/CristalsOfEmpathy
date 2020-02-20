@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: JaronProfile
   m_EditorClassIdentifier: 
   pnjName: Jaron
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: e2fead3bda8c34092891ef3a21dbc02a, type: 3}
+  sadFace: {fileID: 21300000, guid: e2fead3bda8c34092891ef3a21dbc02a, type: 3}
+  confuseFace: {fileID: 21300000, guid: e2fead3bda8c34092891ef3a21dbc02a, type: 3}
+  angryFace: {fileID: 21300000, guid: 4f31efb9fc59d443b8ea4addd6f0070e, type: 3}
+  fearFace: {fileID: 21300000, guid: e2fead3bda8c34092891ef3a21dbc02a, type: 3}

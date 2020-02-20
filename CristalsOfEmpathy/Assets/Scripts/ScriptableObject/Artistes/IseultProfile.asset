@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: IseultProfile
   m_EditorClassIdentifier: 
   pnjName: Iseult, la musicienne
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: 98de92650fc254ae9968e4e4fb04d770, type: 3}
+  sadFace: {fileID: 21300000, guid: 98de92650fc254ae9968e4e4fb04d770, type: 3}
+  confuseFace: {fileID: 21300000, guid: 98de92650fc254ae9968e4e4fb04d770, type: 3}
+  angryFace: {fileID: 21300000, guid: 39d478f850a654451a9e8aca8d7c29d7, type: 3}
+  fearFace: {fileID: 21300000, guid: 98de92650fc254ae9968e4e4fb04d770, type: 3}

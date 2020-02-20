@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AlberthusProfile
   m_EditorClassIdentifier: 
   pnjName: "Alberthus, l'ami des b\xEAtes"
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: a5d76016993e14a99ab209fe403d64c3, type: 3}
+  sadFace: {fileID: 21300000, guid: a5d76016993e14a99ab209fe403d64c3, type: 3}
+  confuseFace: {fileID: 21300000, guid: a5d76016993e14a99ab209fe403d64c3, type: 3}
+  angryFace: {fileID: 21300000, guid: a5d76016993e14a99ab209fe403d64c3, type: 3}
+  fearFace: {fileID: 21300000, guid: a5d76016993e14a99ab209fe403d64c3, type: 3}

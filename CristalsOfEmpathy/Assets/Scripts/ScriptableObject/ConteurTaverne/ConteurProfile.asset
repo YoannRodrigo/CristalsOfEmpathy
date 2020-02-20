@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ConteurProfile
   m_EditorClassIdentifier: 
   pnjName: Ernest, le conteur
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: 0afd64f8b8eff4b45aff93046b6b40da, type: 3}
+  sadFace: {fileID: 21300000, guid: 0afd64f8b8eff4b45aff93046b6b40da, type: 3}
+  confuseFace: {fileID: 21300000, guid: 0afd64f8b8eff4b45aff93046b6b40da, type: 3}
+  angryFace: {fileID: 21300000, guid: c299ed7e876da4fef9ca1ed7b9c2daf5, type: 3}
+  fearFace: {fileID: 21300000, guid: 0afd64f8b8eff4b45aff93046b6b40da, type: 3}

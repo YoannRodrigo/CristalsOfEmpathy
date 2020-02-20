@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DanteProfile
   m_EditorClassIdentifier: 
   pnjName: Dante, l'ancien maire
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: 6ae103c3182bc4d28bf846571e5f4e87, type: 3}
+  sadFace: {fileID: 21300000, guid: 6ae103c3182bc4d28bf846571e5f4e87, type: 3}
+  confuseFace: {fileID: 21300000, guid: d6274b5e249b449f6afea3334ac0fe00, type: 3}
+  angryFace: {fileID: 21300000, guid: eb9364618f8164a4da2ad8d611b2df1f, type: 3}
+  fearFace: {fileID: 21300000, guid: 6ae103c3182bc4d28bf846571e5f4e87, type: 3}

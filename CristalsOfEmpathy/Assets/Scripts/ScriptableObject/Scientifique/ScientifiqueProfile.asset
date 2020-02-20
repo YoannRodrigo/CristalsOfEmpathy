@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ScientifiqueProfile
   m_EditorClassIdentifier: 
   pnjName: Simon, le scientifique
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: b8c3b199a5c064562960c15e97d3f006, type: 3}
+  sadFace: {fileID: 21300000, guid: b8c3b199a5c064562960c15e97d3f006, type: 3}
+  confuseFace: {fileID: 21300000, guid: 84628712f977c415bae9401b86004e65, type: 3}
+  angryFace: {fileID: 21300000, guid: b8c3b199a5c064562960c15e97d3f006, type: 3}
+  fearFace: {fileID: 21300000, guid: b8c3b199a5c064562960c15e97d3f006, type: 3}
