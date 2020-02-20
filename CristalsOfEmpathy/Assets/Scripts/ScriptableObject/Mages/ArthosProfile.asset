@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ArthosProfile
   m_EditorClassIdentifier: 
   pnjName: Arthos
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: a258dab3774ad4725b8f0f1333d89145, type: 3}
+  sadFace: {fileID: 21300000, guid: a258dab3774ad4725b8f0f1333d89145, type: 3}
+  confuseFace: {fileID: 21300000, guid: a258dab3774ad4725b8f0f1333d89145, type: 3}
+  angryFace: {fileID: 21300000, guid: fe902ee4149d04268be7f0b6bd20efeb, type: 3}
+  fearFace: {fileID: 21300000, guid: a258dab3774ad4725b8f0f1333d89145, type: 3}

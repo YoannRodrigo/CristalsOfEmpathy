@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0fc4ffadc5d434db286b052d3ce931, type: 3}
   m_Name: TavernierProfile
   m_EditorClassIdentifier: 
-  pnjName: Taverniak, le tenancier
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  pnjName: Taverniak, l'aubergiste
+  happyFace: {fileID: 21300000, guid: 2a411b3e61f0c48b29cd98c4b38ba980, type: 3}
+  sadFace: {fileID: 21300000, guid: d1c0aebeee8534736b921bf4cfca4d26, type: 3}
+  confuseFace: {fileID: 21300000, guid: 2a411b3e61f0c48b29cd98c4b38ba980, type: 3}
+  angryFace: {fileID: 21300000, guid: 2a411b3e61f0c48b29cd98c4b38ba980, type: 3}
+  fearFace: {fileID: 21300000, guid: 2a411b3e61f0c48b29cd98c4b38ba980, type: 3}

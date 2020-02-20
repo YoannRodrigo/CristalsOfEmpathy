@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AliceProfile
   m_EditorClassIdentifier: 
   pnjName: Alice
-  happyFace: {fileID: 0}
-  sadFace: {fileID: 0}
-  confuseFace: {fileID: 0}
-  angryFace: {fileID: 0}
-  fearFace: {fileID: 0}
+  happyFace: {fileID: 21300000, guid: 875d4d543c3844f3b9efec3119ab502a, type: 3}
+  sadFace: {fileID: 21300000, guid: 875d4d543c3844f3b9efec3119ab502a, type: 3}
+  confuseFace: {fileID: 21300000, guid: 875d4d543c3844f3b9efec3119ab502a, type: 3}
+  angryFace: {fileID: 21300000, guid: 2b6a749d339aa4cbbabb0bd0a35424ca, type: 3}
+  fearFace: {fileID: 21300000, guid: 875d4d543c3844f3b9efec3119ab502a, type: 3}
