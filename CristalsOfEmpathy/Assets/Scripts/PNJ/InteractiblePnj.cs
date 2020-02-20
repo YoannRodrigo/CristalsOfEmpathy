@@ -78,6 +78,7 @@ public class InteractiblePnj : InteractibleItem
             npc.look.FocusOn(LevelManager.instance.player.look.head.transform);
         }
     }
+    
     protected override void Exit()
     {
         base.Exit();

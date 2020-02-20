@@ -86,10 +86,6 @@ MonoBehaviour:
       nextTextId: 2
       emotion: 0
       influence: 1
-    - text: "Agatha ? Je sais o\xF9 est Alice ! "
-      nextTextId: 7
-      emotion: 0
-      influence: 1
     - text: Que voulez-vous dire ?
       nextTextId: 3
       emotion: 2
@@ -101,6 +97,10 @@ MonoBehaviour:
     - text: "Vous semblez bien plus d\xE9sagr\xE9able..."
       nextTextId: 6
       emotion: 3
+      influence: 1
+    - text: "Agatha ? Je sais o\xF9 est Alice ! "
+      nextTextId: 7
+      emotion: 0
       influence: 1
   - playerAnswers:
     - text: Mais pour quelle raison ?

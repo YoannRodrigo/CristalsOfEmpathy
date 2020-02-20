@@ -17,6 +17,7 @@ public class GeneralGameManager : MonoBehaviour
     private int nextPortalIndex = 0;
 
     [Header("PNJ Quests")] 
+    public bool hasPlayerMetAgatha;
     public bool hasPlayerMetAlice;
     public bool hasPlayerMetAlberthus;
     public bool hasPlayerMetGarderner;

@@ -13961,6 +13961,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Muien
       objectReference: {fileID: 0}
+    - target: {fileID: 1590747654834545250, guid: 8b376b09a6242bd4b92302c4a1d23ed0,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 3103bb66af3ba4c3c97c6755846bc095,
+        type: 2}
+    - target: {fileID: 1590747654834545250, guid: 8b376b09a6242bd4b92302c4a1d23ed0,
+        type: 3}
+      propertyPath: otherPolice
+      value: 
+      objectReference: {fileID: 424348796}
     - target: {fileID: 1590747654834545251, guid: 8b376b09a6242bd4b92302c4a1d23ed0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14031,17 +14042,6 @@ PrefabInstance:
       propertyPath: path
       value: 
       objectReference: {fileID: 1771687233}
-    - target: {fileID: 1590747654834545250, guid: 8b376b09a6242bd4b92302c4a1d23ed0,
-        type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 11400000, guid: 3103bb66af3ba4c3c97c6755846bc095,
-        type: 2}
-    - target: {fileID: 1590747654834545250, guid: 8b376b09a6242bd4b92302c4a1d23ed0,
-        type: 3}
-      propertyPath: otherPolice
-      value: 
-      objectReference: {fileID: 424348796}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b376b09a6242bd4b92302c4a1d23ed0, type: 3}
 --- !u!1001 &1577326749
@@ -14371,6 +14371,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2319607630011438470, guid: 5760c1618327d0647a2812ccd3996780,
+        type: 3}
+      propertyPath: m_Name
+      value: Managers
+      objectReference: {fileID: 0}
     - target: {fileID: 2319607630011438465, guid: 5760c1618327d0647a2812ccd3996780,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14425,11 +14430,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2319607630011438470, guid: 5760c1618327d0647a2812ccd3996780,
-        type: 3}
-      propertyPath: m_Name
-      value: Managers
       objectReference: {fileID: 0}
     - target: {fileID: 1104841048154898584, guid: 5760c1618327d0647a2812ccd3996780,
         type: 3}
@@ -16804,6 +16804,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nuien
       objectReference: {fileID: 0}
+    - target: {fileID: 7952654730751273226, guid: 3a44ca1a02c48c24385acea7c60a2939,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 3103bb66af3ba4c3c97c6755846bc095,
+        type: 2}
+    - target: {fileID: 7952654730751273226, guid: 3a44ca1a02c48c24385acea7c60a2939,
+        type: 3}
+      propertyPath: otherPolice
+      value: 
+      objectReference: {fileID: 400457313}
     - target: {fileID: 7952654730751273224, guid: 3a44ca1a02c48c24385acea7c60a2939,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16864,17 +16875,6 @@ PrefabInstance:
       propertyPath: path
       value: 
       objectReference: {fileID: 1771687233}
-    - target: {fileID: 7952654730751273226, guid: 3a44ca1a02c48c24385acea7c60a2939,
-        type: 3}
-      propertyPath: dialogue
-      value: 
-      objectReference: {fileID: 11400000, guid: 3103bb66af3ba4c3c97c6755846bc095,
-        type: 2}
-    - target: {fileID: 7952654730751273226, guid: 3a44ca1a02c48c24385acea7c60a2939,
-        type: 3}
-      propertyPath: otherPolice
-      value: 
-      objectReference: {fileID: 400457313}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a44ca1a02c48c24385acea7c60a2939, type: 3}
 --- !u!1 &1901096202

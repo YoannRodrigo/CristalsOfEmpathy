@@ -2,6 +2,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -43,7 +44,11 @@ public class DialogueManager : MonoBehaviour
     private int currentTextId;
     private int currentAnswerId;
     private bool isTextWritten;
-
+    
+    private bool answersNeedToBeOverrided;
+    private int newPlayersAnswersId;
+    private int newAnswersId;
+    private int oldAnswerId;
 
 
     public void Start()
@@ -123,9 +128,18 @@ public class DialogueManager : MonoBehaviour
         answersHolder.SetActive(true);
         currentAnswerId = id;
         int count = 0;
-        foreach(PlayerAnswer pa in dialogue.playerAnswers[id].playerAnswers)
+        foreach (PlayerAnswer pa in dialogue.playerAnswers[id].playerAnswers.Where(pa => count < 4))
         {
-            CreateAnswerButton(pa.text, count);
+            if (answersNeedToBeOverrided && currentAnswerId == newPlayersAnswersId && count == oldAnswerId)
+            {
+                CreateAnswerButton(dialogue.playerAnswers[id].playerAnswers[newAnswersId].text, newAnswersId);
+                answersNeedToBeOverrided = false;
+            }
+            else
+            {
+                CreateAnswerButton(pa.text, count);
+            }
+
             count++;
         }
     }
@@ -165,6 +179,14 @@ public class DialogueManager : MonoBehaviour
                     DisplayNextSentence(dialogue.dialogues[currentTextId].nextTextId);
             }
         }
+    }
+    
+    public void OverrideAnswers(int playerAnswersId, int oldAnswerId, int newAnswerId)
+    {
+        answersNeedToBeOverrided = true;
+        newPlayersAnswersId = playerAnswersId;
+        newAnswersId = newAnswerId;
+        this.oldAnswerId = oldAnswerId;
     }
 
     public void Answer(int id)
