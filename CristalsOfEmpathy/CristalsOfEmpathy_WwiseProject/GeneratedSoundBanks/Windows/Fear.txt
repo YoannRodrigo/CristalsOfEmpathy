@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	20033646	StartFearMusic			\Default Work Unit\StartFearMusic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	448652585	CoE - Emotion - Peur	C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Windows\SFX\CoE - Emotion - Peur_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CoE - Emotion - Peur		19293812
+	448652585	CoE - Emotion - Peur	C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Windows\SFX\CoE - Emotion - Peur_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\CoE - Emotion - Peur		19293812
 
