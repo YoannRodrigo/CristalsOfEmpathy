@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID FORAINS = 2560613409U;
         static const AkUniqueID MAINMENUOPEN = 3658128575U;
         static const AkUniqueID MAINMUSIC = 3479155863U;
+        static const AkUniqueID PLAYINTRO = 781908707U;
         static const AkUniqueID STARTAVERSIONMUSIC = 5682657U;
         static const AkUniqueID STARTCURIOSITYMUSIC = 3142087295U;
         static const AkUniqueID STARTFEARMUSIC = 20033646U;

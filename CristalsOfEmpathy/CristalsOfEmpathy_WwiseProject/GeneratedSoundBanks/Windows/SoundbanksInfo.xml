@@ -67,11 +67,16 @@
 				<Event Id="2560613409" Name="Forains" ObjectPath="\Events\Default Work Unit\Forains" DurationType="Infinite"/>
 				<Event Id="3658128575" Name="MainMenuOpen" ObjectPath="\Events\Default Work Unit\MainMenuOpen" DurationType="Infinite"/>
 				<Event Id="3479155863" Name="MainMusic" ObjectPath="\Events\Default Work Unit\MainMusic" DurationType="Infinite"/>
+				<Event Id="781908707" Name="PlayIntro" ObjectPath="\Events\Default Work Unit\PlayIntro" DurationType="OneShot" DurationMin="185.808975" DurationMax="185.808975"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="282866249" Language="SFX">
 					<ShortName>CoE - Forains.wav</ShortName>
 					<Path>SFX\CoE - Forains_D79FB2B7.wem</Path>
+				</File>
+				<File Id="399428543" Language="SFX">
+					<ShortName>coeIntro3.wav</ShortName>
+					<Path>SFX\coeIntro3_10C4C929.wem</Path>
 				</File>
 				<File Id="718541537" Language="SFX">
 					<ShortName>CoE - Ecran d'acuueil.wav</ShortName>

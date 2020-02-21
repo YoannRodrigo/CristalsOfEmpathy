@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: cf5eedc6e53c154382ce4716c863ce4a
     GuidInternal: 
-    m_lastTime: -8586193569405418759
+    m_lastTime: -8586193520785280923
     List:
     - name: Aversion
       guid: edddd185966c1a46ab6cd745d316d0f8
@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 71960e2e778eb049be87a6930ee0f61e
     GuidInternal: 
-    m_lastTime: -8586193569405315865
+    m_lastTime: -8586193520785280923
     List:
     - name: ButtonPressed
       guid: 5ad9bfad15916d4ab48376984b479149
@@ -130,6 +130,18 @@ MonoBehaviour:
       - ElementName: MainMusic
         ObjectType: 3
       Path: Default Work Unit\MainMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayIntro
+      guid: ad63aaabe3cb414e87f3d1330ae46145
+      id: 781908707
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayIntro
+        ObjectType: 3
+      Path: Default Work Unit\PlayIntro
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -211,6 +223,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /CristalsOfEmpathy_WwiseProject
+  - /CristalsOfEmpathy_WwiseProject/Events
+  - /CristalsOfEmpathy_WwiseProject/Events/Default Work Unit
   - /CristalsOfEmpathy_WwiseProject/SoundBanks
   - /CristalsOfEmpathy_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1

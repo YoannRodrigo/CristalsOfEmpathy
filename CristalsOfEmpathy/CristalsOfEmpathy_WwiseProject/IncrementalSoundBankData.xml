@@ -8,12 +8,12 @@
 				<File Name="Fear" Hash="701854899" Timestamp="1582250708"/>
 				<File Name="Init" Hash="1182415902" Timestamp="1582250708"/>
 				<File Name="Love" Hash="3655040941" Timestamp="1582250708"/>
-				<File Name="Main" Hash="4125042584" Timestamp="1582250708"/>
+				<File Name="Main" Hash="1628047580" Timestamp="1582254838"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2092763772" Timestamp="1582250708"/>
+				<File Name="" Hash="928281313" Timestamp="1582254839"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -25,12 +25,12 @@
 				<File Name="Fear" Hash="701854899" Timestamp="1582250804"/>
 				<File Name="Init" Hash="2279659568" Timestamp="1579478738"/>
 				<File Name="Love" Hash="3655040941" Timestamp="1582250803"/>
-				<File Name="Main" Hash="4125042584" Timestamp="1582250803"/>
+				<File Name="Main" Hash="1628047580" Timestamp="1582254925"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3085476450" Timestamp="1582250804"/>
+				<File Name="" Hash="699051" Timestamp="1582254925"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -42,12 +42,12 @@
 				<File Name="Fear" Hash="701854899" Timestamp="1582250706"/>
 				<File Name="Init" Hash="3629367326" Timestamp="1582250708"/>
 				<File Name="Love" Hash="3655040941" Timestamp="1582250707"/>
-				<File Name="Main" Hash="4125042584" Timestamp="1582250708"/>
+				<File Name="Main" Hash="1628047580" Timestamp="1582254827"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3869166302" Timestamp="1582250708"/>
+				<File Name="" Hash="3304393503" Timestamp="1582254829"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

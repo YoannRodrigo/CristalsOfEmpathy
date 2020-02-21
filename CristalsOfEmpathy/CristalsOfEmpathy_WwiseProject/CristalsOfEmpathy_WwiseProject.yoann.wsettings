@@ -3,13 +3,14 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{EAFFA4CC-91DC-4A27-BB11-9EAC3459F109}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\yoann\Downloads"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\yoann\Music"/>
 				<Property Name="Event Action List\{073E36DE-5888-47A6-A645-24781363B304}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2635907E-E094-4B0F-A393-6D4CD61EF318}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{322AF292-4E00-40F5-BC15-F9FDA7E71F02}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{47768BB7-ABDB-4BFE-9493-3298569458B3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{55E1CC85-5D14-4F11-9F89-8C53D9E5A2F8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{96669FF5-F098-4FD3-97CF-E3CD24747F41}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{ABAA63AD-CBE3-4E41-87F3-D1330AE46145}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{ADBFD95A-9115-4A6D-B483-76984B479149}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CB20FC8A-9B11-40FD-B18B-7F3D2099ACA0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CD709F50-04AF-4D41-A80F-C94D5240DF84}\x64_Expand States" Type="string" Value=""/>

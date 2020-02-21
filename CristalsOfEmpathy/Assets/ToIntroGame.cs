@@ -6,6 +6,11 @@ public class ToIntroGame : MonoBehaviour
     public VideoPlayer videoIntro;
     private bool isChangeSceneBegan;
 
+
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("PlayIntro", gameObject);
+    }
     private void Update()
     {
         if (!videoIntro.isPlaying && !isChangeSceneBegan)

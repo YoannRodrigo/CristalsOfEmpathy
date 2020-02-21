@@ -9,6 +9,7 @@
 						<ObjectRef Name="MainMusic" ID="{CB20FC8A-9B11-40FD-B18B-7F3D2099ACA0}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ButtonPressed" ID="{ADBFD95A-9115-4A6D-B483-76984B479149}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Forains" ID="{47768BB7-ABDB-4BFE-9493-3298569458B3}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayIntro" ID="{ABAA63AD-CBE3-4E41-87F3-D1330AE46145}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
