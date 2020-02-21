@@ -60,7 +60,7 @@ public class FearEnigmaManager : MonoBehaviour
     private IEnumerator WaitToReturn()
     {
         yield return new WaitForSeconds(2);
-        LevelChanger.instance.ChangeToLevelWithFade(0);
+        LevelChanger.instance.ChangeToLevelWithFade("CreditScene");
     }
 
     private IEnumerator WaitToReturnFearEnigma()

@@ -37,6 +37,26 @@ public class GeneralGameManager : MonoBehaviour
 
     #region Methods
 
+    public void ResetValue()
+    {
+        nextPortalIndex = 0;
+        hasPlayerHeardSpeach = false;
+        hasPlayerMetAgatha = false;
+        hasPlayerMetAlice = false;
+        hasPlayerMetAlberthus = false;
+        hasPlayerMetGarderner = false;
+        hasPlayerAcceptedApoQuest = false;
+        hasPlayerAcceptedFloristQuest = false;
+        hasPlayerAcceptedBartenderQuest = false;
+        hasPlayerAcceptedFishermanQuest = false;
+        hasPlayerGetWoods = false;
+        isApoQuestFinished = false;
+        isFloristQuestFinished = false;
+        isBartenderQuestFinished = false;
+        isFishermanQuestFinished = false;
+        nbFlowerBuy = 0;
+    }
+    
     public void SetPortalIndex(int id)
     {
         nextPortalIndex = id;

@@ -17,6 +17,17 @@ public class EndGameManager : MonoBehaviour
     private BarPointsHandler.Emotions maxEmotion;
     private bool isGuardianAlreadySpawned;
 
+    public void ResetValues()
+    {
+        pnjNames = new List<string>();
+        inLoveBranch = false;
+        inAversionBranch = false;
+        inFearBranch = false;
+        inCuriosityBranch = false;
+        hasPlayerMeetMages = false;
+        isGuardianAlreadySpawned = false;
+    }
+    
     private void Awake()
     {
         if (instance == null)

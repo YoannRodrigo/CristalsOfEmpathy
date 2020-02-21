@@ -47,7 +47,7 @@ public class CuriosityEnigmaMenuManager : MonoBehaviour
     public IEnumerator WaitToReturnMenu()
     {
         yield return new WaitForSeconds(2);
-        LevelChanger.instance.ChangeToLevelWithFade(0);
+        LevelChanger.instance.ChangeToLevelWithFade("CreditScene");
     }
 
     public IEnumerator WaitToReturnEnigma()
@@ -61,7 +61,7 @@ public class CuriosityEnigmaMenuManager : MonoBehaviour
         if (runesCounter.runesCount == 6)
         {
             Debug.Log("Entering coroutine");
-            StartCoroutine("WaitToReturn");
+            StartCoroutine("WaitToReturnMenu");
         }
     }
     #endregion

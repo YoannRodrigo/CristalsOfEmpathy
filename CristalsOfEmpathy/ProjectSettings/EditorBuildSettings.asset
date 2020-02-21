@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneInBuild/GuardianScreen.unity
     guid: 5fa95652ff8989d42bad8556e5c26324
+  - enabled: 1
+    path: Assets/Scenes/SceneInBuild/IntroMovScene.unity
+    guid: 2d68c30445d5ace4c82dfa0b2a41b048
+  - enabled: 1
+    path: Assets/Scenes/SceneInBuild/CreditScene.unity
+    guid: e2b9dfbcd949dce4cb21d5c6c7217a68
   m_configObjects: {}
