@@ -14467,6 +14467,7 @@ MonoBehaviour:
   dialogue: {fileID: 11400000, guid: b099bcc6ca01946a690769f341ab16dd, type: 2}
   dialogueIdle: {fileID: 0}
   dialogueQuest: {fileID: 11400000, guid: a58f1aaa9e319478589b4a7949082b18, type: 2}
+  dialogueAmour: {fileID: 11400000, guid: 644b80d4b9d58463888bb5fd65ddd7fc, type: 2}
   otherMages:
   - {fileID: 1592825302}
   - {fileID: 2088505041}
@@ -21399,6 +21400,7 @@ MonoBehaviour:
   dialogue: {fileID: 11400000, guid: b099bcc6ca01946a690769f341ab16dd, type: 2}
   dialogueIdle: {fileID: 0}
   dialogueQuest: {fileID: 11400000, guid: a58f1aaa9e319478589b4a7949082b18, type: 2}
+  dialogueAmour: {fileID: 11400000, guid: 644b80d4b9d58463888bb5fd65ddd7fc, type: 2}
   otherMages:
   - {fileID: 2088505041}
   - {fileID: 1134976690}
@@ -29220,6 +29222,7 @@ MonoBehaviour:
   dialogue: {fileID: 11400000, guid: b099bcc6ca01946a690769f341ab16dd, type: 2}
   dialogueIdle: {fileID: 0}
   dialogueQuest: {fileID: 11400000, guid: a58f1aaa9e319478589b4a7949082b18, type: 2}
+  dialogueAmour: {fileID: 11400000, guid: 644b80d4b9d58463888bb5fd65ddd7fc, type: 2}
   otherMages:
   - {fileID: 1592825302}
   - {fileID: 1134976690}

@@ -9,6 +9,7 @@ public class InteractibleAversionGardien : InteractiblePnj
         base.OnDialogEnded();
         if(!EndGameManager.instance.inAversionBranch)
         {
+            EndGameManager.instance.inAversionBranch = true;
         }
         else
         {

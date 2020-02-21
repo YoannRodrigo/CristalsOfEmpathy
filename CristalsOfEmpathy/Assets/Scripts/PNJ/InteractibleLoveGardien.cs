@@ -9,6 +9,7 @@ public class InteractibleLoveGardien : InteractiblePnj
         base.OnDialogEnded();
         if(!EndGameManager.instance.inLoveBranch)
         {
+            EndGameManager.instance.inLoveBranch = true;
         }
         else
         {

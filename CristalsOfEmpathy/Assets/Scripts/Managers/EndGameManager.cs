@@ -11,6 +11,7 @@ public class EndGameManager : MonoBehaviour
     public bool inAversionBranch;
     public bool inFearBranch;
     public bool inCuriosityBranch;
+    public bool hasPlayerMeetMages;
 
     public static EndGameManager instance;
     private BarPointsHandler.Emotions maxEmotion;

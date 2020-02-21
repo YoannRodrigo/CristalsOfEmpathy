@@ -182,7 +182,7 @@ PrefabInstance:
     - target: {fileID: 3101492580211231904, guid: 5760c1618327d0647a2812ccd3996780,
         type: 3}
       propertyPath: inFearBranch
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5760c1618327d0647a2812ccd3996780, type: 3}

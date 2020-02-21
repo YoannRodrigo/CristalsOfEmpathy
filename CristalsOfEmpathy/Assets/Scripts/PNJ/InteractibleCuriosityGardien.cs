@@ -3,8 +3,9 @@
     public override void OnDialogEnded()
     {
         base.OnDialogEnded();
-        if(!EndGameManager.instance.inFearBranch)
+        if(!EndGameManager.instance.inCuriosityBranch)
         {
+            EndGameManager.instance.inCuriosityBranch = true;
         }
         else
         {
