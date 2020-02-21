@@ -6,6 +6,7 @@ public class InteractibleMages : InteractiblePnj
 {
     public ScriptablePNJ dialogueQuest;
     public ScriptablePNJ dialogueAmour;
+    public ScriptablePNJ dialogueCuriosity;
     public List<InteractibleMages> otherMages = new List<InteractibleMages>();
 
     public override void Start()
@@ -28,6 +29,14 @@ public class InteractibleMages : InteractiblePnj
                 otherMage.dialogue = otherMage.dialogueAmour;
             }
         }
+        if (EndGameManager.instance.inCuriosityBranch)
+        {
+            dialogue = dialogueCuriosity;
+            foreach (InteractibleMages otherMage in otherMages)
+            {
+                otherMage.dialogue = otherMage.dialogueCuriosity;
+            }
+        }
     }
 
     public override void OnDialogEnded()
@@ -36,6 +45,14 @@ public class InteractibleMages : InteractiblePnj
         if (GeneralGameManager.instance.hasPlayerAcceptedApoQuest)
         {
             GeneralGameManager.instance.isApoQuestFinished = true;
+        }
+        if (EndGameManager.instance.inLoveBranch)
+        {
+            EndGameManager.instance.hasPlayerMeetMages = true;
+        }
+        if (EndGameManager.instance.inCuriosityBranch)
+        {
+            LevelChanger.instance.ChangeToLevelWithFade("GuardianScene");
         }
     }
 }
