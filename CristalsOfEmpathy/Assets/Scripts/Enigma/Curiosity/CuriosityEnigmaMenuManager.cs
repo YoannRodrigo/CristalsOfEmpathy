@@ -20,6 +20,7 @@ public class CuriosityEnigmaMenuManager : MonoBehaviour
     {
         Time.timeScale = 1;
         LevelChanger.instance.FadeOut();
+        AkSoundEngine.PostEvent("StartCuriosityMusic", gameObject);
     }
     public void LeaveButtonOnClick()
     {

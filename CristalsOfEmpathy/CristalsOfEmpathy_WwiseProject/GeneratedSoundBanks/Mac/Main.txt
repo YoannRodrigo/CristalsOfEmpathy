@@ -1,8 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	2560613409	Forains			\Default Work Unit\Forains	
 	2821508605	ButtonPressed			\Default Work Unit\ButtonPressed	
+	3479155863	MainMusic			\Default Work Unit\MainMusic	
 	3658128575	MainMenuOpen			\Default Work Unit\MainMenuOpen	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	25567458	CoE - Forains	C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Mac\SFX\CoE - Forains_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CoE - Forains		5281688
+	465594146	CoE - chill (version2)	C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Mac\SFX\CoE - chill (version2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CoE - chill (version2)		10663012
 	718541537	MainMenu	C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Mac\SFX\CoE - Ecran d'acuueil_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu		9037172
 	891508614	UI Hits Game 4	C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Mac\SFX\UI Hits Game 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Button Hits\UI Hits Game 4		218304
 	951790365	UI Hits Game 3	C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Mac\SFX\UI Hits Game 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Button Hits\UI Hits Game 3		115088

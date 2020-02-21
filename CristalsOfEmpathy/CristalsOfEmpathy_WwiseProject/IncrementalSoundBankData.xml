@@ -3,16 +3,17 @@
 	<Platform GUID="{45ADFAFC-1189-405D-A8F9-065159CBE8D5}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Aversion" Hash="2597115804" Timestamp="1579478738"/>
-				<File Name="Fear" Hash="2751878315" Timestamp="1579478738"/>
-				<File Name="Init" Hash="1182415902" Timestamp="1579478738"/>
-				<File Name="Love" Hash="2546660722" Timestamp="1579478738"/>
-				<File Name="Main" Hash="1189035181" Timestamp="1579478738"/>
+				<File Name="Aversion" Hash="2597115804" Timestamp="1582249908"/>
+				<File Name="Curiosity" Hash="3453421571" Timestamp="1582249969"/>
+				<File Name="Fear" Hash="2751878315" Timestamp="1582249907"/>
+				<File Name="Init" Hash="1182415902" Timestamp="1582249908"/>
+				<File Name="Love" Hash="2546660722" Timestamp="1582249907"/>
+				<File Name="Main" Hash="3573822517" Timestamp="1582249968"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="211600289" Timestamp="1579478738"/>
+				<File Name="" Hash="3306753413" Timestamp="1582249969"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -20,31 +21,33 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Aversion" Hash="2597115804" Timestamp="1579478738"/>
+				<File Name="Curiosity" Hash="3453421571" Timestamp="1582249966"/>
 				<File Name="Fear" Hash="2751878315" Timestamp="1579478738"/>
 				<File Name="Init" Hash="2279659568" Timestamp="1579478738"/>
 				<File Name="Love" Hash="2546660722" Timestamp="1579478738"/>
-				<File Name="Main" Hash="1189035181" Timestamp="1579478738"/>
+				<File Name="Main" Hash="3573822517" Timestamp="1582249966"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2715598879" Timestamp="1579478738"/>
+				<File Name="" Hash="1792524791" Timestamp="1582249966"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{E2B3FAD0-E504-4D65-9866-2A74B63450D8}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Aversion" Hash="2597115804" Timestamp="1579478738"/>
-				<File Name="Fear" Hash="2751878315" Timestamp="1579478737"/>
-				<File Name="Init" Hash="3629367326" Timestamp="1579478738"/>
-				<File Name="Love" Hash="2546660722" Timestamp="1579478737"/>
-				<File Name="Main" Hash="1189035181" Timestamp="1579478737"/>
+				<File Name="Aversion" Hash="2597115804" Timestamp="1582249906"/>
+				<File Name="Curiosity" Hash="3453421571" Timestamp="1582249961"/>
+				<File Name="Fear" Hash="2751878315" Timestamp="1582249905"/>
+				<File Name="Init" Hash="3629367326" Timestamp="1582249906"/>
+				<File Name="Love" Hash="2546660722" Timestamp="1582249905"/>
+				<File Name="Main" Hash="3573822517" Timestamp="1582249960"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="4182178323" Timestamp="1579478738"/>
+				<File Name="" Hash="2595345187" Timestamp="1582249961"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

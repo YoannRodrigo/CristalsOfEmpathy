@@ -25,6 +25,20 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
+		<SoundBank Id="396009140" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Curiosity</ObjectPath>
+			<ShortName>Curiosity</ShortName>
+			<Path>Curiosity.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3142087295" Name="StartCuriosityMusic" ObjectPath="\Events\Default Work Unit\StartCuriosityMusic" DurationType="OneShot" DurationMin="76.742859" DurationMax="76.742859"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="178422844" Language="SFX">
+					<ShortName>CoE - Emotion - Curiosité et Surprise.wav</ShortName>
+					<Path>SFX\CoE - Emotion - Curiosité et Surprise_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
@@ -50,9 +64,19 @@
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2821508605" Name="ButtonPressed" ObjectPath="\Events\Default Work Unit\ButtonPressed" DurationType="OneShot" DurationMin="0.547936" DurationMax="1.470734"/>
+				<Event Id="2560613409" Name="Forains" ObjectPath="\Events\Default Work Unit\Forains" DurationType="OneShot" DurationMin="29.941179" DurationMax="29.941179"/>
 				<Event Id="3658128575" Name="MainMenuOpen" ObjectPath="\Events\Default Work Unit\MainMenuOpen" DurationType="OneShot" DurationMin="51.230770" DurationMax="51.230770"/>
+				<Event Id="3479155863" Name="MainMusic" ObjectPath="\Events\Default Work Unit\MainMusic" DurationType="OneShot" DurationMin="60.447552" DurationMax="60.447552"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="25567458" Language="SFX">
+					<ShortName>CoE - Forains.wav</ShortName>
+					<Path>SFX\CoE - Forains_10C4C929.wem</Path>
+				</File>
+				<File Id="465594146" Language="SFX">
+					<ShortName>CoE - chill (version2).wav</ShortName>
+					<Path>SFX\CoE - chill (version2)_10C4C929.wem</Path>
+				</File>
 				<File Id="718541537" Language="SFX">
 					<ShortName>CoE - Ecran d'acuueil.wav</ShortName>
 					<Path>SFX\CoE - Ecran d'acuueil_10C4C929.wem</Path>

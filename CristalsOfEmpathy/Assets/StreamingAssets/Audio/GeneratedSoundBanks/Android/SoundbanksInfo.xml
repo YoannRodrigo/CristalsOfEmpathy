@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Android\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="271565449" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Love</ObjectPath>
+			<ShortName>Love</ShortName>
+			<Path>Love.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2486664568" Name="StartLoveMusic" ObjectPath="\Events\Default Work Unit\StartLoveMusic" DurationType="OneShot" DurationMin="90.666664" DurationMax="90.666664"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="383016134" Language="SFX">
+					<ShortName>CoE - Emotion - Amour.wav</ShortName>
+					<Path>SFX\CoE - Emotion - Amour_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="396009140" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Curiosity</ObjectPath>
+			<ShortName>Curiosity</ShortName>
+			<Path>Curiosity.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3142087295" Name="StartCuriosityMusic" ObjectPath="\Events\Default Work Unit\StartCuriosityMusic" DurationType="OneShot" DurationMin="76.742859" DurationMax="76.742859"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="178422844" Language="SFX">
+					<ShortName>CoE - Emotion - Curiosité et Surprise.wav</ShortName>
+					<Path>SFX\CoE - Emotion - Curiosité et Surprise_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3133847859" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Fear</ObjectPath>
+			<ShortName>Fear</ShortName>
+			<Path>Fear.bnk</Path>
+			<IncludedEvents>
+				<Event Id="20033646" Name="StartFearMusic" ObjectPath="\Events\Default Work Unit\StartFearMusic" DurationType="OneShot" DurationMin="109.374992" DurationMax="109.374992"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="448652585" Language="SFX">
+					<ShortName>CoE - Emotion - Peur.wav</ShortName>
+					<Path>SFX\CoE - Emotion - Peur_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2821508605" Name="ButtonPressed" ObjectPath="\Events\Default Work Unit\ButtonPressed" DurationType="OneShot" DurationMin="0.547936" DurationMax="1.470734"/>
+				<Event Id="2560613409" Name="Forains" ObjectPath="\Events\Default Work Unit\Forains" DurationType="OneShot" DurationMin="29.941179" DurationMax="29.941179"/>
+				<Event Id="3658128575" Name="MainMenuOpen" ObjectPath="\Events\Default Work Unit\MainMenuOpen" DurationType="OneShot" DurationMin="51.230770" DurationMax="51.230770"/>
+				<Event Id="3479155863" Name="MainMusic" ObjectPath="\Events\Default Work Unit\MainMusic" DurationType="OneShot" DurationMin="60.447552" DurationMax="60.447552"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="25567458" Language="SFX">
+					<ShortName>CoE - Forains.wav</ShortName>
+					<Path>SFX\CoE - Forains_10C4C929.wem</Path>
+				</File>
+				<File Id="465594146" Language="SFX">
+					<ShortName>CoE - chill (version2).wav</ShortName>
+					<Path>SFX\CoE - chill (version2)_10C4C929.wem</Path>
+				</File>
+				<File Id="718541537" Language="SFX">
+					<ShortName>CoE - Ecran d'acuueil.wav</ShortName>
+					<Path>SFX\CoE - Ecran d'acuueil_10C4C929.wem</Path>
+				</File>
+				<File Id="891508614" Language="SFX">
+					<ShortName>UI Hits Game 4.wav</ShortName>
+					<Path>SFX\UI Hits Game 4_10C4C929.wem</Path>
+				</File>
+				<File Id="951790365" Language="SFX">
+					<ShortName>UI Hits Game 3.wav</ShortName>
+					<Path>SFX\UI Hits Game 3_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3998377122" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Aversion</ObjectPath>
+			<ShortName>Aversion</ShortName>
+			<Path>Aversion.bnk</Path>
+			<IncludedEvents>
+				<Event Id="5682657" Name="StartAversionMusic" ObjectPath="\Events\Default Work Unit\StartAversionMusic" DurationType="OneShot" DurationMin="60.845078" DurationMax="60.845078"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="471958184" Language="SFX">
+					<ShortName>CoE - Emotion - Aversion et Dégoût.wav</ShortName>
+					<Path>SFX\CoE - Emotion - Aversion et Dégoût_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

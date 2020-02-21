@@ -6,7 +6,9 @@
 				<SoundBank Name="Main" ID="{4EBA98C4-32C3-4C25-8F39-B3FC8CD9D66D}">
 					<ObjectInclusionList>
 						<ObjectRef Name="MainMenuOpen" ID="{322AF292-4E00-40F5-BC15-F9FDA7E71F02}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MainMusic" ID="{CB20FC8A-9B11-40FD-B18B-7F3D2099ACA0}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ButtonPressed" ID="{ADBFD95A-9115-4A6D-B483-76984B479149}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Forains" ID="{47768BB7-ABDB-4BFE-9493-3298569458B3}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -28,6 +30,13 @@
 				<SoundBank Name="Aversion" ID="{85D1DDED-6C96-461A-AB6C-D745D316D0F8}">
 					<ObjectInclusionList>
 						<ObjectRef Name="StartAversionMusic" ID="{073E36DE-5888-47A6-A645-24781363B304}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Curiosity" ID="{79139F14-32A3-490C-8F8F-DF8D1B171350}">
+					<ObjectInclusionList>
+						<ObjectRef Name="StartCuriosityMusic" ID="{55E1CC85-5D14-4F11-9F89-8C53D9E5A2F8}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
