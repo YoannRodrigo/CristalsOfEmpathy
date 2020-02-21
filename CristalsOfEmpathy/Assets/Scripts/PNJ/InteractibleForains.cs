@@ -5,6 +5,7 @@ using UnityEngine;
 public class InteractibleForains : InteractiblePnj
 {
     public ScriptablePNJ dialogueQuest;
+    public ScriptablePNJ dialogueAversion;
     public InteractibleForains otherForain;
 
     public override void OnDialogEnded()
@@ -15,6 +16,11 @@ public class InteractibleForains : InteractiblePnj
         {
             GeneralGameManager.instance.isBartenderQuestFinished = true;
         }
+        if (EndGameManager.instance.inAversionBranch)
+        {
+            LevelChanger.instance.ChangeToLevelWithFade("GuardianScene");
+        }
+        
     }
 
     public override void Start()
@@ -25,6 +31,11 @@ public class InteractibleForains : InteractiblePnj
         {
             dialogue = dialogueQuest;
             otherForain.dialogue = otherForain.dialogueQuest;
+        }
+        if (EndGameManager.instance.inAversionBranch)
+        {
+            dialogue = dialogueAversion;
+            otherForain.dialogue = otherForain.dialogueAversion;
         }
     }
 }

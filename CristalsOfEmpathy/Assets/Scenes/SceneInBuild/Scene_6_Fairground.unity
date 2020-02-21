@@ -2259,6 +2259,7 @@ MonoBehaviour:
   dialogue: {fileID: 11400000, guid: b6f03f23439e179449d7d713ee035d5f, type: 2}
   dialogueIdle: {fileID: 11400000, guid: 709366d746b7f3a4b8b15936506be448, type: 2}
   dialogueQuest: {fileID: 11400000, guid: 8e3c976bbb1d4ed4ba25be66ba5cd120, type: 2}
+  dialogueAversion: {fileID: 11400000, guid: 1b8d893c1f2aad547b221d253f411e0b, type: 2}
   otherForain: {fileID: 764423447}
 --- !u!135 &154370843
 SphereCollider:
@@ -10861,6 +10862,7 @@ MonoBehaviour:
   dialogue: {fileID: 11400000, guid: b6f03f23439e179449d7d713ee035d5f, type: 2}
   dialogueIdle: {fileID: 11400000, guid: 709366d746b7f3a4b8b15936506be448, type: 2}
   dialogueQuest: {fileID: 11400000, guid: 8e3c976bbb1d4ed4ba25be66ba5cd120, type: 2}
+  dialogueAversion: {fileID: 11400000, guid: 1b8d893c1f2aad547b221d253f411e0b, type: 2}
   otherForain: {fileID: 154370842}
 --- !u!114 &764423448
 MonoBehaviour:
