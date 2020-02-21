@@ -63,8 +63,11 @@ public class GeneralGameManager : MonoBehaviour
 
     public void OnLevelLoaded()
     {
-        LevelManager.instance.portalIndex = nextPortalIndex;
-        LevelManager.instance.SpawnPlayer();
+        if(LevelManager.instance.portals.Count>0)
+        {
+            LevelManager.instance.portalIndex = nextPortalIndex;
+            LevelManager.instance.SpawnPlayer();
+        }
     }
 
     public void SetPlayerPrefab(int playerPrefab)

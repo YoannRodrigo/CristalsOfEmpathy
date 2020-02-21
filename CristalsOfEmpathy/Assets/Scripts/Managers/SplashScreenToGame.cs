@@ -17,7 +17,7 @@ public class SplashScreenToGame : MonoBehaviour
     private void Update()
     {
         timeSinceSceneStarted += Time.deltaTime;
-        if (timeSinceSceneStarted > TIME_MAX_BEFORE_NEXT_SCENE) LevelChanger.instance.ChangeToLevelWithFade(FIRST_GAME_SCENE_ID);
+        if (timeSinceSceneStarted > TIME_MAX_BEFORE_NEXT_SCENE) LevelChanger.instance.ChangeToLevelWithFade("IntroMovScene");
     }
 
     #endregion
