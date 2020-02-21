@@ -17,7 +17,7 @@ public class InteractibleProsper : InteractiblePnj
         base.OnDialogEnded();
         if (EndGameManager.instance.inLoveBranch && EndGameManager.instance.hasPlayerMeetMages)
         {
-            LevelChanger.instance.ChangeToLevelWithFade("GuardianScene");
+            LevelChanger.instance.ChangeToLevelWithFade("GuardianScreen");
         }
     }
 }

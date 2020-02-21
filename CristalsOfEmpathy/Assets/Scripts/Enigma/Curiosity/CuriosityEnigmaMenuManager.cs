@@ -53,7 +53,7 @@ public class CuriosityEnigmaMenuManager : MonoBehaviour
     public IEnumerator WaitToReturnEnigma()
     {
         yield return new WaitForSeconds(2);
-        LevelChanger.instance.ChangeToLevelWithFade(7);
+        LevelChanger.instance.ChangeToLevelWithFade("GuardianScreen");
     }
 
     public void StartWaitToReturnCoroutine()

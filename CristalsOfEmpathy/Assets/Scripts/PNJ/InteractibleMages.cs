@@ -52,7 +52,7 @@ public class InteractibleMages : InteractiblePnj
         }
         if (EndGameManager.instance.inCuriosityBranch)
         {
-            LevelChanger.instance.ChangeToLevelWithFade("GuardianScene");
+            LevelChanger.instance.ChangeToLevelWithFade("GuardianScreen");
         }
     }
 }

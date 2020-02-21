@@ -66,6 +66,6 @@ public class FearEnigmaManager : MonoBehaviour
     private IEnumerator WaitToReturnFearEnigma()
     {
         yield return new WaitForSeconds(2);
-        LevelChanger.instance.ChangeToLevelWithFade(6);
+        LevelChanger.instance.ChangeToLevelWithFade("GuardianScreen");
     }
 }

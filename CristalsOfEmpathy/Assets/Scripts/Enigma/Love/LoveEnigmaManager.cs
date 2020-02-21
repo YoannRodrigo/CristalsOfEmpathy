@@ -221,7 +221,7 @@ public class LoveEnigmaManager : MonoBehaviour
     private IEnumerator WaitToReturnLoveEnigma()
     {
         yield return new WaitForSeconds(2);
-        LevelChanger.instance.ChangeToLevelWithFade(4);
+        LevelChanger.instance.ChangeToLevelWithFade("GuardianScreen");
     }
 
 

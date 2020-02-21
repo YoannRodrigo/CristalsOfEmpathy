@@ -18,7 +18,7 @@ public class InteractibleForains : InteractiblePnj
         }
         if (EndGameManager.instance.inAversionBranch)
         {
-            LevelChanger.instance.ChangeToLevelWithFade("GuardianScene");
+            LevelChanger.instance.ChangeToLevelWithFade("GuardianScreen");
         }
         
     }

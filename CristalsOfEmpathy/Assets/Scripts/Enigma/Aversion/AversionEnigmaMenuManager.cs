@@ -129,7 +129,7 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     private IEnumerator WaitToReturnAversionEnigma()
     {
         yield return new WaitForSeconds(2);
-        LevelChanger.instance.ChangeToLevelWithFade(5);
+        LevelChanger.instance.ChangeToLevelWithFade("GuardianScreen");
     }
 
     #endregion
