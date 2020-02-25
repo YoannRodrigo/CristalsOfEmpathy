@@ -218,6 +218,7 @@ MonoBehaviour:
   destroyAfter: 0
   forceOnStart: 1
   interactiblePnj: {fileID: 7586274938295136842}
+  textIdToBegin: 0
 --- !u!4 &115692791
 Transform:
   m_ObjectHideFlags: 0
@@ -799,7 +800,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: c9f30f87d9dbe3349bafb2ef8ef0df15,
+      objectReference: {fileID: 11400000, guid: b6f03f23439e179449d7d713ee035d5f,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eda83317956dede4da326c5b7f2c5f02, type: 3}

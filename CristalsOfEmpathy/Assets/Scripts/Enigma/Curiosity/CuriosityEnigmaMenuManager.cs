@@ -24,8 +24,10 @@ public class CuriosityEnigmaMenuManager : MonoBehaviour
     }
     public void LeaveButtonOnClick()
     {
-        confirmationScreen.SetActive(true);
-        Time.timeScale = 0;
+        defeatScreen.SetActive(true);
+        
+        Time.timeScale = 1;
+        StartCoroutine("WaitToReturnEnigma");
     }
 
     public void GiveUpNoButtonOnClick()

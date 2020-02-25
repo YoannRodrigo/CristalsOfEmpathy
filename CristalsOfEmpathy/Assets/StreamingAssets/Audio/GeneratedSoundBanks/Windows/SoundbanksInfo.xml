@@ -17,6 +17,7 @@
 			<Path>Love.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2486664568" Name="StartLoveMusic" ObjectPath="\Events\Default Work Unit\StartLoveMusic" DurationType="Infinite"/>
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\StopAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="383016134" Language="SFX">
@@ -31,6 +32,7 @@
 			<Path>Curiosity.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3142087295" Name="StartCuriosityMusic" ObjectPath="\Events\Default Work Unit\StartCuriosityMusic" DurationType="Infinite"/>
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\StopAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="178422844" Language="SFX">
@@ -50,6 +52,7 @@
 			<Path>Fear.bnk</Path>
 			<IncludedEvents>
 				<Event Id="20033646" Name="StartFearMusic" ObjectPath="\Events\Default Work Unit\StartFearMusic" DurationType="Infinite"/>
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\StopAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="448652585" Language="SFX">
@@ -67,11 +70,17 @@
 				<Event Id="2560613409" Name="Forains" ObjectPath="\Events\Default Work Unit\Forains" DurationType="Infinite"/>
 				<Event Id="3658128575" Name="MainMenuOpen" ObjectPath="\Events\Default Work Unit\MainMenuOpen" DurationType="Infinite"/>
 				<Event Id="3479155863" Name="MainMusic" ObjectPath="\Events\Default Work Unit\MainMusic" DurationType="Infinite"/>
+				<Event Id="781908707" Name="PlayIntro" ObjectPath="\Events\Default Work Unit\PlayIntro" DurationType="OneShot" DurationMin="185.808975" DurationMax="185.808975"/>
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\StopAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="282866249" Language="SFX">
 					<ShortName>CoE - Forains.wav</ShortName>
 					<Path>SFX\CoE - Forains_D79FB2B7.wem</Path>
+				</File>
+				<File Id="399428543" Language="SFX">
+					<ShortName>coeIntro3.wav</ShortName>
+					<Path>SFX\coeIntro3_10C4C929.wem</Path>
 				</File>
 				<File Id="718541537" Language="SFX">
 					<ShortName>CoE - Ecran d'acuueil.wav</ShortName>
@@ -97,6 +106,7 @@
 			<Path>Aversion.bnk</Path>
 			<IncludedEvents>
 				<Event Id="5682657" Name="StartAversionMusic" ObjectPath="\Events\Default Work Unit\StartAversionMusic" DurationType="Infinite"/>
+				<Event Id="3086540886" Name="StopAll" ObjectPath="\Events\Default Work Unit\StopAll" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="471958184" Language="SFX">

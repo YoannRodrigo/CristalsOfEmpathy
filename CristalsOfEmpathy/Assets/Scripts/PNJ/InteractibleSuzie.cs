@@ -3,8 +3,9 @@
     public ScriptablePNJ dialogueQuest;
     public ScriptablePNJ dialoguePostComa;
 
-    private void Update()
+    protected override void Update()
     {
+        base.Update();
         if (GeneralGameManager.instance.nbFlowerBuy > 0)
         {
             dialogue = dialogueQuest;

@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCharacterPrefabs:
   - {fileID: 3767665074962278967, guid: 0038874635550d543ad924eeceac9997, type: 3}
-  - {fileID: 601445526444850932, guid: d4d8f20bd498f8040892d55526113ab6, type: 3}
+  - {fileID: 7562227444940556666, guid: 7678012371752477cb4c1b104509ec01, type: 3}
   - {fileID: 7245934649722680806, guid: a85ea31f6b01d7e45b690b4cec78c29d, type: 3}
   cameraPrefab: {fileID: 6141993414393918099, guid: 29bbe8d9236e8d54583935d57e0b78e8,
     type: 3}
@@ -83,6 +83,11 @@ MonoBehaviour:
   pnjNames: []
   guardianPrefab: {fileID: 2729369899121476733, guid: 5b5cc3402f383704f9c7281627d74ba4,
     type: 3}
+  inLoveBranch: 0
+  inAversionBranch: 0
+  inFearBranch: 0
+  inCuriosityBranch: 0
+  hasPlayerMeetMages: 0
 --- !u!114 &8223704712616399996
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -42,7 +42,7 @@ public class EndGameManager : MonoBehaviour
 
     private void Update()
     {
-        if (pnjNames.Count > 11 && !isGuardianAlreadySpawned)
+        if (pnjNames.Count > 8 && !isGuardianAlreadySpawned)
         {
             isGuardianAlreadySpawned = true;
             CheckBar();

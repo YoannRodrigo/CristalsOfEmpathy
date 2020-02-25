@@ -63,7 +63,6 @@ public class LevelChanger : MonoBehaviour
     }
     public void ChangeToLevelWithFade(string levelName)
     {
-        anim.SetBool(isFadeOutNeeded, true);
         levelId = -1;
         this.levelName = levelName;
         isFadeBegan = true;
@@ -73,6 +72,11 @@ public class LevelChanger : MonoBehaviour
     {
         if (isFadeBegan)
         {
+            foreach (AkGameObj akGame in FindObjectsOfType<AkGameObj>())
+            {
+                AkSoundEngine.PostEvent("StopAll", akGame.gameObject);
+            }
+            
             timeSinceFadeBegan += Time.deltaTime;
             if (timeSinceFadeBegan > TIME_BEFORE_FADE_ENDED)
             {

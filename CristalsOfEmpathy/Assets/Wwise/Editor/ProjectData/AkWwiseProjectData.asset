@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: cf5eedc6e53c154382ce4716c863ce4a
     GuidInternal: 
-    m_lastTime: -8586193520785280923
+    m_lastTime: -8586192356839749503
     List:
     - name: Aversion
       guid: edddd185966c1a46ab6cd745d316d0f8
@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 71960e2e778eb049be87a6930ee0f61e
     GuidInternal: 
-    m_lastTime: -8586193520785280923
+    m_lastTime: -8586192357079746030
     List:
     - name: ButtonPressed
       guid: 5ad9bfad15916d4ab48376984b479149
@@ -193,6 +193,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: StopAll
+      guid: fdb2ce083ceb124c91168c0dce919d54
+      id: 3086540886
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StopAll
+        ObjectType: 3
+      Path: Default Work Unit\StopAll
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -225,7 +237,5 @@ MonoBehaviour:
   - /CristalsOfEmpathy_WwiseProject
   - /CristalsOfEmpathy_WwiseProject/Events
   - /CristalsOfEmpathy_WwiseProject/Events/Default Work Unit
-  - /CristalsOfEmpathy_WwiseProject/SoundBanks
-  - /CristalsOfEmpathy_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

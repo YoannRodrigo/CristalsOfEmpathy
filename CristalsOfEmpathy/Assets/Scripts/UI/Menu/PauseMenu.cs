@@ -91,8 +91,7 @@ public class PauseMenu : MonoBehaviour
 
     public void MenuGameOnClick()
     {
-        isOnPause = false;
-        levelChanger.ChangeToLevelWithFade(MAIN_MENU_SCENE_ID);
+        LevelChanger.instance.ChangeToLevelWithFade(MAIN_MENU_SCENE_ID);
     }
 
     #endregion

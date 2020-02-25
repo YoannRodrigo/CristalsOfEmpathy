@@ -9,6 +9,7 @@
 						<ObjectRef Name="MainMusic" ID="{CB20FC8A-9B11-40FD-B18B-7F3D2099ACA0}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ButtonPressed" ID="{ADBFD95A-9115-4A6D-B483-76984B479149}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Forains" ID="{47768BB7-ABDB-4BFE-9493-3298569458B3}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="StopAll" ID="{08CEB2FD-EB3C-4C12-9116-8C0DCE919D54}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlayIntro" ID="{ABAA63AD-CBE3-4E41-87F3-D1330AE46145}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -16,6 +17,7 @@
 				</SoundBank>
 				<SoundBank Name="Love" ID="{EC539D21-256F-47A6-B223-217DA930B1A2}">
 					<ObjectInclusionList>
+						<ObjectRef Name="StopAll" ID="{08CEB2FD-EB3C-4C12-9116-8C0DCE919D54}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StartLoveMusic" ID="{96669FF5-F098-4FD3-97CF-E3CD24747F41}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -23,6 +25,7 @@
 				</SoundBank>
 				<SoundBank Name="Fear" ID="{E3789B2F-8830-4DA0-B6C5-A215DFA23A7B}">
 					<ObjectInclusionList>
+						<ObjectRef Name="StopAll" ID="{08CEB2FD-EB3C-4C12-9116-8C0DCE919D54}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StartFearMusic" ID="{CD709F50-04AF-4D41-A80F-C94D5240DF84}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -31,12 +34,14 @@
 				<SoundBank Name="Aversion" ID="{85D1DDED-6C96-461A-AB6C-D745D316D0F8}">
 					<ObjectInclusionList>
 						<ObjectRef Name="StartAversionMusic" ID="{073E36DE-5888-47A6-A645-24781363B304}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="StopAll" ID="{08CEB2FD-EB3C-4C12-9116-8C0DCE919D54}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Curiosity" ID="{79139F14-32A3-490C-8F8F-DF8D1B171350}">
 					<ObjectInclusionList>
+						<ObjectRef Name="StopAll" ID="{08CEB2FD-EB3C-4C12-9116-8C0DCE919D54}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StartCuriosityMusic" ID="{55E1CC85-5D14-4F11-9F89-8C53D9E5A2F8}" WorkUnitID="{2E0E9671-8E77-49B0-BE87-A6930EE0F61E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

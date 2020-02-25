@@ -27,6 +27,6 @@ MonoBehaviour:
   playerAnswers:
   - playerAnswers:
     - text: "J'ai votre bi\xE8re !"
-      nextTextId: 2
+      nextTextId: 1
       emotion: 2
       influence: 1

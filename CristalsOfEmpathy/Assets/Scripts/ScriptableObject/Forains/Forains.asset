@@ -77,13 +77,13 @@ MonoBehaviour:
   - profilePnj: {fileID: 11400000, guid: ebe2fa5e34be150408f2163109a49a1b, type: 2}
     emotion: 3
     isAnswerNeeded: 0
-    nextTextId: 0
+    nextTextId: -1
     sentence: "A-l-a une belle ameille lui ! Une vraie fem'lette ! Allez vas d'bon
       bord a va bent\xF4t w\xE9ler ! Allez vas-t'en !"
   - profilePnj: {fileID: 11400000, guid: af4db0510a9c58f41b27e5f1e7e2681a, type: 2}
     emotion: 0
     isAnswerNeeded: 1
-    nextTextId: 3
+    nextTextId: 2
     sentence: Alors t'es partant ?
   - profilePnj: {fileID: 11400000, guid: ebe2fa5e34be150408f2163109a49a1b, type: 2}
     emotion: 0

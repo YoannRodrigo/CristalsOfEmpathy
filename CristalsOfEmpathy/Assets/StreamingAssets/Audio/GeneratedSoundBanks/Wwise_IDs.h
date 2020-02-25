@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID STARTCURIOSITYMUSIC = 3142087295U;
         static const AkUniqueID STARTFEARMUSIC = 20033646U;
         static const AkUniqueID STARTLOVEMUSIC = 2486664568U;
+        static const AkUniqueID STOPALL = 3086540886U;
     } // namespace EVENTS
 
     namespace BANKS

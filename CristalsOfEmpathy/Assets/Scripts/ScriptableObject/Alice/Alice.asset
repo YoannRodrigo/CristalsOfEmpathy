@@ -57,12 +57,12 @@ MonoBehaviour:
     nextTextId: -1
     sentence: "Il est plus au sud, tu peux passer le voir !  Moi je vais continuer
       \xE0 le chercher, \xE0 plus tard !"
-  - profilePnj: {fileID: 11400000, guid: b6bee0604e035414f85c824c0af6207b, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 1
     sentence: 'Un moumou ? Non j''ai rien vu, et c''est qui Alberthus ? '
-  - profilePnj: {fileID: 11400000, guid: b6bee0604e035414f85c824c0af6207b, type: 2}
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
     emotion: 0
     isAnswerNeeded: 0
     nextTextId: 3

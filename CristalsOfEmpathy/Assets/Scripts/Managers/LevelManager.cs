@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -10,10 +11,14 @@ public class LevelManager : MonoBehaviour
     public List<Portal> portals;
     [HideInInspector]  public int portalIndex = 0;
     [HideInInspector]  public PlayerMovement player;
-
+    private readonly List<int> sceneGameId =new List<int>{2,3,8,9,10,11,13};
     private void Start()
     {
         LevelChanger.instance.FadeOut();
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            InterfaceManager.instance.ResetHUD();
+        }
         GeneralGameManager.instance.OnLevelLoaded();
     }
 

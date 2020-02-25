@@ -30,7 +30,7 @@ public abstract class InteractibleItem : MonoBehaviour
         }
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if(!canBeTouch) return;
 

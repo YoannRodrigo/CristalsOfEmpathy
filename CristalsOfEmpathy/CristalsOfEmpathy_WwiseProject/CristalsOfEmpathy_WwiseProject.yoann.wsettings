@@ -5,6 +5,7 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\yoann\Music"/>
 				<Property Name="Event Action List\{073E36DE-5888-47A6-A645-24781363B304}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{08CEB2FD-EB3C-4C12-9116-8C0DCE919D54}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2635907E-E094-4B0F-A393-6D4CD61EF318}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{322AF292-4E00-40F5-BC15-F9FDA7E71F02}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{47768BB7-ABDB-4BFE-9493-3298569458B3}\x64_Expand States" Type="string" Value=""/>
@@ -77,6 +78,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="z17txuU8FUOCzkcWyGPOSg=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
+				<Property Name="SoundBankPathUserOverride" Type="bool" Value="True"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Windows">..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</Value>

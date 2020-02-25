@@ -9,4 +9,13 @@ public class InteractibleAlice : InteractiblePnj
         base.OnTouch();
         GeneralGameManager.instance.hasPlayerMetAlice = true;
     }
+
+    public override void Start()
+    {
+        base.Start();
+        if (GeneralGameManager.instance.hasPlayerMetAlice)
+        {
+            dialogue = dialogueIdle;
+        }
+    }
 }

@@ -13,7 +13,7 @@ public class GeneralGameManager : MonoBehaviour
     public GameObject cameraPrefab;
     public GameObject playerPrefab;
 
-    private static int _playerPrefabChoice = 0;
+    private static int _playerPrefabChoice = 1;
     private int nextPortalIndex = 0;
 
 

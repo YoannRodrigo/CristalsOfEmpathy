@@ -151,12 +151,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2842373443219421389, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
+    - target: {fileID: 3770339367142404308, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.03996
       objectReference: {fileID: 0}
-    - target: {fileID: 3770339367142404308, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
+    - target: {fileID: 2842373443219421389, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.03996
@@ -184,11 +184,11 @@ PrefabInstance:
       propertyPath: eyeBrowDepth
       value: 0.377
       objectReference: {fileID: 0}
-    - target: {fileID: 3747868523146312594, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
+    - target: {fileID: 3741539863601321123, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 035f503903c461145802d8620724c89e,
+      objectReference: {fileID: 21300000, guid: 1f7afde0a46b0a14f9dfbf7d1af32d74,
         type: 3}
     - target: {fileID: 3747868524259276698, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
         type: 3}
@@ -196,23 +196,23 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 035f503903c461145802d8620724c89e,
         type: 3}
-    - target: {fileID: 3741539863601321123, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
+    - target: {fileID: 3747868523146312594, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1f7afde0a46b0a14f9dfbf7d1af32d74,
-        type: 3}
-    - target: {fileID: 6824678960654071655, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 1f7afde0a46b0a14f9dfbf7d1af32d74,
+      objectReference: {fileID: 21300000, guid: 035f503903c461145802d8620724c89e,
         type: 3}
     - target: {fileID: 6812581897786341385, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 19a66115a83c42042a5a1bb31908bc5e,
+        type: 3}
+    - target: {fileID: 6824678960654071655, guid: 38a90f5bdb7037c4aa045ad016b1e4b5,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1f7afde0a46b0a14f9dfbf7d1af32d74,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38a90f5bdb7037c4aa045ad016b1e4b5, type: 3}
@@ -287,73 +287,41 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 100044, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: Neck_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 400068, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
       propertyPath: m_Name
       value: Head_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 100072, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: Spine3_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8fa4ee54d08acb643b16b62ad5cb6309, type: 2}
+    - target: {fileID: 100026, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: L_Clavicle_J
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
       propertyPath: m_Name
       value: Hip_J
       objectReference: {fileID: 0}
-    - target: {fileID: 100022, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: L_Ankle_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100026, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: L_Clavicle_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100028, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: L_Elbow_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100032, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: L_Fingers_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100034, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: L_Knee_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100036, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: L_Leg_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100038, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: L_Shoulder_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100040, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: L_Toe_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100042, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: L_Wrist_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100044, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: Neck_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100046, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: R_Ankle_J
-      objectReference: {fileID: 0}
     - target: {fileID: 100050, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
       propertyPath: m_Name
       value: R_Clavicle_J
       objectReference: {fileID: 0}
-    - target: {fileID: 100052, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+    - target: {fileID: 100070, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
       propertyPath: m_Name
-      value: R_Elbow_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100054, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: R_Fingers_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100056, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: R_Knee_J
+      value: Spine2_J
       objectReference: {fileID: 0}
     - target: {fileID: 100060, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
       propertyPath: m_Name
@@ -363,34 +331,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: R_Shoulder_J
       objectReference: {fileID: 0}
-    - target: {fileID: 100064, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+    - target: {fileID: 100036, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
       propertyPath: m_Name
-      value: R_Toe_J
+      value: L_Leg_J
       objectReference: {fileID: 0}
-    - target: {fileID: 100066, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+    - target: {fileID: 100038, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
       propertyPath: m_Name
-      value: R_Wrist_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100070, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: Spine2_J
-      objectReference: {fileID: 0}
-    - target: {fileID: 100072, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Name
-      value: Spine3_J
+      value: L_Shoulder_J
       objectReference: {fileID: 0}
     - target: {fileID: 100074, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
       propertyPath: m_Name
       value: Spine_J
       objectReference: {fileID: 0}
-    - target: {fileID: 400068, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
+    - target: {fileID: 100028, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: L_Elbow_J
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 8fa4ee54d08acb643b16b62ad5cb6309, type: 2}
+    - target: {fileID: 100052, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: R_Elbow_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 100056, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: R_Knee_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: L_Knee_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: L_Ankle_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 100046, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: R_Ankle_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 100042, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: L_Wrist_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 100066, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: R_Wrist_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: R_Fingers_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: L_Fingers_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 100040, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: L_Toe_J
+      objectReference: {fileID: 0}
+    - target: {fileID: 100064, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
+      propertyPath: m_Name
+      value: R_Toe_J
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5092fca5890023f4cb63d3e455f9d396, type: 3}
 --- !u!4 &6036573925000294038 stripped

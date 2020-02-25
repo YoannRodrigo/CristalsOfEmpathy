@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class InterfaceManager : MonoBehaviour
@@ -23,6 +25,15 @@ public class InterfaceManager : MonoBehaviour
     public GameObject pauseButton;
     public GameObject inventoryButton;
 
+
+    public void ResetHUD()
+    {
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+    }
+    
     public void GameUI(bool active)
     {
         joystick.gameObject.SetActive(active);

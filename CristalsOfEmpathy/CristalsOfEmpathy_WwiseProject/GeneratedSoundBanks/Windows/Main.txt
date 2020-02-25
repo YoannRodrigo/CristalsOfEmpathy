@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	781908707	PlayIntro			\Default Work Unit\PlayIntro	
 	2560613409	Forains			\Default Work Unit\Forains	
 	2821508605	ButtonPressed			\Default Work Unit\ButtonPressed	
+	3086540886	StopAll			\Default Work Unit\StopAll	
 	3479155863	MainMusic			\Default Work Unit\MainMusic	
 	3658128575	MainMenuOpen			\Default Work Unit\MainMenuOpen	
 

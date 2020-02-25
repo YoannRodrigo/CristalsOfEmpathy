@@ -41,7 +41,7 @@ MonoBehaviour:
   - profilePnj: {fileID: 11400000, guid: 2e4e72dbf35ba1d4e95414a7079643d6, type: 2}
     emotion: 0
     isAnswerNeeded: 0
-    nextTextId: 0
+    nextTextId: -1
     sentence: "Le f\xEAtard se retourne en hoquetant. Il rote bri\xE8vement puis s'en
       va vers le comptoir pour acheter une nouvelle boisson apr\xE8s avoir ass\xE9ch\xE9
       son bock."
