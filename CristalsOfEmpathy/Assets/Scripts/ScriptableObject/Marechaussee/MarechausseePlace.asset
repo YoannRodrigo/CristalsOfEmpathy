@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: MarechausseePlace
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "H\xE9 vous l\xE0 ! Oui vous, l'\xE9tranger !"
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 2
+    sentence: "Un touriste oui, on les connait nous les touristes. Ils d\xE9barquent,
+      marchent sur nos fleurs et se moquent de notre village. Vous savez pourquoi
+      ils se moquent hein ?"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Parce qu'ils sont jaloux, jaloux de voir tout notre amour et la paix
+      qui r\xE8gne ici. Nous on est gentils ici, toi t'es un gentil ? "
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 4
+    sentence: Si tu le dis alors, on te croit ! Moi c'est Muien et lui c'est...
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 11
+    sentence: "Nuien. Un plaisir de te rencontrer ! Nous sommes les agents de la mar\xE9chauss\xE9e,
+      nous veillons \xE0 ce que Tilfinn reste un village paisible. "
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 6
+    sentence: "Ils ne comprennent pas qu'ici tout le monde s'entraide et s'appr\xE9cie."
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 13
+    sentence: "A croire que chez eux, ils se tirent dans les pattes ! Mais on est
+      membre de la mar\xE9chauss\xE9e nous, on veille au grain ! C'est nous la loi. "
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "T-t-t-t. Tu crois qu'on va s'en aller comme \xE7a ? "
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 15
+    sentence: "Tu sais pas \xE0 qui tu parles. Nous sommes les repr\xE9sentants de
+      la loi, ton pire cauchemar si tu continues \xE0 agir comme \xE7a !"
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 10
+    sentence: "Tu risques rien si tu nous donnes aucune raison de nous m\xE9fier de
+      toi."
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 18
+    sentence: "Alors veille bien \xE0 rester dans les clous parce qu'on est les deux
+      meilleurs agents de la mar\xE9chauss\xE9e !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 12
+    sentence: "T'as l'air d'\xEAtre gentil toi. Alors on va te confier un truc.."
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 20
+    sentence: "Hm-mh. Si t'as un probl\xE8me avec qui que ce soit dans le village.
+      Viens nous voir, on pourra t'aider."
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 14
+    sentence: "C'est surtout qu'on a eu des probl\xE8mes avec les voyageurs. Des vols,
+      des insultes publiques."
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 23
+    sentence: "R\xE9cemment, notre maire s'est fait prendre \xE0 part par un forain
+      qui vit au sud-est. Le bougre a invent\xE9 une histoire tir\xE9e par les cheveux
+      !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 16
+    sentence: "On t'a \xE0 l'oeil. "
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 17
+    sentence: "Tu veux pas savoir ce qui arrive \xE0 ceux qui filent du mauvais coton
+      !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 26
+    sentence: Alors baisse d'un ton !
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 19
+    sentence: "Moi c'est Nuien et lui c'est Muien. T'as l'air un peu p\xE2lot, on
+      va te laisser hein ?"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Ouais au moins on est s\xFBr que t'auras trop peur pour faire quoi
+      que ce soit. Allez, adieu on \xE0 a faire."
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 21
+    sentence: "C'est pas tout l'ami mais on a une affaire \xE0 r\xE9soudre."
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Une enqu\xEAte capitale pour Tilfinn. Un moumou s'est enfui, on doit
+      y aller !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 23
+    sentence: "Il a dit que c'\xE9tait un voleur. Notre maire ? Un malandrin ?!"
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 24
+    sentence: "H\xE9r\xE9sie ! Monsieur le maire est un exemple pour nous tous. Rien
+      qu'\xE0 entendre son discours.."
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: Bref, on va se revoir. On doit parler au maire, au revoir !
+  - profilePnj: {fileID: 0}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 26
+    sentence: "Allez on doit filer ! On a un moumou \xE0 retrouver."
+  - profilePnj: {fileID: 0}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Et si c'est toi qui l'a kidnapp\xE9, tu ferais mieux de le rendre en
+      vitesse. A la revoyure ordure !"
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 7
+    sentence: "Ils sont jaloux d'une bande de fous ? L\xE2chez-moi la grappe !"
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "Euh.. Je-.. O-.. Ne me faites pas de mal s'il vous pla\xEEt.."
+  playerAnswers:
+  - playerAnswers:
+    - text: "Oui je suis l\xE0 pour aider !"
+      nextTextId: 3
+      emotion: 0
+      influence: 1
+    - text: "Quel est le probl\xE8me avec les \"touristes\" ?"
+      nextTextId: 4
+      emotion: 2
+      influence: 1
+    - text: Laissez-moi tranquille.
+      nextTextId: 27
+      emotion: 3
+      influence: 1
+    - text: Ne me faites pas de mal.
+      nextTextId: 28
+      emotion: 1
+      influence: 1

@@ -1,5 +1,6 @@
 ﻿#region Using Directives
 
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,6 +21,12 @@ public class MainMenu : MonoBehaviour
     #endregion
 
     #region Methods
+
+    private void Start()
+    {
+        GeneralGameManager.instance.ResetValue();
+        EndGameManager.instance.ResetValues();
+    }
 
     public void PlayGameOnClick()
     {

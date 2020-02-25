@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: MarechausseeHDV
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Tiens, comme on se retrouve... Qu'est-ce que tu fais pr\xE8s de l'H\xF4tel
+      de ville comme \xE7a... Tu es jaloux de la prestance de notre nouveau maire
+      ?"
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Nous ne tol\xE9rerons pas la jalousie ici ! Tu ferais mieux de ne pas
+      te faire trop remarquer !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: J'aimerais te croire...
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "On garde un oeil sur toi... T'\xE9loignes pas trop du droit chemin
+      ! File maintenant !"
+  - profilePnj: {fileID: 11400000, guid: 0f5b77306fb19c242933d85aa241f307, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 5
+    sentence: "On tol\xE8re votre pr\xE9sence dans notre village d\xE9j\xE0 !"
+  - profilePnj: {fileID: 11400000, guid: f650d25473c781c4a87892cddb493e88, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Mais on ne tol\xE8rera pas ton comportement bien longtemps ! Tu peux
+      nous croire ! Va, file maintenant !"
+  playerAnswers:
+  - playerAnswers:
+    - text: Ce n'est pas de la jalousie !
+      nextTextId: 2
+      emotion: 4
+      influence: 1
+    - text: "Vous tol\xE9rez quelque chose ?"
+      nextTextId: 4
+      emotion: 3
+      influence: 1
+    - text: J'explore, c'est tout...
+      nextTextId: 2
+      emotion: 0
+      influence: 1

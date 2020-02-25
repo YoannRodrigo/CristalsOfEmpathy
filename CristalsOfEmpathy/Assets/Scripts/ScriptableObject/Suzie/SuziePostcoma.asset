@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: SuziePostcoma
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Ah bah c'est pas trop t\xF4t ! Tu te r\xE9veilles enfin ! Tr\xE9sor,
+      tu as loup\xE9 toute la soir\xE9e, je te la raconterais bien, mais c'\xE9tait
+      tellement extraordinaire que j'ai peur de ne pas pouvoir tout te retranscrire
+      \ ! En tout cas le nouveau maire \xE9tait incroyable, tu l'aurais vu danser...
+      Allez l\xE8ve toi, et rejoins moi, je suis d'humeur \xE0 danser et je ne veux
+      pas que l'euphorie de la nuit ne me quitte tout de suite !"
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Oh... D'accord... Apr\xE8s tout tu dois \xEAtre fatigu\xE9. On se voit
+      plus tard !"
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Je viens de te le dire ! une soir\xE9e exceptionnelle... Tout le monde
+      \xE9tait d\xE9cha\xEEn\xE9, je crois bien que le nouveau maire soit la meilleure
+      chose qui soit arriv\xE9e au village depuis bien longtemps ! C'est vraiment
+      dommage que tu sois venu ici pour t'endormir comme \xE7a, j'ai bien essay\xE9
+      de te r\xE9veiller mais rien \xE0 faire ! \r\n\r\nTu en fais une t\xEAte...
+      Je vais te laisser te reposer, reviens me voir plus tard !"
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Laisse moi deviner... tu n'es pas du matin c'est \xE7a ?"
+  - profilePnj: {fileID: 11400000, guid: 937a8fa1db818432cb4548e1f91d8f43, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Je te l'ai dit hier soir ... mais tu \xE9tais d\xE9j\xE0 ailleurs...
+      Je suis Suzie ! Tout le monde m'appr\xE9cie ici, mais repasse me voir quand
+      tu iras mieux... moi aussi j'ai besoin de me reposer de toute fa\xE7on !"
+  playerAnswers:
+  - playerAnswers:
+    - text: "Plus tard, peut-\xEAtre..."
+      nextTextId: 1
+      emotion: 0
+      influence: 1
+    - text: "Qu'est-ce qui s'est pass\xE9 ?"
+      nextTextId: 2
+      emotion: 2
+      influence: 1
+    - text: "Non merci \xE7a ira..."
+      nextTextId: 3
+      emotion: 3
+      influence: 1
+    - text: "Mais... qui \xEAtes-vous ?"
+      nextTextId: 4
+      emotion: 1
+      influence: 1

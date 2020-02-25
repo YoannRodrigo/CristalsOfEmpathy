@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: ConteurIdle
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Je suis occup\xE9 \xE0 deviser avec un fonctionnaire de l\u2019autre
+      monde.\r\nJe ne puis vous accorder de temps, je d\xE9voue celui-ci \xE0 l\u2019\xE9criture
+      de mon roman : un savant m\xE9lange entre drame et com\xE9die, repr\xE9sentant
+      au final ce qui garnit nos vies.\r\n"
+  - profilePnj: {fileID: 11400000, guid: 14ee041d3511241478a6802b65dec93b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Je ne d\xE9die mon temps qu'aux lettres et non aux hommes, adieu !"
+  playerAnswers: []

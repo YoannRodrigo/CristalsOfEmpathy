@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: GardienPeurIntro
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 7a8aa5edfa09840bcb32bd78aa22cb36, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Vous tremblez d\xE9j\xE0 ? Je ne suis que la mat\xE9rialisation de
+      ceux qui m'ont cr\xE9\xE9 vous savez... Ils vous ressemblent d'ailleurs beaucoup.
+      Auriez-vous peur de votre ombre ? Allons, reprenez-vous, si vous voulez r\xE9cup\xE9rer
+      le cristal, il va falloir faire preuve de sang froid ! Le cristal que vous cherchez
+      est craintif lui aussi, il n'ira pas dans les mains d'un \xEAtre en qui il n'a
+      pas confiance.\n"
+  - profilePnj: {fileID: 11400000, guid: 7a8aa5edfa09840bcb32bd78aa22cb36, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Il est temps de vous mettre \xE0 l'\xE9preuve jeune h\xE9ros, si je
+      peux vous appelez ainsi... Pour gagner ma confiance et celle du cristal, je
+      dois vous tester. Je dois \xEAtre certain que ce cristal sera en s\xFBret\xE9
+      avec vous, plus qu'il ne l'a \xE9t\xE9 par le pass\xE9. Vous sentez-vous capable
+      de relevez cette \xE9preuve, h\xE9ros ?"
+  - profilePnj: {fileID: 11400000, guid: 7a8aa5edfa09840bcb32bd78aa22cb36, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: "Vous l'expliquez vous g\xE2cherait la surprise... Je dois vous voir
+      r\xE9agir avec vos \xE9motions les plus brutes et naturelles. Il est temps h\xE9ros...
+      Sachez que ma lumi\xE8re vous accompagnera dans votre \xE9preuve, lorsque vous
+      serez plong\xE9 dans le manoir, ne m'oubliez pas. "
+  - profilePnj: {fileID: 11400000, guid: 7a8aa5edfa09840bcb32bd78aa22cb36, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Et n'ayez crainte, ma lumi\xE8re ne faiblira pas, mais gardez tout
+      de m\xEAme un oeil \xE0 rythme cardiaque... Bonne chance h\xE9ros !"
+  - profilePnj: {fileID: 11400000, guid: 7a8aa5edfa09840bcb32bd78aa22cb36, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Je vais prendre \xE7a pour un oui... Il est temps, h\xE9ros... Sachez
+      que ma lumi\xE8re vous accompagnera dans votre \xE9preuve, lorsque vous serez
+      plong\xE9(e) dans le manoir, ne m'oubliez pas. Et n'ayez crainte, ma lumi\xE8re
+      ne faiblira pas, mais gardez tout de m\xEAme un oeil \xE0 rythme cardiaque...
+      Bonne chance h\xE9ros !"
+  playerAnswers:
+  - playerAnswers:
+    - text: "Quelle \xE9preuve exactement ?"
+      nextTextId: 2
+      emotion: 4
+      influence: 0
+    - text: Aie-je vraiment le choix ?
+      nextTextId: 4
+      emotion: 4
+      influence: 0
+    - text: '...'
+      nextTextId: 4
+      emotion: 4
+      influence: 0

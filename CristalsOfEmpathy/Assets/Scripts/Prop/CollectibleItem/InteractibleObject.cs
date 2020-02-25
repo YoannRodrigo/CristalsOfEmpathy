@@ -15,7 +15,7 @@ public class InteractibleObject : InteractibleItem
 
         if (canBeTouch && collectibleItem.tag != "Berlingots")
         {
-            bool wasPickedUp = Inventory.inventoryInstance.Add(item);
+            bool wasPickedUp = Inventory.instance.Add(item);
             if (wasPickedUp) Destroy(collectibleItem);
         }
     }

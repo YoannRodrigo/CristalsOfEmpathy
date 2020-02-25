@@ -5,10 +5,10 @@ labels:
 - shader
 - Material
 - LowPoly
-timeCreated: 1489240511
-licenseType: Store
 ShaderImporter:
+  externalObjects: {}
   defaultTextures: []
+  nonModifiableTextures: []
   userData: 
   assetBundleName: 
   assetBundleVariant: 

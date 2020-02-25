@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: GardienAFin
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Bravo \xE0 vous h\xE9ros, il semblerait que l'\xE9quilibre \xE9motionnel
+      du village soit r\xE9tabli ! H\xE9lise, je vous laisse v\xE9rifier par vous
+      m\xEAme\u2026"
+  - profilePnj: {fileID: 11400000, guid: c70d73b84f6b80242a046921d3986b83, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 2
+    sentence: "Bien entendu Gardien, je vais m'en occuper tout de suite ! *H\xE9lise
+      disparait du champ de vision*"
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Quant \xE0 vous h\xE9ros\u2026 je crois que ce cristal vous revient
+      de droit, apr\xE8s tout, vous semblez digne d'un gardien\u2026 \xE0 moins que
+      vous pr\xE9f\xE9riez le rendre \xE0 sa propri\xE9taire ? La Gardienne des Sentiments
+      ?  je vous laisse le choix, h\xE9ros\u2026"
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: "Int\xE9ressant\u2026 vous d\xE9cidez seulement maintenant de r\xE9v\xE9ler
+      votre v\xE9ritable nature\u2026 peut-\xEAtre m\xE9riteriez vous un autre cristal
+      apr\xE8s tout\u2026"
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: "Allons ne soyez pas si craintif\u2026 ce n'est pas l\xE0, la voie que
+      vous avez choisi jeune h\xE9ros.. mais peut-\xEAtre est-il plus sage de r\xE9agir
+      ainsi face \xE0 ce cristal\u2026"
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: "Bien s\xFBr h\xE9ros, je me doutais que telle serait votre r\xE9ponse\u2026
+      mais vous devez garder \xE0 l'esprit que la Gardienne des Sentiments n'est pas
+      infaillible\u2026"
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 0
+    sentence: "Je ne peux vous bl\xE2mer d'\xEAtre curieux face \xE0 tant de pouvoirs,
+      bien d'autres avant vous ont succomb\xE9, seulement j'en attendais plus d'un
+      h\xE9ros au coeur pur\u2026"
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "H\xE9lise vous revoil\xE0, je crois que ce cristal vous appartient\u2026
+      prenez en soin cette fois-ci ! \r\n*le gardien se d\xE9mat\xE9rialise et rejoint
+      le cristal*"
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: "Attendez une minute\u2026 bien s\xFBr que ce cristal me revient ! c'est
+      moi qui ai r\xE9solu l'\xE9nigme !"
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 4
+    sentence: "Je crois que j'ai eu assez d'ennuis comme \xE7a, je ne pr\xE9f\xE8re
+      pas y toucher..."
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 5
+    sentence: "Me revenir ? \xE0 moi ?  Mais c'est \xE0 H\xE9lise que doit revenir
+      le cristal\u2026 c'est elle la Gardienne des Sentiments !"
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 6
+    sentence: "Je ne peux pas imaginer toutes les opportunit\xE9s que pourraient m'offrir
+      ce cristal\u2026 il faudrait que j'en parle aux mages."
+  playerAnswers:
+  - playerAnswers:
+    - text: "Je m\xE9rite ce cristal !\r\n"
+      nextTextId: 8
+      emotion: 4
+      influence: 0
+    - text: "Je pr\xE9f\xE8re ne pas y toucher...\r\n"
+      nextTextId: 9
+      emotion: 4
+      influence: 0
+    - text: "Il doit revenir \xE0 H\xE9lise !\r\n"
+      nextTextId: 10
+      emotion: 4
+      influence: 0
+    - text: "\xC7a pourrait int\xE9resser les mages !\r\n"
+      nextTextId: 11
+      emotion: 4
+      influence: 0

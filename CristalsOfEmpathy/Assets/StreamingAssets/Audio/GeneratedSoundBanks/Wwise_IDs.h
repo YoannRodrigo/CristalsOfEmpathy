@@ -14,16 +14,22 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BUTTONPRESSED = 2821508605U;
+        static const AkUniqueID FORAINS = 2560613409U;
         static const AkUniqueID MAINMENUOPEN = 3658128575U;
+        static const AkUniqueID MAINMUSIC = 3479155863U;
+        static const AkUniqueID PLAYINTRO = 781908707U;
         static const AkUniqueID STARTAVERSIONMUSIC = 5682657U;
+        static const AkUniqueID STARTCURIOSITYMUSIC = 3142087295U;
         static const AkUniqueID STARTFEARMUSIC = 20033646U;
         static const AkUniqueID STARTLOVEMUSIC = 2486664568U;
+        static const AkUniqueID STOPALL = 3086540886U;
     } // namespace EVENTS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID AVERSION = 3998377122U;
+        static const AkUniqueID CURIOSITY = 396009140U;
         static const AkUniqueID FEAR = 3133847859U;
         static const AkUniqueID LOVE = 271565449U;
         static const AkUniqueID MAIN = 3161908922U;

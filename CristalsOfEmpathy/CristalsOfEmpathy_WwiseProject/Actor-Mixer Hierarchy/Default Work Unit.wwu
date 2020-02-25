@@ -101,6 +101,9 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<Sound Name="MainMenu" ID="{6E24405E-4910-4DCB-96C1-ADF79468B2FD}" ShortID="483725207">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
@@ -120,6 +123,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Emotion Amour" ID="{F619B40D-DA13-4F04-B397-BABF81F4ED3A}" ShortID="656906680">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
@@ -139,6 +145,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="CoE - Emotion - Aversion et Dégoût" ID="{CDB4FA23-BB11-4C70-8423-8D2EAD683044}" ShortID="280235841">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
@@ -158,6 +167,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="CoE - Emotion - Curiosité et Surprise" ID="{F51F4209-F04B-4047-8026-657AAB74E711}" ShortID="658784992">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
@@ -171,12 +183,29 @@
 							<Language>SFX</Language>
 							<AudioFile>CoE - Emotion - Curiosité et Surprise.wav</AudioFile>
 						</AudioFileSource>
+						<AudioFileSource Name="CoE - chill (version2)" ID="{49C17FBA-52B5-49ED-82C4-82BAD0C33FAE}" ShortID="465594146">
+							<Language>SFX</Language>
+							<AudioFile>CoE - chill (version2).wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="955481509"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="CoE - Forains" ID="{888FC545-5D73-4A52-AB3B-FCF72492ACE9}" ShortID="25567458">
+							<Language>SFX</Language>
+							<AudioFile>CoE - Forains.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="282866249"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="CoE - Emotion - Curiosité et Surprise" ID="{4A26720D-36EE-4DF1-9623-3E0FC4FF4647}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="CoE - Emotion - Peur" ID="{BBF739B7-BB28-4D63-9946-E4C64B0E76AC}" ShortID="5804419">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
@@ -193,6 +222,69 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="CoE - Emotion - Peur" ID="{64292B30-910C-4C61-937F-EF9B6EB1C1CD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CoE - chill (version2)" ID="{0D9DF276-D672-4E12-8D29-454245E70E9C}" ShortID="538755198">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD0BE872-5ACF-4851-97A5-83A6ABE16895}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CoE - chill (version2)" ID="{70D5CCF2-4D33-4F79-966D-4D1B0994AE16}" ShortID="955481509">
+							<Language>SFX</Language>
+							<AudioFile>CoE - chill (version2).wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CoE - chill (version2)" ID="{70D5CCF2-4D33-4F79-966D-4D1B0994AE16}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CoE - Forains" ID="{43F6F5F2-48C1-465B-B4A8-101F010C88B4}" ShortID="23065781">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD0BE872-5ACF-4851-97A5-83A6ABE16895}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CoE - Forains" ID="{E9747466-94AA-45F0-A4E8-3527F314731A}" ShortID="282866249">
+							<Language>SFX</Language>
+							<AudioFile>CoE - Forains.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CoE - Forains" ID="{E9747466-94AA-45F0-A4E8-3527F314731A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="coeIntro3" ID="{D4FAEC71-A296-496C-B90F-B544C79E4D5A}" ShortID="296892025">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{73B8BC10-5E73-4585-B2F0-3D239C6ACFB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CD0BE872-5ACF-4851-97A5-83A6ABE16895}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="coeIntro3" ID="{C002F801-D62B-4DA1-AE25-534EF78FE298}" ShortID="399428543">
+							<Language>SFX</Language>
+							<AudioFile>coeIntro3.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="coeIntro3" ID="{C002F801-D62B-4DA1-AE25-534EF78FE298}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

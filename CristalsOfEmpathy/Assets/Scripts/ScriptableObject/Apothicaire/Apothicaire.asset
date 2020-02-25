@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: Apothicaire
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Bonjour \xE0 vous voyageur ! Je me pr\xE9sente, je suis Hippolyte,
+      l'apothicaire de Tilfinn."
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 5
+    sentence: "Vous \xEAtes curieux. J'aime bien \xE7a ! Pour tout vous dire, tout
+      ce qu'il se passe au village est \xE9trange."
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 6
+    sentence: "Que vous \xEAtes aimable, c'est exactement ce go\xFBt pour le bien-\xEAtre
+      des autres qui m'a pouss\xE9 \xE0 devenir apothicaire."
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "Loin de l\xE0, je pr\xE9pare des potions et des rem\xE8des pour gu\xE9rir
+      les maux des habitants. Je n'empoisonne personne, n'ayez crainte ! C'est autre
+      chose qui nous corrompt."
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "Vous \xEAtes m\xE9prisant mais vous avez raison.."
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "La sant\xE9 des habitants n'est pas remise en cause mais il s'agit
+      plut\xF4t de leur \xE9tat d'esprit.. Des relations qui ont \xE9volu\xE9es d'une
+      fa\xE7on illogique.. Mais, est-ce que tout doit \xEAtre logique ?"
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 8
+    sentence: "En effet je pourrais avoir besoin d'aide ! Les mages m'ont demand\xE9
+      de travailler sur un rem\xE8de pour gu\xE9rir les villageois des maux qui les
+      frappent. Ils vivent au nord-est d'ici. "
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Attention, \xE0 premi\xE8re vue, ils peuvent para\xEEtre tr\xE8s \xE9tranges
+      mais, m\xEAme s'ils tiennent des propos d\xE9routants, je suis persuad\xE9 qu'ils
+      \u0153uvrent pour la p\xE9rennit\xE9 du village. Selon eux.."
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 9
+    sentence: "Nous sommes tous frapp\xE9s par la folie de l'amour. Ma ch\xE8re Suzie
+      a compl\xE8tement chang\xE9e."
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "J'ai donc pr\xE9par\xE9 diff\xE9rentes potions pour savoir si nos sentiments
+      sont alt\xE9r\xE9s par quelque chose. Il faudrait leur apporter le plus vite
+      possible pour qu'ils puissent v\xE9rifier si elles fonctionnent !"
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Les mages m'en ont parl\xE9 mais je n'ai pas compris grand chose..
+      En tout cas, je n'ai jamais rien vu de tel ! Seule la science peut nous aider.
+      Ces mythes ne feront que nous divertir !"
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Merci \xE0 vous. Pour trouver les mages, vous devez trouver leur campement
+      au nord-est et r\xE9ussir \xE0 les tirer de leurs chaumi\xE8res !"
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Vous \xEAtes perfide. Connaissez-vous seulement quelque chose \xE0
+      l'amour ? Avez-vous d\xE9j\xE0 \xE9prouv\xE9, en voyant une personne, ce sentiment
+      si puissant qui vous fait fondre ! "
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "J'\xE9tais pr\xEAt \xE0 tout pour elle. Je fr\xE9missais \xE0 chacun
+      de ses regards, chacun de ses sourires. Une fusion des esprits ! Tous les instants,
+      qui peuvent para\xEEtre banals, deviennent des \xE9clats de toute beaut\xE9."
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "Une maladie, un mal\xE9fice, une force ext\xE9rieure. Rien d'autre
+      n'aurait pu briser notre amour.. Il \xE9tait si pur.. "
+  - profilePnj: {fileID: 11400000, guid: ec013c43b35db7e45a457b3afa710f8e, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: Vous n'y comprenez rien.. Laissez-moi tranquille.
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Bonjour. Vous avez remarqu\xE9 quelque chose d'\xE9trange dans le village
+      ces derniers temps ?"
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 3
+    sentence: "Apothi-quoi ? Vous fa\xEEtes des poisons c'est \xE7a ? "
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 4
+    sentence: "Vous avez arr\xEAt\xE9 de travailler ou quoi ? Ils sont tous malades
+      ! "
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 10
+    sentence: "C'est pas avec des mixtures que vous allez r\xE9soudre ce probl\xE8me.
+      Vous avez entendu parler des cristaux d'\xE9motions ? "
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 12
+    sentence: "Vous allez faire boire des potions \xE0 tout le monde ? Vous faites
+      piti\xE9.. Tournez la page, \xE7a sera mieux pour vous !"
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 15
+    sentence: "Passez \xE0 autre chose. C'est pas en la droguant que \xE7a ira mieux.
+      C'est m\xEAme horrible de faire \xE7a ! "
+  playerAnswers:
+  - playerAnswers:
+    - text: Vous avez vu quelque chose... ?
+      nextTextId: 16
+      emotion: 2
+      influence: 1
+    - text: 'Je peux vous aider ? '
+      nextTextId: 3
+      emotion: 0
+      influence: 1
+    - text: Apothi-quoi ?
+      nextTextId: 17
+      emotion: 1
+      influence: 1
+    - text: "Vous \xEAtes pas dou\xE9..."
+      nextTextId: 18
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: Il y a plus important !
+      nextTextId: 19
+      emotion: 3
+      influence: 1
+    - text: Je vais leur apporter !
+      nextTextId: 11
+      emotion: 0
+      influence: 1
+    - text: "Vous faites piti\xE9.. "
+      nextTextId: 20
+      emotion: 3
+      influence: 1
+  - playerAnswers:
+    - text: "Que s'est-il pass\xE9 ? "
+      nextTextId: 14
+      emotion: 2
+      influence: 1
+    - text: "Passez \xE0 autre chose."
+      nextTextId: 21
+      emotion: 3
+      influence: 1

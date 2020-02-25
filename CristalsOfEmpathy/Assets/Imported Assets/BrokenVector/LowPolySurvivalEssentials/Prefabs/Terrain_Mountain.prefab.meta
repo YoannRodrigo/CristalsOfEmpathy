@@ -5,9 +5,8 @@ labels:
 - survival
 - environment
 - terrain
-timeCreated: 1518099041
-licenseType: Store
-NativeFormatImporter:
+PrefabImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

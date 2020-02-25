@@ -27,6 +27,12 @@
 				</Event>
 				<Event Name="StartLoveMusic" ID="{96669FF5-F098-4FD3-97CF-E3CD24747F41}">
 					<ChildrenList>
+						<Action Name="" ID="{A70369A3-F687-4C8F-B4BD-7EC997881309}" ShortID="364700642">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
 						<Action Name="" ID="{D1D17121-0EBD-44FA-91F2-E661EDCFF9D0}" ShortID="1030121604">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -38,6 +44,12 @@
 				</Event>
 				<Event Name="StartFearMusic" ID="{CD709F50-04AF-4D41-A80F-C94D5240DF84}">
 					<ChildrenList>
+						<Action Name="" ID="{F88670ED-A63B-4752-88B2-662E1FDFE957}" ShortID="139215875">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
 						<Action Name="" ID="{E96DD7C3-DE94-4531-BDA4-E154D6A8AA3E}" ShortID="709058596">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -49,12 +61,100 @@
 				</Event>
 				<Event Name="StartAversionMusic" ID="{073E36DE-5888-47A6-A645-24781363B304}">
 					<ChildrenList>
+						<Action Name="" ID="{8CF00DBF-CECA-47BB-9B89-A6F63562A778}" ShortID="811031833">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
 						<Action Name="" ID="{8B6D274E-68AA-43ED-BE21-00A367531B23}" ShortID="900673973">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="CoE - Emotion - Aversion et Dégoût" ID="{CDB4FA23-BB11-4C70-8423-8D2EAD683044}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
 								</Reference>
 							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MainMusic" ID="{CB20FC8A-9B11-40FD-B18B-7F3D2099ACA0}">
+					<ChildrenList>
+						<Action Name="" ID="{0283F22C-4AE1-41DA-BF8C-161E3D624326}" ShortID="290640935">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{BD08D1AD-2B72-40B2-B9BB-408E789978B0}" ShortID="44514743">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoE - chill (version2)" ID="{0D9DF276-D672-4E12-8D29-454245E70E9C}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Forains" ID="{47768BB7-ABDB-4BFE-9493-3298569458B3}">
+					<ChildrenList>
+						<Action Name="" ID="{C51F9FA3-F9BA-4CB4-BB91-27DDA450BBEA}" ShortID="1038057568">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoE - Forains" ID="{43F6F5F2-48C1-465B-B4A8-101F010C88B4}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EF6DCB41-61A1-4FBE-B3DD-E5A59947B7B5}" ShortID="501131296">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoE - chill (version2)" ID="{0D9DF276-D672-4E12-8D29-454245E70E9C}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StartCuriosityMusic" ID="{55E1CC85-5D14-4F11-9F89-8C53D9E5A2F8}">
+					<ChildrenList>
+						<Action Name="" ID="{FFE6F3CC-F2AB-4A61-BBAA-F4737C857F7F}" ShortID="151528125">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{42E601D7-0DDD-4925-9030-66DD4DDA9494}" ShortID="602018508">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoE - Emotion - Curiosité et Surprise" ID="{F51F4209-F04B-4047-8026-657AAB74E711}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayIntro" ID="{ABAA63AD-CBE3-4E41-87F3-D1330AE46145}">
+					<ChildrenList>
+						<Action Name="" ID="{92C8FBE4-CF13-4BFC-AA42-110AF446A6D4}" ShortID="1024428064">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{CB9BC151-CD95-45B6-BE0E-0217734588AF}" ShortID="26501358">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="coeIntro3" ID="{D4FAEC71-A296-496C-B90F-B544C79E4D5A}" WorkUnitID="{329851EE-C28B-43E3-A703-A0324ACC76B8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopAll" ID="{08CEB2FD-EB3C-4C12-9116-8C0DCE919D54}">
+					<ChildrenList>
+						<Action Name="" ID="{310645CB-9C4E-4912-BEBE-BB55BCEB7333}" ShortID="918013560">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>

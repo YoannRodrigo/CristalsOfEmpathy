@@ -4,9 +4,8 @@ labels:
 - lowpoly
 - survival
 - environment
-timeCreated: 1515783713
-licenseType: Store
-NativeFormatImporter:
+PrefabImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

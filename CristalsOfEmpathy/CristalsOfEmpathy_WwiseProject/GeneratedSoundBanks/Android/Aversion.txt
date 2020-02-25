@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	5682657	StartAversionMusic			\Default Work Unit\StartAversionMusic	
+	3086540886	StopAll			\Default Work Unit\StopAll	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	471958184	CoE - Emotion - Aversion et Dégoût	C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Android\SFX\CoE - Emotion - Aversion et Dégoût_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CoE - Emotion - Aversion et Dégoût		10733136
+	471958184	CoE - Emotion - Aversion et Dégoût	C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Android\SFX\CoE - Emotion - Aversion et Dégoût_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\CoE - Emotion - Aversion et Dégoût		10733136
 

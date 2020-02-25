@@ -15,6 +15,7 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     public GameObject waterCanonPrefab;
     public TextMeshProUGUI scoreText;
     public GameObject victoryScreen;
+    public GameObject loseScreen;
     public Animator enigmaAnimator;
     public LevelChanger levelChanger;
     private static readonly int isGiveUpWindowsNeeded = Animator.StringToHash("isGiveUpWindowsNeeded");
@@ -40,6 +41,7 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     private void Start()
     {
         AkSoundEngine.PostEvent("StartAversionMusic", gameObject);
+        LevelChanger.instance.FadeOut();
     }
     public void UpdateScore(float pointToAdd)
     {
@@ -54,14 +56,25 @@ public class AversionEnigmaMenuManager : MonoBehaviour
 
     private void Update()
     {
+        if (currentScore <= -1500)
+        {
+            loseScreen.SetActive(true);
+            StartCoroutine(WaitToReturnAversionEnigma());
+        }
         switch (gameState)
         {
             case GameState.TOMATO:
-                if (!currentTomato) currentTomato = Instantiate(tomatoPrefab, spawnerTransform);
+                if (!currentTomato)
+                {
+                    currentTomato = Instantiate(tomatoPrefab, spawnerTransform);
+                }
                 waterCanonPrefab.SetActive(false);
                 break;
             case GameState.WATER:
-                if (currentTomato) Destroy(currentTomato);
+                if (currentTomato)
+                {
+                    Destroy(currentTomato);
+                }
                 waterCanonPrefab.SetActive(true);
                 break;
         }
@@ -110,7 +123,13 @@ public class AversionEnigmaMenuManager : MonoBehaviour
     private IEnumerator WaitToReturn()
     {
         yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(0);
+        LevelChanger.instance.ChangeToLevelWithFade("CreditScene");
+    }
+
+    private IEnumerator WaitToReturnAversionEnigma()
+    {
+        yield return new WaitForSeconds(2);
+        LevelChanger.instance.ChangeToLevelWithFade("GuardianScreen");
     }
 
     #endregion

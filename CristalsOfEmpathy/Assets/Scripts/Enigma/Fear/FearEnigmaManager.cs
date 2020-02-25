@@ -12,7 +12,13 @@ public class FearEnigmaManager : MonoBehaviour
     public TextMeshProUGUI textMeshProUgui;
     private float timeSinceLastBeatRise;
     public GameObject winScreen;
+    public GameObject loseScreen;
 
+    private void Start()
+    {
+        LevelChanger.instance.FadeOut();
+    }
+    
     public void SetLastGhost(GameObject lastGhost)
     {
         this.lastGhost = lastGhost;
@@ -42,13 +48,24 @@ public class FearEnigmaManager : MonoBehaviour
 
         if (currentBeatHeart > 180)
         {
-            print("Dead");
+            Death();
         }
     }
 
+    public void Death()
+    {
+        loseScreen.SetActive(true);
+        StartCoroutine(WaitToReturnFearEnigma());
+    }
     private IEnumerator WaitToReturn()
     {
         yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(0);
+        LevelChanger.instance.ChangeToLevelWithFade("CreditScene");
+    }
+
+    private IEnumerator WaitToReturnFearEnigma()
+    {
+        yield return new WaitForSeconds(2);
+        LevelChanger.instance.ChangeToLevelWithFade("GuardianScreen");
     }
 }

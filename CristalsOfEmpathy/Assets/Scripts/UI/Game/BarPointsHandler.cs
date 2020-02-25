@@ -9,13 +9,14 @@ public class BarPointsHandler : MonoBehaviour
 {
     #region Member Variables
 
-    private static BarPointsHandler _instance;
+    public static BarPointsHandler _instance;
 
     private static int _loveBarPoints;
     private static int _fearBarPoints;
     private static int _curiosityBarPoints;
     private static int _aversionBarPoints;
-
+    
+    
     public enum Emotions
     {
         LOVE,
@@ -24,6 +25,11 @@ public class BarPointsHandler : MonoBehaviour
         AVERSION,
         NONE
     }
+
+
+    #endregion
+
+    #region Methods
 
     public int LoveBarPoints
     {
@@ -59,7 +65,9 @@ public class BarPointsHandler : MonoBehaviour
         if (_instance != null && _instance != this)
             Destroy(gameObject);
         else
+        {
             _instance = this;
+        }
     }
 
     public static void UpdateEmotionPoints(Emotions emotion, int influence)
@@ -85,9 +93,15 @@ public class BarPointsHandler : MonoBehaviour
         }
     }
 
-    #endregion
-
-    #region Methods
-
+    public static Emotions GetMaxBar()
+    {
+        int maxNum = Mathf.Max(_loveBarPoints, _aversionBarPoints, _curiosityBarPoints, _fearBarPoints);
+        
+        return maxNum == _fearBarPoints ? Emotions.FEAR : 
+            maxNum == _curiosityBarPoints ? Emotions.CURIOSITY : 
+            maxNum == _aversionBarPoints ? Emotions.AVERSION :
+            maxNum == _loveBarPoints ? Emotions.LOVE : Emotions.NONE;
+    }
+    
     #endregion
 }

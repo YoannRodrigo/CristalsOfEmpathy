@@ -33,6 +33,7 @@ public class LoveEnigmaManager : MonoBehaviour
     public GameObject hearth;
     public Animator canvasAnimator;
     public GameObject victoryScreen;
+    public GameObject loseScreen;
     public LevelChanger levelChanger;
 
     private int currentLeftPersonna;
@@ -51,6 +52,7 @@ public class LoveEnigmaManager : MonoBehaviour
 
     private void Start()
     {
+        LevelChanger.instance.FadeOut();
         AkSoundEngine.PostEvent("StartLoveMusic", gameObject);
         currentCouple = couples[0];
         ChooseRandomPersonna();
@@ -150,6 +152,11 @@ public class LoveEnigmaManager : MonoBehaviour
             isCoupleOk = true;
             nbVictory++;
         }
+        else
+        {
+            loseScreen.SetActive(true);
+            StartCoroutine(WaitToReturnLoveEnigma());
+        }
     }
 
     public void DialogueOnClic()
@@ -208,8 +215,15 @@ public class LoveEnigmaManager : MonoBehaviour
     private IEnumerator WaitToReturn()
     {
         yield return new WaitForSeconds(2);
-        levelChanger.ChangeToLevelWithFade(0);
+        LevelChanger.instance.ChangeToLevelWithFade("CreditScene");
     }
+
+    private IEnumerator WaitToReturnLoveEnigma()
+    {
+        yield return new WaitForSeconds(2);
+        LevelChanger.instance.ChangeToLevelWithFade("GuardianScreen");
+    }
+
 
     #endregion
 }

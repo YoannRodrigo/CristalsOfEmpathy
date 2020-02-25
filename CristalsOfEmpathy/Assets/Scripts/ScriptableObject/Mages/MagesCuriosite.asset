@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: MagesCuriosite
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "Voici notre h\xE9ros ! Avez-vous fait de belles rencontres ? \r\n"
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 2
+    sentence: "Allons Arthos, nous avons de plus importants sujets \xE0 \xE9voquer.\r\n"
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Cette personne ne peut nous aider ! Nous devons nous d\xE9brouiller
+      tout seul. Trouvons les runes avant qu'il ne soit trop tard."
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 4
+    sentence: "Parfait, vous avez su faire preuve d'une grande curiosit\xE9. C'est
+      tr\xE8s bien, nous pourrons les utiliser pour des exp\xE9riences capitales.\r\n"
+  - profilePnj: {fileID: 11400000, guid: 1a809fcb7782f4e7ba291ee6e43bb3c8, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 6
+    sentence: "Surtout, ne les laissez pas entre les mains de la Gardienne ! Cette
+      goinfre a mis le monde le monde en p\xE9ril par simple gourmandise !"
+  - profilePnj: {fileID: 11400000, guid: 2057769e81cbb42a59e0c7930866036b, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 6
+    sentence: "Elle servent \xE0 invoquer les autres mages du village. Nous avons
+      besoin d'eux pour r\xE9tablir l'\xE9quilibre du monde."
+  - profilePnj: {fileID: 11400000, guid: 4bd8ddc6d7b3140f1ad5bc47364dc4df, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 7
+    sentence: "Cependant, vous n'avez pas trouv\xE9 de cristal.. Malgr\xE9 vos efforts..
+      Nous sommes perdus.."
+  - profilePnj: {fileID: 11400000, guid: e48169bde31cb954abe59385849269a2, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: -1
+    sentence: "*Votre vision se trouble, un esprit appara\xEEt* "
+  playerAnswers:
+  - playerAnswers:
+    - text: "J'ai r\xE9cup\xE9r\xE9 les berlingots "
+      nextTextId: 3
+      emotion: 4
+      influence: 0
+    - text: 'Quelles runes ? '
+      nextTextId: 5
+      emotion: 4
+      influence: 0

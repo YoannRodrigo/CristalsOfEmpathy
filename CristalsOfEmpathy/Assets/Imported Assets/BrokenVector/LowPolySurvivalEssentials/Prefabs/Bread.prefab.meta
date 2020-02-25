@@ -4,9 +4,8 @@ labels:
 - lowpoly
 - survival
 - food
-timeCreated: 1515783715
-licenseType: Store
-NativeFormatImporter:
+PrefabImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

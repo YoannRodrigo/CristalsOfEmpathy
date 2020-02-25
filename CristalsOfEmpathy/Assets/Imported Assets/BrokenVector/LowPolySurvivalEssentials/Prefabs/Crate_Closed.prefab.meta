@@ -3,9 +3,8 @@ guid: 319f93e12d7de1e4fa6298fb9e7ff203
 labels:
 - lowpoly
 - survival
-timeCreated: 1515783963
-licenseType: Store
-NativeFormatImporter:
+PrefabImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

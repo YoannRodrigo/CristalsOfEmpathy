@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38542b64947db0644906e28b4edf71fc, type: 3}
+  m_Name: GardienAmourIntro
+  m_EditorClassIdentifier: 
+  dialogues:
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 1
+    sentence: "H\xE9ros, oui c'est \xE0 vous que je m'adresse ! Je suis le gardien
+      du cristal de l'amour et j'ai besoin de vous pour le reconstituer. En l'\xE9tat
+      il ne peut \xEAtre d'aucune utilit\xE9 \xE0 la Gardienne des Sentiments."
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 2
+    sentence: "Autrefois, un amour pur unissait les gens de ce village paisible, et
+      il est maintenant temps pour vous de r\xE9tablir l'\xE9quilibre en ces lieux..."
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 0
+    sentence: "Je vous demande un dernier effort h\xE9ros. Vous devez aider les habitants
+      de Tilfinn \xE0 retrouver leurs \xE2mes soeurs, c'est le seul moyen de reconstituer
+      le cristal bris\xE9..."
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "Ne vous pr\xE9cipitez pas, il vous faut \xEAtre calme pour r\xE9soudre
+      ces \xE9nigmes... Souhaitez-vous commencer ?"
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "Il vous faudra r\xE9pondre \xE0 une s\xE9rie d'\xE9nigmes qui concerne
+      les couples originels de ce village... Souhaitez-vous commencer ?"
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 0
+    nextTextId: 6
+    sentence: "Le cristal de l'amour a un grand pouvoir, et entre de mauvaises mains,
+      il peut \xEAtre dangereux. Avant que Prosper ne le r\xE9cup\xE8re, il r\xE9gnait
+      un amour pur entre les habitants..."
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "C'est \xE0 vous maintenant de le restaurer... Souhaitez-vous commencer
+      ?"
+  - profilePnj: {fileID: 11400000, guid: 5350ff3116d00c94281a5c90a30f97d4, type: 2}
+    emotion: 0
+    isAnswerNeeded: 1
+    nextTextId: 1
+    sentence: "Je vous conseille d'aller leur parler dans ce cas, cela vous aidera
+      pour les \xE9nigmes qui vont suivre... Souhaitez-vous tout de m\xEAme continuer
+      ?"
+  playerAnswers:
+  - playerAnswers:
+    - text: Je veux aider ! Laissez moi faire !
+      nextTextId: 3
+      emotion: 4
+      influence: 0
+    - text: Que dois-je faire Gardien ?
+      nextTextId: 4
+      emotion: 4
+      influence: 0
+    - text: Un amour pur ?
+      nextTextId: 5
+      emotion: 4
+      influence: 0
+    - text: Et si je ne connais pas tous les habitants du village ?
+      nextTextId: 7
+      emotion: 4
+      influence: 0
+  - playerAnswers:
+    - text: "*Commencer l'\xE9nigme*"
+      nextTextId: -1
+      emotion: 4
+      influence: 0

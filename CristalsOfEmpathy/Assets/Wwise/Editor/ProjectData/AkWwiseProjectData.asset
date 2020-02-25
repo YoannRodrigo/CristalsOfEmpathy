@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: cf5eedc6e53c154382ce4716c863ce4a
     GuidInternal: 
-    m_lastTime: -8586221281609314541
+    m_lastTime: -8586192356839749503
     List:
     - name: Aversion
       guid: edddd185966c1a46ab6cd745d316d0f8
@@ -42,6 +42,15 @@ MonoBehaviour:
       - ElementName: Aversion
         ObjectType: 7
       Path: Default Work Unit\Aversion
+    - name: Curiosity
+      guid: 149f1379a3320c498f8fdf8d1b171350
+      id: 396009140
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Curiosity
+        ObjectType: 7
+      Path: Default Work Unit\Curiosity
     - name: Fear
       guid: 2f9b78e33088a04db6c5a215dfa23a7b
       id: 3133847859
@@ -74,7 +83,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 71960e2e778eb049be87a6930ee0f61e
     GuidInternal: 
-    m_lastTime: -8586221304092954563
+    m_lastTime: -8586192357079746030
     List:
     - name: ButtonPressed
       guid: 5ad9bfad15916d4ab48376984b479149
@@ -85,6 +94,18 @@ MonoBehaviour:
       - ElementName: ButtonPressed
         ObjectType: 3
       Path: Default Work Unit\ButtonPressed
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Forains
+      guid: b78b7647dbabfe4b94933298569458b3
+      id: 2560613409
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Forains
+        ObjectType: 3
+      Path: Default Work Unit\Forains
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -100,6 +121,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: MainMusic
+      guid: 8afc20cb119bfd40b18b7f3d2099aca0
+      id: 3479155863
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MainMusic
+        ObjectType: 3
+      Path: Default Work Unit\MainMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayIntro
+      guid: ad63aaabe3cb414e87f3d1330ae46145
+      id: 781908707
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayIntro
+        ObjectType: 3
+      Path: Default Work Unit\PlayIntro
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: StartAversionMusic
       guid: de363e078858a647a64524781363b304
       id: 5682657
@@ -109,6 +154,18 @@ MonoBehaviour:
       - ElementName: StartAversionMusic
         ObjectType: 3
       Path: Default Work Unit\StartAversionMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartCuriosityMusic
+      guid: 85cce155145d114f9f898c53d9e5a2f8
+      id: 3142087295
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StartCuriosityMusic
+        ObjectType: 3
+      Path: Default Work Unit\StartCuriosityMusic
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -133,6 +190,18 @@ MonoBehaviour:
       - ElementName: StartLoveMusic
         ObjectType: 3
       Path: Default Work Unit\StartLoveMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopAll
+      guid: fdb2ce083ceb124c91168c0dce919d54
+      id: 3086540886
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StopAll
+        ObjectType: 3
+      Path: Default Work Unit\StopAll
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -166,7 +235,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /CristalsOfEmpathy_WwiseProject
-  - /CristalsOfEmpathy_WwiseProject/SoundBanks
-  - /CristalsOfEmpathy_WwiseProject/SoundBanks/Default Work Unit
+  - /CristalsOfEmpathy_WwiseProject/Events
+  - /CristalsOfEmpathy_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

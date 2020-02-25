@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3086540886	StopAll			\Default Work Unit\StopAll	
+	3142087295	StartCuriosityMusic			\Default Work Unit\StartCuriosityMusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	178422844	CoE - Emotion - Curiosité et Surprise	C:\Users\yoann\Documents\Master\CristalOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy\CristalsOfEmpathy_WwiseProject\.cache\Mac\SFX\CoE - Emotion - Curiosité et Surprise_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\CoE - Emotion - Curiosité et Surprise		13537504
+

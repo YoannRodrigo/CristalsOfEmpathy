@@ -1,5 +1,6 @@
 ﻿#region Using Directives
 
+using System;
 using UnityEngine;
 
 #endregion
@@ -8,10 +9,15 @@ public class SplashScreenToGame : MonoBehaviour
 {
     #region Methods
 
+    private void Start()
+    {
+        LevelChanger.instance.FadeOut();
+    }
+
     private void Update()
     {
         timeSinceSceneStarted += Time.deltaTime;
-        if (timeSinceSceneStarted > TIME_MAX_BEFORE_NEXT_SCENE) levelChanger.ChangeToLevelWithFade(FIRST_GAME_SCENE_ID);
+        if (timeSinceSceneStarted > TIME_MAX_BEFORE_NEXT_SCENE) LevelChanger.instance.ChangeToLevelWithFade("IntroMovScene");
     }
 
     #endregion

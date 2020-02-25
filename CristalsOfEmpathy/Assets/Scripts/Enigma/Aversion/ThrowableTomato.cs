@@ -12,7 +12,7 @@ public class ThrowableTomato : MonoBehaviour
     private Vector3 endTouchPosition;
     private Vector3 directionSwipeTouchPosition;
 
-    private const float THROW_FORCE = 0.8f;
+    private float THROW_FORCE = 0.8f;
     private float timeSinceTouchStarted;
     private float timeInterval;
 
@@ -38,8 +38,8 @@ public class ThrowableTomato : MonoBehaviour
         {
             Vector2 actualScale = transform.localScale;
 
-            actualScale.x -= 0.01f;
-            actualScale.y -= 0.01f;
+            actualScale.x -= 0.03f;
+            actualScale.y -= 0.03f;
 
             transform.localScale = actualScale;
         }
